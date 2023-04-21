@@ -12,12 +12,17 @@ namespace QuickAI
         public Common() { }
         public SqlDataAdapter adas;
         public SqlCommand comm;
+        //Connection class
         public SqlConnection conn;
         public SqlDataReader dr;
 
+        //code
+        //Sql server
+        /*Connection con = DriverManager.getConnection("jdbc:oracle:thin:driver@locahost:1521", "userName", "upwd");
+        const*/
         public void connect()
         {
-            String str = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=db;Integrated Security=True";
+            String str = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI;Integrated Security=True";
             this.conn= new SqlConnection(str);
         }
         public string Insert(String query)

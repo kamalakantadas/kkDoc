@@ -1,4 +1,48 @@
 ﻿$(document).ready(function () {
+    
+    //forgot page work
+    $("#btnReset").on("click", function () {
+        var email = $("#email").val();
+        if (email == "") {
+            alert("Email is Missing!!!!")
+        } else {
+            $.ajax({
+                url: "index.ashx?checkEmail",
+                check: false,
+                data: { "email": email },
+                success: function (result) {
+                    if (result == "yes") {
+                        //Password will reset page allowed here
+                        $("#ResetPage").show();
+                        var oldPwd = $("#rPwd").val();
+                        var newPwd = $("#rNPwd").val();
+                        var repeatPwd = $("#rNCPwd").val();
+                        if (repeatPwd != newPwd) {
+                            alert("Password Not Mathced!!");
+                        }
+                    } else if (result == "no") {
+                        alert("Email is Not In database!!");
+                        //Register again
+                        $("#registrationPage").hide();
+                        $("#registrationPage").show();                        
+                    }
+                }
+            });
+        }       
+    });
+    //forgotPage automatically hide when Document load
+    $("#forgotPage").hide();
+    //When click on return button from Forgot page
+    $("#returnFromForgot").on("click", function () {
+        $("#forgotPage").hide();
+        $("#mainPage").show();
+    });
+    $("#forgotText").on("click", function () {
+        $("#loginForm").hide();
+        //$("#headFix").show();
+        $("#forgotPage").show();
+    });
+
     //Login Page
     $("#login").on("click", function () {
         var uName = $("#uName").val();

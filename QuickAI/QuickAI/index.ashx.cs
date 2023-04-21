@@ -30,7 +30,37 @@ namespace QuickAI
             if (context.Request.QueryString["action"] == "userLogin") {
                 userLogin();
             }
+            if (context.Request.QueryString["action"] == "checkEmail") {
+                checkEmail();
+            }
+        }
+        public class User
+        {
+            String name { get; set; }
+            String email { get; set; }
+            String pwd { get; set; }
 
+        }
+        public void checkEmail()
+        {
+            User user = new User();
+            String email = _context.Request.QueryString["email"];
+            DataTable dt = new DataTable();
+            query = "select userEmail,userPwd from userReg wher userEmail='" + email + "'";
+            dt = obj.Select(query).Tables[0];
+            String text = "";
+
+            
+
+            if (dt.Rows.Count == 0)
+            {
+                text = "no";
+            }
+            else
+            {
+                text = "yes";
+            }
+            _context.Response.Write(text);
         }
         public void userLogin()
         {
@@ -75,8 +105,7 @@ namespace QuickAI
             dt = ds.Tables[0];
             //Boolean v = false;
             if (dt.Rows.Count == 0)
-            {
-                
+            {               
                 query = "insert into userReg(userName,userEmail,userPwd) values('" + name + "','" + email + "','" + pwd + "')";
                 obj.Insert(query);
                 _context.Response.Write("succesfully Saved into database");
@@ -85,9 +114,6 @@ namespace QuickAI
             {
                 _context.Response.Write("Present");
             }
-            
-            
-            
         }
         public bool IsReusable
         {
