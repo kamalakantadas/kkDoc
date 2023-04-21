@@ -38,7 +38,7 @@ namespace QuickAI
             String userPwd = _context.Request.QueryString["uPwd"];            
             query = "select * from userReg where userName='" + userName + "' and userPwd='" + userPwd + "'";
             DataTable dt = new DataTable();
-            String text = "";
+            //String text = "";
             dt = obj.Select(query).Tables[0];
             if (dt.Rows.Count == 1)
             {
@@ -73,7 +73,7 @@ namespace QuickAI
             DataSet ds = new DataSet();
             ds=obj.Select(query);
             dt = ds.Tables[0];
-            Boolean v = false;
+            //Boolean v = false;
             if (dt.Rows.Count == 0)
             {
                 
