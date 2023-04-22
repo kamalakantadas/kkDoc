@@ -23,8 +23,9 @@ namespace QuickAI
         public void connect()
         {
             String str = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI;Integrated Security=True";
-            this.conn= new SqlConnection(str);
+            this.conn = new SqlConnection(str);
         }
+       
         public string Insert(String query)
         {
             comm = new SqlCommand(query, conn);
