@@ -23,7 +23,11 @@
                 cache: false,
                 data: { "uName": uName, "uPwd": uPwd },
                 success: function (result) {
-
+                     if(result=="yes"){
+                        alert("succesfully Login");
+                     }else if(result != "yes"){
+                        alert("User Is not exist");
+                     }
                 }
             });
         }
