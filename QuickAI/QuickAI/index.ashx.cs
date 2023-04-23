@@ -120,8 +120,9 @@ namespace QuickAI
             if (dt.Rows.Count == 1)
             {
                 //text = dt.Rows.
+                _context.Response.Write("yes");
             }
-            
+            _context.Response.Write("No");
         }
         public void validateEmail()
         {
