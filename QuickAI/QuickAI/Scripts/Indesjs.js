@@ -58,8 +58,7 @@
                 if (result == "Present") {
                     $("#form3Example3cg").val("");
                     //$("#register").prop("disabled", true);
-                    alert("Email is Already Registered");
-                    
+                    alert("Email is Already Registered");                    
                 }
                 else {
                     $("#loginForm").hide();
@@ -76,7 +75,15 @@
         });
     });
 
-        
+    //When click on Register for Free Link
+    $("#startedFreeReg").on("click", function () {
+        $("#registrationPage").show();
+        $("#mainPage").hide();
+        $("#loginForm").hide();
+        $("#form3Example3cg").val("");
+        $("#form3Example4cg").val("");
+        $("#form3Example4cdg").val("");
+    });
     $("#signupButton").ready(function () {
         //email Validation Code Here
        /* $("#form3Example3cg").on("change blur", function () {
