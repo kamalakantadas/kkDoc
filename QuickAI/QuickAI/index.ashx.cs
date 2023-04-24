@@ -111,9 +111,9 @@ namespace QuickAI
         }
         public void userLogin()
         {
-            string userName = _context.Request.QueryString["uName"];
+            string userEmail = _context.Request.QueryString["uEmail"];
             string userPwd = _context.Request.QueryString["uPwd"];
-            string query = "select * from userReg where userName='" + userName + "' and userPwd='" + userPwd + "'";
+            string query = "select * from userReg where userEmail='" + userEmail + "' and userPwd='" + userPwd + "'";
             DataTable dt = new DataTable();
             //String text = "";
             dt = obj.Select(query).Tables[0];
@@ -122,7 +122,11 @@ namespace QuickAI
                 //text = dt.Rows.
                 _context.Response.Write("yes");
             }
-            _context.Response.Write("No");
+            else
+            {
+                _context.Response.Write("No");
+            }
+            
         }
         public void validateEmail()
         {

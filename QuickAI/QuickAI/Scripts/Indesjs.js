@@ -13,15 +13,16 @@
 
     //Login Page
     $("#login").on("click", function () {
-        var uName = $("#uName").val();
+        var uEmail = $("#uEmail").val();
         var uPwd = $("#uPwd").val();
-        if (uPwd == "" || uName == "") {
+        if (uPwd == "" || uEmail == "") {
             alert("UserName or Password not be empty");
         } else {
             $.ajax({
-                url: "index.ashx?userLogin?timeid" + (Math.random() * 10000) + " ",
+                
+                url: "index.ashx?action=userLogin&timeid" + (Math.random() * 10000) + " ",
                 cache: false,
-                data: { "uName": uName, "uPwd": uPwd },
+                data: { "uEmail": uEmail, "uPwd": uPwd },
                 success: function (result) {
                      if(result=="yes"){
                         alert("succesfully Login");
