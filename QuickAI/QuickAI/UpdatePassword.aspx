@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="QuickAI.ForgotPassword" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UpdatePassword.aspx.cs" Inherits="QuickAI.UpdatePassword" %>
 
 <!DOCTYPE html>
 
@@ -14,12 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <!--Forgot Password Page Design-->
-    <div class="container" style="margin-top:100px">
+     <div class="container" style="margin-top:100px">
             <div class="d-flex justify-content-center">
                 <!-- h-100-->
                 <div class="card">
-                    <div id="forgotPage">
+                    <div id="UpdatePassword">
                         <nav class="nav navbar">
                             <div class="card-body">
                                 <form id="form1" class="form-group" runat="server">
@@ -28,24 +27,24 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <asp:Button runat="server" onclick="returnHome" class="btn btn-primary float-left" Text="GoHome"/>                                                    
+                                                <div class="col-md-6">                                                                                         
                                                 </div>
                                             </div>
                                             <h3><i class="fa fa-lock fa-4x"></i></h3>
-                                            <h2 class="text-center">Forgot Password?</h2>
-                                            <div class="row" id="alertPopupForEmptyEmail" style="display:none">
-                                                <h4>Email is Missing</h4>
-                                            </div>
+                                            <h2 class="text-center">Update Password?</h2>                                           
                                             <div class="panel-body">
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                                        <asp:TextBox runat="server" id="emailFromForgot" placeholder="email address" class="form-control" type="email"></asp:TextBox>
+                                                        <asp:TextBox runat="server" id="Pwd" placeholder="password" class="form-control"></asp:TextBox>
+                                                    </div>
+                                                     <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                                        <asp:TextBox runat="server" id="cnfPwd" placeholder="confirmPassword" class="form-control" ></asp:TextBox>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <asp:Button runat="server" onclick="forgotPassword" class="btn btn-lg btn-primary btn-block" id="btnReset" Text="ResetPassword" />
+                                                <div class="form-group">                                                   
+                                                    <asp:Button runat="server" onclick="updatePd" class="btn btn-lg btn-primary btn-block" id="updatePwd" Text="UpdatePassword" />
                                                 </div>
                                             </div>
                                         </div>
@@ -56,6 +55,6 @@
                     </div>
                 </div>
             </div>
-        </div>       
+        </div>   
 </body>
 </html>

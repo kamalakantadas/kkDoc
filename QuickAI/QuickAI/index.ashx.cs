@@ -95,7 +95,7 @@ namespace QuickAI
             int val = dt.Rows.Count;
             if (val == 1) {
                 _context.Response.Write("yes");
-            }                
+            }               
             else
             {
                 _context.Response.Write("N");

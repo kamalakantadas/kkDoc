@@ -13,7 +13,9 @@ namespace QuickAI
         {
 
         }
-
+        protected void freeRegClick(object sender, EventArgs e) {
+            Response.Redirect("Register.aspx", true);
+        }
         protected void joinbutton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx", true);

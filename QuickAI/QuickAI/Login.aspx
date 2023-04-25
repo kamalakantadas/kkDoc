@@ -22,7 +22,6 @@
     <div class="container-fluid">
         <div class="row" id="loginForm" style="margin-top:50px">
             <div class="col-lg-4">
-
             </div>
             <div class="col-lg-4">
                 <div class="justify-content-center h-100">
@@ -34,7 +33,7 @@
                                 <div class="p-3 m-0 border-0 bd-example">
                                     <!-- Example Code -->
                                     <i class="bi bi-x bi-3x"></i>
-                                    <button type="button" class="btn btn-primary"  id="closeButton" aria-label="Close">X</button>
+                                    <asp:Button runat="server" type="button" onclick="gotoHomePage" Text="Home" class="btn btn-primary"  id="closeButton" aria-label="Close"/>                                    
                                     <!-- End Example Code -->
                                 </div>
                             </div>
@@ -66,16 +65,15 @@
                             <div class="card-footer">
                                 <div class="row">
                                     <div class="col-sm-6"></div>
-                                    <div class="col-sm-6">
-                                    <div class="d-flex justify-content-center links">
+                                    <div class="col-sm-3">
                                         <asp:Button runat="server" class="btn btn-primary" OnClick="sgnBtn_Click" Text="signup" id="signupButton" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                    <div class="d-flex justify-content-center links">                                        
                                         <asp:Button runat="server" Text="Login" id="login" OnClick="lgnBtn_Click" class="btn float-right login_btn btn-primary" />
                                     </div>
                                 </div>
                                 </div>
-                            <!-- <div class="d-flex justify-content-center">
-                                <input type="button" class="button btn-primary" value="Forgot Password" id="forgotbutton" />
-                            </div>-->
                             </div>
                         </form>                        
                     </div>

@@ -29,7 +29,7 @@
                                 <div class="p-3 m-0 border-0 bd-example">
                                     <!-- Example Code -->
                                     <i class="bi bi-x bi-3x"></i>
-                                    <button type="button" class="btn btn-primary"  id="closeButton" aria-label="Close">X</button>
+                                    <asp:Button runat="server" type="button" onclick="gohomeFromRegister" class="btn btn-primary"  id="closeButton" Text="GoHome" aria-label="Close" />
                                     <!-- End Example Code -->
                                 </div>
                             </div>
@@ -37,11 +37,20 @@
                             <div class="card-body">                            
                                 <div class="input-group form-group">                                   
                                     <label>Your Name</label><br />
-                                    <asp:TextBox runat="server" class="form-control" id="form3Example1cg"></asp:TextBox>
+                                    <asp:TextBox runat="server" class="form-control" id="form3Example1cg" OnTextChanged="form3Example1cg_TextChanged"></asp:TextBox>
                                 </div>
                                 <div class="input-group form-group">                                    
                                     <label>Your Email</label><br />
                                     <asp:TextBox runat="server" class="form-control"  id="form3Example3cg" TextMode="Email"></asp:TextBox>
+                                    <%--  OnTextChanged="verifyEmail" --%>
+                                    <asp:RequiredFieldValidator 
+                                        ControlToValidate="form3Example3cg" 
+                                        ErrorMessage="Email is Empty"
+                                        Display="Dynamic"
+                                        CssClass="error"
+                                        ValidationGroup="Form"
+                                        ID="RequiredFieldValidator1" runat="server" 
+                                       ></asp:RequiredFieldValidator>
                                 </div>
                                 <div class="input-group form-group">                                    
                                     <label>Password</label><br />
@@ -58,11 +67,11 @@
                                     <div class="col-sm-6">
                                     <div class="d-flex justify-content-center links">
                                         
-                                        <asp:Button runat="server" class="btn btn-primary" onclick="regBtn_Click" Text="Register" id="register" />                                        
+                                        <asp:Button runat="server" class="btn btn-primary"  Text="Register" onclick="regBtn_Click" id="register" />                                        
                                     </div>
                                 </div>
                                 </div>
-                            <!-- <div class="d-flex justify-content-center">
+                            <!-- <div class="d-flex justify-content-center">"""onclick="regBtn_Click"""
                                 <input type="button" class="button btn-primary" value="Forgot Password" id="forgotbutton" />
                             </div>-->
                             </div>
