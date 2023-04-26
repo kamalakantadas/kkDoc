@@ -7,29 +7,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Responsive Page</title>
+    <link href="IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
 </head>
 <body>
      <!--Home Page Content-->
     <div class="container-fluid">
         <form runat="server">
             <div id="mainPage">                
-                <nav class="row navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                    <div class="col-lg-2">
+                <nav class="row navbar navbar-expand-lg navbar-dark bg-dark fixed-top">                    
+                    <div class="col-lg-2" style="width:8.33%">
                         <a class="navbar-brand" href="#">
                             <h1>QUICKAI</h1>
                         </a>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" style="width:58.31%">
 
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-1" style="width:8.33%">
                         <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" id="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-1" style="width:8.33%">
                         <div class="col-lg-1">
                             <div class="dropdown">
                                 <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -53,104 +54,63 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-1"></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    </ul>
-                </div>
+                    <div class="col-lg-1" style="width:8.33%"></div>
+                    <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                         </button>
+                         <div class="collapse navbar-collapse" id="navbarNav">
+                             <ul class="navbar-nav">
+                             </ul>
+                         </div>--%>
                 </nav>
-                <%-- <nav>   
-                    <img src="Images/home-hero-icon%20(1).png" />
-                </nav>--%>
-                <nav class="row navbar navbar-expand-lg" style="margin-top:50px">
-                <div class="row" style="margin-top:50px">
-                    <div class="col-sm-12">
-                        <div class="jumbotron text-center" style="margin-left:130px">
-                            <div class="display-4">Best AI Content Writer</div>
-                            <h6>Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</h6>
-                            <asp:Button runat="server" OnClick="freeRegClick" id="startedFreeReg" Text="Get Started For Free"  class="button btn btn-primary ripple-effect button-sliding-icon"/>
-                            <%--<button class="button btn btn-primary ripple-effect button-sliding-icon" id="startedFreeReg">Get Started For Free</button>--%>
-                            <h6> No credit card required</h6>
+                <div class="full-page" style="width: 100%;height: 100%;">
+                     <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
+                    <div class="row" style="width:100%;">
+                        
+                        <div class="col-md-12" style="padding-top:100px">
+                            <center>
+                                <img src="Images/home-hero-icon%20(1).png" style="width:180px;height:180px" />
+                                <h1 class="margin-bottom-10 text_gradient_animation">
+                                    <strong>Best AI Content Writer</strong>
+                                </h1>                               
+                                <p class="lead">Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</p>
+                               
+                                <asp:LinkButton ID="startedFreeReg" runat="server" href="Register.aspx" Text="Get Started For Free" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff" />                                 
+                                <h6> No credit card required</h6>
+                            </center>              
                         </div>
+                                                   
                     </div>
-                </div>
-            </nav>
+                </nav>
+                </div>   
+                <nav class="row navbar navbar-expand-lg" style="padding-top:100px"></nav>
                 <nav class="row navbar navbar-expand-lg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <h1>Hello, world!</h1>
-
-                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                        <div class="col-lg-4 col-md-6 col-sm-12">                            
+                            <h1>Select a template</h1>
+                            <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <h1>Hello, world!</h1>
-                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                            <h1>Fill the form</h1>
+                            <p>Enter a detailed description of your content. Tell the AI what do you want.</p>                            
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <h1>Hello, world!</h1>
-                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                            <h1>Get your content</h1>
+                            <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
                         </div>
                     </div>
                 </div>
             </nav>
-                <nav class="row navbar navbar-expand-lg">
-                <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-                    <ul class="list-unstyled">
-                        <li> <a href="#"> </a> </li>
-                        <li> <a href="#">Payment Center</a></li>
-                        <li> <a href="#"> Contact Directory </a></li>
-                        <li> <a href="#">Forms</a></li>
-                        <li> <a href="#">News and Updates</a></li>
-                        <li> <a href="#">FAQs</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-
-                    <ul class="list-unstyled">
-                        <li><a href="#"> Blog </a> </li>
-                        <li><a href="#">Accessibility</a> </li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Webmaster</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-                    <ul class="list-unstyled">
-                        <li> <a href="#"> Parks and Recreation </a> </li>
-                        <li> <a href="#">Police Department</a> </li>
-                        <li> <a href="#"> Fire </a> </li>
-                        <li> <a href="#"> Mayor and City Council </a> </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-                    <ul class="social-network social-circle">
-                        <li> <a href="#" class="icoFacebook" title="Facebook"> <i class="fa fa-facebook"> </i> </a> </li>
-                        <li> <a href="#" class="icoLinkedin" title="Linkedin"> <i class="fa fa-linkedin"> </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a> </li>
-                    </ul>
-                </div>
-
-            </nav>
-                <nav class="row navbar navbar-expand-lg">
-                </nav>
+               
+                <nav class="row navbar navbar-expand-lg" style="padding-top:200px"></nav>
                 <div class="row">
                 <div class="col-md-12 copy">
                     <p class="text-center">  </p>
                 </div>
             </div>
                 <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width" style="width:100%">
+                <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-logo">
@@ -165,7 +125,8 @@
                                 <ul>
                                     <li><a href="Login.aspx">Login</a></li><li><a href="Register.aspx">Register</a></li>                        </ul>
                             </div>
-                        </div><div class="col-md-2">
+                        </div>
+                        <div class="col-md-2">
                             <div class="footer-links">
                                 <h3>Helpful Links</h3>
                                 <ul>
@@ -182,36 +143,86 @@
                                     <li><a href="#">Testimonials</a></li>                        </ul>
                             </div>
                         </div>
+                    </div>                    
+                </div>
+                <div class="row navbar py-3 text-light bg-dark full-width">
+                    <div class="col-md-6">
+                        <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
+                    </div>
+                    <div class="col-md-6">
+                       <!-- Facebook -->
+                        <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
+                          ><i class="fab fa-google"></i
+                        ></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+
+                        <!-- Pinterest -->
+                        <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
+                          ><i class="fab fa-pinterest"></i
+                        ></a>
+
+                        <!-- Vkontakte -->
+                        <a class="btn btn-primary" style="background-color: #4c75a3;" href="#!" role="button"
+                          ><i class="fab fa-vk"></i
+                        ></a>
+
+                        <!-- Stack overflow -->
+                        <a class="btn btn-primary" style="background-color: #ffac44;" href="#!" role="button"
+                          ><i class="fab fa-stack-overflow"></i
+                        ></a>
+
+                        <!-- Youtube -->
+                        <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"
+                          ><i class="fab fa-youtube"></i
+                        ></a>
+
+                        <!-- Slack -->
+                        <a class="btn btn-primary" style="background-color: #481449;" href="#!" role="button"
+                          ><i class="fab fa-slack-hash"></i
+                        ></a>
+
+                        <!-- Github -->
+                        <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
+                          ><i class="fab fa-github"></i
+                        ></a>
+
+                        <!-- Dribbble -->
+                        <a class="btn btn-primary" style="background-color: #ec4a89;" href="#!" role="button"
+                          ><i class="fab fa-dribbble"></i
+                        ></a>
+
+                        <!-- Reddit -->
+                        <a class="btn btn-primary" style="background-color: #ff4500;" href="#!" role="button"
+                          ><i class="fab fa-reddit-alien"></i
+                        ></a>
+
+                        <!-- Whatsapp -->
+                        <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"
+                          ><i class="fab fa-whatsapp"></i
+                        ></a>
                     </div> 
-                </div>               
+                </div>
             </div>
         </form>        
     </div>    
 </body>
 </html>
-<%--                        
-                        <div class="col-md-6">                                  
-                           <img src="Images/1149945428.png" />
-                           <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
-                        </div>
-                        <div class="col-md-2">
-                           <ul class="list-inline text-md-right">
-                              <li class="list-inline-item"><a href="#">Link 1</a></li>
-                              <li class="list-inline-item"><a href="#">Link 2</a></li>
-                              <li class="list-inline-item"><a href="#">Link 3</a></li>
-                           </ul>
-                        </div>
-                        <div class="col-md-2">
-                            <ul class="list-inline text-md-right">
-                              <li class="list-inline-item"><a href="#">Link 1</a></li>
-                              <li class="list-inline-item"><a href="#">Link 2</a></li>
-                              <li class="list-inline-item"><a href="#">Link 3</a></li>
-                           </ul>
-                        </div>
-                        <div class="col-md-2">
-                            <ul class="list-inline text-md-right">
-                              <li class="list-inline-item"><a href="#">Link 1</a></li>
-                              <li class="list-inline-item"><a href="#">Link 2</a></li>
-                              <li class="list-inline-item"><a href="#">Link 3</a></li>
-                           </ul>
-                        </div> --%>

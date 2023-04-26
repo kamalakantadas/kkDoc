@@ -114,6 +114,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\indexstyle.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -135,6 +136,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Index.html" />
+    <Content Include="IndexPage.css" />
     <Content Include="Login.aspx" />
     <Content Include="ModifyForgotPassword.html" />
     <Content Include="Register.aspx" />
@@ -168,6 +170,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Test.css" />
+    <Content Include="Test.html" />
     <Content Include="UpdatePassword.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -191,6 +195,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

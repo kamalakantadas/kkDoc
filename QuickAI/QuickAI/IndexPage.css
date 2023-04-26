@@ -1,0 +1,21 @@
+﻿body {
+}
+.container-fluid{
+    display:flex;
+}
+.dHead{
+    position:fixed;
+    top:0;
+    border-color:red;
+    border:1px;
+    height:200px;
+    width:200px;
+    }
+.dLeftSide {
+    border-color: green;
+    position: fixed;
+    left: 0;
+    border: 1px;
+    height: 200px;
+    width: 200px;
+}

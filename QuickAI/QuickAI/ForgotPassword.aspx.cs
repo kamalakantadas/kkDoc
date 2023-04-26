@@ -9,6 +9,10 @@ using System.Web.UI.WebControls;
 
 namespace QuickAI
 {
+    class validationPwd
+    {
+
+    }
     public class User
     {
         public string name { get; set; }
