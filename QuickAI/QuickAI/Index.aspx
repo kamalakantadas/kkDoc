@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <form runat="server">
             <div id="mainPage">                
-                <nav class="row navbar navbar-expand-lg navbar-dark bg-dark fixed-top">                    
+                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;">                    
                     <div class="col-lg-2" style="width:8.33%">
                         <a class="navbar-brand" href="#">
                             <h1>QUICKAI</h1>
@@ -31,8 +31,7 @@
                         <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" id="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
                     </div>
                     <div class="col-lg-1" style="width:8.33%">
-                        <div class="col-lg-1">
-                            <div class="dropdown">
+                        <div class="dropdown">
                                 <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                     Text="Language"/>                            
                                 <div class="dropdown-menu" aria-labelledby="Lang">
@@ -52,7 +51,6 @@
                                     <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
                                 </div>
                             </div>
-                        </div>
                     </div>
                     <div class="col-lg-1" style="width:8.33%"></div>
                     <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,10 +61,9 @@
                              </ul>
                          </div>--%>
                 </nav>
-                <div class="full-page" style="width: 100%;height: 100%;">
-                     <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
-                    <div class="row" style="width:100%;">
-                        
+                <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
+                    <div class="row" style="width:100%;">     
+                     <%--<div class="row-fluid">--%>
                         <div class="col-md-12" style="padding-top:100px">
                             <center>
                                 <img src="Images/home-hero-icon%20(1).png" style="width:180px;height:180px" />
@@ -78,39 +75,38 @@
                                 <asp:LinkButton ID="startedFreeReg" runat="server" href="Register.aspx" Text="Get Started For Free" class="btn btn-primary" style="background-color:#184698;border-radius: 4px;box-shadow:0 4px 12px;color: #fff" />                                 
                                 <h6> No credit card required</h6>
                             </center>              
-                        </div>
-                                                   
+                        </div>                                                   
                     </div>
-                </nav>
-                </div>   
+                </nav>                  
                 <nav class="row navbar navbar-expand-lg" style="padding-top:100px"></nav>
                 <nav class="row navbar navbar-expand-lg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">                            
-                            <h1>Select a template</h1>
-                            <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <h1>Fill the form</h1>
-                            <p>Enter a detailed description of your content. Tell the AI what do you want.</p>                            
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <h1>Get your content</h1>
-                            <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">                            
+                                <h1>Select a template</h1>
+                                <p>Choose a content creation template. Multiple templates are available for your all needs.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <h1>Fill the form</h1>
+                                <p>Enter a detailed description of your content. Tell the AI what do you want.</p>                            
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <h1>Get your content</h1>
+                                <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
                
                 <nav class="row navbar navbar-expand-lg" style="padding-top:200px"></nav>
                 <div class="row">
-                <div class="col-md-12 copy">
-                    <p class="text-center">  </p>
+                    <div class="col-md-12 copy">
+                        <p class="text-center">  </p>
+                    </div>
                 </div>
-            </div>
                 <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
+                <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
+                    <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-logo">
@@ -145,7 +141,7 @@
                         </div>
                     </div>                    
                 </div>
-                <div class="row navbar py-3 text-light bg-dark full-width">
+                    <div class="row navbar py-3 text-light bg-dark full-width">
                     <div class="col-md-6">
                         <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
                     </div>
@@ -221,6 +217,7 @@
                         ></a>
                     </div> 
                 </div>
+                </footerclass>           
             </div>
         </form>        
     </div>    
