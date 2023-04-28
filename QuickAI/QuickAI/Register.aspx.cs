@@ -78,50 +78,8 @@ namespace QuickAI
         {
             Response.Redirect("Index.aspx", true);
         }
-        /*protected void verifyEmail(object sender, EventArgs e)
-        {
-            string email = form3Example3cg.Text.Trim();
-            bool isValidEmail = ValidateEmailFromDatabase(email);
-
-            if (!isValidEmail)
-            {
-                MessageBox.Show("Invalid Email");
-                // You can also clear the TextBox or take other actions as needed.
-            }
-            else
-            {
-                MessageBox.Show("Email is already registered");
-            }
-        }
-        protected Boolean ValidateEmailFromDatabase(string email)
-        {
-            register reg = new register();
-            Common obj = new Common();
-            reg.email = form3Example3cg.Text.ToString();            
-            DataSet ds = new DataSet();
-            DataTable dt = new DataTable();
-            query = "select userEmail from userReg where userEmail='" + reg.email + "'";
-            Boolean check = false;
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    SqlCommand command = new SqlCommand(query, connection);
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable table = new DataTable();
-                    adapter.Fill(table);
-                    if (table.Rows.Count == 1)
-                    {
-                        check = true;
-                    }                   
-                }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Some Sql Problem while sending Data to Database: " + ex.Message);
-            }
-            return check;
-        }*/
+       
+        //User Registration Function
         protected void regBtn_Click(object sender, EventArgs e)
         {
             register reg = new register();
@@ -156,6 +114,8 @@ namespace QuickAI
                         DataTable table = new DataTable();
                         adapter.Fill(table);
                         MessageBox.Show("Successfully Registered!!");
+                        //It should be redirected to Index page where UserName should assign to User Icon using reg.name
+                        //all property associated with userName should be visible in Dashboard page
                     }
                 }catch(SqlException ex)
                 {

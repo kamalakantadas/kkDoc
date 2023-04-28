@@ -9,24 +9,26 @@
     <title>Dashboard</title>
     <link href="IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+    <script src="Dashboard.js"></script>  
 </head>
 <body>    
    <form id="form1" runat="server">
        <div id="DashBoard">
-           <%-- Header Contentt Writen by kamalakantadas --%>
-           <div id="dHeader">
-                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;border-style: ridge;">                    
-                    <div class="col-lg-2" style="width:16.66%; overflow: hidden;"  >
+           <%-- Header Contentt Writen by kamalakantadas27@gmail.com --%>
+           <div id="dHeader" style="position: absolute;z-index: 999;background-color:red">
+                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;height:90px;border-style: ridge;z-index:999;background-color:white">                    
+                    <div class="col-lg-2" style="width:16.66%"  >
                                 
-                        <a class="navbar-brand" href="Index.aspx">                    
-                            <img src="Images/1149945428.png" style="padding-left:35px;padding-right:35px;overflow: hidden;"/>
+                        <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px;overflow: hidden;">                    
+                            <img src="Images/1149945428.png" style="position:fixed; max-width:100%;margin-bottom:30px;padding-left:35px;padding-right:35px;overflow: hidden;"/>
                         </a>
                         
                     </div>
-                    <div class="col-lg-8" style="width:58.31%;">
+                    <div class="col-lg-8" style="width:66.64%;overflow: hidden;">
                         <a href="#" class="sandwich-link" data-toggle="collapse" data-target="#leftSideBar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -65,18 +67,29 @@
                 </nav>
            </div>
            <%-- Body --%>
-           <div id="bPage">
-               <div class="container-fluid" style="margin-top:95px;">
-                   <div class="row">
+           <div id="bPage" >
+               <div class="container-fluid">
+                   <div class="row"style="display:inline-flex;margin-top:95px">
                        <%-- Left Side --%>
-                       <div class="col-md-2" style="width:200px;box-shadow: 2px 2px 5px grey;border-style: ridge;">
-                           <div id="leftFixBar" >
-
+                       <div class="col-md-2" >
+                           <div id="leftFixBar" style="width:200px;border-style: ridge;padding-top:50px">
+                               <ul>
+                                   <li><h6>My Account</h6></li>
+                                   <li ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                      <rect height="7" width="7" x="3" y="3" />
+                                      <rect height="7" width="7" x="14" y="3" />
+                                      <rect height="7" width="7" x="14" y="14" />
+                                      <rect height="7" width="7" x="3" y="14" />
+                                    </svg><a href="dashboard.aspx" >                                    
+                                    Dashboard</a>
+                                   </li>
+                               </ul>
                            </div>
                        </div>
                        <%-- Right Side --%>
-                       <div class="col-md-10"  style="width:75%;background:#f2f2f2;margin-left:200px;padding:60px">
+                       <div class="col-md-10"  style="width:75%;background:#f2f2f2;margin-left:225px;z-index:99">
                            <div id="rightSide">
+                               <%-- Right content 1st row only content --%>
                                <div class="row" >
                                    <%-- Left Side of Right side --%>
                                    <div class="col-md-2">
@@ -87,27 +100,28 @@
                                    </div>
                                     <%-- Right Side of Right side --%>
                                    <div class="col-md-2">
-                                        <nav id="SubPage">
-                                          <ul>
+                                        <div id="SubPage">
+                                          <ul style="display: inline-flex;">
                                              <li "><a href="index.aspx">Home</a></li>                                      
                                              <li" >Dashboard:</li>
                                           </ul>
-                                       </nav>
+                                       </div>
                                    </div>
                                </div>
+                               <%-- 3 boxes Right content 2nd row --%>
                                <div class="row">
                                    <%-- Words Used --%>
-                                   <div class="col-md-6" >
+                                   <div class="col-lg-4" style="width:33%;">
                                        <div id="wordsUsed" style="height:150px;background-color:white;margin-bottom:30px;margin-right:30px" >
                                            <div class="row">
-                                               <div class="col-md-8">
-                                                   <div id="wu" style="padding-left:40px;padding-top:40px;">
+                                               <div class="col-lg-6">
+                                                   <div id="wu" style="padding-left:40px;padding-top:40px;width:50%;">
                                                        <h5>Words Used</h5>
                                                        <h5>0/10,000</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-md-4" style="background-color: rgb(184, 27, 127);overflow-x: auto;">                                                   
-                                                   <svg style="height:130px;width:40px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                                               <div class="col-lg-6" style="background-color: rgb(184, 27, 127); background-position:center; width:50%;">                                                   
+                                                   <svg style="height:140px;width:40px" xmlns="http://www.w3.org/2000/svg" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
 </svg>
                                                </div>                                              
@@ -115,54 +129,64 @@
                                        </div>
                                    </div>
                                    <%-- Images Used --%>
-                                   <div class="col-md-6" >
-                                       <div id="imagesUsed" style="height:150px;background-color:white;margin-bottom:30px;margin-right:30px">
+                                   <div class="col-lg-4" style="width:33%;">
+                                       <div id="imagesUsed" style="height:150px;background-color:white;margin-bottom:30px;margin-right:30px;">
                                            <div class="row">
-                                               <div class="col-md-8">
+                                               <div class="col-lg-6" style="width:50%;">
                                                    <div id="iu" style="padding-left:40px;padding-top:40px;">
                                                        <h5>Images Used</h5>
                                                        <h5>0/100</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-md-4" style="color: rgb(54, 189, 120);text-align: center;">
-                                                   <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="60px" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                                               <div class="col-lg-6" style="color: rgb(54, 189, 120);text-align: center;width:50%">
+                                                   <svg xmlns="http://www.w3.org/2000/svg" style="margin-top:20px;" width="100px" height="100px" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
   <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
 </svg>
                                                </div>                                           
                                            </div>
                                        </div>
                                    </div>
-                               </div>
-                               <%-- second Row for right content--%>
-                               <div class="row">
                                    <%-- Speech Text --%>
-                                   <div class="col-md-6" >
+                                   <div class="col-lg-4" style="width:33%;">
                                        <div id="speechText" style="height:150px;background-color:white;margin-bottom:30px;margin-right:30px">
                                            <div class="row">
-                                               <div class="col-md-8">
+                                               <div class="col-lg-6" style="width:50%">
                                                    <div id="st" style="padding-left:40px;padding-top:40px;">
                                                        <h5>Speech Text</h5>
                                                        <h5>0/0</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-md-4" style="color: rgb(239, 168, 15);text-align: center;">
-                                                   <svg xmlns="http://www.w3.org/2000/svg" width="160px" height="60px" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                               <div class="col-lg-6" style="color: rgb(239, 168, 15);text-align: center;width:50%">
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" style="margin-top:30px;" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
   <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
 </svg>
                                                </div>                                             
                                            </div>
-                                       </div>
+                                       </div>                                       
                                    </div>
-                                   <%-- Empty one --%>
-                                   <div class="col-md-6">
+                               </div>
+                               <%-- second Row for right content--%>
+                               <%-- Chart --%>
+                               <div class="row" >
+                                   <%-- Chart Header--%>
+                                   <div id="chartHeader" style="width:100%;background-color:white;">
 
                                    </div>
+                                   <%-- Chart Body--%>                                  
+                                   <div id="chartbody" style="width:100%;background-color:white;margin-left:15px;margin-right:45px">                                       
+                                        <div class="headlinechart" style="box-shadow: 1px 1px 5px grey;">                                            
+                                               <h5 style="padding-left:10px;padding-top:10px;padding-bottom:10px">words used this month</h5>
+                                        </div>
+                                        <div>
+                                          <canvas id="myChart"></canvas>
+                                        </div>
+                                   </div>                                   
                                </div>
                            </div>
                        </div>
-                  </div>
-               </div>
-            </div>
+                  </div>                               
+                </div>
+           </div>
            <%-- Footer Dashboard --%>
             <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
                 <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
@@ -281,4 +305,5 @@
        </div>
    </form>
 </body>
+  
 </html>

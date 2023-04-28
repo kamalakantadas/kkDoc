@@ -1,22 +1,29 @@
 ﻿body {
 }
-.container-fluid{
-    display:flex;
+.container-fluid {
+    display: inline;
 }
 
-.dHead {
-    position:fixed;
-    top:0;
-    border-color:red;
-    border:1px;
-    height:200px;
-    width:200px;
+.axis-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
-.dLeftSide {
-    border-color: green;
-    position: fixed;
-    left: 0;
-    border: 1px;
-    height: 200px;
-    width: 200px;
+
+    .axis-y span {
+        font-size: 12px;
+    }
+
+.chart-container {
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+}
+
+
+li {
+    padding-top:5px;
+    padding-bottom:5px;
+    box-shadow: 1px 1px 5px grey;
 }

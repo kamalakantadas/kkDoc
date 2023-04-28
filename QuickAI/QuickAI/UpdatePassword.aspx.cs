@@ -72,32 +72,7 @@ namespace QuickAI
         }
         //Updated Password
         protected void updatePd(object sender,EventArgs e)
-        {
-            /*Common obj = new Common();
-            string query = "";
-            string email = Request.QueryString["email"];
-            string pwd = Pwd.Text.ToString();
-            query = "update userReg set userPwd = '" + pwd + "' where userEmail='" + email + "'";
-            obj.Select(query);
-            MessageBox.Show("Value Updated");
-            Response.Redirect("Index.aspx");
-            //
-             var context = new ValidationContext(reg, serviceProvider: null, items: null);
-            var results = new List<ValidationResult>();
-            var isValid = Validator.TryValidateObject(reg, context, results, true);
-            
-            if (!isValid)
-            {
-                foreach (var validationResult in results)
-                {
-                    Response.Write(validationResult.ErrorMessage.ToString());
-                }
-
-                return;
-            }
-            else
-            {
-             */
+        {           
             UpdatePasswordValidation reg = new UpdatePasswordValidation();
             string email = Request.QueryString["email"];
             reg.Password = Pwd.Text.ToString();

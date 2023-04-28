@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Responsive Page</title>
+    <title>Index Page</title>
     <link href="IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,8 +17,9 @@
      <!--Home Page Content-->
     <div class="container-fluid">
         <form runat="server">
-            <div id="mainPage">                
-                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;">                    
+            <div id="mainPage">
+                <div id="IndexHeader">
+                    <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white">                    
                     <div class="col-lg-2" style="width:8.33%">
                         <a class="navbar-brand" href="#">
                             <h1>QUICKAI</h1>
@@ -61,7 +62,9 @@
                              </ul>
                          </div>--%>
                 </nav>
-                <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
+                </div>
+                <div id="IndexBody" style="z-index:99">
+                   <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
                     <div class="row" style="width:100%;">     
                      <%--<div class="row-fluid">--%>
                         <div class="col-md-12" style="padding-top:100px">
@@ -217,7 +220,8 @@
                         ></a>
                     </div> 
                 </div>
-                </footerclass>           
+                </footerclass>    
+                </div>                      
             </div>
         </form>        
     </div>    

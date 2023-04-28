@@ -62,6 +62,7 @@ namespace QuickAI
         //    set;
         //}
     }
+    
     public partial class Login : System.Web.UI.Page
     {
         //Common obj = new Common();

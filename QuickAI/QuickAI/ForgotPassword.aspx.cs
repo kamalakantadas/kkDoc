@@ -22,7 +22,7 @@ namespace QuickAI
     }
     public partial class ForgotPassword : System.Web.UI.Page
     {
-        String query = "";
+        //String query = "";
         string connectionString = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI; Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,17 +33,6 @@ namespace QuickAI
             Response.Redirect("Index.aspx");
         }
         protected void forgotPassword(object sender, EventArgs e) {
-            /*Common obj = new Common();
-            User user = new User();
-            user.email = emailFromForgot.Text.ToString();            
-            DataTable dt = new DataTable();
-            query = "select userEmail from userReg where userEmail='" + user.email + "'";
-            dt = obj.Select(query).Tables[0];
-            int val = dt.Rows.Count;
-            if (val == 1)
-            {
-                Response.Redirect("UpdatePassword.aspx?email='"+user.email+"'");
-            }*/
             User user = new User();
             user.email = emailFromForgot.Text.ToString();
             string query = "select userEmail from userReg where userEmail='" + user.email + "'";
