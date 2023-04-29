@@ -13,23 +13,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
-    <%--<script src="Dashboard.js"></script>--%>  
+    <script src="dashboard.js"></script>  
 </head>
 <body>    
    <form id="form1" runat="server">
        <div id="DashBoard">
            <%-- Header Contentt Writen by kamalakantadas27@gmail.com --%>
-           <div id="dHeader" style="position: absolute;z-index: 999;background-color:red">
+           <div id="dHeader" style="">
                 <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;height:90px;border-style: ridge;z-index:999;background-color:white">                    
-                    <div class="col-lg-2" style="width:16.66%"  >
-                                
+                    <div class="col-lg-3" style="width:24.99%"  >                                
                         <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px;overflow: hidden;">                    
                             <img src="Images/1149945428.png" style="position:fixed; max-width:100%;margin-bottom:30px;padding-left:35px;padding-right:35px;overflow: hidden;"/>
-                        </a>
-                        
+                        </a>                        
                     </div>
-                    <div class="col-lg-8" style="width:66.64%;overflow: hidden;">
-                        <a href="#" class="sandwich-link" data-toggle="collapse" data-target="#leftSideBar">
+                    <div class="col-lg-7" style="width:58.31%;overflow: hidden;">
+                        <a href="#" class="sandwich-link" data-toggle="collapse" data-target=".leftSideBar">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                             </svg>
@@ -66,28 +64,107 @@
                     </div>                    
                 </nav>
            </div>
-           <%-- Body --%>
+           <%-- Body designed by Kamalakantadas --%>
            <div id="bPage" >
                <div class="container-fluid">
-                   <div class="row"style="display:inline-flex;margin-top:95px">
+                   <div class="row" style="display:inline-flex;margin-top:100px">
                        <%-- Left Side --%>
-                       <div class="col-md-2" >
-                           <div id="leftFixBar" style="width:200px;border-style: ridge;padding-top:50px">
-                               <ul>
-                                   <li><h6>My Account</h6></li>
-                                   <li ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                      <rect height="7" width="7" x="3" y="3" />
-                                      <rect height="7" width="7" x="14" y="3" />
-                                      <rect height="7" width="7" x="14" y="14" />
-                                      <rect height="7" width="7" x="3" y="14" />
-                                    </svg><a href="dashboard.aspx" >                                    
-                                    Dashboard</a>
-                                   </li>
-                               </ul>
-                           </div>
+                       <div class="col-lg-3 scrollable hide-div leftSideBar" id="sidebar" style="width:28%;background-color:#f2f2f2">
+                           <!-- Left Side Lists -->
+                           <%-- My Account --%>
+                           <ul class="">
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-grid"></i>
+                                       <div>Dashboard</div>
+                                   </a>
+                               </li>
+                               <li>                                  
+                                   <a href="#" id="myDocBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> 
+                                       My Documents</a>
+                                    <ul id="myDocShow">
+                                       <li class=""><a href="http://hype.sociusus.com/all-documents">All Documents</a></li>
+                                       <li class=""><a href="http://hype.sociusus.com/all-images">All AI Images</a></li>
+                                    </ul>                                  
+                               </li>
+                           </ul>
+                           <%-- Organize and Manage --%>
+                           <ul>
+                               <li>Organize and Manage</li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-layers"></i>
+                                       <div>Templates</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-image"></i>
+                                       <div>Ai Images</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-message-circle"></i>
+                                       <div>Ai Chat</div>
+                                   </a>                              
+                               </li>
+                                <li>
+                                   <a href="#">
+                                       <i class="icon-feather-headphones"></i>
+                                       <div>Speech to Text</div>
+                                   </a>                              
+                               </li>
+                                <li>
+                                   <a href="#">
+                                       <i class="icon-feather-code"></i>
+                                       <div>Ai Code</div>
+                                   </a>                              
+                               </li>
+                             </ul>
+                           <%-- Account --%>
+                           <ul style="padding-bottom:50px">
+                               <li>Account</li>
+                                <li class="">
+                                <a id="ap" href="#"><i class="icon-feather-share-2"></i> Affiliate Program</a>
+                                <ul id="apShow">
+                                    <li class=""><a href="http://hype.sociusus.com/affiliate-program">Affiliate Program</a></li>
+                                    <li class=""><a href="http://hype.sociusus.com/withdrawals">Withdrawals</a></li>
+                                </ul>
+                                </li>                          
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-gift"></i>
+                                       <div>Membership</div>
+                                   </a>                              
+
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-file-text"></i>
+                                       <div>Transactions</div>
+                                   </a>                              
+
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-feather-log-out"></i>
+                                       <div>Account Setting</div>
+                                   </a>                              
+
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <i class="icon-material-outline-power-settings-new"></i>
+                                       <div>Logout</div>
+                                   </a>                              
+
+                               </li>
+                           </ul>
                        </div>
+                           
                        <%-- Right Side --%>
-                       <div class="col-md-10"  style="width:75%;background:#f2f2f2;margin-left:225px;z-index:99">
+                       <div class="col-lg-9 scrollable" id="content"  style="width:72%;background:#f2f2f2;z-index:99;">
                            <div id="rightSide">
                                <%-- Right content 1st row only content --%>
                                <div class="row" >
@@ -95,15 +172,15 @@
                                    <div class="col-md-2">
                                        <h3>Dashboard</h3>
                                    </div>
-                                   <div class="col-md-8">
+                                   <div class="col-md-6">
 
                                    </div>
                                     <%-- Right Side of Right side --%>
-                                   <div class="col-md-2">
+                                   <div class="col-md-4">
                                         <div id="SubPage">
                                           <ul style="display: inline-flex;">
-                                             <li "><a href="index.aspx">Home</a></li>                                      
-                                             <li" >Dashboard:</li>
+                                             <li><a href="index.aspx">Home</a></li>                                      
+                                             <li><a href="#">Dashboard</a></li>
                                           </ul>
                                        </div>
                                    </div>
@@ -114,16 +191,15 @@
                                    <div class="col-lg-4" style="width:33%;">
                                        <div id="wordsUsed" style="height:150px;background-color:white;margin-bottom:30px;margin-right:30px" >
                                            <div class="row">
-                                               <div class="col-lg-6">
+                                               <div class="col-lg-8">
                                                    <div id="wu" style="padding-left:40px;padding-top:40px;width:50%;">
                                                        <h5>Words Used</h5>
                                                        <h5>0/10,000</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-lg-6" style="background-color: rgb(184, 27, 127); background-position:center; width:50%;">                                                   
-                                                   <svg style="height:140px;width:40px" xmlns="http://www.w3.org/2000/svg" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-</svg>
+                                               <div class="col-lg-4" style="background-position:center; width:50%;"> 
+                                                   <svg xmlns="http://www.w3.org/2000/svg" style="height:140px;width:40px; fill: rgb(184, 27, 127);" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"/></svg>
+                                                  
                                                </div>                                              
                                            </div>
                                        </div>
@@ -167,141 +243,77 @@
                                </div>
                                <%-- second Row for right content--%>
                                <%-- Chart --%>
-                               <div class="row" >
+                               <div class="row" style="padding-bottom:50px">
                                    <%-- Chart Header--%>
                                    <div id="chartHeader" style="width:100%;background-color:white;">
 
                                    </div>
                                    <%-- Chart Body--%>                                  
-                                   <div id="chartbody" style="width:100%;background-color:white;margin-left:15px;margin-right:45px">                                       
+                                   <div id="chartbody" style="width:100%;background-color:white;margin-left:15px;margin-right:45px;padding-bottom:50px">                                       
                                         <div class="headlinechart" style="box-shadow: 1px 1px 5px grey;">                                            
-                                               <h5 style="padding-left:10px;padding-top:10px;padding-bottom:10px">words used this month</h5>
+                                               <h5 class="text-muted" style="padding-left:10px;padding-top:10px;padding-bottom:10px">Words used this month</h5>
                                         </div>
                                         <div>
                                           <canvas id="myChart"></canvas>
                                         </div>
                                    </div>                                   
                                </div>
+                               
+                                <%-- Footer Dashboard --%>
+                                <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
+                               <div class="row-fluid" style="padding-bottom:80px;border-top: 1px solid #ccc;">
+                                    <footerclass="footer" style="position: sticky; bottom: 0;margin-bottom:85px;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
+                                         <div class="row navbar py-3 full-width">
+                                            <div class="col-md-6">
+                                                <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                               <!-- Facebook -->
+                                                <a class="btn" style="" href="#!" role="button"></a>
+                                                    <!-- Twitter -->
+                                                <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
+                                                  ><i class="fab fa-twitter"></i
+                                                ></a>
+
+                                                <!-- Google -->
+                                                <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
+                                                  ><i class="fab fa-google"></i
+                                                ></a>
+
+                                                <!-- Instagram -->
+                                                <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
+                                                  ><i class="fab fa-instagram"></i
+                                                ></a>
+
+                                                <!-- Linkedin -->
+                                                <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
+                                                  ><i class="fab fa-linkedin-in"></i
+                                                ></a>
+
+                                                <!-- Pinterest -->
+                                                <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
+                                                  ><i class="fab fa-pinterest"></i
+                                                ></a>
+
+
+                                                <!-- Github -->
+                                                <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
+                                                  ><i class="fab fa-github"></i
+                                                ></a>
+
+                                            </div> 
+                                        </div>  
+                                    </footerclass> 
+                               </div>                                     
                            </div>
                        </div>
                   </div>                               
                 </div>
            </div>
-           <%-- Footer Dashboard --%>
-            <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
-                    <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-logo">
-                                <img src="Images/1149945428.png" />                               
-                            </div>
-                            <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
-
-                        </div>
-                        <div class="col-md-2">
-                             <div class="footer-links">
-                                <h3>My Account</h3>
-                                <ul>
-                                    <li><a href="Login.aspx">Login</a></li><li><a href="Register.aspx">Register</a></li>                        </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="footer-links">
-                                <h3>Helpful Links</h3>
-                                <ul>
-                                    <li><a href="#">Blog</a></li>                            <li><a href="#">Feedback</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="footer-links">
-                                <h3>Information</h3>
-                                <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Testimonials</a></li>                        </ul>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-                    <div class="row navbar py-3 text-light bg-dark full-width">
-                    <div class="col-md-6">
-                        <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
-                    </div>
-                    <div class="col-md-6">
-                       <!-- Facebook -->
-                        <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-
-                        <!-- Twitter -->
-                        <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-
-                        <!-- Google -->
-                        <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
-                          ><i class="fab fa-google"></i
-                        ></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
-                          ><i class="fab fa-linkedin-in"></i
-                        ></a>
-
-                        <!-- Pinterest -->
-                        <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
-                          ><i class="fab fa-pinterest"></i
-                        ></a>
-
-                        <!-- Vkontakte -->
-                        <a class="btn btn-primary" style="background-color: #4c75a3;" href="#!" role="button"
-                          ><i class="fab fa-vk"></i
-                        ></a>
-
-                        <!-- Stack overflow -->
-                        <a class="btn btn-primary" style="background-color: #ffac44;" href="#!" role="button"
-                          ><i class="fab fa-stack-overflow"></i
-                        ></a>
-
-                        <!-- Youtube -->
-                        <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"
-                          ><i class="fab fa-youtube"></i
-                        ></a>
-
-                        <!-- Slack -->
-                        <a class="btn btn-primary" style="background-color: #481449;" href="#!" role="button"
-                          ><i class="fab fa-slack-hash"></i
-                        ></a>
-
-                        <!-- Github -->
-                        <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
-                          ><i class="fab fa-github"></i
-                        ></a>
-
-                        <!-- Dribbble -->
-                        <a class="btn btn-primary" style="background-color: #ec4a89;" href="#!" role="button"
-                          ><i class="fab fa-dribbble"></i
-                        ></a>
-
-                        <!-- Reddit -->
-                        <a class="btn btn-primary" style="background-color: #ff4500;" href="#!" role="button"
-                          ><i class="fab fa-reddit-alien"></i
-                        ></a>
-
-                        <!-- Whatsapp -->
-                        <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"
-                          ><i class="fab fa-whatsapp"></i
-                        ></a>
-                    </div> 
-                </div>
-                </footerclass>   
+           <%-- Bottom Fixed Bar Design by Kamalakantadas --%>
+           <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">
+               
+           </div>
        </div>
    </form>
 </body>

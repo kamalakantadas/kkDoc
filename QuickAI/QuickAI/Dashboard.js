@@ -1,4 +1,11 @@
 ﻿$(document).ready(function () {
+    //
+    $("#myDocBtn").on("click", function () {
+        $("#myDocShow").toggle();
+    });
+    $("#ap").on("click", function () {
+        $("#apShow").toggle();
+    });
     const ctx = document.getElementById('myChart');
   
     new Chart(ctx, {
@@ -64,6 +71,23 @@
         //    }
         //}
     }
-       });
+    });
+
+    ///$("#sidebar")
+   $(".sandwich-link").on("click", function () {
+       if ($("#sidebar").classList.contains("col-lg-3 scrollable hide-div leftSideBar")) {
+           $("#sidebar").classList.remove("col-lg-3 scrollable hide-div leftSideBar");
+           $("#sidebar").classList.add("d-none");
+           $("#content").classList.remove("col-lg-9 scrollable");
+            $("#content").classList.add("col-lg-12 scrollable");
+            $("#content").style.width = "100%";
+        } else {
+           $("#sidebar").classList.remove("d-none");
+           $("#sidebar").classList.add("col-lg-3 scrollable hide-div leftSideBar");
+            $("#content").classList.remove("col-lg-12 scrollable");
+            $("#content").classList.add("col-lg-9 scrollable");
+            $("#content").style.width = "75%";
+        }
+    });
 
 });
