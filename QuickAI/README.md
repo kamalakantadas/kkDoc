@@ -1,3 +1,1 @@
-"# kkDoc" 
-"# kkDoc" 
-"#kkdoc" 
+This is QuickAi Application
