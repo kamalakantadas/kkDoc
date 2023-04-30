@@ -69,7 +69,8 @@
                <div class="container-fluid">
                    <div class="row" style="display:inline-flex;margin-top:100px">
                        <%-- Left Side --%>
-                       <div class="col-lg-3 scrollable hide-div leftSideBar" id="sidebar" style="width:28%;background-color:#f2f2f2">
+                       <div class="col-lg-3">
+                       <div class="scrollable hide-div leftSideBar" id="sidebar" style="width:28%;background-color:#f2f2f2">
                            <!-- Left Side Lists -->
                            <%-- My Account --%>
                            <ul class="">
@@ -162,8 +163,10 @@
                                </li>
                            </ul>
                        </div>
+                       </div>//Edited
                            
                        <%-- Right Side --%>
+                       <div class="col-lg-9">
                        <div class="col-lg-9 scrollable" id="content"  style="width:72%;background:#f2f2f2;z-index:99;">
                            <div id="rightSide">
                                <%-- Right content 1st row only content --%>
@@ -307,6 +310,7 @@
                                </div>                                     
                            </div>
                        </div>
+                       </div>//edited line
                   </div>                               
                 </div>
            </div>
