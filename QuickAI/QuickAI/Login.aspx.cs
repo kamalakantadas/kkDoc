@@ -112,7 +112,7 @@ namespace QuickAI
                         adapter.Fill(table);
                         if (table.Rows.Count == 1)
                         {
-                            MessageBox.Show("Successfully Login");
+                            Response.Redirect("dashboard.aspx?email='" + reg.email + "'");                                
                         }
                         else
                         {

@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Images\1149945428.png" />
     <Content Include="Images\home-hero-icon %281%29.png" />
+    <Content Include="Images\userIcon.jpg" />
     <Content Include="index.ashx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Index.aspx" />
