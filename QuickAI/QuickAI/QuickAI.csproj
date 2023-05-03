@@ -107,6 +107,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="accountSetting.aspx" />
+    <Content Include="AccountSetting.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -132,6 +134,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Images\1149945428.png" />
+    <Content Include="Images\Email.png" />
     <Content Include="Images\home-hero-icon %281%29.png" />
     <Content Include="Images\userIcon.jpg" />
     <Content Include="index.ashx" />
@@ -181,6 +184,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accountSetting.aspx.cs">
+      <DependentUpon>accountSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accountSetting.aspx.designer.cs">
+      <DependentUpon>accountSetting.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>

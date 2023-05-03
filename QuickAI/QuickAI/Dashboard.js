@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿
+$(document).ready(function () {
 
     const ctx = document.getElementById('myChart');
 
@@ -73,41 +74,18 @@
         //    //}
         //}
     });
-    
+ 
+    //new Code
    
-    var isWide = false;
-    var column1 = $('#sidebar');
-    var column2 = $('#content');
-    $('#btnToggle').on('click', function () {
-        // Toggle the state of the columns
-        isWide = !isWide;
-        if (isWide) {
-            column1.hide();
-            column2.removeClass('col-lg-9 scrollable').addClass('col-lg-12 scrollable');
-        } else {
-            column1.show();
-            column2.removeClass('col-lg-12 scrollable').addClass('col-lg-9 scrollable');
-           
-        }
+    $('#btnToggle').on('click', function () {        
+        $("#sidebar").toggle();
+        $("#content").toggleClass('col-lg-12 full-width');       
     });
+   
 });
-//
-    //$(document).ready(function () {
-    //    // Set the initial state of the columns
-    //    var isWide = false;
-    //    var column1 = $('.col-lg-3');
-    //    var column2 = $('.col-lg-9');
+function viewText() {   
+    $("#viewImage").show();   
+} function hideText() {
+    $("#viewImage").hide();
+}
 
-    //    // Add a click event listener to the button
-    //    $('#toggle-btn').on('click', function () {
-    //        // Toggle the state of the columns
-    //        isWide = !isWide;
-    //        if (isWide) {
-    //            column1.hide();
-    //            column2.removeClass('col-lg-9').addClass('col-lg-12');
-    //        } else {
-    //            column1.show();
-    //            column2.removeClass('col-lg-12').addClass('col-lg-9');
-    //        }
-    //    });
-    //});

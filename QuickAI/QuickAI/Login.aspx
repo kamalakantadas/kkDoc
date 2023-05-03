@@ -65,7 +65,8 @@
                              </ul>
                          </div>--%>
                 </nav>
-         <div class="row" id="loginForm" style="margin-top:200px">
+          <%-- Login Form --%>
+         <div class="row" id="loginForm" style="margin-top:100px;margin-bottom:50px">
             <div class="col-lg-4">
             </div>
             <div class="col-lg-4">
@@ -84,29 +85,28 @@
                             </div>
                         </div>                            
                             <div class="card-body">
-                            
+
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend">
                                         <%--<span class="input-group-text"><i class="fas fa-user"></i></span>--%>
                                     </div>
                                     <label>UserEmail</label>
-                                    <asp:TextBox runat="server" class="form-control" id="uEmail" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox runat="server" class="form-control" ID="uEmail" TextMode="Email" Style="width: 300px"></asp:TextBox>
                                 </div>
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend">
                                         <%--<span class="input-group-text"><i class="fas fa-key"></i></span>--%>
                                     </div>
                                     <label>Password</label>
-                                    <asp:TextBox runat="server" class="form-control"  id="uPwd" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox runat="server" class="form-control" ID="uPwd" TextMode="Password" Style="width: 300px"></asp:TextBox>
                                 </div>
                                 <div class="row input-with-icon-left">
-                                    <asp:HyperLink runat="server" id="forgotText" NavigateUrl="ForgotPassword.aspx" Text="forgot password"/>
-                                   
+                                    <asp:HyperLink runat="server" ID="forgotText" NavigateUrl="ForgotPassword.aspx" Text="forgot password" />
                                 </div>
                                 <div class="form-group">
                                     <!--<input type="button" value="Login" id="login" class="btn float-right login_btn btn-primary">-->
                                 </div>
-                        </div>
+                            </div>
                             <div class="card-footer">
                                 <div class="row">
                                     <div class="col-sm-6"></div>
@@ -126,52 +126,39 @@
             <div class="col-lg-4">   </div>
         </div>
         <%-- Footer of Login --%>
-          <div class="row-fluid" style="padding-bottom:80px;border-top: 1px solid #ccc;">
-               <footerclass="footer" style="position: sticky; bottom: 0;margin-bottom:85px;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
+         <div class="row-fluid" style="border-top: 1px solid #ccc;">
+              <footerclass="footer" style="position: sticky; bottom: 0;margin-bottom:85px;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
                   <div class="row navbar py-3 full-width">
-                                                <div class="col-md-6">
-                                                    <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
-                                                </div>
-                                                <div class="col-md-6">
-                                                   <!-- Facebook -->
-                                                    <a class="btn" style="" href="#!" role="button"></a>
-                                                        <!-- Twitter -->
-                                                    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
-                                                      ><i class="fab fa-twitter"></i
-                                                    ></a>
+                      <div class="col-md-6">
+                          <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                      </div>
+                      <div class="col-md-6">
+                          <!-- Facebook -->
+                          <a class="btn" style="" href="#!" role="button"></a>
+                          <!-- Twitter -->
+                          <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                                    <!-- Google -->
-                                                    <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
-                                                      ><i class="fab fa-google"></i
-                                                    ></a>
+                          <!-- Google -->
+                          <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                                    <!-- Instagram -->
-                                                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
-                                                      ><i class="fab fa-instagram"></i
-                                                    ></a>
+                          <!-- Instagram -->
+                          <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                                    <!-- Linkedin -->
-                                                    <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
-                                                      ><i class="fab fa-linkedin-in"></i
-                                                    ></a>
+                          <!-- Linkedin -->
+                          <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                                    <!-- Pinterest -->
-                                                    <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
-                                                      ><i class="fab fa-pinterest"></i
-                                                    ></a>
+                          <!-- Pinterest -->
+                          <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                                    <!-- Github -->
-                                                    <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
-                                                      ><i class="fab fa-github"></i
-                                                    ></a>
+                          <!-- Github -->
+                          <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                                </div> 
-                                            </div>  
-               </footerclass>                          
+                      </div>
+                  </div>
+              </footerclass>
           </div>        
-    </div>   
-     </form>
-   
+      </div>   
+     </form>   
 </body>
 </html>
