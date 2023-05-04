@@ -12,6 +12,7 @@ namespace QuickAI
         protected void Page_Load(object sender, EventArgs e)
         {
             string email = Request.QueryString["email"];
+            Session["Email"] = email;
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
             //Image img = (Image)Page.FindControl("userImage");

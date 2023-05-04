@@ -77,7 +77,7 @@ $(document).ready(function () {
  
     //new Code
    
-    $('#btnToggle').on('click', function () {        
+    $('#btnToggle').on('click', function () { //button event       
         $("#sidebar").toggle();
         $("#content").toggleClass('col-lg-12 full-width');       
     });

@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
     <script src="AccountSetting.js"></script>
-    
 </head>
 <body>
     <form id="accountSetting" runat="server">
@@ -38,7 +37,7 @@
                     <div class="dropdown show">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <asp:Image runat="server" ID="userImage" src="Images/userIcon.jpg" Style="height: 30px" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
-                            <asp:TextBox ID="viewImage" Style="display: none; width: 100px; margin-top: 50px" runat="server" value=""></asp:TextBox>
+                            <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="userDropDownList">
 
@@ -232,8 +231,8 @@
                                    <div class="row">
                                        <div class="col-sm-5">                                           
                                            <div class="form-group">
-                                               <label class="custom-file-label" for="imageInput">Upload</label>
-                                               <input type="file" class="form-control-file" id="imageInput" style="width: 100px;" />                                               
+                                               <label class="custom-file-label" for="imageInput" style="margin-left:15px; ">Upload</label>
+                                               <asp:FileUpload runat="server" class="form-control-file" id="imageInput" style="width: 100px;" />                                               
                                            </div>
                                        </div>
                                        <div class="col-sm-7">
@@ -249,19 +248,20 @@
                                    <div class="input-group mb-3">
                                        <div class="input-group-prepend">
                                            <span class="input-group-text" id="userId">
-                                               <img src="Images/userIcon.jpg" style="height: 15px" /></span>
+                                               <img src="Images/userIcon.jpg" style="height: 15px" />
+                                           </span>
                                        </div>
-                                       <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                       <asp:TextBox runat="server" id="userName" class="form-control" placeholder="UserName" aria-label="Username" aria-describedby="basic-addon1" ></asp:TextBox>
                                    </div>
                                </div>
                                <div class="col-lg-6">
                                    <h4>Email Address *</h4>
                                    <div class="input-group mb-3">
                                        <div class="input-group-prepend">
-                                           <span class="input-group-text" id="userEmail">
+                                           <span class="input-group-text" id="">
                                                <img src="Images/Email.png" style="height: 15px" /></span>
                                        </div>
-                                       <input type="email" class="form-control" placeholder="userEmail" aria-label="userEmail" aria-describedby="basic-addon1" />
+                                       <asp:TextBox runat="server" id="userEmail" class="form-control" placeholder="userEmail" aria-label="userEmail" aria-describedby="basic-addon1" ></asp:TextBox>
                                    </div>
                                </div>
                            </div>
@@ -269,19 +269,19 @@
                                <div class="col-lg-6">
                                    <h4>New Password</h4>
                                    <div class="form-group">
-                                       <input type="password" class="form-control" id="userPwd" />
+                                      <asp:TextBox runat="server" class="form-control" id="userPwd" ></asp:TextBox>
                                    </div>
                                </div>
                                <div class="col-lg-6">
                                    <h4>Confirm Password</h4>
                                    <div class="form-group">
-                                       <input type="password" class="form-control" id="userRePwd" />
+                                       <asp:TextBox runat="server" class="form-control" id="userRePwd" ></asp:TextBox>
                                    </div>
                                </div>
                            </div>
                            <div class="row" style="width: 100%; background-color: white;  margin-right: 45px;padding-bottom:30px;margin-bottom:30px">
                                <div class="col-lg-6">
-                                   <input type="button" id="saveUserBtn" value="Save Changes" class="btn btn-primary" />
+                                   <asp:Button runat="server" id="saveUserBtn" Text="Save Changes" onclick="updatePwd" class="btn btn-primary form-control" ></asp:Button>
                                </div>
                                <div class="col-lg-6"></div>
                            </div>
@@ -299,24 +299,31 @@
                        </div>                    
                        <div class="row" style="width: 100%; background-color: white; ">
                            <div class="col-md-12">
-                               <label for="exampleInputEmail1">Name</label>
-                                <div class="dropdown">
-                               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Personal
-                               </a>
-                               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                   <a class="dropdown-item" href="#">Personal</a>
-                                   <a class="dropdown-item" href="#">Business</a>
+                               <label for="exampleInputEmail1">Type</label>
+                               <div class="dropdown">
+                                  <%-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   </a>--%>
+                                   <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" style="width:100%;height:38px;">
+                                       <asp:ListItem href="#" id="personal">Personal</asp:ListItem>
+                                       <asp:ListItem href="#" id="business">Business</asp:ListItem>
+                                   </asp:DropDownList>
                                </div>
-                           </div>
-                           </div>                          
+                           </div>            
                        </div>
-                                   
+                       <div class="row" id="td" style="width: 100%; background-color: white;display:none">
+                           <div class="col-md-12">
+                               <div class="form-group">
+                                   <label for="taxId">Tax ID</label>
+                                   <asp:TextBox runat="server" class="form-control" id="taxIdBox" aria-describedby="taxIdBoxx" placeholder="Tax Id" ></asp:TextBox>
+                               </div>                               
+                           </div>            
+                       </div>   
 
                        <div class="row" style="width: 100%; background-color: white;">
                            <div class="col-md-12">
                                <div class="form-group">
                                    <label for="exampleInputEmail1">Name</label>
-                                   <input type="text" class="form-control" id="billingUserName" aria-describedby="emailHelp" placeholder="Enter Name" />
+                                   <asp:TextBox runat="server" class="form-control" id="billingUserName" aria-describedby="emailHelp" placeholder="Enter Name" ></asp:TextBox>
                                </div>
                            </div>                           
                        </div>
@@ -324,7 +331,7 @@
                            <div class="col-md-12">
                                <div class="form-group">
                                    <label for="exampleInputEmail1">Address</label>
-                                   <input type="text" class="form-control" id="billingUserAdd" aria-describedby="emailHelp" placeholder="Address" />
+                                   <asp:TextBox runat="server" class="form-control" id="billingUserAdd" aria-describedby="emailHelp" placeholder="Address" ></asp:TextBox>
                                </div>
                            </div>                          
                        </div>
@@ -332,19 +339,19 @@
                            <div class="col-md-4">
                                <div class="form-group">
                                    <label for="billingUserCity">City</label>
-                                   <input type="text" class="form-control" id="billingUserCity" placeholder="City" />
+                                   <asp:TextBox runat="server" class="form-control" id="billingUserCity" placeholder="City" ></asp:TextBox>
                                </div>
                            </div>
                            <div class="col-md-4">
                                <div class="form-group">
                                    <label for="billingUserState">State</label>
-                                   <input type="text" class="form-control" id="billingUserState" placeholder="State" />
+                                   <asp:TextBox runat="server" class="form-control" id="billingUserState" placeholder="State" ></asp:TextBox>
                                </div>
                            </div>
                            <div class="col-md-4">
                                <div class="form-group">
                                    <label for="billingUserZip">Zip</label>
-                                   <input type="text" class="form-control" id="billingUserZip" placeholder="Zip" />
+                                   <asp:TextBox runat="server" class="form-control" id="billingUserZip" placeholder="Zip" ></asp:TextBox>
                                </div>
                            </div>        
                        </div>
@@ -352,19 +359,19 @@
                            <div class="col-md-12">
                                <label for="country">Country</label>
                                <div class="form-group">                                   
-                                   <select class="form-select" id="country" name="country">
-                                       <option value="">country</option>
-                                       <option value="AF">Afghanistan</option>
-                                       <option value="AX">INDIA</option>
-                                       <option value="AL">USA</option>
-                                       <option value="DZ">Engaland</option>
-                                   </select>
+                                   <asp:DropDownList runat="server" class="form-select" id="country" name="country">
+                                       <asp:ListItem value="">country</asp:ListItem>
+                                       <asp:ListItem value="AF">Afghanistan</asp:ListItem>
+                                       <asp:ListItem value="AX">INDIA</asp:ListItem>
+                                       <asp:ListItem value="AL">USA</asp:ListItem>
+                                       <asp:ListItem value="DZ">Engaland</asp:ListItem>
+                                   </asp:DropDownList>
                                </div>
                            </div>                           
                        </div>
                        <div class="row" style="width: 100%;  background-color: white;padding-bottom: 30px; margin-bottom: 30px">
                            <div class="col-md-6">
-                               <input type="button" id="userBillingDetails" value="Save Changes" class="btn btn-primary" />
+                               <asp:Button runat="server" id="userBillingDetails" Text="Save Changes" class="btn btn-primary form-control" ></asp:Button>
                            </div>
                            <div class="col-md-6"></div>                           
                        </div>
