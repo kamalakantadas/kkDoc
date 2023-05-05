@@ -19,57 +19,77 @@
         <form runat="server">
             <div id="mainPage">
                 <div id="IndexHeader">
-                    <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white">                    
-                    <div class="col-lg-2" style="width:8.33%">
-                        <a class="navbar-brand" href="#">
-                            <h1>QUICKAI</h1>
-                        </a>
+                    <div class="container" id="emailBar" style="height:50px; display:none">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p class="text-left">Your Email Address is not verified. Please Verify your email address to use all the feature.</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <asp:TextBox runat="server" ID="verifyEmailBox" class="form-control"></asp:TextBox>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-2">
+                                <asp:Button class="btn btn-primary" runat="server" ID="verfiyEmailBtn" Text="VerifyEmail" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-7" style="width:58.31%">
+                   <%-- //Email verify Bar
+                    //Header Page--%>
+                    <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white;">
+                        <div class="row" style="width:100%;height:50px;"></div>
+                        <div class="row" style="width:100%;">
 
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%">
-                        <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" id="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%">
-                        <div class="dropdown">
-                                <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    Text="Language"/>                            
+                        </div>
+                        <div class="col-lg-2" style="width: 8.33%">
+                            <a class="navbar-brand" href="#">
+                                <h1>QUICKAI</h1>
+                            </a>
+                        </div>
+                        <div class="col-lg-7" style="width: 58.31%">
+                        </div>
+                        <div class="col-lg-1" style="width: 8.33%">
+                            <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" ID="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
+                        </div>
+                        <div class="col-lg-1" style="width: 8.33%">
+                            <div class="dropdown">
+                                <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    Text="Language" />
                                 <div class="dropdown-menu" aria-labelledby="Lang">
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="English"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="English" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
                                 </div>
                             </div>
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%"></div>
-                    <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        </div>
+                        <div class="col-lg-1" style="width: 8.33%"></div>
+                        <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                          </button>
                          <div class="collapse navbar-collapse" id="navbarNav">
                              <ul class="navbar-nav">
                              </ul>
                          </div>--%>
-                </nav>
+                    </nav>
                 </div>
                 <div id="IndexBody" style="z-index:99">
                    <nav class="row navbar navbar-expand-lg" style="margin-top:80px;">
                     <div class="row" style="width:100%;">     
                      <%--<div class="row-fluid">--%>
-                        <div class="col-md-12" style="padding-top:100px">
+                        <div class="col-md-12" style="padding-top:50px">
                             <center>
-                                <img src="Images/home-hero-icon%20(1).png" style="width:180px;height:180px" />
+                                <img src="Images/home-hero-icon%20(1).png" style="width: 280px;height: 280px;" />
                                 <h1 class="margin-bottom-10 text_gradient_animation">
                                     <strong>Best AI Content Writer</strong>
                                 </h1>                               

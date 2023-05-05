@@ -105,24 +105,6 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.DropDownList typeSel;
 
         /// <summary>
-        /// personal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem personal;
-
-        /// <summary>
-        /// business control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListItem business;
-
-        /// <summary>
         /// taxIdBox control.
         /// </summary>
         /// <remarks>

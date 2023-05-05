@@ -4,17 +4,23 @@
         $("#sidebar").toggle();//left side bar id
         $("#content").toggleClass('col-lg-12 full-width');//right side bar
     });
-    $("#typeSel.business").on('select', function () {
-        if ($("#td").hide()) {
-            $("#td").show()
-        }
-    });
-  
-    $("#typeSel.personal").on('select', function () {
-        if ($("#td").show()) {
+ 
+    //Dropdown of Type
+    $("#typeSel").change(function () {
+        var selectedOption = $(this).val();
+
+        if (selectedOption === 'personal') {
+            if ($("#td").show()) {
+                $("#td").hide()
+            }
+        } else {
             $("#td").hide()
         }
-    });
+        if (selectedOption === "business") {
+            $("#td").show()
+        }
+    });     
+    
 });
 
 

@@ -7,13 +7,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Setting</title>
-    <link href="IndexPage.css" rel="stylesheet" />
-    <link href="accountSetting.css" rel="stylesheet" />
+    <link href="IndexPage.css" rel="stylesheet" />   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
-    <script src="AccountSetting.js"></script>
+    <script src="Scripts/AccountSetting.js"></script>
 </head>
 <body>
     <form id="accountSetting" runat="server">
@@ -288,94 +287,95 @@
                        </div>
 
                        <%-- Billing Header --%>
-                       <div class="row" style="width: 100%; box-shadow: 1px 1px 2px grey;height:50px;padding-left:20px;padding-top:15px;padding-bottom:15px; background-color: white;">
-                           <h6 class="text-muted" style="padding-left: 15px; padding-top: 14px; padding-bottom: 14px">Billing Details</h6>
-                       </div>
+                       <div id="billInfo">
+                           <div class="row" style="width: 100%; box-shadow: 1px 1px 2px grey; height: 50px; padding-left: 20px; padding-top: 15px; padding-bottom: 15px; background-color: white;">
+                               <h6 class="text-muted" style="padding-left: 15px; padding-top: 14px; padding-bottom: 14px">Billing Details</h6>
+                           </div>
 
-                       <div class="row" style="width: 100%; background-color: white; ">
-                           <div class="col-md-12">
-                               <div style="width: 100%; height: 50px; width: 400px"></div>
-                           </div>                           
-                       </div>                    
-                       <div class="row" style="width: 100%; background-color: white; ">
-                           <div class="col-md-12">
-                               <label for="exampleInputEmail1">Type</label>
-                               <div class="dropdown">
-                                  <%-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-12">
+                                   <div style="width: 100%; height: 50px; width: 400px"></div>
+                               </div>
+                           </div>
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-12">
+                                   <label for="exampleInputEmail1">Type</label>
+                                   <div class="dropdown">
+                                       <%-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                    </a>--%>
-                                   <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" style="width:100%;height:38px;">
-                                       <asp:ListItem href="#" id="personal">Personal</asp:ListItem>
-                                       <asp:ListItem href="#" id="business">Business</asp:ListItem>
-                                   </asp:DropDownList>
+                                       <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" Style="width: 100%; height: 38px;">
+                                           <asp:ListItem href="#" Value="personal">Personal</asp:ListItem>
+                                           <asp:ListItem href="#" Value="business">Business</asp:ListItem>
+                                       </asp:DropDownList>
+                                   </div>
                                </div>
-                           </div>            
-                       </div>
-                       <div class="row" id="td" style="width: 100%; background-color: white;display:none">
-                           <div class="col-md-12">
-                               <div class="form-group">
-                                   <label for="taxId">Tax ID</label>
-                                   <asp:TextBox runat="server" class="form-control" id="taxIdBox" aria-describedby="taxIdBoxx" placeholder="Tax Id" ></asp:TextBox>
-                               </div>                               
-                           </div>            
-                       </div>   
+                           </div>
+                           <div class="row" id="td" style="width: 100%; background-color: white; display: none">
+                               <div class="col-md-12">
+                                   <div class="form-group">
+                                       <label for="taxId">Tax ID</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="taxIdBox" aria-describedby="taxIdBoxx"></asp:TextBox>
+                                   </div>
+                               </div>
+                           </div>
 
-                       <div class="row" style="width: 100%; background-color: white;">
-                           <div class="col-md-12">
-                               <div class="form-group">
-                                   <label for="exampleInputEmail1">Name</label>
-                                   <asp:TextBox runat="server" class="form-control" id="billingUserName" aria-describedby="emailHelp" placeholder="Enter Name" ></asp:TextBox>
-                               </div>
-                           </div>                           
-                       </div>
-                       <div class="row" style="width: 100%; background-color: white;">
-                           <div class="col-md-12">
-                               <div class="form-group">
-                                   <label for="exampleInputEmail1">Address</label>
-                                   <asp:TextBox runat="server" class="form-control" id="billingUserAdd" aria-describedby="emailHelp" placeholder="Address" ></asp:TextBox>
-                               </div>
-                           </div>                          
-                       </div>
-                       <div class="row" style="width: 100%;background-color: white;">
-                           <div class="col-md-4">
-                               <div class="form-group">
-                                   <label for="billingUserCity">City</label>
-                                   <asp:TextBox runat="server" class="form-control" id="billingUserCity" placeholder="City" ></asp:TextBox>
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-12">
+                                   <div class="form-group">
+                                       <label for="exampleInputEmail1">Name *</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="billingUserName" aria-describedby="emailHelp"></asp:TextBox>
+                                   </div>
                                </div>
                            </div>
-                           <div class="col-md-4">
-                               <div class="form-group">
-                                   <label for="billingUserState">State</label>
-                                   <asp:TextBox runat="server" class="form-control" id="billingUserState" placeholder="State" ></asp:TextBox>
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-12">
+                                   <div class="form-group">
+                                       <label for="exampleInputEmail1">Address *</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="billingUserAdd" aria-describedby="emailHelp"></asp:TextBox>
+                                   </div>
                                </div>
                            </div>
-                           <div class="col-md-4">
-                               <div class="form-group">
-                                   <label for="billingUserZip">Zip</label>
-                                   <asp:TextBox runat="server" class="form-control" id="billingUserZip" placeholder="Zip" ></asp:TextBox>
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-4">
+                                   <div class="form-group">
+                                       <label for="billingUserCity">City *</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="billingUserCity"></asp:TextBox>
+                                   </div>
                                </div>
-                           </div>        
-                       </div>
-                       <div class="row" style="width: 100%; background-color: white;">
-                           <div class="col-md-12">
-                               <label for="country">Country</label>
-                               <div class="form-group">                                   
-                                   <asp:DropDownList runat="server" class="form-select" id="country" name="country">
-                                       <asp:ListItem value="">country</asp:ListItem>
-                                       <asp:ListItem value="AF">Afghanistan</asp:ListItem>
-                                       <asp:ListItem value="AX">INDIA</asp:ListItem>
-                                       <asp:ListItem value="AL">USA</asp:ListItem>
-                                       <asp:ListItem value="DZ">Engaland</asp:ListItem>
-                                   </asp:DropDownList>
+                               <div class="col-md-4">
+                                   <div class="form-group">
+                                       <label for="billingUserState">State *</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="billingUserState"></asp:TextBox>
+                                   </div>
                                </div>
-                           </div>                           
-                       </div>
-                       <div class="row" style="width: 100%;  background-color: white;padding-bottom: 30px; margin-bottom: 30px">
-                           <div class="col-md-6">
-                               <asp:Button runat="server" id="userBillingDetails" Text="Save Changes" class="btn btn-primary form-control" ></asp:Button>
+                               <div class="col-md-4">
+                                   <div class="form-group">
+                                       <label for="billingUserZip">Zip *</label>
+                                       <asp:TextBox runat="server" class="form-control" ID="billingUserZip"></asp:TextBox>
+                                   </div>
+                               </div>
                            </div>
-                           <div class="col-md-6"></div>                           
+                           <div class="row" style="width: 100%; background-color: white;">
+                               <div class="col-md-12">
+                                   <label for="country">Country *</label>
+                                   <div class="form-group">
+                                       <asp:DropDownList runat="server" class="form-select" ID="country" name="country" Style="height: 32px; width: 100%;">
+                                           <asp:ListItem Value="">country</asp:ListItem>
+                                           <asp:ListItem Value="AF">Afghanistan</asp:ListItem>
+                                           <asp:ListItem Value="IN">INDIA</asp:ListItem>
+                                           <asp:ListItem Value="US">USA</asp:ListItem>
+                                           <asp:ListItem Value="EN">Engaland</asp:ListItem>
+                                       </asp:DropDownList>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row" style="width: 100%; padding-top: 30px; background-color: white; padding-bottom: 30px; margin-bottom: 30px">
+                               <div class="col-md-6">
+                                   <asp:Button runat="server" OnClick="billingDetails" ID="userBillingDetails" Text="Save Changes" class="btn btn-primary form-control"></asp:Button>
+                               </div>
+                               <div class="col-md-6"></div>
+                           </div>
                        </div>
-
                        <%-- Footer Dashboard --%>
                        <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
                        <div class="row-fluid" style="padding-bottom:100px;border-top: 1px solid #ccc;">

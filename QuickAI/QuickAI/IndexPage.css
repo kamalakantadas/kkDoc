@@ -1,5 +1,10 @@
 ﻿body {
 }
+/*ChangePlan Page*/
+.pricing-plan-features ul li {
+    color:black;
+
+}
 /*Account Setting Page*/
 .leftSideBarOfAS {
     position: fixed;
@@ -9,15 +14,19 @@
     overflow-x: hidden;
     padding-bottom: 20px;
 }
+#sidebar ul li {
+    background-color: #cbb4b4;
+}
 .leftSideBarOfAS ul {
         margin-top: 20px;
     }
 
-.leftSideBarOfAS ul li {
-            width: 100%;
-            list-style: none;
-            color: cornflowerblue;
-        }
+    .leftSideBarOfAS ul li {
+        width: 100%;
+        list-style: none;
+        color: cornflowerblue;
+        background-color:#007bff;
+    }
     
 .leftSideBarOfAS ul li dropdown-menu a {
         width: 100%;
@@ -161,13 +170,13 @@ a {
     overflow-y: auto;
     height:500px;
 }
-#dHeader {
+/*#dHeader {
     display: grid;
     grid-template-columns: 2fr 10fr 0.4fr 1fr;
     position: absolute;
     z-index: 999;
     background-color: red
-}
+}*/
 ul {
     list-style: none;
     position: center;

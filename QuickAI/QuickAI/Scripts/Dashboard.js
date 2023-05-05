@@ -83,6 +83,16 @@ $(document).ready(function () {
     });
    
 });
+function hideEmailDiv() {
+    $("#emailBar").hide();
+    $("#headerBar").css({
+        'position': 'relative'
+    });
+    $("#dashboardBody").css({
+        'margin-top': '0px'
+    });
+   
+}
 function viewText() {   
     $("#viewImage").show();   
 } function hideText() {
