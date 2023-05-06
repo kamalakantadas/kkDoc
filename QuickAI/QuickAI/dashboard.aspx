@@ -190,7 +190,7 @@
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="Transaction.aspx">
                                        <i class="icon-feather-file-text"></i>
                                        <div>Transactions</div>
                                    </a>

@@ -5,6 +5,10 @@
     color:black;
 
 }
+.radio-button-list label {
+    margin-right: 10px;
+}
+
 /*Account Setting Page*/
 .leftSideBarOfAS {
     position: fixed;

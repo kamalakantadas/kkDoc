@@ -47,8 +47,8 @@
                             <a class="dropdown-item" href="#">Speech to Text</a>
                             <a class="dropdown-item" href="#">AI Code</a>
                             <a class="dropdown-item" href="#">All Documents</a>
-                            <a class="dropdown-item" href="#">Membership</a>
-                            <a class="dropdown-item" href="#">Account Setting</a>
+                            <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
+                            <a class="dropdown-item" href="Transaction.aspx">Account Setting</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
                     </div>
@@ -165,21 +165,21 @@
                                </div>
                            </li>
                            <li>
-                               <a href="#">
+                               <a href="membership/membership.aspx">
                                    <i class="icon-feather-gift"></i>
                                    <div>Membership</div>
                                </a>
 
                            </li>
                            <li>
-                               <a href="#">
+                               <a href="Transaction.aspx">
                                    <i class="icon-feather-file-text"></i>
                                    <div>Transactions</div>
                                </a>
 
                            </li>
                            <li>
-                               <a href="#">
+                               <a href="accountSetting.aspx">
                                    <i class="icon-feather-log-out"></i>
                                    <div>Account Setting</div>
                                </a>

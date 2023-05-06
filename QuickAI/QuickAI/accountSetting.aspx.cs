@@ -64,7 +64,7 @@ namespace QuickAI
         //    set;
         //}
     }
-    public partial class accountSetting : System.Web.UI.Page
+    public partial class accountSetting : System.Web.UI.Page 
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -161,7 +161,7 @@ namespace QuickAI
         }
         
         //Billing Details of Account Setting Page
-        protected void billingDetails(object sender, EventArgs e) 
+        public void billingDetails(object sender, EventArgs e) 
         {
             //
             if (string.IsNullOrEmpty(billingUserName.Text) || string.IsNullOrEmpty(billingUserAdd.Text) || string.IsNullOrEmpty(billingUserCity.Text)

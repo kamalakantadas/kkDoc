@@ -42,7 +42,7 @@
 
                         </div>
                         <div class="col-lg-2" style="width: 8.33%">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="Index.aspx">
                                 <h1>QUICKAI</h1>
                             </a>
                         </div>

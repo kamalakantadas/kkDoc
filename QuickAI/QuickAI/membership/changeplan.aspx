@@ -7,13 +7,14 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membership Change Plan</title>
-      <link href="../IndexPage.css" rel="stylesheet" />
+      
+    <link href="../IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="Scripts/Dashboard.js"></script>    
+    <script src="../Scripts/changeplan.js"></script>
+
 </head>
 <body>
     <form id="changePlanForm" runat="server">
@@ -81,238 +82,399 @@
                     </div>                    
                 </nav>
            </div>
+
             <%-- ChangePlan Body --%>
             <div class="container-fluid">
-                <div class="row" style="margin-top:95px">
-                    <div class="col-lg-12" style="padding-left:150px;padding-right:150px">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p class="font-weight-normal">Membership Plan</p>                               
-                            </div>
-                            <div class="col-lg-6">
-                                <ul style="display: inline-flex;float:right">
-                                <li><a href="../Index.aspx">Home</a></li>
-                                <li><a href="#">Membersip Plan</a></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="row" style="text-align:center;display:inline-flex;width:100%">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6">                                
-                               <asp:RadioButton ID="mbtn" runat="server" Text="Monthly" />  
-                               
-                               <asp:RadioButton ID="ybtn" runat="server" Text="Yearly"/>  
-                               
-                               <asp:RadioButton ID="lbtn" runat="server" Text="Lifetime" />  
-                            
-                            </div>
-                            <div class="col-md-3"></div>
-                            
-                        </div>
-                        <%-- Plan Scheme duration --%>
-                        <div class="row" style="background-color:white;margin-top:40px;box-shadow: 2px 2px 5px grey;padding-top:10px">
-                            <%-- Free Trial --%>
-                            <div class="col-lg-4">
-                                <p class="font-weight-normal">Membership Plan</p>
-                                <div id="frp" style="height:70px;width:300px;background-color:lightgrey;padding-top:20px;padding-bottom:20px">
-                                    <p class="font-weight-normal" style="text-align:center">Free</p>
-                                </div>
-                                <%--  --%>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Free Plan</strong>
-                                    <ul>
-                                        <li>
-                                            <strong>32</strong> AI Document Templates</li>
-                                        <li>
-                                            <strong>10,000</strong> Words per month</li>
-                                        <li>
-                                            <strong>100</strong> Images per month </li>
-                                        <li>
-                                            <strong>0</strong> Speech to Text per month
-                                            <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Create audio transcription">
-                                            </i>
-                                        </li>
-                                        <li>
-                                            <strong>0 MB</strong> Audio file size limit
-                                        </li>
-                                        <li>
-                                            <span class="icon-text no">
-                                                <i
-                                                class="icon-feather-x-circle margin-right-2">
-                                                </i>
-                                            </span>
-                                            AI Chat                                                
-                                            <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Chat with the AI bot">
-                                            </i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text no">
-                                                <i class="icon-feather-x-circle margin-right-2"></i>
-                                            </span>
-                                            AI Code                                                
-                                            <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Generate code of any programming language with the AI">
-                                            </i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text yes"><i
-                                                class="icon-feather-check-circle margin-right-2">
-                                                                        </i>
-                                            </span>
-                                            Hide Ads
-                                        </li>
-                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Setup</li>
-                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Support</li>
-                                    </ul>
-                                </div>
-                                <div class="from-group" style="height:50px;margin-bottom:50px">
-                                    <asp:Button runat="server" ID="freePlan" Text="Upgrade" class="btn btn-primary form-control" />
-                                </div>
-                            </div>
-                            <%-- Trial Plan --%>
-                            <div class="col-lg-4">
-                                <p class="font-weight-normal">Trial Plan</p>
-                                 <div id="trp" style="height:70px;width:300px;background-color:lightgrey;padding-top:20px;padding-bottom:20px">
-                                    <p class="font-weight-normal" style="text-align:center">Trial</p>
-                                </div>
-                                <%--  --%>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Trial Plan</strong>
-                                    <ul>
-                                        <li>
-                                            <strong>61</strong> AI Document Templates                                        </li>
-                                        <li>
-                                            <strong>50,000</strong> Words per month                                        </li>
-                                        <li>
-                                            <strong>500</strong> Images per month                                            </li>
-                                        <li>
-                                            <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Create audio transcription"></i></li>
-                                        <li>
-                                            <strong>0 MB</strong> Audio file size limit                                            </li>
-                                        <li>
-                                            <span class="icon-text no"><i
-                                                class="icon-feather-x-circle margin-right-2"></i></span>
-                                            AI Chat                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Chat with the AI bot"></i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text no"><i
-                                                class="icon-feather-x-circle margin-right-2"></i></span>
-                                            AI Code                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Generate code of any programming language with the AI"></i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text yes"><i
-                                                class="icon-feather-check-circle margin-right-2"></i></span>
-                                            Hide Ads                                        </li>
-                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Setup</li>
-                                        <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Support</li>
-                                    </ul>
-                                </div>
-                                <div class="from-group" style="height:50px;margin-bottom:50px">
-                                    <asp:Button runat="server" ID="cPlan" Text="CurrentPlan" class="btn btn-primary form-control" />
-                                </div>
-                            </div>
-                            <%-- Extended plan --%>
-                            <div class="col-lg-4">
-                                <p class="font-weight-normal">Extended Plan</p>
-                                <div id="ltp" style="height:70px;width:300px;background-color:lightgrey;padding-top:20px;padding-bottom:20px">
-                                    <p class="font-weight-normal" style="text-align:center">5 / Monthly</p>
-                                </div>
-                                <%--  --%>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Extended Plan</strong>
-                                    <ul>
-                                        <li>
-                                            <strong>61</strong> AI Document Templates                                        </li>
-                                        <li>
-                                            <strong>100,000</strong> Words per month                                        </li>
-                                        <li>
-                                            <strong>1,000</strong> Images per month                                            </li>
-                                        <li>
-                                            <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Create audio transcription"></i></li>
-                                        <li>
-                                            <strong>0 MB</strong> Audio file size limit                                            </li>
-                                        <li>
-                                            <span class="icon-text no"><i
-                                                class="icon-feather-x-circle margin-right-2"></i></span>
-                                            AI Chat                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Chat with the AI bot"></i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text no"><i
-                                                class="icon-feather-x-circle margin-right-2"></i></span>
-                                            AI Code                                                <i class="icon-feather-help-circle margin-left-2"
-                                                data-tippy-placement="top"
-                                                title="Generate code of any programming language with the AI"></i>
-                                        </li>
-                                        <li>
-                                            <span class="icon-text yes"><i
-                                                class="icon-feather-check-circle margin-right-2"></i></span>
-                                            Hide Ads                                        </li>
-                                        <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>Free Setup</li>
-                                        <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>Free Support</li>
-                                    </ul>
-                                </div>
-                                <div class="from-group" style="height:50px;margin-bottom:50px">
-                                    <asp:Button runat="server" ID="up" Text="Upgrade" class="btn btn-primary form-control" />
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>                  
-                </div>
-            </div>
-             <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
-                    <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
+                <%-- Upgrade Membership --%>
+                <div id="upgradeMembership" style="margin-top:95px;margin-left:150px;margin-right:150px;display:none">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-logo">
-                                <img src="Images/1149945428.png" />                               
+                        <div class="col-lg-12" >
+                            <%-- upgrade --%>
+                            <div class="row">
+                                <div class="col-md-6"> <h3>Upgrade Membership</h3></div>
+                                <div class="col-md-6">
+                                    <div style="float:right">
+                                        <ul style="display: inline-flex;">
+                                            <li><a href="../Index.aspx">Home</a></li>                                       
+                                            <li><a href="#">Upgrade</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                            <%-- content of Payment Details --%>
+                            <div class="row">
+                                <%-- Payment Method --%>
+                                <div class="col-lg-8">
+                                    <h3>Payment Method</h3>
+                                    <div class="pm" style="height:500px;background-color:antiquewhite">
+                                        <div style="height:50px;box-shadow: 2px 2px 5px grey;"><asp:RadioButton ID="bankselect" runat="server" Text="Bank Details(Offline Payment)" /></div>                                        
+                                        <div class="row"><p>You will be redirected to the payment page for complete payment.</p></div>
+                                        <div class="row"><h4>Bank Account Details</h4></div>
+                                        <div class="row"><h4>Reference</h4></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
 
-                        </div>
-                        <div class="col-md-2">
-                             <div class="footer-links">
-                                <h3>My Account</h3>
-                                <ul>
-                                    <li><a href="Login.aspx">Login</a></li><li><a href="Register.aspx">Register</a></li>                        </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="footer-links">
-                                <h3>Helpful Links</h3>
-                                <ul>
-                                    <li><a href="#">Blog</a></li>                            <li><a href="#">Feedback</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="footer-links">
-                                <h3>Information</h3>
-                                <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Testimonials</a></li>                        </ul>
-                            </div>
-                        </div>
-                    </div>                    
+                        </div>                       
+                    </div>
                 </div>
-                    <div class="row navbar py-3 text-light bg-dark full-width">
+                <%-- Billing Form --%>
+                <div id="billingFormChangePlan" style="margin-top:95px;display:none">                   
+                    <%-- billing Form --%>
+                    <%-- Billing Header --%>
+                    <div id="billInfo" style="margin-left:30px;margin-right:30px;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row" style="width: 100%; box-shadow: 1px 1px 2px grey; height: 50px; padding-left: 20px; padding-top: 15px; padding-bottom: 15px; background-color: white;">
+                                    <div class="col-lg-7">
+                                        <h6 class="text-muted" style="padding-left: 15px; padding-top: 14px; padding-bottom: 14px">Billing Details</h6>
+                                    </div>
+                                    <div class="col-lg-5">
+                                         <div id="SubPage">
+                                             <ul style="display: inline-flex;">
+                                                 <li><a href="index.aspx">Home</a></li>
+                                                 <li><a href="membership.aspx">Membership</a></li>
+                                                 <li><a href="#">Billing Details</a></li>
+                                             </ul>
+                                         </div>
+                                    </div>                                    
+                                </div>
+
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-12">
+                                        <div style="width: 100%; height: 50px; width: 400px"></div>
+                                    </div>
+                                </div>
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-12">
+                                        <label for="exampleInputEmail1">Type</label>
+                                        <div class="dropdown">
+                                            <%-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   </a>--%>
+                                            <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" Style="width: 100%; height: 38px;">
+                                                <asp:ListItem href="#" Value="personal">Personal</asp:ListItem>
+                                                <asp:ListItem href="#" Value="business">Business</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="td" style="width: 100%; background-color: white; display: none">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="taxId">Tax ID</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="taxIdBox" aria-describedby="taxIdBoxx"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Name *</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="billingUserName" aria-describedby="emailHelp"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Address *</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="billingUserAdd" aria-describedby="emailHelp"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="billingUserCity">City *</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="billingUserCity"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="billingUserState">State *</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="billingUserState"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="billingUserZip">Zip *</label>
+                                            <asp:TextBox runat="server" class="form-control" ID="billingUserZip"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="width: 100%; background-color: white;">
+                                    <div class="col-md-12">
+                                        <label for="country">Country *</label>
+                                        <div class="form-group">
+                                            <asp:DropDownList runat="server" class="form-select" ID="country" name="country" Style="height: 32px; width: 100%;">
+                                                <asp:ListItem Value="">country</asp:ListItem>
+                                                <asp:ListItem Value="AF">Afghanistan</asp:ListItem>
+                                                <asp:ListItem Value="IN">INDIA</asp:ListItem>
+                                                <asp:ListItem Value="US">USA</asp:ListItem>
+                                                <asp:ListItem Value="EN">Engaland</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="width: 100%; padding-top: 30px; background-color: white; padding-bottom: 30px; margin-bottom: 30px">
+                                    <div class="col-md-6">
+                                        <asp:Button runat="server" OnClick="billingDetails" ID="userBillingDetails" Text="Save and Continue To Checkout" class="btn btn-primary form-control"></asp:Button>
+                                    </div>
+                                    <div class="col-md-6"></div>
+                                </div>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+
+                <%-- Change Plan Stuff --%>
+                <div id="changePlan">
+                    <div class="row" style="margin-top:95px">
+                        <div class="col-lg-12" style="padding-left:150px;padding-right:150px">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="font-weight-normal">Membership Plan</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul style="display: inline-flex; float: right">
+                                        <li><a href="../Index.aspx">Home</a></li>
+                                        <li><a href="#">Membersip Plan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: center; display: inline-flex; width: 100%">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <asp:RadioButtonList ID="timePeriod" runat="server" RepeatLayout="Flow" RepeatDirection="Horizontal">
+                                        <asp:ListItem Text="Monthly" name="rd" Value="1" id="monthly"></asp:ListItem>
+                                        <asp:ListItem Text="Yearly" name="rd" Value="2" id="yearly"></asp:ListItem>
+                                        <asp:ListItem Text="Lifetime" name="rd" Value="3" id="Lifetime"></asp:ListItem>
+                                    </asp:RadioButtonList>
+
+
+                                    <%-- <asp:RadioButton value="mbtn" name ="timeDuration" runat="server" Text="Monthly" />  
+                               
+                               <asp:RadioButton value="ybtn" name ="timeDuration" runat="server" Text="Yearly"/>  
+                               
+                               <asp:RadioButton value="lbtn" name ="timeDuration" runat="server" Text="Lifetime" />  --%>
+                                </div>
+                                <div class="col-md-3"></div>
+
+                            </div>
+                            <%-- Plan Scheme duration --%>
+                            <div class="row" style="background-color: white; margin-top: 40px; box-shadow: 2px 2px 5px grey; padding-top: 50px">
+                                <%-- Free Trial --%>
+                                <div class="col-lg-4">
+                                    <p class="font-weight-normal">Membership Plan</p>
+                                    <div id="frp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
+                                        <p class="font-weight-normal" style="text-align: center">Free</p>
+                                    </div>
+                                    <%--  --%>
+                                    <div class="pricing-plan-features">
+                                        <strong>Features of&nbsp;Free Plan</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>32</strong> AI Document Templates</li>
+                                            <li>
+                                                <strong>10,000</strong> Words per month</li>
+                                            <li>
+                                                <strong>100</strong> Images per month </li>
+                                            <li>
+                                                <strong>0</strong> Speech to Text per month
+                                            <i class="icon-feather-help-circle margin-left-2"
+                                                data-tippy-placement="top"
+                                                title="Create audio transcription"></i>
+                                            </li>
+                                            <li>
+                                                <strong>0 MB</strong> Audio file size limit
+                                            </li>
+                                            <li>
+                                                <span class="icon-text no">
+                                                    <i
+                                                        class="icon-feather-x-circle margin-right-2"></i>
+                                                </span>
+                                                AI Chat                                                
+                                            <i class="icon-feather-help-circle margin-left-2"
+                                                data-tippy-placement="top"
+                                                title="Chat with the AI bot"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text no">
+                                                    <i class="icon-feather-x-circle margin-right-2"></i>
+                                                </span>
+                                                AI Code                                                
+                                            <i class="icon-feather-help-circle margin-left-2"
+                                                data-tippy-placement="top"
+                                                title="Generate code of any programming language with the AI"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text yes"><i
+                                                    class="icon-feather-check-circle margin-right-2"></i>
+                                                </span>
+                                                Hide Ads
+                                            </li>
+                                            <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Setup</li>
+                                            <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="from-group" style="height: 50px; margin-bottom: 50px">
+                                        <asp:Button runat="server" ID="freePlan" Text="Upgrade" class="btn btn-primary form-control" />
+                                    </div>
+                                </div>
+
+                                <%-- Trial Plan --%>
+                                <div class="col-lg-4">
+                                    <p class="font-weight-normal">Trial Plan</p>
+                                    <div id="trp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
+                                        <p class="font-weight-normal" style="text-align: center">Trial</p>
+                                    </div>
+                                    <%--  --%>
+                                    <div class="pricing-plan-features">
+                                        <strong>Features of&nbsp;Trial Plan</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>61</strong> AI Document Templates                                        </li>
+                                            <li>
+                                                <strong>50,000</strong> Words per month                                        </li>
+                                            <li>
+                                                <strong>500</strong> Images per month                                            </li>
+                                            <li>
+                                                <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Create audio transcription"></i></li>
+                                            <li>
+                                                <strong>0 MB</strong> Audio file size limit                                            </li>
+                                            <li>
+                                                <span class="icon-text no"><i
+                                                    class="icon-feather-x-circle margin-right-2"></i></span>
+                                                AI Chat                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Chat with the AI bot"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text no"><i
+                                                    class="icon-feather-x-circle margin-right-2"></i></span>
+                                                AI Code                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Generate code of any programming language with the AI"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text yes"><i
+                                                    class="icon-feather-check-circle margin-right-2"></i></span>
+                                                Hide Ads                                        </li>
+                                            <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Setup</li>
+                                            <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>Free Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="from-group" style="height: 50px; margin-bottom: 50px">
+                                        <asp:Button runat="server" ID="cPlan" Text="CurrentPlan" class="btn btn-primary form-control" />
+                                    </div>
+                                </div>
+
+
+                                <%-- Extended plan --%>
+                                <div class="col-lg-4">
+                                    <p class="font-weight-normal">Extended Plan</p>
+                                    <div id="ltp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
+                                        <p class="font-weight-normal" style="text-align: center;" id="chPara">5 / Monthly</p>
+                                    </div>
+                                    <%--  --%>
+                                    <div class="pricing-plan-features">
+                                        <strong>Features of&nbsp;Extended Plan</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>61</strong> AI Document Templates                                        </li>
+                                            <li>
+                                                <strong>100,000</strong> Words per month                                        </li>
+                                            <li>
+                                                <strong>1,000</strong> Images per month                                            </li>
+                                            <li>
+                                                <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Create audio transcription"></i></li>
+                                            <li>
+                                                <strong>0 MB</strong> Audio file size limit                                            </li>
+                                            <li>
+                                                <span class="icon-text no"><i
+                                                    class="icon-feather-x-circle margin-right-2"></i></span>
+                                                AI Chat                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Chat with the AI bot"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text no"><i
+                                                    class="icon-feather-x-circle margin-right-2"></i></span>
+                                                AI Code                                                <i class="icon-feather-help-circle margin-left-2"
+                                                    data-tippy-placement="top"
+                                                    title="Generate code of any programming language with the AI"></i>
+                                            </li>
+                                            <li>
+                                                <span class="icon-text yes"><i
+                                                    class="icon-feather-check-circle margin-right-2"></i></span>
+                                                Hide Ads                                        </li>
+                                            <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>Free Setup</li>
+                                            <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>Free Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="from-group" style="height: 50px; margin-bottom: 50px">
+                                        <asp:Button runat="server" ID="up" onclick="showBill" Text="Upgrade" class="btn btn-primary form-control" />
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+                
+            </div>
+
+
+             <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
+            <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
+                <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-logo">
+                                    <img src="Images/1149945428.png" />
+                                </div>
+                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <div class="footer-links">
+                                    <h3>My Account</h3>
+                                    <ul>
+                                        <li><a href="Login.aspx">Login</a></li>
+                                        <li><a href="Register.aspx">Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="footer-links">
+                                    <h3>Helpful Links</h3>
+                                    <ul>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Feedback</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="footer-links">
+                                    <h3>Information</h3>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row navbar py-3 text-light bg-dark full-width">
                     <div class="col-md-6">
                         <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
                     </div>
@@ -388,7 +550,7 @@
                         ></a>
                     </div> 
                 </div>
-                </footerclass>    
+            </footerclass>    
         </div>
     </form>
 </body>

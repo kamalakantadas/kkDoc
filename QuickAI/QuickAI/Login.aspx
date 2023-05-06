@@ -23,68 +23,66 @@
       <div class="container-fluid">
         <%-- Header of Login --%>
          <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white">                    
-                    <div class="col-lg-2" style="width:8.33%">
-                        <a class="navbar-brand" href="Index.aspx">
-                            <h1>QUICKAI</h1>
-                        </a>
-                    </div>
-                    <div class="col-lg-7" style="width:58.31%">
-
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%">
-                        <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" id="joinbutton" Text="JOIN"  />
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%">
-                        <div class="dropdown">
-                                <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    Text="Language"/>                            
-                                <div class="dropdown-menu" aria-labelledby="Lang">
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="English"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-lg-1" style="width:8.33%"></div>
-                    <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <div class="col-lg-2" style="width: 8.33%">
+                 <a class="navbar-brand" href="Index.aspx">
+                     <h1>QUICKAI</h1>
+                 </a>
+             </div>
+             <div class="col-lg-7" style="width: 58.31%">
+             </div>
+             <div class="col-lg-1" style="width: 8.33%">
+                 <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" ID="joinbutton" Text="JOIN" />
+             </div>
+             <div class="col-lg-1" style="width: 8.33%">
+                 <div class="dropdown">
+                     <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                         Text="Language" />
+                     <div class="dropdown-menu" aria-labelledby="Lang">
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="English" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                         <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-1" style="width: 8.33%"></div>
+             <%-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                          </button>
                          <div class="collapse navbar-collapse" id="navbarNav">
                              <ul class="navbar-nav">
                              </ul>
                          </div>--%>
-                </nav>
+         </nav>
           <%-- Login Form --%>
          <div class="row" id="loginForm" style="margin-top:100px;margin-bottom:50px">
             <div class="col-lg-4">
             </div>
             <div class="col-lg-4">
                 <div class="justify-content-center h-100">
-                    <div class="card">
-                        
-                            <div class="card-header">
-                            <h3>Sign In</h3>
-                            <div class="d-flex justify-content-end">
-                                <div class="p-3 m-0 border-0 bd-example">
-                                    <!-- Example Code -->
-                                    <i class="bi bi-x bi-3x"></i>
-                                    <asp:Button runat="server" type="button" onclick="gotoHomePage" Text="Home" class="btn btn-primary"  id="closeButton" aria-label="Close"/>                                    
-                                    <!-- End Example Code -->
+                    <div class="card">                        
+                        <div class="card-header">
+                                <h3>Sign In</h3>
+                                <div class="d-flex justify-content-end">
+                                    <div class="p-3 m-0 border-0 bd-example">
+                                        <!-- Example Code -->
+                                        <i class="bi bi-x bi-3x"></i>
+                                        <asp:Button runat="server" type="button" OnClick="gotoHomePage" Text="Home" class="btn btn-primary" ID="closeButton" aria-label="Close" />
+                                        <!-- End Example Code -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>                            
-                            <div class="card-body">
+                        <div class="card-body">
 
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend">
@@ -107,7 +105,7 @@
                                     <!--<input type="button" value="Login" id="login" class="btn float-right login_btn btn-primary">-->
                                 </div>
                             </div>
-                            <div class="card-footer">
+                        <div class="card-footer">
                                 <div class="row">
                                     <div class="col-sm-6"></div>
                                     <div class="col-sm-3">
