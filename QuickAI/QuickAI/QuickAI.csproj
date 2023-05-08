@@ -182,6 +182,7 @@
     <Content Include="Site.Master" />
     <Content Include="Test.css" />
     <Content Include="Test.html" />
+    <Content Include="TestForm.aspx" />
     <Content Include="Transaction.aspx" />
     <Content Include="UpdatePassword.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -288,6 +289,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.aspx.cs">
+      <DependentUpon>TestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestForm.aspx.designer.cs">
+      <DependentUpon>TestForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction.aspx.cs">
       <DependentUpon>Transaction.aspx</DependentUpon>

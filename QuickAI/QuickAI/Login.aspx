@@ -19,8 +19,8 @@
 </head>
 <body>
     <!--Login Page Content-->
-     <form runat="server" method="post">
-      <div class="container-fluid">
+    <form runat="server" method="post">
+        <div class="container-fluid">
         <%-- Header of Login --%>
          <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white">                    
              <div class="col-lg-2" style="width: 8.33%">
@@ -157,6 +157,6 @@
               </footerclass>
           </div>        
       </div>   
-     </form>   
+    </form>   
 </body>
 </html>
