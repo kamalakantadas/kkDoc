@@ -101,21 +101,21 @@
                                     <p style="margin-left: 20px;">Order: Extended Plan Membership Plan</p>
                                 </div>
                                 <div class="row">
-                                    <p style="margin-left: 20px;">Username:</p>
+                                    <p style="margin-left: 20px;">Username:  </p>
                                     <h5 id="userNameBankDeposit" runat="server"/>
                                 </div>
                                 <div class="row">
                                     <p style="margin-left: 20px;">Include a note with Reference so that we know which account to credit.</p>
                                 </div>
                                 <div class="row" style="box-shadow: 1px 1px 2px black;margin-left:1px;margin-right:1px;height:80px">
-                                    <h5 style="margin-left: 20px;">Amount to send</h5>
+                                    <div><p style="margin-left: 20px;">AmountSend:::::</p></div>
                                     <div class="row">
-                                        <p runat="server" id="priceDepositForm"></p>
+                                        <h5 runat="server" id="priceDepositForm"> </h5>
                                     </div>
                                 </div>                                
                             </div>
                             <div class="form-group" style="box-shadow: 2px 2px 5px grey;margin-top:50px;width:120px;">
-                                <asp:Button runat="server" ID="transaction" Text="Transactions" class="form-control btn btn-primary" />
+                                <asp:Button runat="server" onclick="forwardToTransaction" ID="transaction" Text="Transactions" class="form-control btn btn-primary" />
                             </div>
                         </div>
                     </div>
@@ -149,21 +149,21 @@
                                         <div class="row" style="padding-left: 20px;"><p class="active">You will be redirected to the payment page for complete payment.</p></div>
                                         <div class="row" style="padding-left: 20px;"><h6 class="active">Bank Account Details</h6></div>
                                         <div class="row" style="padding-left: 20px;"><h6 class="active">Reference</h6></div>
-                                        <div class="row" style="padding-left: 20px;"><h6 class="active">Membership Plan: Extended Plan</h6></div>
+                                        <div class="row" style="padding-left: 20px;"><h6 class="active">Membership Plan:  Extended Plan</h6></div>
                                         <div class="row" style="padding-left: 20px;">
-                                            <h6 class="active">UserName:</h6>
-                                            <p class="active" id="pmUserName"></p>
+                                            <h6 class="active">UserName: </h6>
+                                            <p class="active" runat="server" id="pmUserName"> </p>
                                         </div>
                                         <div class="row" style="padding-left: 20px;">                                            
                                             <p class="active">Include a note with Reference so that we know which account to credit.</p>
                                         </div>
                                         <div class="row" style="padding-left: 20px;">
-                                            <h5>Amount to send</h5>
-                                            <p class="align-content-md-between" id="planPurchase"></p>
+                                            <h5>Amount to send: </h5>
+                                            <p class="align-content-md-between" runat="server" id="planPurchase"></p>
                                         </div>
                                     </div>
                                     <div class="form-group"style="padding-top:20px;">
-                                        <asp:Button runat="server" class="form-control btn btn-primary" style="width:100px;" Text="Submit"/>
+                                        <asp:Button runat="server" id="forwardToBank"  OnClick="forwardToBankDeposit" class="form-control btn btn-primary" style="width:100px;" Text="Submit"/>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -186,20 +186,20 @@
                                             </div>
                                         </div>--%>
                                         <div class="row" style="padding-left:20px;">
-                                            <p>Membership</p>
+                                            <p>Membership::    </p>
                                             <p runat="server" id="membershipPlan"></p>
                                         </div>
                                         <div class="row" style="padding-left:20px;">
-                                            <p>Start Date</p>
+                                            <p>Start Date::  </p>
                                             <p runat="server" id="startDate"></p>
                                         </div>
                                         <div class="row" style="padding-left:20px;">
-                                            <p>Expire Date</p>
+                                            <p>Expire Date::  </p>
                                             <p runat="server" id="endDate"></p>
                                         </div>
                                         <hr />
                                         <div class="row" style="padding-left:20px;">
-                                            <p>Total Cost</p>
+                                            <p>Total Cost::   </p>
                                             <p runat="server" id="TotalCost"></p>
                                         </div>
                                     </div>
@@ -468,7 +468,8 @@
                                 <div class="col-lg-4">
                                     <p class="font-weight-normal">Extended Plan</p>
                                     <div id="ltp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
-                                        <p runat="server" class="font-weight-normal" style="text-align: center;" id="chPara">5</p><p id="chParaText"></p>
+                                        <asp:TextBox runat="server" class="font-weight-normal" style="text-align: center;" id="chPara"></asp:TextBox>
+                                        <p id="chParaText"></p>
                                     </div>
                                     <%--  --%>
                                     <div class="pricing-plan-features">
@@ -509,7 +510,7 @@
                                         </ul>
                                     </div>
                                     <div class="from-group" style="height: 50px; margin-bottom: 50px">
-                                        <asp:Button runat="server" ID="up" onclick="showBill" Text="Upgrade" class="btn btn-primary form-control" />
+                                        <asp:Button runat="server" ID="up" onclick="showBillAndSendDataToBankDepositForm" Text="Upgrade" class="btn btn-primary form-control" />
                                     </div>
                                 </div>
 

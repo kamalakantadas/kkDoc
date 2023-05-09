@@ -87,6 +87,33 @@ namespace QuickAI.membership
         protected global::System.Web.UI.WebControls.RadioButton bankselect;
 
         /// <summary>
+        /// pmUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pmUserName;
+
+        /// <summary>
+        /// planPurchase control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl planPurchase;
+
+        /// <summary>
+        /// forwardToBank control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button forwardToBank;
+
+        /// <summary>
         /// membershipPlan control.
         /// </summary>
         /// <remarks>
@@ -264,7 +291,7 @@ namespace QuickAI.membership
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl chPara;
+        protected global::System.Web.UI.WebControls.TextBox chPara;
 
         /// <summary>
         /// up control.

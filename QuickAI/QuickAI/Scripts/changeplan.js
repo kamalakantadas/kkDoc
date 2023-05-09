@@ -1,58 +1,26 @@
 ﻿$(document).ready(function () {
-    ////billing Form Show
-    //$("#up").on("click", function () {
-    //    $("#changePlan").hide();
-    //    $("#billingFormChangePlan").css("display","block");_
-    //});
-    //
-    $("#membershipPlan").text("Extended Plan");
-    var email = $("#viewImage").val();
-    $("#userNameBankDeposit").text = email;
-    var planValue = $("#chPara").text();
-    
-    $("#planPurchase").text = planValue;
-    $("#priceDepositForm").text = planValue;
-    //package summary
-    var stte = $("#startDate").val();
-
-    var currentDate = moment();
-    
    
-    //
-    if (planValue == "550") {
-        $("#endDate").text = "LifeTime";
-    }
-    else if (planValue == "50") {       
-        var futureDate = currentDate.add(1, 'years');
-        $('#endDate').text(futureDate.format('DD-MM-YYYY'));      
-    }
-    else {      
-        var futureDate = currentDate.add(1, 'months');
-        $('#endDate').text(futureDate.format('DD-MM-YYYY'));
-    }
-    $("#TotalCost").text = planValue;
-    //
     var today = new Date();
     var day = today.getDate();
     var month = today.getMonth() + 1; // JavaScript months are 0-11
     var year = today.getFullYear();
     var formattedDate = ('0' + day).slice(-2) + '-' + ('0' + month).slice(-2) + '-' + year;
-    
- 
     $("#startDate").html(formattedDate);
-    //Congratulation Code wWork
+  
+    //Radio button work
     $("#monthly").on("click", function () {
-            $('#chPara').text('5');
-        $("#chParaText").text('/monthly');
+        $("#chPara").val("5");
+        $("#chParaText").text("/monthly");       
         });
     $("#yearly").on("click", function () {
-        $('#chPara').text('50');
-        $("#chParaText").text('/yearly');
+        $("#chPara").val("50");
+        $("#chParaText").text('/yearly');       
     });
     $("#Lifetime").on("click", function () {
-        $('#chPara').text('550');
-        $("#chParaText").text('/LifeTime');
+        $("#chPara").val("550");
+        $("#chParaText").text('/LifeTime');       
     });
+
     //Dropdown of Type
     $("#typeSel").change(function () {
         var selectedOption = $(this).val();
@@ -68,19 +36,84 @@
             $("#td").show()
         }
     });
+  
 });
-//This is the for action Upgrade Membership
-function ActionUpMemb() {
-    $("#upgradeMembership").show();
-    $("#changePlan").hide();
-    $("#billingFormChangePlan").hide();
-}
+
 function showBill() {
     $("#billingFormChangePlan").show();//visibleBill
     $("#changePlan").hide();
 }
-//function billingDetails() {
+function billingDetails() {
+    $("#upgradeMembership").show();
+    $("#changePlan").hide();
+    $("#billingFormChangePlan").hide();
+}
+function forwardToBankDeposit() {
+    $("#bankDeposit").show();
+    $("#upgradeMembership").hide();
+    $("#changePlan").hide();
+    $("#billingFormChangePlan").hide();
+}
+
+function viewText() {
+    $("#viewImage").show();
+} function hideText() {
+    $("#viewImage").hide();
+}
+
+
+  //var currentDate = moment();
+    //
+/* $("#membershipPlan").text("Extended Plan");*/
+    //var email = $("#viewImage").val();
+    //$("#userNameBankDeposit").text(email);
+
+
+
+
+
+
+//This is the for action Upgrade Membership
+//function ActionUpMemb() {
 //    $("#upgradeMembership").show();
 //    $("#changePlan").hide();
 //    $("#billingFormChangePlan").hide();
 //}
+
+
+ //package summary
+    //var stte = $("#startDate").val();
+
+
+
+
+    //
+    //if (planValue == "550") {
+    //    $("#endDate").text("LifeTime");
+    //    $("#planPurchase").text(planValue);
+    //    $("#priceDepositForm").text(planValue);
+    //    $("#TotalCost").text(planValue);
+    //}
+    //else if (planValue == "50") {
+    //    var futureDate = currentDate.add(1, 'years');
+    //    $('#endDate').text(futureDate.format('DD-MM-YYYY'));
+    //    $("#planPurchase").text(planValue);
+    //    $("#priceDepositForm").text(planValue);
+    //    $("#TotalCost").text(planValue);
+    //}
+    //else {
+    //    var futureDate = currentDate.add(1, 'months');
+    //    $('#endDate').text(futureDate.format('DD-MM-YYYY'));
+    //    $("#planPurchase").text(planValue);
+    //    $("#priceDepositForm").text(planValue);
+    //    $("#TotalCost").text(planValue);
+    //}
+
+ ////billing Form Show
+    //$("#up").on("click", function () {
+    //    $("#changePlan").hide();
+    //    $("#billingFormChangePlan").css("display","block");_
+    //});
+    //
+
+    //

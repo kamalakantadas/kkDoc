@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
-    <script src="Scripts/AccountSetting.js"></script>
+    <script src="Scripts/Transaction.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -100,23 +100,18 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12">
-                                <table class="table table-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Title</th>
-                                            <th>Amount</th>
-                                            <th>Premium</th>
-                                            <th>Payment Method</th>
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                           <td>NO result found</td>
-                                       </tr>
-                                    </tbody>
-                                </table>
+                                <asp:Table class="table table-condensed" ID="tableData" runat="server" >
+                                    <asp:TableHeaderRow>
+                                        <asp:TableHeaderCell>Title</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Amount</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Premium</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>PaymentMethod</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Date</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>Status</asp:TableHeaderCell>                                                                           
+                                    </asp:TableHeaderRow>
+                                    <asp:TableRow>
+                                    </asp:TableRow>
+                                </asp:Table>
                             </div>
                         </div>
                     </div>

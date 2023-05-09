@@ -11,7 +11,9 @@ namespace QuickAI.membership
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string email = (string)Session["Email"];
+            TextBox txt = (TextBox)Page.FindControl("viewImage");
+            txt.Text = email;
         }
         //protected void verifyEmail(object sender, EventArgs e)
         //{
