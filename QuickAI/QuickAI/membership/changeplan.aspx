@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <%-- Upgrade Membership --%>
                 <div id="upgradeMembership" style="margin-top:95px;margin-left:150px;margin-right:150px;display:none">
                     <div class="row">
@@ -210,7 +210,7 @@
                 </div>
                 
                 <%-- Billing Form --%>
-                <div id="billingFormChangePlan" style="margin-top:95px;display:none">                   
+                <div id="billingFormChangePlan" style="margin-top:95px;display:none" runat="server">                   
                     <%-- billing Form --%>
                     <%-- Billing Header --%>
                     <div id="billInfo" style="margin-left:30px;margin-right:30px;">
@@ -320,7 +320,7 @@
                 </div>
 
                 <%-- Change Plan Stuff --%>
-                <div id="changePlan">
+                <div id="changePlan" runat="server">
                     <div class="row" style="margin-top:95px">
                         <div class="col-lg-12" style="padding-left:150px;padding-right:150px">
                             <div class="row">
@@ -523,7 +523,7 @@
             </div>
 
 
-             <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
+            <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
             <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
                 <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
                         <div class="row">

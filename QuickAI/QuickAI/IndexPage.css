@@ -8,7 +8,44 @@
 .radio-button-list label {
     margin-right: 10px;
 }
+/*Carousel sliding*/
 
+/*.carousel-inner .item img {
+    width: 100%;
+}
+
+.carousel-control {
+    color: #fff;
+    top: 50%;
+}
+
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        display: inline-block;
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 50%;
+        margin-left: -10px;
+    }
+
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 50%;
+        margin-right: -10px;
+    }
+*/
 /*Account Setting Page*/
 .leftSideBarOfAS {
     position: fixed;

@@ -150,6 +150,15 @@ namespace QuickAI.membership
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl TotalCost;
 
         /// <summary>
+        /// billingFormChangePlan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl billingFormChangePlan;
+
+        /// <summary>
         /// typeSel control.
         /// </summary>
         /// <remarks>
@@ -229,6 +238,15 @@ namespace QuickAI.membership
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button userBillingDetails;
+
+        /// <summary>
+        /// changePlan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl changePlan;
 
         /// <summary>
         /// timePeriod control.

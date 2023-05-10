@@ -74,24 +74,24 @@
                     <div class="col-lg-1 col-md-3 col-sm-4" style="width:8.33%;">
                         <%-- Header Language Selection --%>
                         <div class="dropdown">
-                                <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    Text="en"/>                        
-                                <div class="dropdown-menu" aria-labelledby="Lang">
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="English"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                    <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil"/>
-                                </div>
+                            <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                Text="en" />
+                            <div class="dropdown-menu" aria-labelledby="Lang">
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="English" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                                <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                            </div>
                         </div>
                     </div>                    
                 </nav>

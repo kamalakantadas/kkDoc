@@ -16,13 +16,17 @@ namespace QuickAI.membership
     public partial class changeplan : System.Web.UI.Page
     {
         String connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
-        string query = "";
+        string query = "";       
         protected void Page_Load(object sender, EventArgs e)
         {
+            //string val = Request.QueryString["val"];
+            //if (val == "1") {
+            //    ScriptManager.RegisterStartupScript(this, this.GetType(), "freeplan", "actionupmemb();", true);
+            //    changePlan.Visible = false;                
+            //}
             string email = (string)Session["Email"];
             TextBox txt = (TextBox)Page.FindControl("viewImage");
-            txt.Text = email;
-            
+            txt.Text = email;            
         }
         protected void upgradeMembership(object sender, EventArgs e)
         {
@@ -42,7 +46,7 @@ namespace QuickAI.membership
         protected void forwardToBankDeposit(object sender, EventArgs e)
         {
             ScriptManager.RegisterStartupScript(this, this.GetType(), "forwardToBank", "forwardToBankDeposit();", true);
-            //page_load(sender,e);            
+            //page_load(sender,e);
         }
 
         protected void showBillAndSendDataToBankDepositForm(object sender, EventArgs e) {

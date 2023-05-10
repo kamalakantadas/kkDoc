@@ -108,6 +108,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="accountSetting.aspx" />
+    <Content Include="ai-templates\testimonial-reviews.aspx" />
+    <Content Include="blogs.aspx" />
+    <Content Include="Images\Image ICON.png" />
+    <Content Include="Images\picDemo.jfif" />
     <Content Include="Scripts\changeplan.js" />
     <Content Include="membership\changeplan.aspx" />
     <Content Include="Scripts\AccountSetting.js" />
@@ -152,12 +156,14 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Indesjs.js" />
+    <Content Include="Scripts\Index.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\membership.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\testimonialReviews.js" />
     <Content Include="Scripts\Transaction.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
@@ -199,6 +205,13 @@
     <Compile Include="accountSetting.aspx.designer.cs">
       <DependentUpon>accountSetting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\testimonial-reviews.aspx.cs">
+      <DependentUpon>testimonial-reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\testimonial-reviews.aspx.designer.cs">
+      <DependentUpon>testimonial-reviews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -208,6 +221,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="blogs.aspx.cs">
+      <DependentUpon>blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blogs.aspx.designer.cs">
+      <DependentUpon>blogs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

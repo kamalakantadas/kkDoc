@@ -38,7 +38,9 @@
     });
   
 });
-
+function actionupmemb() {
+    $("#billingFormChangePlan").show();
+}
 function showBill() {
     $("#billingFormChangePlan").show();//visibleBill
     $("#changePlan").hide();
@@ -60,7 +62,11 @@ function viewText() {
 } function hideText() {
     $("#viewImage").hide();
 }
-
+//if val==1
+function hideChangeFunctionality() {
+    $("#changePlan").hide();
+    $("#billingFormChangePlan").show();
+};
 
   //var currentDate = moment();
     //

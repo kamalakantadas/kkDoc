@@ -217,23 +217,22 @@
                            <div id="rightSide">
                                <%-- Right content 1st row only content --%>
                                <div class="row" >
-                                       <%-- Left Side of Right side --%>
-                                       <div class="col-md-2">
-                                           <h3>Dashboard</h3>
-                                       </div>
-                                       <div class="col-md-6">
-
-                                       </div>
-                                        <%-- Right Side of Right side --%>
-                                       <div class="col-md-4">
-                                            <div id="SubPage">
-                                              <ul style="display: inline-flex;">
-                                                 <li><a href="index.aspx">Home</a></li>                                      
-                                                 <li><a href="#">Dashboard</a></li>
-                                              </ul>
-                                           </div>
+                                   <%-- Left Side of Right side --%>
+                                   <div class="col-md-2">
+                                       <h3>Dashboard</h3>
+                                   </div>
+                                   <div class="col-md-6">
+                                   </div>
+                                   <%-- Right Side of Right side --%>
+                                   <div class="col-md-4">
+                                       <div id="SubPage">
+                                           <ul style="display: inline-flex;">
+                                               <li><a href="index.aspx">Home</a></li>
+                                               <li><a href="#">Dashboard</a></li>
+                                           </ul>
                                        </div>
                                    </div>
+                               </div>
                                <%-- 3 boxes Right content 2nd row --%>
                                <div class="row">
                                    <%-- Words Used --%>
