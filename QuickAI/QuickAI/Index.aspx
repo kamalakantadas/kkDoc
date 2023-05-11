@@ -339,7 +339,7 @@
                                <div class="align-content-center" style="text-align: center;">
                                    <h3>Testimonials</h3>
                                </div>
-                               <%-- Carousel sliding --%>
+                               <%-- Carousel sliding start --%>
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -350,57 +350,65 @@
                                         <div class="carousel-item active" >
                                             <%--<img class="d-block w-100" src="Images/Email.png" alt="First slide">--%>
                                             <div style="height:300px;width:400px;box-shadow: 2px 2px 5px grey;background: bisque;margin-left:300px" >
-                                                <div style="align-content: center">
-                                                    <img src="Images/Image%20ICON.png" style="height: 30px; width: 30px" />
-                                                    Natasha
-                                                <asp:Button ID="t1" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px" />
-                                                </div>
-                                                <div>
-                                                    abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-                                                </div>
+                                                <div style="align-content: center;padding-top:20px">
+                                                    <div class="row">
+                                                        <img src="Images/Image%20ICON.png" style="height: 30px;padding-left: 180px;" />
+                                                    </div>
+                                                    <div class="row" style="padding-left:170px">
+                                                        Ashis
+                                                    </div>
+                                                    <div class="row">
+                                                        <asp:Button ID="t1" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px;margin-left: 120px;" />
+                                                    </div>                                                
+                                                    <div class="text-container" style="padding-top:20px">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                    </div>
+
+                                                </div>                                                
                                             </div>                                            
                                         </div>
                                         <div class="carousel-item">
                                             <%--<img class="d-block w-100" src="Images/home-hero-icon%20(1).png" alt="Second slide">--%>
                                             <div style="height:300px;width:400px;box-shadow: 2px 2px 5px grey;background: bisque;margin-left:300px">
-                                                <div style="align-content: center">
-                                                    <div class="row"><img src="Images/Image%20ICON.png" style="height: 30px; width: 30px" /></div>
-                                                    <div class="row">
+                                                <div style="align-content: center;padding-top:20px">
+                                                    <div class="row"><img src="Images/Image%20ICON.png" style="height: 30px; padding-left: 180px;" /></div>
+                                                    <div class="row" style="padding-left:170px">
                                                         Akansha
                                                     </div>
                                                     <div class="row">
-                                                        <asp:Button ID="t2" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px" />
+                                                        <asp:Button ID="t2" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px;margin-left: 120px;" />
                                                     </div>
-                                                
-                                                </div>
-                                                <div>
-                                                    abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-                                                </div>
+                                                    <div class="text-container" style="padding-top:20px">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                    </div>
+                                                </div>                                                
                                             </div>                                           
                                         </div>
                                         <div class="carousel-item">
                                             <%--<img class="d-block w-100" src="Images/userIcon.jpg" alt="Third slide">--%>
                                             <div style="height:300px;width:400px;box-shadow: 2px 2px 5px grey;background: bisque;margin-left:300px">
-                                                <div style="align-content: center">
+                                                <div style="align-content: center;padding-top:20px">
                                                     <div class="row">
-                                                        <img src="Images/Image%20ICON.png" style="height: 30px; width: 30px" />
+                                                        <img src="Images/Image%20ICON.png" style="height: 30px;padding-left: 180px;" />
+                                                    </div>
+                                                    <div class="row" style="padding-left:170px">
+                                                        Rohini
                                                     </div>
                                                     <div class="row">
-                                                        Rohini
-                                                    </div>  
-                                                <asp:Button ID="t3" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px" />
-                                                </div>
-                                                <div>
-                                                    <p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</p>                                                    
-                                                </div>
+                                                        <asp:Button ID="t3" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px;margin-left: 120px;" />
+                                                    </div>
+                                                    <div class="text-container" style="padding-top:20px">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                    </div>
+                                                </div>                                                
                                             </div>                                            
                                         </div>
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background: black;">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background: black;">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
@@ -408,7 +416,7 @@
                             </div>
                         </div>
                     </div>
-                
+                <%-- Carousel sliding end --%>
 
 
                     
@@ -467,15 +475,18 @@
                                  <div class="footer-links">
                                     <h3>My Account</h3>
                                     <ul>
-                                        <li><a href="Login.aspx">Login</a></li><li><a href="Register.aspx">Register</a></li>                        </ul>
+                                        <li><a href="Login.aspx">Login</a></li>
+                                        <li><a href="Register.aspx">Register</a></li>   
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="footer-links">
                                     <h3>Helpful Links</h3>
                                     <ul>
-                                        <li><a href="#">Blog</a></li>                            <li><a href="#">Feedback</a></li>
+                                        <li><a href="#">Feedback</a></li>
                                         <li><a href="#">Contact</a></li>
+                                        <li><a href="blogs.aspx">Blog</a></li> 
                                     </ul>
                                 </div>
                             </div>
@@ -484,7 +495,8 @@
                                     <h3>Information</h3>
                                     <ul>
                                         <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Testimonials</a></li>                        </ul>
+                                        <li><a href="Testimonials.aspx">Testimonials</a></li>   
+                                    </ul>
                                 </div>
                             </div>
                         </div>                    

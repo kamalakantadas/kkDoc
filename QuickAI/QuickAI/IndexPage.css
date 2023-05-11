@@ -8,6 +8,23 @@
 .radio-button-list label {
     margin-right: 10px;
 }
+.text-container {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.form-group {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-group i {
+    font-size: 20px;
+    color: #333;
+}
+
 /*Carousel sliding*/
 
 /*.carousel-inner .item img {

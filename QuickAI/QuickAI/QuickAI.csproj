@@ -108,8 +108,12 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="accountSetting.aspx" />
+    <Content Include="ai-templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
+    <Content Include="all-documents.aspx" />
+    <Content Include="all-Images.aspx" />
     <Content Include="blogs.aspx" />
+    <Content Include="Blogs\1\First-Blogs.aspx" />
     <Content Include="Images\Image ICON.png" />
     <Content Include="Images\picDemo.jfif" />
     <Content Include="Scripts\changeplan.js" />
@@ -190,6 +194,7 @@
     <Content Include="Test.css" />
     <Content Include="Test.html" />
     <Content Include="TestForm.aspx" />
+    <Content Include="Testimonials.aspx" />
     <Content Include="Transaction.aspx" />
     <Content Include="UpdatePassword.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -205,12 +210,33 @@
     <Compile Include="accountSetting.aspx.designer.cs">
       <DependentUpon>accountSetting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates.aspx.cs">
+      <DependentUpon>ai-templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates.aspx.designer.cs">
+      <DependentUpon>ai-templates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\testimonial-reviews.aspx.cs">
       <DependentUpon>testimonial-reviews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ai-templates\testimonial-reviews.aspx.designer.cs">
       <DependentUpon>testimonial-reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="all-documents.aspx.cs">
+      <DependentUpon>all-documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="all-documents.aspx.designer.cs">
+      <DependentUpon>all-documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="all-Images.aspx.cs">
+      <DependentUpon>all-Images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="all-Images.aspx.designer.cs">
+      <DependentUpon>all-Images.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -227,6 +253,13 @@
     </Compile>
     <Compile Include="blogs.aspx.designer.cs">
       <DependentUpon>blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blogs\1\First-Blogs.aspx.cs">
+      <DependentUpon>First-Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blogs\1\First-Blogs.aspx.designer.cs">
+      <DependentUpon>First-Blogs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -317,6 +350,13 @@
     </Compile>
     <Compile Include="TestForm.aspx.designer.cs">
       <DependentUpon>TestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonials.aspx.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonials.aspx.designer.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction.aspx.cs">
       <DependentUpon>Transaction.aspx</DependentUpon>

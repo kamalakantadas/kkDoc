@@ -319,7 +319,7 @@
                     </div>
                 </div>
 
-                <%-- Change Plan Stuff --%>
+                <%-- Change Plan Membership Page Stuff --%>
                 <div id="changePlan" runat="server">
                     <div class="row" style="margin-top:95px">
                         <div class="col-lg-12" style="padding-left:150px;padding-right:150px">

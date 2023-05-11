@@ -11,7 +11,7 @@ namespace QuickAI
 {
 
 
-    public partial class blogs
+    public partial class Testimonials
     {
 
         /// <summary>
@@ -42,13 +42,13 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Button dropdownMenu2;
 
         /// <summary>
-        /// searchBlog control.
+        /// testimonialsBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchBlog;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl testimonialsBody;
 
         /// <summary>
         /// t1 control.
@@ -60,15 +60,6 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Button t1;
 
         /// <summary>
-        /// t2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button t2;
-
-        /// <summary>
         /// t3 control.
         /// </summary>
         /// <remarks>
@@ -78,21 +69,12 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Button t3;
 
         /// <summary>
-        /// travelFun control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button travelFun;
-
-        /// <summary>
-        /// love control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button love;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
