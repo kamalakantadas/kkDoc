@@ -5,16 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace QuickAI.Blogs._1
+namespace QuickAI.ai_templates
 {
-    public partial class First_Blogs : System.Web.UI.Page
+    public partial class Ai_templates : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void travelFand(object sender, EventArgs e) { }
-        protected void loved(object sender, EventArgs e) { }
-
     }
 }

@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="../Scripts/changeplan.js"></script>
 </head>
 <body>
@@ -109,9 +110,8 @@
                                                 <asp:Button ID="t1" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px; margin-left: 120px;" />
                                             </div>
                                             <div class="text-container" style="padding-top: 20px">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                <p style="white-space:initial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                                                 <asp:Button ID="t3" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px; margin-left: 120px;" />
                                             </div>
                                             <div class="text-container" style="padding-top: 20px">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                <p style="white-space:initial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +145,7 @@
                                                 <asp:Button ID="Button1" runat="server" Text="Designer" class="btn btn-primary" Style="width: 150px; margin-left: 120px;" />
                                             </div>
                                             <div class="text-container" style="padding-top: 20px">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
+                                                <p style="white-space:initial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +172,7 @@
                                     <h3>My Account</h3>
                                     <ul>
                                         <li><a href="Login.aspx">Login</a></li>
-                                        <li><a href="Register.aspx">Register</a></li>
+                                        <li><a href="Register.aspx">Register</a></li>                                        
                                     </ul>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                                 <div class="footer-links">
                                     <h3>Helpful Links</h3>
                                     <ul>
-                                        <li><a href="blogs.aspx">Blog</a></li>
+                                        <li><a href="blogs/blogs.aspx">Blog</a></li>
                                         <li><a href="#">Feedback</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
@@ -192,6 +192,7 @@
                                     <ul>
                                         <li><a href="#">FAQ</a></li>
                                         <li><a href="Testimonials.aspx">Testimonials</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>

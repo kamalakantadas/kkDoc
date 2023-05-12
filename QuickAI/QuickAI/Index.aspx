@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/Index.js"></script>
 </head>
 <body>
@@ -142,7 +143,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul style="display: inline-flex; float: right">
-                                            <li><a href="../Index.aspx">Home</a></li>
+                                            <li><a href="Index.aspx">Home</a></li>
                                             <li><a href="membership/membership.aspx">Membersip Plan</a></li>
                                         </ul>
                                     </div>
@@ -427,7 +428,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 150px; padding-right: 150px;padding-bottom:95px">
                         <div class="row pb-10">
                             <div class="col-lg-6">                                
-                                <div class="row" style="padding-left:50px">Recent Blogs</div>
+                                <div class="row" style="padding-left:50px">
+                                    <div>
+                                        <h3>Recent Blog</h3>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div style="float:right">
@@ -437,16 +442,22 @@
                         </div>
                         <%-- content --%>
                         <div class="row" style="margin-top: 30px; padding-top: 50px">
-                            <div class="col-md-8">Recent Blog</div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <asp:TextBox ID="searchBlog" runat="server" Text="Search..." class="form-control" Style="height: 40px; width: 300px;"></asp:TextBox>
+                            <div class="col-md-8">
+                                <div>
+                                    <p>Recent Blog</p>
                                 </div>
+                                
+
+                            </div>
+                            <div class="col-md-4">
+                               <%-- <div class="form-group">
+                                    <asp:TextBox ID="searchBlog" runat="server" Text="Search..." class="form-control" Style="height: 40px; width: 300px;"></asp:TextBox>
+                                </div>--%>
                             </div>
                         </div>
                         <div class="row" style="background: #f2f2f2;">
                             <div class="col-lg-8">
-                                <a href="#">
+                                <a href="blogs/1/blogsFirst.aspx">
                                     <div id="blogImage" style="width: 100%; height: 200px; background-color: white; display: flex">
                                         <img src="Images/picDemo.jfif" style="height: 100%" />
                                         <div id="blogImageData">
@@ -457,7 +468,11 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-lg-4" style="background:white">
+
+                            </div>
                         </div>
+                       
                     </div>
 
                     <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
@@ -486,7 +501,7 @@
                                     <ul>
                                         <li><a href="#">Feedback</a></li>
                                         <li><a href="#">Contact</a></li>
-                                        <li><a href="blogs.aspx">Blog</a></li> 
+                                        <li><a href="blogs/blogs.aspx">Blog</a></li>
                                     </ul>
                                 </div>
                             </div>

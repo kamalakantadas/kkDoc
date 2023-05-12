@@ -7,21 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuickAI.Blogs._1
+namespace QuickAI.blogs
 {
 
 
-    public partial class First_Blogs
+    public partial class blogs
     {
-
-        /// <summary>
-        /// firstBlogNested control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm firstBlogNested;
 
         /// <summary>
         /// userImage control.
@@ -51,49 +42,13 @@ namespace QuickAI.Blogs._1
         protected global::System.Web.UI.WebControls.Button dropdownMenu2;
 
         /// <summary>
-        /// dbDate control.
+        /// searchBlog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dbDate;
-
-        /// <summary>
-        /// dbFolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dbFolder;
-
-        /// <summary>
-        /// travelForFun control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink travelForFun;
-
-        /// <summary>
-        /// shareIt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink shareIt;
-
-        /// <summary>
-        /// sBoxInBlogs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sBoxInBlogs;
+        protected global::System.Web.UI.WebControls.TextBox searchBlog;
 
         /// <summary>
         /// t1 control.
@@ -123,13 +78,13 @@ namespace QuickAI.Blogs._1
         protected global::System.Web.UI.WebControls.Button t3;
 
         /// <summary>
-        /// travelFan control.
+        /// travelFun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button travelFan;
+        protected global::System.Web.UI.WebControls.Button travelFun;
 
         /// <summary>
         /// love control.
@@ -139,23 +94,5 @@ namespace QuickAI.Blogs._1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button love;
-
-        /// <summary>
-        /// userComment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userComment;
-
-        /// <summary>
-        /// cmntPost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cmntPost;
     }
 }

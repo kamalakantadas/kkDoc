@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/Dashboard.js"></script>
 </head>
 <body>
@@ -107,8 +108,8 @@
 
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="MyDocDrop">
-                                            <a class="dropdown-item" href="#">All Documents</a>
-                                            <a class="dropdown-item" href="#">All AI Images</a>
+                                           <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                                           <a class="dropdown-item" href="all-Images.aspx">All AI Images</a>
                                         </div>
                                     </div>
                                     <%-- <a href="#" id="myDocBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> 

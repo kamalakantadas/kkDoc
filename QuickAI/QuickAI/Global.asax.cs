@@ -13,7 +13,7 @@ namespace QuickAI
     {
         void Application_Start(object sender, EventArgs e)
         {
-            RouteTable.Routes.MapPageRoute("", "ai-templates.aspx", "~/ai-templates/ai-templates.aspx");
+            //RouteTable.Routes.MapPageRoute("", "ai-templates.aspx", "~/ai-templates/ai-templates.aspx");
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

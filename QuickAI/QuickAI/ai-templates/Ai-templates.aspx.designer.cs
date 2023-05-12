@@ -7,39 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuickAI
+namespace QuickAI.ai_templates
 {
 
 
-    public partial class dashboard
+    public partial class Ai_templates
     {
 
         /// <summary>
-        /// dashboardForm control.
+        /// aitemplatesForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm dashboardForm;
-
-        /// <summary>
-        /// verifyEmailBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox verifyEmailBox;
-
-        /// <summary>
-        /// verfiyEmailBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verfiyEmailBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlForm aitemplatesForm;
 
         /// <summary>
         /// userImage control.

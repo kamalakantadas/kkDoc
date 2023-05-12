@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/Transaction.js"></script>
 </head>
 <body>
@@ -132,14 +133,18 @@
                              <div class="footer-links">
                                 <h3>My Account</h3>
                                 <ul>
-                                    <li><a href="Login.aspx">Login</a></li><li><a href="Register.aspx">Register</a></li>                        </ul>
+                                    <li><a href="Login.aspx">Login</a></li>
+                                    <li><a href="Register.aspx">Register</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-md-2">
                             <div class="footer-links">
                                 <h3>Helpful Links</h3>
                                 <ul>
-                                    <li><a href="#">Blog</a></li>                            <li><a href="#">Feedback</a></li>
+                                    <li><a href="blogs/blogs.aspx">Blog</a></li>
+                                    <li><a href="#">Feedback</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
@@ -149,7 +154,9 @@
                                 <h3>Information</h3>
                                 <ul>
                                     <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Testimonials</a></li>                        </ul>
+                                    <li><a href="Testimonials.aspx">Testimonials</a>
+                                    </li>
+                                </ul>                                
                             </div>
                         </div>
                     </div>                    

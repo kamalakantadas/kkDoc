@@ -24,7 +24,7 @@ namespace QuickAI
             string email = (string)Session["Email"];
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
-            query = "select * from trans_table";
+            query = "select * from trans_table order by id desc";
             SqlConnection con = new SqlConnection(conn);
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);

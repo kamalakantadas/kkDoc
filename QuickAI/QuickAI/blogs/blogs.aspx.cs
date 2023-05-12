@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace QuickAI
+namespace QuickAI.blogs
 {
-    public partial class ai_templatesss : System.Web.UI.Page
+    public partial class blogs : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="../Scripts/membership.js"></script>
 </head>
 
@@ -183,21 +184,21 @@
                                    </div>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="membership.aspx">
                                        <i class="icon-feather-gift"></i>
                                        <div>Membership</div>
                                    </a>
 
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../Transaction.aspx">
                                        <i class="icon-feather-file-text"></i>
                                        <div>Transactions</div>
                                    </a>
 
                                </li>
                                <li>
-                                   <a href="accountSetting.aspx">
+                                   <a href="../accountSetting.aspx">
                                        <i class="icon-feather-log-out"></i>
                                        <div>Account Setting</div>
                                    </a>
@@ -226,7 +227,7 @@
                                    <div class="col-md-6">
                                        <div id="SubPage">
                                            <ul style="display: inline-flex;">
-                                               <li><a href="index.aspx">Home</a></li>
+                                               <li><a href="../Index.aspx">Home</a></li>                                               
                                                <li><a href="#">Current Plan</a></li>
                                            </ul>
                                        </div>
