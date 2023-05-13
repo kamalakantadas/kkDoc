@@ -27,22 +27,22 @@ namespace QuickAI
         }
         protected void registerData(object sender, EventArgs e)
         {
-            string userEmail =uName.Text.ToString();
-            string userpwd = uPwd.Text.ToString();
-            string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
-            string query = "select * from userReg where userEmail='" + userEmail + "' and userPwd='" + userpwd + "'";
-            SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand(query, con);
-            DataTable dt = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(dt);
-            if (dt.Rows.Count == 1) {
-                MessageBox.Show("Login Successfully");
-            }
-            else
-            {
-                MessageBox.Show("Invalid Credential");
-            }
+            //string userEmail =.Text.ToString();
+            //string userpwd = uPwd.Text.ToString();
+            //string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
+            //string query = "select * from userReg where userEmail='" + userEmail + "' and userPwd='" + userpwd + "'";
+            //SqlConnection con = new SqlConnection(connectionString);
+            //SqlCommand cmd = new SqlCommand(query, con);
+            //DataTable dt = new DataTable();
+            //SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            //adapter.Fill(dt);
+            //if (dt.Rows.Count == 1) {
+            //    MessageBox.Show("Login Successfully");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Invalid Credential");
+            //}
 
         }
     }

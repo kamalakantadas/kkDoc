@@ -1,9 +1,14 @@
 ﻿body {
 }
+.btnToggle {
+    border-style: none;
+    background-color: deepskyblue;
+    padding: 10px;
+}
+/**/
 /*ChangePlan Page*/
 .pricing-plan-features ul li {
-    color:black;
-
+    color: black;
 }
 .radio-button-list label {
     margin-right: 10px;
@@ -23,6 +28,16 @@
 .form-group i {
     font-size: 20px;
     color: #333;
+}
+
+.aitempl {
+    //box-shadow: 1px 1px 1px 3px grey;
+    background: white;
+  
+}
+.content{
+    color:black;
+
 }
 
 /*Carousel sliding*/

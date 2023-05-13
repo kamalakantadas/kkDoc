@@ -1,5 +1,4 @@
 ﻿$(document).ready(function () {
-    //templates click Button
     $("#at").on("click", function () {
         $("#abp").show();
         $("#amt").show();
@@ -20,7 +19,7 @@
     });
     $("#am").on("click", function () {
         $("#amt").show();
-        $("#abp").hide();
+        $("#abp").hide();       
         $("#gwg").hide();
         $("#ece").hide();
         $("#sma").hide();
@@ -40,7 +39,7 @@
         $("#ece").show();
         $("#gwg").hide();
         $("#amt").hide();
-        $("#abp").hide();
+        $("#abp").hide();        
         $("#sma").hide();
         $("#webe").hide();
         $("#oth").hide();
@@ -60,7 +59,7 @@
         $("#gwg").hide();
         $("#amt").hide();
         $("#abp").hide();
-        $("#sma").hide();
+        $("#sma").hide();        
         $("#oth").hide();
     });
     $("#ot").on("click", function () {
@@ -70,20 +69,6 @@
         $("#gwg").hide();
         $("#amt").hide();
         $("#abp").hide();
-        $("#sma").hide();
+        $("#sma").hide();        
     });
-    //Radio button work
-    $("#monthly").on("click", function () {
-        $("#chPara").val("5");
-        $("#chParaText").text("/monthly");
-    });
-    $("#yearly").on("click", function () {
-        $("#chPara").val("50");
-        $("#chParaText").text('/yearly');
-    });
-    $("#Lifetime").on("click", function () {
-        $("#chPara").val("550");
-        $("#chParaText").text('/LifeTime');
-    });
-	
 });
