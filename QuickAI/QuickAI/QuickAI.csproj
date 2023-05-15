@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="accountSetting.aspx" />
+    <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
     <Content Include="all-documents.aspx" />
@@ -116,6 +117,7 @@
     <Content Include="blogs\blogs.aspx" />
     <Content Include="Images\Image ICON.png" />
     <Content Include="Images\picDemo.jfif" />
+    <Content Include="Scripts\ai-images.js" />
     <Content Include="Scripts\changeplan.js" />
     <Content Include="membership\changeplan.aspx" />
     <Content Include="Scripts\AccountSetting.js" />
@@ -211,6 +213,13 @@
     </Compile>
     <Compile Include="accountSetting.aspx.designer.cs">
       <DependentUpon>accountSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-images.aspx.cs">
+      <DependentUpon>ai-images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-images.aspx.designer.cs">
+      <DependentUpon>ai-images.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\Ai-templates.aspx.cs">
       <DependentUpon>Ai-templates.aspx</DependentUpon>

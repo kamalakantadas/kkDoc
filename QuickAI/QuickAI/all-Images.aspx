@@ -124,13 +124,13 @@
                             <ul>
                                 <li>Organize and Manage</li>
                                 <li>
-                                    <a href="#">
+                                    <a href="ai-templates/Ai-templates.aspx">
                                         <i class="icon-feather-layers"></i>
                                         <div>Templates</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="all-Images.aspx">
                                         <i class="icon-feather-image"></i>
                                         <div>Ai Images</div>
                                     </a>

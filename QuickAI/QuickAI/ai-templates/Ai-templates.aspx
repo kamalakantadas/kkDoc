@@ -140,7 +140,7 @@
                            <ul>
                                <li>Organize and Manage</li>
                                <li>
-                                   <a href="../Testimonials.aspx">
+                                   <a href="Ai-templates.aspx">
                                        <i class="icon-feather-layers"></i>
                                        <div>Templates</div>                                      
                                    </a>

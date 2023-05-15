@@ -1,5 +1,16 @@
 ﻿body {
 }
+.input-group-append {
+    margin-left: -1px;
+}
+
+.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pt-50{
+    padding-top:50px;
+}
 /* V arun kumar css code start*/
 .btnToggle {
     border-style: none;
@@ -239,12 +250,13 @@ li:hover {
 a {
     color:black;
 }
-
 .scrollable {
     overflow-y: auto;
-    height:500px;
+    height: 500px;
 }
-/*#dHeader {
+/*
+
+#dHeader {
     display: grid;
     grid-template-columns: 2fr 10fr 0.4fr 1fr;
     position: absolute;

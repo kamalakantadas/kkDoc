@@ -39,6 +39,11 @@ namespace QuickAI
                         MessageBox.Show("Email Verified Successfully");
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "emailBar", "hideEmailDiv();", true);
                     }
+                    else
+                    {
+                        MessageBox.Show("Email is Not Registered");
+                    }
+                   
                 }
             }
             catch(SqlException ex)
