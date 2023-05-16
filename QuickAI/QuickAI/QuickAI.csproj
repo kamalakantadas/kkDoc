@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="accountSetting.aspx" />
+    <Content Include="ai-chat.aspx" />
     <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
@@ -117,6 +118,8 @@
     <Content Include="blogs\blogs.aspx" />
     <Content Include="Images\Image ICON.png" />
     <Content Include="Images\picDemo.jfif" />
+    <Content Include="Images\userIcon1.png" />
+    <Content Include="Scripts\ai-chat.js" />
     <Content Include="Scripts\ai-images.js" />
     <Content Include="Scripts\changeplan.js" />
     <Content Include="membership\changeplan.aspx" />
@@ -213,6 +216,13 @@
     </Compile>
     <Compile Include="accountSetting.aspx.designer.cs">
       <DependentUpon>accountSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-chat.aspx.cs">
+      <DependentUpon>ai-chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-chat.aspx.designer.cs">
+      <DependentUpon>ai-chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-images.aspx.cs">
       <DependentUpon>ai-images.aspx</DependentUpon>

@@ -11,9 +11,14 @@
 .pt-50{
     padding-top:50px;
 }
+.btn-group btnToggle {
+    border:none;
+    outline:none;
+}
 /* V arun kumar css code start*/
 .btnToggle {
-    border-style: none;
+    border: none;
+    outline: none;
     background-color: deepskyblue;
     padding: 10px;
 }

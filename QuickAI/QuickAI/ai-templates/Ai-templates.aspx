@@ -6,7 +6,8 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ai-templates</title>
-    <link href="../IndexPage.css" rel="stylesheet" />    
+    <link href="../IndexPage.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -242,7 +243,7 @@
                                 <div class="col-md-12">
                                     <div style="width:100%;">
                                         <div style="border-radius:100px;background-color:deepskyblue;padding:15px;">
-                                            <div class="btn-group rounded-pill " role="group" aria-label="Rounded pill example"">
+                                            <div class="btn-group rounded-pill" role="group" aria-label="Rounded pill example"">
                                                 <button type="button" class="btnToggle" id="at">All Templates</button>
                                                 <button type="button" class="btnToggle" id="ab">Article And Blogs</button>
                                                 <button type="button" class="btnToggle" id="am">Ads And Marketing Tools</button>
