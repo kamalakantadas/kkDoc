@@ -13,5 +13,10 @@ namespace QuickAI
         {
 
         }
+        protected void generateText(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "generateChatText", "downloadText();", true);
+        }
+        
     }
 }

@@ -11,17 +11,8 @@ namespace QuickAI
 {
 
 
-    public partial class ai_chat
+    public partial class speechToText
     {
-
-        /// <summary>
-        /// aiChat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm aiChat;
 
         /// <summary>
         /// userImage control.
@@ -51,21 +42,30 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Button dropdownMenu2;
 
         /// <summary>
-        /// generateChatText control.
+        /// title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button generateChatText;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText title;
 
         /// <summary>
-        /// deleteChat control.
+        /// audioFile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deleteChat;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile audioFile;
+
+        /// <summary>
+        /// aDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox aDesc;
     }
 }

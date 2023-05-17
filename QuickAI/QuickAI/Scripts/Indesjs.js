@@ -152,7 +152,6 @@
         $("#registrationPage").hide();
         $("#uName").val("");
         $("#uPwd").val("");
-
     });    
     $("#closeButton").on("click", function () {
         $("#mainPage").show();

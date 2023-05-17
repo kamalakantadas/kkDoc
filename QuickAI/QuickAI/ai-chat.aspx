@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="Scripts/ai-chat.js"></script>
 </head>
 <body>
@@ -42,13 +44,13 @@
                         <div class="dropdown-menu" aria-labelledby="userDropDownList">
 
                             <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                            <a class="dropdown-item" href="#">Templates</a>
-                            <a class="dropdown-item" href="#">AI Images</a>
-                            <a class="dropdown-item" href="#">AI Chat</a>
+                            <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                            <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                            <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
                             <a class="dropdown-item" href="#">Speech to Text</a>
                             <a class="dropdown-item" href="#">AI Code</a>
-                            <a class="dropdown-item" href="#">All Documents</a>
-                            <a class="dropdown-item" href="#">Membership</a>
+                            <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                            <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
                             <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
@@ -102,7 +104,6 @@
                                                 <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
                                             </svg>
                                             My Documents
-
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="MyDocDrop">
                                             <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
@@ -133,7 +134,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="ai-chat.aspx">
                                         <i class="icon-feather-message-circle"></i>
                                         <div>Ai Chat</div>
                                     </a>
@@ -204,7 +205,8 @@
                                         <div class="form-group" style="display:flex">
                                             <h3>AI Chat</h3>
                                             <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" disabled /> 
-                                        </div>                                        
+                                        </div>
+                                        
                                     </div>
                                    
                                     <%-- Right Side of Right side --%>
@@ -236,18 +238,12 @@
                                                 </div>
                                                 <div class="col-lg-2 col-md-4 col-sm-4 pt-1">
                                                     <div id="right">
-                                                        <button class="btn btn-primary align-items-center" style="background-color: #007bff;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                                            </svg>
-                                                        </button>
-                                                        <button class="btn btn-danger align-items-center" style="background-color: #dc3545;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
-                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
-                                                            </svg>
-                                                        </button>
+                                                        <asp:Button onclick="generateText" id="generateChatText" runat="server" CssClass="button-with-span btn align-items-center" Style="position: absolute"></asp:Button>
+                                                        <i class="fa fa-download" aria-hidden="true" style="position: relative; width: 15px; padding-left: 5px; padding-top: 5px; /* color: red; */"></i>
+                                                        <%--<a class="btn btn-primary" onclick="generateText" id="generateChatText" runat="server" style="background-color: #ac2bac;" role="button"><i class="fa fa-download" aria-hidden="true"></i></a>--%>
+
+                                                        <asp:Button runat="server" CssClass="button-with-span" ID="deleteChat" class="btn align-items-center" Style="position: absolute; width: 30px; margin-left: 20px;"></asp:Button>
+                                                        <i class="fa fa-trash" aria-hidden="true" style="position: relative; /* width: 99px; */padding-left: 7px; padding-top: 5px; margin-left: 21px; color: red;"></i>
                                                     </div>
                                                 </div>
                                             </div>

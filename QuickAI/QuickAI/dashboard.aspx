@@ -68,7 +68,7 @@
                                    </a>
                                    <div class="dropdown-menu" aria-labelledby="userDropDownList">
                                        <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                                       <a class="dropdown-item" href="#">Templates</a>
+                                       <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
                                        <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
                                        <a class="dropdown-item" href="#">AI Chat</a>
                                        <a class="dropdown-item" href="#">Speech to Text</a>
