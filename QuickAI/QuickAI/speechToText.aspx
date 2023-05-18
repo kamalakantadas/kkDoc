@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae3393d1fa.js" crossorigin="anonymous"></script>
+    <script src="Scripts/speechToText.js"></script>
 </head>
 <body>
     <form id="speechToText" runat="server">
@@ -251,13 +253,13 @@
                                                Audio transcription may takes time due to the file size.
                                            </div>
                                        </div>
-                                    </div>
+                                   </div>
                                    <%-- speech To text Form Left Side end --%>
                                    <%-- Generated Result Right Side start--%>
                                    <div class="col-lg-8">
-                                       <div class="row pl-3 pr-3" style="background-color: white; height: 400px; margin-right: 30px;">
+                                       <div class="row pl-3 pr-3" style="background-color: white; margin-right: 30px;">
                                            <%-- Header of generated Result start --%>
-                                           <div class="row" style="width: 100%; padding-top: 25px; padding-bottom: 25px; box-shadow: 1px 1px 1px 1px grey; height: 80px;margin:0px;">
+                                           <div class="row" style="width: 100%; padding-top: 25px; padding-bottom: 25px; border:1px solid grey; height: 80px;margin:0px;">
                                                <div class="col-lg-1">
                                                    <i class="fa fa-align-left" aria-hidden="true"></i>
                                                </div>
@@ -276,29 +278,110 @@
                                            </div>
                                            <%-- Header of generated Result end--%>
                                            <%-- paragraph of generated Box Start --%>
-                                           <div class="row" style="margin-top:40px;box-shadow:1px 1px 1px 1px grey;height:400px">
-                                               <%-- Icon first Line starts --%>
+                                           <div id="paragraphBody" style="margin-top:20px;min-height:400px;width:612px;padding-left:25px;border:1px solid grey;padding-top:10px">
+                                               <div id="pIcon" style="box-shadow:0px 2px 4px 2px grey;margin-left:-12px;margin-right:10px">
+                                                    <%-- Icon first Line starts --%>
+                                                   <div class="row" style="margin-left:10px;padding-top:10px">
+                                                       <%-- paragraph --%>
+                                                       <div class="dropdown">
+                                                           <button class="btn btn-secondary dropdown-toggle raise" id="btntog" onchange="execCommandWithArg('formatBlock', this.value);" type="button" data-toggle="dropdown" style="padding: 2px;">
+                                                               heading 1
+                                                           </button>
+                                                           <div class="dropdown-menu raise" style="width: 5%; overflow: hidden">
+                                                               <a class="dropdown-item heading" href="#">paragraph</a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h1>heading1</h1>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h2>heading2</h2>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h3>heading3</h3>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h4>heading4</h4>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h5>heading5</h5>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">
+                                                                   <h6>heading6</h6>
+                                                               </a>
+                                                               <a class="dropdown-item heading" href="#">performatted</a>
+                                                           </div>
+                                                       </div>
+
+                                                       <%-- Bold Button --%>
+                                                       <button id="bold" onclick="execCmd('bold');" class="raise"><i class="fa fa-bold" aria-hidden="true"></i></button>
+                                                       <button id="italic" onclick="execCmd('italic');" class="raise"><i class="fa fa-italic" aria-hidden="true"></i></button>
+                                                       <button id="underLine" onclick="execCmd('underline');" class="raise"><i class="fa fa-underline" aria-hidden="true"></i></button>
+                                                       <button id="CrossLine" onclick="execCmd('strikeThrough');" class="raise">
+                                                           <span>
+                                                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-type-strikethrough" viewBox="0 0 16 16">
+                                                                   <path d="M6.333 5.686c0 .31.083.581.27.814H5.166a2.776 2.776 0 0 1-.099-.76c0-1.627 1.436-2.768 3.48-2.768 1.969 0 3.39 1.175 3.445 2.85h-1.23c-.11-1.08-.964-1.743-2.25-1.743-1.23 0-2.18.602-2.18 1.607zm2.194 7.478c-2.153 0-3.589-1.107-3.705-2.81h1.23c.144 1.06 1.129 1.703 2.544 1.703 1.34 0 2.31-.705 2.31-1.675 0-.827-.547-1.374-1.914-1.675L8.046 8.5H1v-1h14v1h-3.504c.468.437.675.994.675 1.697 0 1.826-1.436 2.967-3.644 2.967z" />
+                                                               </svg></span></button>
+                                                       <button id="leftAlign" onclick="execCmd('justifyLeft');" class="raise"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                                                       <button id="centerAlign" onclick="execCmd('justifyCenter');" class="raise"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+                                                       <button id="rightAlign" onclick="execCmd('justifyRight');" class="raise"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+                                                       <button id="link" onclick="execCmd('createLink', prompt('Enter a URL', 'http://'));" class="raise"><i class="fa fa-link" aria-hidden="true"></i></button>
+                                                       <button id="rightQuote" class="raise"><i class="fa fa-quote-right" aria-hidden="true"></i></button>
+                                                   </div>
+                                                   <%-- Icon first Line ends --%><hr />
+                                                   <%-- Icon second Line --%>
+                                                   <div class="row" style="margin-left:10px;padding-bottom:10px">
+                                                       <button id="undo" onclick="execCmd('undo');" class="raise"><i class="fa fa-undo" aria-hidden="true"></i></button>
+                                                       <button id="redo" onclick="execCmd('redo');" class="raise">
+                                                           <%--<i class="fas fa-redo"></i>--%>
+                                                           <span>
+                                                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                                                   <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                                                   <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                                                               </svg>
+                                                           </span>
+                                                       </button>
+                                                       <button onclick="execCmd('removeFormat');" class="raise"><i class="fas fa-remove-format"></i></button>
+                                                       <%--  --%>
+                                                       <div class="dropdown">
+                                                           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                               <i class="fa fa-list-ol" aria-hidden="true"></i>Line Style
+                                                           </button>
+                                                           <div class="dropdown-menu">
+                                                               <a class="dropdown-item" href="#">
+                                                                   <i class="fas fa-grip-lines"></i>Solid
+                                                               </a>
+                                                               <a class="dropdown-item" href="#">
+                                                                   <i class="fas fa-grip-lines-vertical"></i>Dotted Vertical
+                                                               </a>
+                                                               <a class="dropdown-item" href="#">
+                                                                   <i class="fas fa-grip-lines-horizontal"></i>Dotted Horizontal
+                                                               </a>
+                                                               <a class="dropdown-item" href="#">
+                                                                   <i class="fas fa-grip-lines-diagonal"></i>Dotted Diagonal
+                                                               </a>
+                                                           </div>
+                                                       </div>
+
+                                                       <%--  --%>
+                                                       <button class="raise" onclick="execCmd('insertOrderedList');"><i class="fas fa-list-ol"></i></button>
+                                                       <%-- Line alignment --%>
+                                                       <button class="raise" onclick="execCmd('insertUnorderedList');"><i class="fas fa-list-ul"></i></button>
+
+                                                       <button id="indentRight" onclick="execCmd('indent');" class="raise"><i class="fa fa-outdent" aria-hidden="true"></i></button>
+                                                       <button id="indentLeft" onclick="execCmd('outdent');" class="raise"><i class="fa fa-indent" aria-hidden="true"></i></button>
+                                                   </div>
+                                               </div>                                             
+                                              
+                                               <div class="row mt-2">
+                                                   <textarea id="richTextField" rows="4" cols="50" style="width:592px;height:258px"></textarea>
+                                                  <%-- <iframe name="richTextField" style="width:592px;height:258px"/>--%>
+                                               </div>
+                                               <hr />
                                                <div class="row">
 
-                                                   <%-- Paragraph --%>                                                   
-                                                   <div class="dropdown">
-                                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                                          Heading 1
-                                                       </button>
-                                                       <div class="dropdown-menu">
-                                                           <a class="dropdown-item" href="#">paragraph</a>    
-                                                           <a class="dropdown-item" href="#"><h1>Item 1</h1></a>
-                                                           <a class="dropdown-item" href="#"><h2>Item 1</h2></a>
-                                                           <a class="dropdown-item" href="#"><h3>Item 1</h3></a>
-                                                           <a class="dropdown-item" href="#"><h4>Item 1</h4></a>
-                                                           <a class="dropdown-item" href="#"><h5>Item 1</h5></a>
-                                                           <a class="dropdown-item" href="#"><h6>Item 1</h6></a>
-                                                           <a class="dropdown-item" href="#">performatted</a>                                                                                                                  
-                                                       </div>
-                                                   </div>
                                                </div>
-                                               <%-- Icon first Line ends --%>
                                            </div>
+                                           
+                                          
                                            <%-- paragraph of generated Box End --%>
                                        </div>
                                    </div>

@@ -1,5 +1,14 @@
 ﻿body {
 }
+/*Paragraph body*/
+/*.raise:hover, .raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}*/
+/*Paragraph Text reduce*/
+dropdown-menu dropdown-item h1, h2, h3, h4, h5, h6{
+    margin-left:-5px;
+}
 .input-group-append {
     margin-left: -1px;
 }
