@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="speechToText.aspx.cs" Inherits="QuickAI.speechToText" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="speechToText.aspx.cs" Inherits="QuickAI.speechToText" %>
 
 <!DOCTYPE html>
 
@@ -20,7 +20,7 @@
 <body>
     <form id="speechToText" runat="server">
        <div id="speechToTextForm">
-           <div id="speechHeader">
+           <div id="spee    chHeader">
                <%-- Testimonial Header --%>
                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 80px; z-index: 999; background-color: white;">
                    <div class="col-lg-3 col-md-4 col-sm-4" style="width: 24.99%">
@@ -284,7 +284,7 @@
                                                    <div class="row" style="margin-left:10px;padding-top:10px">
                                                        <%-- paragraph --%>
                                                        <div class="dropdown">
-                                                           <button class="btn btn-secondary dropdown-toggle raise" id="btntog" onchange="execCommandWithArg('formatBlock', this.value);" type="button" data-toggle="dropdown" style="padding: 2px;">
+                                                           <button class="btn btn-secondary dropdown-toggle raise" id="btntog" <%-- onchange="execCommandWithArg('formatBlock', this.value);"--%> type="button" data-toggle="dropdown" style="padding: 2px;">
                                                                heading 1
                                                            </button>
                                                            <div class="dropdown-menu raise" style="width: 5%; overflow: hidden">
@@ -324,42 +324,47 @@
                                                        <button id="centerAlign" onclick="execCmd('justifyCenter');" class="raise"><i class="fa fa-align-center" aria-hidden="true"></i></button>
                                                        <button id="rightAlign" onclick="execCmd('justifyRight');" class="raise"><i class="fa fa-align-right" aria-hidden="true"></i></button>
                                                        <button id="link" onclick="execCmd('createLink', prompt('Enter a URL', 'http://'));" class="raise"><i class="fa fa-link" aria-hidden="true"></i></button>
-                                                       <button id="rightQuote" class="raise"><i class="fa fa-quote-right" aria-hidden="true"></i></button>
+                                                       <button id="rightQuote" onclick="javascript:void(0)" class="raise"><i class="fa fa-quote-right" aria-hidden="true"></i></button>
                                                    </div>
                                                    <%-- Icon first Line ends --%><hr />
                                                    <%-- Icon second Line --%>
                                                    <div class="row" style="margin-left:10px;padding-bottom:10px">
-                                                       <button id="undo" onclick="execCmd('undo');" class="raise"><i class="fa fa-undo" aria-hidden="true"></i></button>
-                                                       <button id="redo" onclick="execCmd('redo');" class="raise">
+                                                       <button id="undo" onclick="execCmd('undo');" class="raise"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+                                                       <button id="redo" onclick="execCmd('redo');" class="raise"><i class="fa fa-undo" aria-hidden="true"></i>
                                                            <%--<i class="fas fa-redo"></i>--%>
-                                                           <span>
+                                                           <%--<span>
                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
                                                                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
                                                                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
                                                                </svg>
-                                                           </span>
+                                                           </span>--%>
                                                        </button>
                                                        <button onclick="execCmd('removeFormat');" class="raise"><i class="fas fa-remove-format"></i></button>
-                                                       <%--  --%>
+                                                       <%--  Table Icon--%>
                                                        <div class="dropdown">
-                                                           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                                               <i class="fa fa-list-ol" aria-hidden="true"></i>Line Style
+                                                           <button class="btn btn-primary dropdown-toggle" type="button" id="tableDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                               <i class="fas fa-table"></i>Table
                                                            </button>
-                                                           <div class="dropdown-menu">
-                                                               <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-grip-lines"></i>Solid
+                                                           <div class="dropdown-menu" aria-labelledby="tableDropdown">
+                                                               <a class="dropdown-item" href="#" id="tableCellDropdown">
+                                                                   <i class="fas fa-th"></i>Table Cell
                                                                </a>
                                                                <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-grip-lines-vertical"></i>Dotted Vertical
+                                                                   <i class="fas fa-bars"></i>Table Row
                                                                </a>
                                                                <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-grip-lines-horizontal"></i>Dotted Horizontal
+                                                                   <i class="fas fa-columns"></i>Table Column
                                                                </a>
                                                                <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-grip-lines-diagonal"></i>Dotted Diagonal
+                                                                   <i class="fas fa-cogs"></i>Table Properties
+                                                               </a>
+                                                               <a class="dropdown-item" href="#">
+                                                                   <i class="fas fa-trash-alt"></i>Delete Table
                                                                </a>
                                                            </div>
                                                        </div>
+
+
 
                                                        <%--  --%>
                                                        <button class="raise" onclick="execCmd('insertOrderedList');"><i class="fas fa-list-ol"></i></button>
@@ -372,57 +377,60 @@
                                                </div>                                             
                                               
                                                <div class="row mt-2">
-                                                   <textarea id="richTextField" rows="4" cols="50" style="width:592px;height:258px"></textarea>
-                                                  <%-- <iframe name="richTextField" style="width:592px;height:258px"/>--%>
+                                                   <%--<textarea id="richTextField" rows="4" cols="50" style="width:592px;height:258px"></textarea>--%>
+                                                  <%--<iframe name="richTextField" style="width:96%;height:400px" title="abc"/>--%>
+                                                   <iframe name="richTextField" style="width:96%;height:400px" title="abc"></iframe>
                                                </div>
                                                <hr />
                                                <div class="row">
 
                                                </div>
-                                           </div>
-                                           
+                                           </div>                                           
                                           
-                                           <%-- paragraph of generated Box End --%>
-                                       </div>
+                                               <%-- paragraph of generated Box End --%>
+                                        </div>
+                                       
                                    </div>
                                    <%-- Generated Result Right Side end--%>
                                </div>
                              
                                <%-- Footer Dashboard --%>
                                <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                               <div class="row-fluid" style="border-top: 1px solid #ccc;">
-                                   <footerclass="footer" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
-                                       <div class="row navbar py-3 full-width">
-                                   <div class="col-md-6">
-                                       <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
-                                   </div>
-                                   <div class="col-md-6">
-                                       <!-- Facebook -->
-                                       <a class="btn" style="" href="#!" role="button"></a>
-                                       <!-- Twitter -->
-                                       <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                               <div class="row" style="border-top: 1px solid #ccc;z-index:999">
+                                       <footerclass="footer clearfix" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
+                                           <div class="row navbar py-3 full-width">
+                                               <div class="col-md-6">
+                                                   <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                                               </div>
+                                               <div class="col-md-6">
+                                                   <!-- Facebook -->
+                                                   <a class="btn" style="" href="#!" role="button"></a>
+                                                   <!-- Twitter -->
+                                                   <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                       <!-- Google -->
-                                       <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                                                   <!-- Google -->
+                                                   <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                       <!-- Instagram -->
-                                       <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                                   <!-- Instagram -->
+                                                   <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                       <!-- Linkedin -->
-                                       <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                                   <!-- Linkedin -->
+                                                   <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                       <!-- Pinterest -->
-                                       <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+                                                   <!-- Pinterest -->
+                                                   <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                       <!-- Github -->
-                                       <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                                                   <!-- Github -->
+                                                   <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                   </div>
+                                               </div>
+                                           </div>
+                                       </footerclass>
                                </div>
-                                   </footerclass>
-                               </div>
+                             
                            </div>
+                          
                        </div>                                      
                    </div>
                </div>

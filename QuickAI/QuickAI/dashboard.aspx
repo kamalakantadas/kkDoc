@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/Dashboard.js"></script>
 </head>
 <body>
@@ -61,7 +61,7 @@
                            </div>
                            <div class="col-lg-1 col-md-3 col-sm-4" style="width: 8.33%;">
                                <%-- User Drop Down Button --%>
-                               <div class="dropdown show">
+                               <div class="dropdown show">                                  
                                    <a class="btn btn-secondary dropdown-toggle" style="margin-top:10px" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                        <asp:Image runat="server" ID="userImage" src="Images/userIcon.jpg" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
                                        <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>

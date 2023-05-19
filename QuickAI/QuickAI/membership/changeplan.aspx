@@ -469,7 +469,7 @@
                                 <div class="col-lg-4">
                                     <p class="font-weight-normal">Extended Plan</p>
                                     <div id="ltp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
-                                        <asp:TextBox runat="server" class="font-weight-normal" style="text-align: center;" id="chPara"></asp:TextBox>
+                                        <asp:TextBox runat="server" class="font-weight-normal" style="text-align: center;border: 0px;outline: 0px;background: lightgrey;" id="chPara"></asp:TextBox>
                                         <p id="chParaText"></p>
                                     </div>
                                     <%--  --%>

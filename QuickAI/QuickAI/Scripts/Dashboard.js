@@ -1,6 +1,6 @@
 ﻿
 $(document).ready(function () {
-
+   
     const ctx = document.getElementById('myChart');
     const months = [
         "Jan", "Feb", "Mar", "Apr",

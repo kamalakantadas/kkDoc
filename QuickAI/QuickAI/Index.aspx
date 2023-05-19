@@ -51,7 +51,16 @@
                         <div class="col-lg-7" style="width: 58.31%">
                         </div>
                         <div class="col-lg-1" style="width: 8.33%">
-                            <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" ID="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
+                            <%-- when session is active it will show --%>
+                            <div id="activeSessionFunction" runat="server">
+                                <a class="btn btn-secondary dropdown-toggle" style="margin-top:10px" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <asp:Image runat="server" ID="userImage" src="Images/userIcon.jpg" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
+                                    <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
+                                </a>
+                            </div>
+                            <div id="joinButtonFunct" runat="server">
+                                <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" ID="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
+                            </div>
                         </div>
                         <div class="col-lg-1" style="width: 8.33%">
                             <div class="dropdown">
@@ -1308,7 +1317,7 @@
                                     <div class="col-lg-4">
                                         <p class="font-weight-normal">Extended Plan</p>
                                         <div id="ltp" style="height: 70px; width: 100%; background-color: lightgrey; padding-top: 20px; padding-bottom: 20px">
-                                            <asp:TextBox runat="server" class="font-weight-normal" Style="text-align: center;" ID="chPara"></asp:TextBox>
+                                            <asp:TextBox runat="server" class="font-weight-normal" style="text-align: center;border: 0px;outline: 0px;background: lightgrey;" ID="chPara"></asp:TextBox>
                                             <p id="chParaText"></p>
                                         </div>
                                         <%--  --%>

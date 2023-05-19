@@ -1,5 +1,31 @@
 ﻿body {
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    position: relative;
+    z-index: 1;
+}
+.textbox-container {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+#hover-textbox {
+    width: 200px;
+    height: 100px;
+}
+
+.raise{
+    border:none;
+    margin:5px;
+    outline:none;
+}
 /*Paragraph body*/
 /*.raise:hover, .raise:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -70,7 +96,7 @@ dropdown-menu dropdown-item h1, h2, h3, h4, h5, h6{
 }
 
 .aitempl {
-    //box-shadow: 1px 1px 1px 3px grey;
+    /*//box-shadow: 1px 1px 1px 3px grey;*/
     background: white;
   
 }

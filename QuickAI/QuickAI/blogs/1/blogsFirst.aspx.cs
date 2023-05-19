@@ -23,31 +23,31 @@ namespace QuickAI.blogs._1
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
             userName.InnerText = email;
-            //comment Box load
-            query = "select * from comment order by id desc";
-            SqlConnection conn = new SqlConnection(con);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataAdapter adpt = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            adpt.Fill(dt);
-            // Retrieve data from the database and store it in a List<string>
+            ////comment Box load
+            //query = "select * from comment order by id desc";
+            //SqlConnection conn = new SqlConnection(con);
+            //SqlCommand cmd = new SqlCommand(query, conn);
+            //SqlDataAdapter adpt = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //adpt.Fill(dt);
+            //// Retrieve data from the database and store it in a List<string>
            
-            Panel myPanel = new Panel();
-            LiteralControl ulLiteral = new LiteralControl("<ul>");
-            myPanel.Controls.Add(ulLiteral);
-            foreach (DataRow row in dt.Rows)
-            {
-                // Create a LiteralControl to hold the HTML for the <li> element
-                LiteralControl liLiteral = new LiteralControl(" <li style='background-color:#cbb4b4;box-shadow: 2px 2px 5px grey;'> " +
-                    "<div class='row'>" + row["userEmail"] + "</div>" +
-                    "<div class='row'>" + row["dateOfCom"] + "</div>" +
-                    "<div class='row'>" + row["cmntText"] + "</div>" +                    
-                    "</li>");
+            //Panel myPanel = new Panel();
+            //LiteralControl ulLiteral = new LiteralControl("<ul>");
+            //myPanel.Controls.Add(ulLiteral);
+            //foreach (DataRow row in dt.Rows)
+            //{
+            //    // Create a LiteralControl to hold the HTML for the <li> element
+            //    LiteralControl liLiteral = new LiteralControl(" <li style='background-color:#cbb4b4;box-shadow: 2px 2px 5px grey;'> " +
+            //        "<div class='row'>" + row["userEmail"] + "</div>" +
+            //        "<div class='row'>" + row["dateOfCom"] + "</div>" +
+            //        "<div class='row'>" + row["cmntText"] + "</div>" +                    
+            //        "</li>");
 
-                // Add the LiteralControl for the <li> element to the LiteralControl for the <ul> element
-                myPanel.Controls.Add(liLiteral);
-            }
-            myContainer.Controls.Add(myPanel);
+            //    // Add the LiteralControl for the <li> element to the LiteralControl for the <ul> element
+            //    myPanel.Controls.Add(liLiteral);
+            //}
+            //myContainer.Controls.Add(myPanel);
             
         }
         
@@ -66,6 +66,35 @@ namespace QuickAI.blogs._1
             //Page_Load(sender, e);
             //userComment
             //    userName
+            //string email = (string)Session["Email"];
+            TextBox txt = (TextBox)Page.FindControl("viewImage");
+            txt.Text = email;
+            userName.InnerText = email;
+            //comment Box load
+            query = "select * from comment order by id desc";
+            //SqlConnection conn = new SqlConnection(con);
+            SqlCommand cmdd = new SqlCommand(query, conn);
+            SqlDataAdapter adptt = new SqlDataAdapter(cmdd);
+            DataTable dtt = new DataTable();
+            adptt.Fill(dtt);
+            // Retrieve data from the database and store it in a List<string>
+
+            Panel myPanel = new Panel();
+            LiteralControl ulLiteral = new LiteralControl("<ul>");
+            myPanel.Controls.Add(ulLiteral);
+            foreach (DataRow row in dtt.Rows)
+            {
+                // Create a LiteralControl to hold the HTML for the <li> element
+                LiteralControl liLiteral = new LiteralControl(" <li style='background-color:#cbb4b4;box-shadow: 2px 2px 5px grey;'> " +
+                    "<div class='row'>" + row["userEmail"] + "</div>" +
+                    "<div class='row'>" + row["dateOfCom"] + "</div>" +
+                    "<div class='row'>" + row["cmntText"] + "</div>" +
+                    "</li>");
+
+                // Add the LiteralControl for the <li> element to the LiteralControl for the <ul> element
+                myPanel.Controls.Add(liLiteral);
+            }
+            myContainer.Controls.Add(myPanel);
         }
         protected void travelFand(object sender, EventArgs e) { }
         protected void loved(object sender, EventArgs e) { }

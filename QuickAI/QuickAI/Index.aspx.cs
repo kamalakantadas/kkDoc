@@ -13,7 +13,18 @@ namespace QuickAI
         changeplan cp = new changeplan();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string email = (string)Session["email"];
+            TextBox txt = (TextBox)Page.FindControl("viewImage");
+            txt.Text = email;
+            if (email == null) {
+                activeSessionFunction.Visible = false;
+                joinButtonFunct.Visible = true;
+            }
+            else
+            {
+                activeSessionFunction.Visible = true;
+                joinButtonFunct.Visible = false;
+            }
         }
         protected void freeRegClick(object sender, EventArgs e) {
             Response.Redirect("Register.aspx", true);
