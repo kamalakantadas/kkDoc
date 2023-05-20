@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="accountSetting.aspx" />
+    <Content Include="affiliate-program.aspx" />
     <Content Include="ai-chat.aspx" />
     <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
@@ -176,6 +177,7 @@
     <Content Include="Scripts\templates.js" />
     <Content Include="Scripts\testimonialReviews.js" />
     <Content Include="Scripts\Testing.js" />
+    <Content Include="Scripts\tinymce.min.js" />
     <Content Include="Scripts\Transaction.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
@@ -218,6 +220,13 @@
     </Compile>
     <Compile Include="accountSetting.aspx.designer.cs">
       <DependentUpon>accountSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="affiliate-program.aspx.cs">
+      <DependentUpon>affiliate-program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="affiliate-program.aspx.designer.cs">
+      <DependentUpon>affiliate-program.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-chat.aspx.cs">
       <DependentUpon>ai-chat.aspx</DependentUpon>

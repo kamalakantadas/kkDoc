@@ -45,7 +45,11 @@ namespace QuickAI
             //ScriptManager.RegisterStartupScript(this, this.GetType(), "up", "hideChangeFunctionality();", true);
            
         }
-        
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Index.aspx");
+        }
     }
 }
 

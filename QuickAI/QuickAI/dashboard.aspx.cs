@@ -51,5 +51,10 @@ namespace QuickAI
                 MessageBox.Show("Sql Erro" + ex);
             }
         }
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Login.aspx");
+        }
     }
 }

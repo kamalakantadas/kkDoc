@@ -4,17 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speech To Text</title>      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <title>Speech To Text</title>
     <link href="../IndexPage.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/ae3393d1fa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ae3393d1fa.js" crossorigin="anonymous"></script>   
     <script src="Scripts/speechToText.js"></script>
 </head>
 <body>
@@ -39,20 +40,20 @@
                        <%-- User Drop Down Button --%>
                        <div class="dropdown show">
                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <asp:Image runat="server" ID="userImage" src="../Images/userIcon.jpg" Style="height: 30px" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
+                               <asp:Image runat="server" ID="userImage" src="Images/Image%20ICON.png" Style="height: 30px" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
                                <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                            </a>
-                           <div class="dropdown-menu" aria-labelledby="userDropDownList">
+                           <div class="dropdown-menu" aria-labelledby="userDropDownList" runat="server">
                                <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                               <a class="dropdown-item" href="#">Templates</a>
-                               <a class="dropdown-item" href="#">AI Images</a>
-                               <a class="dropdown-item" href="#">AI Chat</a>
-                               <a class="dropdown-item" href="#">Speech to Text</a>
+                               <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                               <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                               <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                               <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
                                <a class="dropdown-item" href="#">AI Code</a>
-                               <a class="dropdown-item" href="#">All Documents</a>
-                               <a class="dropdown-item" href="#">Membership</a>
+                               <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                               <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
                                <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                               <a class="dropdown-item" href="#">Logout</a>
+                               <asp:LinkButton class="dropdown-item" onclick="logout" runat="server">Logout</asp:LinkButton>
                            </div>
                        </div>
                    </div>
@@ -123,7 +124,7 @@
                                <li>
                                    <a href="ai-templates/Ai-templates.aspx">
                                        <i class="icon-feather-layers"></i>
-                                       <div>Templates</div>
+                                       <div>Templates</div>                                       
                                    </a>
                                </li>
                                <li>
@@ -139,13 +140,13 @@
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="speechToText.aspx">
                                        <i class="icon-feather-headphones"></i>
-                                       <div>Speech to Text</div>
+                                       <div>Speech to Text</div>                                      
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="ai-code.aspx">
                                        <i class="icon-feather-code"></i>
                                        <div>Ai Code</div>
                                    </a>
@@ -158,7 +159,6 @@
                                    <div class="dropdown show" style="">
                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" style="height: 40px;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Affiliate Program
                                        </a>
-
                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                            <a class="dropdown-item" href="#">Affiliate Program</a>
                                            <a class="dropdown-item" href="#">Withdrawals</a>
@@ -176,26 +176,23 @@
                                        <i class="icon-feather-file-text"></i>
                                        <div>Transactions</div>
                                    </a>
-
                                </li>
                                <li>
                                    <a href="accountSetting.aspx">
                                        <i class="icon-feather-log-out"></i>
                                        <div>Account Setting</div>
                                    </a>
-
                                </li>
                                <li>
-                                   <a href="#">
+                                   <asp:LinkButton runat="server" OnClick="logout">
                                        <i class="icon-material-outline-power-settings-new"></i>
                                        <div>Logout</div>
-                                   </a>
-
+                                   </asp:LinkButton>
                                </li>
                            </ul>
                        </div>
                        <%-- Right Side Lists --%>
-                       <div class="col-lg-9 scrollable" id="content" style="width: 75%; background: #f2f2f2; z-index: 99; padding-left: 10px; padding-top: 50px;">
+                       <div class="col-lg-9 col-md-12 scrollable" id="content" style="width: 75%; background: #f2f2f2; z-index: 99; padding-left: 10px; padding-top: 50px;">
                            <div id="rightSide">
                                <%-- Right content 1st row only content --%>
                                <div class="row mb-3">
@@ -219,8 +216,8 @@
                                <%-- Right content Second Row Div --%>
                                <div class="row pt-10">
                                    <%-- speech To text Form Left Side start--%>
-                                   <div class="col-lg-4">
-                                       <div class="row" style="background-color: white; margin-left: 15px; margin-right: 15px">
+                                   <div class="col-lg-4 col-md-4 col-sm-12">
+                                       <div class="row" style="background-color: white; margin-left: 15px; margin-right: 15px;box-shadow: 0px 1px 7px 1px;">
                                            <div class="row" style="width: 90%; padding: 20px; margin-left: 20px; box-shadow: 0px 0px 1px grey">
                                                <a><i class="fas fa-headset"></i></a>
                                                <h5 class="fs-4 fw-bolder">Speech To Text</h5>
@@ -229,7 +226,7 @@
                                                <p>Create audio transcript from a file</p>
                                            </div>
                                            <div class="row form-group" style="margin-left: 20px; width: 90%; margin-top: 10px;">
-                                               Title<div style="float: right">0/100</div>
+                                               Title:<p id="titleCount">0</p><p>/100</p>
                                                <input class="form-control" type="text" runat="server" id="title" placeholder="" />
                                            </div>
                                            <div class="row" style="margin-left: 20px">
@@ -241,7 +238,8 @@
                                                </div>
                                            </div>
                                            <div class="row form-group" style="margin-left: 20px">
-                                               <p class="fs-4 fw-bolder">Audio Description</p>
+                                               Audio Description:<p id="audioDescCount">0</p><p>/100</p>
+                                               <p class="fs-4 fw-bolder"></p>
                                                <asp:TextBox class="form-control" ID="aDesc" runat="server" Rows="2" TextMode="MultiLine" Style="width: 90%"></asp:TextBox>
                                                <p class="fs-6 text-lowercase text-muted fw-light">Describe the speech from the file to help the AI. (Optional)</p>
                                            </div>
@@ -256,18 +254,18 @@
                                    </div>
                                    <%-- speech To text Form Left Side end --%>
                                    <%-- Generated Result Right Side start--%>
-                                   <div class="col-lg-8">
-                                       <div class="row pl-3 pr-3" style="background-color: white; margin-right: 30px;">
+                                   <div class="col-lg-8 col-md-8 col-sm-12">
+                                       <div class="row pl-3 pr-3">
                                            <%-- Header of generated Result start --%>
-                                           <div class="row" style="width: 100%; padding-top: 25px; padding-bottom: 25px; border:1px solid grey; height: 80px;margin:0px;">
-                                               <div class="col-lg-1">
+                                           <div class="row" style="margin-left:1px;width: 100%; padding-top: 25px; padding-bottom: 25px; height: 80px;background-color:white;box-shadow:0px 1px 5px 1px grey;">
+                                               <div class="col-lg-1 col-md-2 col-sm-1">
                                                    <i class="fa fa-align-left" aria-hidden="true"></i>
                                                </div>
-                                               <div class="col-lg-5">
+                                               <div class="col-lg-5 col-md-6 col-sm-7">
                                                    <p>Generated Result</p>
                                                </div>
                                                <div class="col-lg-3"></div>
-                                               <div class="col-lg-3">
+                                               <div class="col-lg-3 col-md-4 col-sm-4">
                                                    <!--Mouse Hover Event required for all three event//Mouse click also-->
                                                    <a href="#"><i class="fa fa-file-word" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
 
@@ -276,120 +274,18 @@
                                                    <a href="#"><i class="fa fa-clone" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
                                                </div>
                                            </div>
-                                           <%-- Header of generated Result end--%>
-                                           <%-- paragraph of generated Box Start --%>
-                                           <div id="paragraphBody" style="margin-top:20px;min-height:400px;width:612px;padding-left:25px;border:1px solid grey;padding-top:10px">
-                                               <div id="pIcon" style="box-shadow:0px 2px 4px 2px grey;margin-left:-12px;margin-right:10px">
-                                                    <%-- Icon first Line starts --%>
-                                                   <div class="row" style="margin-left:10px;padding-top:10px">
-                                                       <%-- paragraph --%>
-                                                       <div class="dropdown">
-                                                           <button class="btn btn-secondary dropdown-toggle raise" id="btntog" <%-- onchange="execCommandWithArg('formatBlock', this.value);"--%> type="button" data-toggle="dropdown" style="padding: 2px;">
-                                                               heading 1
-                                                           </button>
-                                                           <div class="dropdown-menu raise" style="width: 5%; overflow: hidden">
-                                                               <a class="dropdown-item heading" href="#">paragraph</a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h1>heading1</h1>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h2>heading2</h2>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h3>heading3</h3>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h4>heading4</h4>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h5>heading5</h5>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">
-                                                                   <h6>heading6</h6>
-                                                               </a>
-                                                               <a class="dropdown-item heading" href="#">performatted</a>
-                                                           </div>
-                                                       </div>
-
-                                                       <%-- Bold Button --%>
-                                                       <button id="bold" onclick="execCmd('bold');" class="raise"><i class="fa fa-bold" aria-hidden="true"></i></button>
-                                                       <button id="italic" onclick="execCmd('italic');" class="raise"><i class="fa fa-italic" aria-hidden="true"></i></button>
-                                                       <button id="underLine" onclick="execCmd('underline');" class="raise"><i class="fa fa-underline" aria-hidden="true"></i></button>
-                                                       <button id="CrossLine" onclick="execCmd('strikeThrough');" class="raise">
-                                                           <span>
-                                                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-type-strikethrough" viewBox="0 0 16 16">
-                                                                   <path d="M6.333 5.686c0 .31.083.581.27.814H5.166a2.776 2.776 0 0 1-.099-.76c0-1.627 1.436-2.768 3.48-2.768 1.969 0 3.39 1.175 3.445 2.85h-1.23c-.11-1.08-.964-1.743-2.25-1.743-1.23 0-2.18.602-2.18 1.607zm2.194 7.478c-2.153 0-3.589-1.107-3.705-2.81h1.23c.144 1.06 1.129 1.703 2.544 1.703 1.34 0 2.31-.705 2.31-1.675 0-.827-.547-1.374-1.914-1.675L8.046 8.5H1v-1h14v1h-3.504c.468.437.675.994.675 1.697 0 1.826-1.436 2.967-3.644 2.967z" />
-                                                               </svg></span></button>
-                                                       <button id="leftAlign" onclick="execCmd('justifyLeft');" class="raise"><i class="fa fa-align-left" aria-hidden="true"></i></button>
-                                                       <button id="centerAlign" onclick="execCmd('justifyCenter');" class="raise"><i class="fa fa-align-center" aria-hidden="true"></i></button>
-                                                       <button id="rightAlign" onclick="execCmd('justifyRight');" class="raise"><i class="fa fa-align-right" aria-hidden="true"></i></button>
-                                                       <button id="link" onclick="execCmd('createLink', prompt('Enter a URL', 'http://'));" class="raise"><i class="fa fa-link" aria-hidden="true"></i></button>
-                                                       <button id="rightQuote" onclick="javascript:void(0)" class="raise"><i class="fa fa-quote-right" aria-hidden="true"></i></button>
-                                                   </div>
-                                                   <%-- Icon first Line ends --%><hr />
-                                                   <%-- Icon second Line --%>
-                                                   <div class="row" style="margin-left:10px;padding-bottom:10px">
-                                                       <button id="undo" onclick="execCmd('undo');" class="raise"><i class="fa fa-repeat" aria-hidden="true"></i></button>
-                                                       <button id="redo" onclick="execCmd('redo');" class="raise"><i class="fa fa-undo" aria-hidden="true"></i>
-                                                           <%--<i class="fas fa-redo"></i>--%>
-                                                           <%--<span>
-                                                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                                                                   <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
-                                                                   <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
-                                                               </svg>
-                                                           </span>--%>
-                                                       </button>
-                                                       <button onclick="execCmd('removeFormat');" class="raise"><i class="fas fa-remove-format"></i></button>
-                                                       <%--  Table Icon--%>
-                                                       <div class="dropdown">
-                                                           <button class="btn btn-primary dropdown-toggle" type="button" id="tableDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                               <i class="fas fa-table"></i>Table
-                                                           </button>
-                                                           <div class="dropdown-menu" aria-labelledby="tableDropdown">
-                                                               <a class="dropdown-item" href="#" id="tableCellDropdown">
-                                                                   <i class="fas fa-th"></i>Table Cell
-                                                               </a>
-                                                               <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-bars"></i>Table Row
-                                                               </a>
-                                                               <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-columns"></i>Table Column
-                                                               </a>
-                                                               <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-cogs"></i>Table Properties
-                                                               </a>
-                                                               <a class="dropdown-item" href="#">
-                                                                   <i class="fas fa-trash-alt"></i>Delete Table
-                                                               </a>
-                                                           </div>
-                                                       </div>
-
-
-
-                                                       <%--  --%>
-                                                       <button class="raise" onclick="execCmd('insertOrderedList');"><i class="fas fa-list-ol"></i></button>
-                                                       <%-- Line alignment --%>
-                                                       <button class="raise" onclick="execCmd('insertUnorderedList');"><i class="fas fa-list-ul"></i></button>
-
-                                                       <button id="indentRight" onclick="execCmd('indent');" class="raise"><i class="fa fa-outdent" aria-hidden="true"></i></button>
-                                                       <button id="indentLeft" onclick="execCmd('outdent');" class="raise"><i class="fa fa-indent" aria-hidden="true"></i></button>
-                                                   </div>
-                                               </div>                                             
-                                              
-                                               <div class="row mt-2">
-                                                   <%--<textarea id="richTextField" rows="4" cols="50" style="width:592px;height:258px"></textarea>--%>
-                                                  <%--<iframe name="richTextField" style="width:96%;height:400px" title="abc"/>--%>
-                                                   <iframe name="richTextField" style="width:96%;height:400px" title="abc"></iframe>
-                                               </div>
-                                               <hr />
-                                               <div class="row">
-
-                                               </div>
-                                           </div>                                           
-                                          
-                                               <%-- paragraph of generated Box End --%>
+                                           <%-- Header of generated Result end--%>                                         
                                         </div>
-                                       
+                                       <%-- paragraph of generated Box Start --%>
+                                       <div id="pc" style="min-height:400px;width:100%;padding-top:10px;background-color:white;border:none">
+                                           <div class="row justify-content-md-center mt-4 mb-4">
+                                               <div class="form-group">
+                                                   <textarea id="editor"></textarea>
+                                               </div>
+                                           </div>
+                                           <%--<button type="submit" class="btn btn-primary">Submit</button>--%>
+                                       </div>                                      
+                                       <%-- paragraph of generated Box End --%>
                                    </div>
                                    <%-- Generated Result Right Side end--%>
                                </div>

@@ -63,20 +63,20 @@
                                <%-- User Drop Down Button --%>
                                <div class="dropdown show">                                  
                                    <a class="btn btn-secondary dropdown-toggle" style="margin-top:10px" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       <asp:Image runat="server" ID="userImage" src="Images/userIcon.jpg" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
+                                       <asp:Image runat="server" ID="userImage" src="Images/Image%20ICON.png" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
                                        <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                                    </a>
                                    <div class="dropdown-menu" aria-labelledby="userDropDownList">
                                        <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
                                        <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
                                        <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
-                                       <a class="dropdown-item" href="#">AI Chat</a>
-                                       <a class="dropdown-item" href="#">Speech to Text</a>
+                                       <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                                       <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
                                        <a class="dropdown-item" href="#">AI Code</a>
-                                       <a class="dropdown-item" href="#">All Documents</a>
-                                       <a class="dropdown-item" href="#">Membership</a>
-                                       <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                                       <a class="dropdown-item" href="#">Logout</a>
+                                       <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                                       <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
+                                       <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>                                      
+                                       <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                                    </div>
                                </div>
                            </div>
@@ -162,15 +162,15 @@
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="ai-chat.aspx">
                                        <i class="icon-feather-message-circle"></i>
-                                       <div>Ai Chat</div>
+                                       <div>Ai Chat</div>                                    
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="speechToText.aspx">
                                        <i class="icon-feather-headphones"></i>
-                                       <div>Speech to Text</div>
+                                       <div>Speech to Text</div>                                       
                                    </a>
                                </li>
                                <li>
@@ -306,20 +306,19 @@
                                <%-- second Row for right content--%>
                                <%-- Chart --%>
                                <div class="row" style="padding-bottom:50px">
-                                       <%-- Chart Header--%>
-                                       <div id="chartHeader" style="width:100%;background-color:white;">
-
-                                       </div>
-                                       <%-- Chart Body--%>                                  
-                                       <div id="chartbody" style="width:100%;background-color:white;margin-left:15px;margin-right:45px;padding-bottom:50px">                                       
-                                            <div class="headlinechart" style="box-shadow: 1px 1px 5px grey;">                                            
-                                                   <h5 class="text-muted" style="padding-left:10px;padding-top:10px;padding-bottom:10px">Words used this month</h5>
-                                            </div>
-                                            <div >
-                                              <canvas id="myChart" ></canvas>
-                                            </div>
-                                       </div>                                   
+                                   <%-- Chart Header--%>
+                                   <div id="chartHeader" style="width: 100%; background-color: white;">
                                    </div>
+                                   <%-- Chart Body--%>
+                                   <div id="chartbody" style="width: 100%; background-color: white; margin-left: 15px; margin-right: 45px; padding-bottom: 50px">
+                                       <div class="headlinechart" style="box-shadow: 1px 1px 5px grey;">
+                                           <h5 class="text-muted" style="padding-left: 10px; padding-top: 10px; padding-bottom: 10px">Words used this month</h5>
+                                       </div>
+                                       <div>
+                                           <canvas id="myChart"></canvas>
+                                       </div>
+                                   </div>
+                               </div>
 
                                <%-- Footer Dashboard --%>
                                <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>

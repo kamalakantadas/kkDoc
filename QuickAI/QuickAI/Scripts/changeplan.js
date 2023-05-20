@@ -67,7 +67,11 @@ function hideChangeFunctionality() {
     $("#changePlan").hide();
     $("#billingFormChangePlan").show();
 };
-
+function viewText() {
+    $("#viewImage").show();
+} function hideText() {
+    $("#viewImage").hide();
+}
   //var currentDate = moment();
     //
 /* $("#membershipPlan").text("Extended Plan");*/

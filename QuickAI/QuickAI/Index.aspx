@@ -53,10 +53,22 @@
                         <div class="col-lg-1" style="width: 8.33%">
                             <%-- when session is active it will show --%>
                             <div id="activeSessionFunction" runat="server">
-                                <a class="btn btn-secondary dropdown-toggle" style="margin-top:10px" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <asp:Image runat="server" ID="userImage" src="Images/userIcon.jpg" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
+                                <a class="btn btn-secondary dropdown-toggle"  href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <asp:Image runat="server" ID="userImage" src="Images/Image%20ICON.png" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
                                     <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                                 </a>
+                                <div class="dropdown-menu" aria-labelledby="userDropDownList">
+                                    <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
+                                    <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                                    <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                                    <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                                    <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
+                                    <a class="dropdown-item" href="#">AI Code</a>
+                                    <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                                    <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
+                                    <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
+                                    <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
+                                   </div>
                             </div>
                             <div id="joinButtonFunct" runat="server">
                                 <asp:Button runat="server" type="button" class="btn btn-primary btn-lg btn-block header-widget" ID="joinbutton" Text="JOIN" OnClick="joinbutton_Click" />
@@ -144,6 +156,22 @@
                     <%--<div style="padding-top: 15px; padding-bottom: 25px">
                         <input type="text" class="with-border border-pilled" style="width: 800px; height: 45px" />
                     </div>--%>
+                    <div class="row pt-5">
+                        <div class="col-lg-5"></div>
+                        <div class="col-lg-2">
+                             <h2>Templates</h2>
+                        </div>
+                        <div class="col-lg-5"></div>                       
+                    </div>
+                    <div class="row pt-2 pb-2">
+                        <div classs="col-lg-5"></div>
+                        <div classs="col-lg-2">
+                            <p class="text-muted" style="margin-left:380px"> Generate your required content with over 60+ content creation templates</p>
+                            <%--<h6> Generate your required content with over 60+ content creation templates</h6>--%>
+                        </div>
+                        <div classs="col-lg-5"></div>
+                        
+                    </div>
                     <%-- V Arun Kumar css Code --%>
                     <div class="row">
                         <div class="col-md-12">
