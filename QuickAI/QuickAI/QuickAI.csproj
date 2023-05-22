@@ -120,6 +120,7 @@
     <Content Include="Images\Image ICON.png" />
     <Content Include="Images\picDemo.jfif" />
     <Content Include="Images\userIcon1.png" />
+    <Content Include="Scripts\af-Program.js" />
     <Content Include="Scripts\ai-chat.js" />
     <Content Include="Scripts\ai-images.js" />
     <Content Include="Scripts\changeplan.js" />
@@ -155,6 +156,8 @@
     <Content Include="Images\home-hero-icon %281%29.png" />
     <Content Include="Images\userIcon.jpg" />
     <Content Include="index.ashx" />
+    <Content Include="Scripts\withdrawals.js" />
+    <Content Include="withdrawals.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Index.html" />
@@ -416,6 +419,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="withdrawals.aspx.cs">
+      <DependentUpon>withdrawals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="withdrawals.aspx.designer.cs">
+      <DependentUpon>withdrawals.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -17,16 +17,20 @@ namespace QuickAI
         }
         protected void logout(object sender, EventArgs e)
         {
-            Session["Email"] = null;
-            if (Session["Email"] == null)
-            {
-                Response.Redirect("Login.aspx");
-            }
-            else
-            {
-                Response.Redirect("speechToText.aspx");
-            }
+            //Session["Email"] = null;
+            //if (Session["Email"] == null)
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
+            //else
+            //{
+            //    Response.Redirect("speechToText.aspx");
+            //}
             
+                Session["Email"] = null;
+                Response.Redirect("Index.aspx");
+           
+
         }
     }
 }

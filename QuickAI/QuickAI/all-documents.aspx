@@ -44,7 +44,6 @@
                                 <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropDownList">
-
                                 <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
                                 <a class="dropdown-item" href="#">Templates</a>
                                 <a class="dropdown-item" href="#">AI Images</a>

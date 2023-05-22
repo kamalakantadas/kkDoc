@@ -28,6 +28,11 @@ namespace QuickAI.membership
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;            
         }
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Index.aspx");
+        }
         protected void upgradeMembership(object sender, EventArgs e)
         {
             //ScriptManager.RegisterStartupScript(this, this.GetType(), "freeplan", "actionupmemb();", true);

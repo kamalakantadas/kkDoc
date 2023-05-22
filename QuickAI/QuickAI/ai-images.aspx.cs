@@ -11,7 +11,14 @@ namespace QuickAI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string email = (string)Session["Email"];
+            TextBox txt = (TextBox)Page.FindControl("viewImage");
+            txt.Text = email;
+        }
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Index.aspx");
         }
     }
 }

@@ -211,5 +211,10 @@ namespace QuickAI
             }
             
         }
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Index.aspx");
+        }
     }
 }

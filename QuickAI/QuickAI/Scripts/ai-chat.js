@@ -154,3 +154,8 @@ function downloadText() {
     // Clean up
     document.body.removeChild(a);
 }
+function viewText() {
+    $("#viewImage").show();
+} function hideText() {
+    $("#viewImage").hide();
+}
