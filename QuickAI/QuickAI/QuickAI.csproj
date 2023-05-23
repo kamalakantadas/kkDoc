@@ -110,9 +110,16 @@
     <Content Include="accountSetting.aspx" />
     <Content Include="affiliate-program.aspx" />
     <Content Include="ai-chat.aspx" />
+    <Content Include="ai-code.aspx" />
     <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
+    <Content Include="ai-templates\faq-answers.aspx" />
+    <Content Include="ai-templates\faq.aspx" />
+    <Content Include="ai-templates\songLyrics.aspx" />
+    <Content Include="ai-templates\Templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
+    <Content Include="ai-templates\ToneChanger.aspx" />
+    <Content Include="ai-templates\translate.aspx" />
     <Content Include="all-documents.aspx" />
     <Content Include="all-Images.aspx" />
     <Content Include="blogs\1\blogsFirst.aspx" />
@@ -122,6 +129,7 @@
     <Content Include="Images\userIcon1.png" />
     <Content Include="Scripts\af-Program.js" />
     <Content Include="Scripts\ai-chat.js" />
+    <Content Include="Scripts\ai-code.js" />
     <Content Include="Scripts\ai-images.js" />
     <Content Include="Scripts\changeplan.js" />
     <Content Include="membership\changeplan.aspx" />
@@ -156,6 +164,7 @@
     <Content Include="Images\home-hero-icon %281%29.png" />
     <Content Include="Images\userIcon.jpg" />
     <Content Include="index.ashx" />
+    <Content Include="Scripts\allTemplates.js" />
     <Content Include="Scripts\withdrawals.js" />
     <Content Include="withdrawals.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -238,6 +247,13 @@
     <Compile Include="ai-chat.aspx.designer.cs">
       <DependentUpon>ai-chat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-code.aspx.cs">
+      <DependentUpon>ai-code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-code.aspx.designer.cs">
+      <DependentUpon>ai-code.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-images.aspx.cs">
       <DependentUpon>ai-images.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,12 +268,54 @@
     <Compile Include="ai-templates\Ai-templates.aspx.designer.cs">
       <DependentUpon>Ai-templates.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\faq-answers.aspx.cs">
+      <DependentUpon>faq-answers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\faq-answers.aspx.designer.cs">
+      <DependentUpon>faq-answers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\songLyrics.aspx.cs">
+      <DependentUpon>songLyrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\songLyrics.aspx.designer.cs">
+      <DependentUpon>songLyrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Templates.aspx.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Templates.aspx.designer.cs">
+      <DependentUpon>Templates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\testimonial-reviews.aspx.cs">
       <DependentUpon>testimonial-reviews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ai-templates\testimonial-reviews.aspx.designer.cs">
       <DependentUpon>testimonial-reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\ToneChanger.aspx.cs">
+      <DependentUpon>ToneChanger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\ToneChanger.aspx.designer.cs">
+      <DependentUpon>ToneChanger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\translate.aspx.cs">
+      <DependentUpon>translate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\translate.aspx.designer.cs">
+      <DependentUpon>translate.aspx</DependentUpon>
     </Compile>
     <Compile Include="all-documents.aspx.cs">
       <DependentUpon>all-documents.aspx</DependentUpon>

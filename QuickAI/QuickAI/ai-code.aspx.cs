@@ -5,20 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace QuickAI.ai_templates
+namespace QuickAI
 {
-    public partial class testimonial_reviews : System.Web.UI.Page
+    public partial class ai_code : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string email = (string)Session["Email"];
-            TextBox txt = (TextBox)Page.FindControl("viewImage");
-            txt.Text = email;
+
         }
         protected void logout(object sender, EventArgs e)
         {
             Session["Email"] = null;
-            Response.Redirect("../Index.aspx");
+            Response.Redirect("Index.aspx");
         }
     }
 }

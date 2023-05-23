@@ -1,11 +1,10 @@
-﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="speechToText.aspx.cs" Inherits="QuickAI.speechToText" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ai-code.aspx.cs" Inherits="QuickAI.ai_code" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
-    <title>Speech To Text</title>
+    <title>Ai-code</title>
     <link href="../IndexPage.css" rel="stylesheet" />
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,12 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/ae3393d1fa.js" crossorigin="anonymous"></script>   
-    <script src="Scripts/speechToText.js"></script>
+    <script src="Scripts/ai-code.js"></script>
 </head>
 <body>
-    <form id="speechToText" runat="server">
+    <form id="aiCodeBody" runat="server">
        <div id="speechToTextForm">
-           <div id="speechHeader">
+           <div id="aiHeader">
                <%-- Testimonial Header --%>
                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 80px; z-index: 999; background-color: white;">
                    <div class="col-lg-3 col-md-4 col-sm-4" style="width: 24.99%">
@@ -82,9 +81,9 @@
                    </div>
                </nav>
            </div>
-           <div id="speechBody" >
-               <div class="container-fluid" >
-                   <div class="row" style="margin-top:60px">
+           <div id="aibody">
+               <div class="container-fluid">
+                   <div class="row" style="margin-top: 60px">
                        <!-- Left Side Lists -->
                        <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
                            <%-- My Account --%>
@@ -124,7 +123,7 @@
                                <li>
                                    <a href="ai-templates/Ai-templates.aspx">
                                        <i class="icon-feather-layers"></i>
-                                       <div>Templates</div>                                       
+                                       <div>Templates</div>
                                    </a>
                                </li>
                                <li>
@@ -142,7 +141,7 @@
                                <li>
                                    <a href="speechToText.aspx">
                                        <i class="icon-feather-headphones"></i>
-                                       <div>Speech to Text</div>                                      
+                                       <div>Speech to Text</div>
                                    </a>
                                </li>
                                <li>
@@ -191,15 +190,15 @@
                                </li>
                            </ul>
                        </div>
-                       <%-- Right Side Lists --%>
+                       <%-- Right Side Lists --%>                      
                        <div class="col-lg-9 col-md-12 scrollable" id="content" style="width: 75%; background: #f2f2f2; z-index: 99; padding-left: 10px; padding-top: 50px;">
                            <div id="rightSide">
-                               <%-- Right content 1st row only content --%>
+                               <%-- Ai Code Right Side --%>
                                <div class="row mb-3">
                                     <%-- Left Side of Right side --%>
                                     <div class="col-md-8">
                                         <div class="form-group" style="display:flex">
-                                            <h3>Speech To Text</h3>
+                                            <h3>AI Code</h3>
                                             <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" disabled /> 
                                         </div>                                        
                                     </div>                                   
@@ -213,57 +212,38 @@
                                         </div>
                                     </div>
                                 </div>
-                               <%-- Right content Second Row Div --%>
                                <div class="row pt-10">
                                    <%-- speech To text Form Left Side start--%>
                                    <div class="col-lg-4 col-md-4 col-sm-12">
-                                       <div class="row" style="background-color: white; margin-left:10px;box-shadow: 0px 1px 7px 1px;">
-                                           <div class="row" style="width:90%;padding: 20px; margin-left: 10px; border-bottom:1px solid grey">
+                                       <div class="row ml-1 mb-2" style="background-color: white;box-shadow: 0px 1px 7px 1px;">
+                                           <div class="row" style="padding: 10px;margin: 10px;border-bottom: 1px solid gray;width: 100%;">
                                                <a><i class="fas fa-headset"></i></a>
-                                               <h5 class="fs-4 fw-bolder">Speech To Text</h5>
+                                               <h5 class="fs-4 fw-bolder">Ai Code</h5>
                                            </div>
-                                           <div class="row" style="margin:20px;padding:5px;background-color: cornflowerblue;">
-                                               <p>Create audio transcript from a file</p>
+                                           <div class="row" style="margin:10px; background-color: cornflowerblue; padding: 10px; ">
+                                               <p>Use this code generator to create code in any programming language.</p>
                                            </div>
-                                           <div class="row form-group ml-3 mt-1 mb-0" >
-                                              <p>Title:</p>
-                                              <p style="margin-left:50px;" id="titleCount">0</p><p>/100</p>
+                                           <div class="row" style="margin-left: 60px; margin-top: 10px;width:100%">
+                                               Title:<p style="margin-left:50px;" id="titleCount">0</p><p>/100</p>
                                            </div>
-                                           <div class="row form-group ml-3">
-                                               <input class="form-control" type="text" runat="server" id="title" placeholder="" style="width:auto"/>
+                                           <div class="row form-group ml-2" style="width:95%">
+                                               <input class="form-control" type="text" runat="server" id="title" style="margin-left:10px;" placeholder="New Code" />                                           </div>
+                                           <div class="row form-group" style="margin-left: 20px">
+                                                Description:<p style="color:red">*</p>                                            
+                                               <p class="fs-4 fw-bolder"></p>
+                                               <asp:TextBox class="form-control" ID="aDesc" placeholder="Write a javascript function to generate a random string" runat="server" Rows="4" TextMode="MultiLine" ></asp:TextBox>                                                                                          
                                            </div>
-                                           <div class="row mt-2" style="margin: 18px">
-                                               <p class="fs-4 fw-bolder">Upload Media </p>
-                                               <span style="color: red">*</span>
-                                               <input type="file" class="form-control" runat="server" id="audioFile" placeholder="Upload Media" />
-                                               <div class="row" style="margin:5px">
-                                                   <p class="fs-6 text-lowercase text-muted fw-light">.mp3, .mp4.,.mpeg,.mpga,.m4a,.wav,.webm allowed. Max file size:1024MB</p>
-                                               </div>
-                                           </div>
-                                           <div class="row" style="margin: 18px;margin-bottom:10px">
-                                               <p>Audio Description:</p>
-                                               <p style="margin-left:50px" id="audioDescCount">0</p><p>/100</p>
-                                           </div>
-                                           <div class="row form-group ml-3" style="margin-bottom:0;">
-                                               <asp:TextBox class="form-control" ID="aDesc" runat="server" Rows="2" TextMode="MultiLine" style="width:267px"></asp:TextBox>                                              
-                                           </div>
-                                           <div class="row" style="margin:10px">
-                                                <p class="fs-6 text-lowercase text-muted fw-light">Describe the speech from the file to help the AI. (Optional)</p>
-                                           </div>
-                                           <div class="row form-group" style="margin-left: 20px; margin-left: 10px; margin-right: 10px; margin-top: 10px; width: 90%;">
-                                               <input type="button" class="form-control btn btn-primary" value="Generate ->" />
-                                           </div>
-                                           <div class="row" style="background: cornflowerblue;margin:5px">
-                                               <p class="fs-6 text-lowercase fw-light">Audio transcription may takes time due to the file size.</p>                                               
-                                           </div>
+                                           <div class="row form-group">
+                                               <input type="button" class="form-control btn btn-primary" value="Generate ->" style="width:280px;margin-left:35px"/>
+                                           </div>                                       
                                        </div>
                                    </div>
                                    <%-- speech To text Form Left Side end --%>
                                    <%-- Generated Result Right Side start--%>
                                    <div class="col-lg-8 col-md-8 col-sm-12">
-                                       <div class="row pl-3 pr-3">
+                                       <div class="row pl-3 pr-3 ml-1">
                                            <%-- Header of generated Result start --%>
-                                           <div class="row" style="margin-left:1px;width: 100%; padding-top: 25px; padding-bottom: 25px; height: 80px;background-color:white;box-shadow:0px 1px 5px 1px grey;">
+                                           <div class="row" style="width: 100%; padding-top: 25px; padding-bottom: 25px; height: 80px; background-color: white; border-bottom: 1px solid grey;">
                                                <div class="col-lg-1 col-md-2 col-sm-1">
                                                    <i class="fa fa-align-left" aria-hidden="true"></i>
                                                </div>
@@ -272,30 +252,18 @@
                                                </div>
                                                <div class="col-lg-3"></div>
                                                <div class="col-lg-3 col-md-4 col-sm-4">
-                                                   <!--Mouse Hover Event required for all three event//Mouse click also-->
-                                                   <a href="#"><i class="fa fa-file-word" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
-
-                                                   <a href="#"><i class="fa fa-file" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
-
-                                                   <a href="#"><i class="fa fa-clone" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
                                                </div>
                                            </div>
-                                           <%-- Header of generated Result end--%>                                         
-                                        </div>
-                                       <%-- paragraph of generated Box Start --%>
-                                       <div id="pc" style="min-height:400px;width:100%;padding-top:10px;background-color:white;border:none">
-                                           <div class="row justify-content-md-center mt-4 mb-4">
-                                               <div class="form-group">
-                                                   <textarea id="editor"></textarea>
+                                           <div class="row" style="min-height: 100px; background: white; width: 100%">
+                                               <div class="row-fluid" style="padding: 10px; background: cornflowerblue; margin: 20px; width: 100%">
+                                                   <p>Generated code will appear here.</p>
                                                </div>
                                            </div>
-                                           <%--<button type="submit" class="btn btn-primary">Submit</button>--%>
-                                       </div>                                      
-                                       <%-- paragraph of generated Box End --%>
+                                       </div>
+                                       <%-- Header of generated Result end--%>
                                    </div>
-                                   <%-- Generated Result Right Side end--%>
                                </div>
-                             
+                               <%-- Ai Code Right Side end--%>                  
                                <%-- Footer Dashboard --%>
                                <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
                                <div class="row" style="border-top: 1px solid #ccc;z-index:999">
@@ -330,14 +298,12 @@
                                        </div>
                                    </footerclass>
                                </div>
-                             
                            </div>
-                          
-                       </div>                                      
+                       </div>
                    </div>
                </div>
-           </div>           
-        </div>
+           </div>
+       </div>
     </form>
 </body>
 </html>

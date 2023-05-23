@@ -60,17 +60,16 @@
                               <asp:TextBox ID="viewImage" style="display:none;width:100px;" runat="server" value=""></asp:TextBox>
                           </a>
                           <div class="dropdown-menu" aria-labelledby="userDropDownList">
-                            
-                            <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                            <a class="dropdown-item" href="#">Templates</a>
-                              <a class="dropdown-item" href="#">AI Images</a>
-                              <a class="dropdown-item" href="#">AI Chat</a>
-                              <a class="dropdown-item" href="#">Speech to Text</a>
-                              <a class="dropdown-item" href="#">AI Code</a>
-                              <a class="dropdown-item" href="#">All Documents</a>
-                              <a class="dropdown-item" href="#">Membership</a>
-                              <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                              <a class="dropdown-item" href="#">Logout</a>                           
+                              <a class="dropdown-item" href="../dashboard.aspx">Dashboard</a>
+                              <a class="dropdown-item" href="Ai-templates.aspx">Templates</a>
+                              <a class="dropdown-item" href="../ai-images.aspx">AI Images</a>
+                              <a class="dropdown-item" href="../ai-chat.aspx">AI Chat</a>
+                              <a class="dropdown-item" href="../speechToText.aspx">Speech to Text</a>
+                              <a class="dropdown-item" href="../ai-code.aspx">AI Code</a>
+                              <a class="dropdown-item" href="../all-documents.aspx">All Documents</a>
+                              <a class="dropdown-item" href="../membership/membership.aspx">Membership</a>
+                              <a class="dropdown-item" href="../accountSetting.aspx">Account Setting</a>
+                              <asp:LinkButton runat="server" OnClick="logout"><i class="icon-material-outline-power-settings-new"></i><div>Logout</div></asp:LinkButton>
                           </div>
                         </div>                 
                     </div>
@@ -154,19 +153,19 @@
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-chat.aspx">
                                        <i class="icon-feather-message-circle"></i>
                                        <div>Ai Chat</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../speechToText.aspx">
                                        <i class="icon-feather-headphones"></i>
                                        <div>Speech to Text</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-code.aspx">
                                        <i class="icon-feather-code"></i>
                                        <div>Ai Code</div>
                                    </a>
@@ -181,8 +180,8 @@
                                        </a>
 
                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                           <a class="dropdown-item" href="#">Affiliate Program</a>
-                                           <a class="dropdown-item" href="#">Withdrawals</a>
+                                           <a class="dropdown-item" href="../affiliate-program.aspx">Affiliate Program</a>
+                                           <a class="dropdown-item" href="../withdrawals.aspx">Withdrawals</a>
                                        </div>
                                    </div>
                                </li>
@@ -208,10 +207,10 @@
 
                                </li>
                                <li>
-                                   <a href="#">
+                                   <asp:LinkButton runat="server" OnClick="logout">
                                        <i class="icon-material-outline-power-settings-new"></i>
                                        <div>Logout</div>
-                                   </a>
+                                   </asp:LinkButton>
 
                                </li>
                            </ul>
@@ -257,8 +256,7 @@
                                     </div>
                                 </div>                        
                             </div>
-                           <div class="row" id="allTemp" style="padding-left:50px;padding-right:50px;padding-bottom:50px">
-                              
+                           <div class="row" id="allTemp" style="padding-left:50px;padding-right:50px;padding-bottom:50px">                              
                                <%-- articles and blogs --%>
                                <div class="row" id="abp">
                                    <div class="row" style="padding-top:20px;padding-bottom:20px">
@@ -1161,7 +1159,7 @@
                                    <div class="row">
                                        <h4>Other</h4>
                                    </div>
-                                    <div class="row">
+                                   <div class="row">
                                        <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <a href="http://hype.sociusus.com/ai-templates/tone-changer"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
@@ -1242,7 +1240,7 @@
                                            </a>
                                        </div>
                                        <div class="col-lg-4 border border-warning rounded-pill aitempl">
-                                           <a href="testimonial-reviews.aspx" title="Upgrade your plan to use this template" data-tippy-placement="top">
+                                           <asp:LinkButton runat="server" href="testimonial-reviews.aspx" title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -1254,9 +1252,9 @@
                                                        <p class="margin-bottom-0">Add social proof to your website by generating user testimonials.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                   </div>  
+                                   </div>
                                </div>
                            </div>                                                 
                            <%--All Templates End--%>

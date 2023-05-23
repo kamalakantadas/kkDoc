@@ -11,16 +11,16 @@ namespace QuickAI.ai_templates
 {
 
 
-    public partial class testimonial_reviews
+    public partial class ToneChanger
     {
 
         /// <summary>
-        /// testimonialsreview control.
+        /// toneChanger control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm testimonialsreview;
+        protected global::System.Web.UI.HtmlControls.HtmlForm toneChanger;
     }
 }

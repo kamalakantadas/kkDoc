@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace QuickAI.ai_templates
 {
-    public partial class testimonial_reviews : System.Web.UI.Page
+    public partial class faq_answers : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string email = (string)Session["Email"];
-            TextBox txt = (TextBox)Page.FindControl("viewImage");
-            txt.Text = email;
+
         }
         protected void logout(object sender, EventArgs e)
         {
