@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-lg-7 col-md-2" style="width: 58.31%; overflow: hidden;">
                         <a href="#" class="sandwich-link" data-toggle="collapse" <%--data-target=".leftsidebar"--%> id="btntoggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-list" viewbox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-list" <%--viewbox="0 0 16 16"--%>>
                                 <path fill-rule="evenodd" d="m2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h3a.5.5 0 0 1-.5-.5z" />
                             </svg>
                         </a>
@@ -294,7 +294,7 @@
                                             </select>
                                         </div>
                                         <%-- number of result --%>
-                                         <p class="fs-4 fw-bolder ml-3 mb-2">number of result</p>
+                                        <p class="fs-4 fw-bolder ml-3 mb-2">number of result</p>
                                         <div class="row ml-3" style="box-shadow:0px 1px 4px 1px grey;height:30px;">                                           
                                             <select class="selectpicker" data-width="fit" style="width:267px">
                                                 <option>1</option>

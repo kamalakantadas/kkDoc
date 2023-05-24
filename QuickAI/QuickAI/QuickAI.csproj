@@ -113,11 +113,50 @@
     <Content Include="ai-code.aspx" />
     <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
+    <Content Include="ai-templates\Answers.aspx" />
+    <Content Include="ai-templates\AppsAndSms.aspx" />
+    <Content Include="ai-templates\articleOutline.aspx" />
+    <Content Include="ai-templates\articleRewriter.aspx" />
+    <Content Include="ai-templates\articleWriter.aspx" />
+    <Content Include="ai-templates\blogConclusion.aspx" />
+    <Content Include="ai-templates\blogIdea.aspx" />
+    <Content Include="ai-templates\blogSection.aspx" />
+    <Content Include="ai-templates\blogsIntro.aspx" />
+    <Content Include="ai-templates\blogsTitles.aspx" />
+    <Content Include="ai-templates\BodyContentTemplates.ascx" />
+    <Content Include="ai-templates\bulletPointAnswers.aspx" />
+    <Content Include="ai-templates\Company Mission.aspx" />
+    <Content Include="ai-templates\companyBios.aspx" />
+    <Content Include="ai-templates\CompanyVision.aspx" />
+    <Content Include="ai-templates\ContentRephrase.aspx" />
+    <Content Include="ai-templates\ContentShorten.aspx" />
+    <Content Include="ai-templates\definition.aspx" />
+    <Content Include="ai-templates\Email.aspx" />
+    <Content Include="ai-templates\EmailSubjectLines.aspx" />
+    <Content Include="ai-templates\emailsV2.aspx" />
+    <Content Include="ai-templates\facebookAds.aspx" />
+    <Content Include="ai-templates\facebookAdsHeadline.aspx" />
     <Content Include="ai-templates\faq-answers.aspx" />
     <Content Include="ai-templates\faq.aspx" />
+    <Content Include="ai-templates\GoogleAdsDesc.aspx" />
+    <Content Include="ai-templates\googleAdsTitle.aspx" />
+    <Content Include="ai-templates\HeadContentTemplates.ascx" />
+    <Content Include="ai-templates\LinkedAdsDesc.aspx" />
+    <Content Include="ai-templates\LinkedAdsHeadLine.aspx" />
+    <Content Include="ai-templates\paragraphWriter.aspx" />
+    <Content Include="ai-templates\passiveToActiveVoice.aspx" />
+    <Content Include="ai-templates\prosAndCons.aspx" />
+    <Content Include="ai-templates\question.aspx" />
+    <Content Include="ai-templates\QuoraAnswer.aspx" />
+    <Content Include="ai-templates\RewriteWithKeywords.aspx" />
     <Content Include="ai-templates\songLyrics.aspx" />
+    <Content Include="ai-templates\startupNameGenerator.aspx" />
+    <Content Include="ai-templates\stories.aspx" />
+    <Content Include="ai-templates\summarizeGrade.aspx" />
+    <Content Include="ai-templates\talkingPoints.aspx" />
     <Content Include="ai-templates\Templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
+    <Content Include="ai-templates\TextExtender.aspx" />
     <Content Include="ai-templates\ToneChanger.aspx" />
     <Content Include="ai-templates\translate.aspx" />
     <Content Include="all-documents.aspx" />
@@ -268,6 +307,167 @@
     <Compile Include="ai-templates\Ai-templates.aspx.designer.cs">
       <DependentUpon>Ai-templates.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\Answers.aspx.cs">
+      <DependentUpon>Answers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Answers.aspx.designer.cs">
+      <DependentUpon>Answers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\AppsAndSms.aspx.cs">
+      <DependentUpon>AppsAndSms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\AppsAndSms.aspx.designer.cs">
+      <DependentUpon>AppsAndSms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\articleOutline.aspx.cs">
+      <DependentUpon>articleOutline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\articleOutline.aspx.designer.cs">
+      <DependentUpon>articleOutline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\articleRewriter.aspx.cs">
+      <DependentUpon>articleRewriter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\articleRewriter.aspx.designer.cs">
+      <DependentUpon>articleRewriter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\articleWriter.aspx.cs">
+      <DependentUpon>articleWriter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\articleWriter.aspx.designer.cs">
+      <DependentUpon>articleWriter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\blogConclusion.aspx.cs">
+      <DependentUpon>blogConclusion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\blogConclusion.aspx.designer.cs">
+      <DependentUpon>blogConclusion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\blogIdea.aspx.cs">
+      <DependentUpon>blogIdea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\blogIdea.aspx.designer.cs">
+      <DependentUpon>blogIdea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\blogSection.aspx.cs">
+      <DependentUpon>blogSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\blogSection.aspx.designer.cs">
+      <DependentUpon>blogSection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\blogsIntro.aspx.cs">
+      <DependentUpon>blogsIntro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\blogsIntro.aspx.designer.cs">
+      <DependentUpon>blogsIntro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\blogsTitles.aspx.cs">
+      <DependentUpon>blogsTitles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\blogsTitles.aspx.designer.cs">
+      <DependentUpon>blogsTitles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\BodyContentTemplates.ascx.cs">
+      <DependentUpon>BodyContentTemplates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\BodyContentTemplates.ascx.designer.cs">
+      <DependentUpon>BodyContentTemplates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\bulletPointAnswers.aspx.cs">
+      <DependentUpon>bulletPointAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\bulletPointAnswers.aspx.designer.cs">
+      <DependentUpon>bulletPointAnswers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Company Mission.aspx.cs">
+      <DependentUpon>Company Mission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Company Mission.aspx.designer.cs">
+      <DependentUpon>Company Mission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\companyBios.aspx.cs">
+      <DependentUpon>companyBios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\companyBios.aspx.designer.cs">
+      <DependentUpon>companyBios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\CompanyVision.aspx.cs">
+      <DependentUpon>CompanyVision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\CompanyVision.aspx.designer.cs">
+      <DependentUpon>CompanyVision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\ContentRephrase.aspx.cs">
+      <DependentUpon>ContentRephrase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\ContentRephrase.aspx.designer.cs">
+      <DependentUpon>ContentRephrase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\ContentShorten.aspx.cs">
+      <DependentUpon>ContentShorten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\ContentShorten.aspx.designer.cs">
+      <DependentUpon>ContentShorten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\definition.aspx.cs">
+      <DependentUpon>definition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\definition.aspx.designer.cs">
+      <DependentUpon>definition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\EmailSubjectLines.aspx.cs">
+      <DependentUpon>EmailSubjectLines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\EmailSubjectLines.aspx.designer.cs">
+      <DependentUpon>EmailSubjectLines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\emailsV2.aspx.cs">
+      <DependentUpon>emailsV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\emailsV2.aspx.designer.cs">
+      <DependentUpon>emailsV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\facebookAds.aspx.cs">
+      <DependentUpon>facebookAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\facebookAds.aspx.designer.cs">
+      <DependentUpon>facebookAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\facebookAdsHeadline.aspx.cs">
+      <DependentUpon>facebookAdsHeadline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\facebookAdsHeadline.aspx.designer.cs">
+      <DependentUpon>facebookAdsHeadline.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\faq-answers.aspx.cs">
       <DependentUpon>faq-answers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,12 +482,117 @@
     <Compile Include="ai-templates\faq.aspx.designer.cs">
       <DependentUpon>faq.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\GoogleAdsDesc.aspx.cs">
+      <DependentUpon>GoogleAdsDesc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\GoogleAdsDesc.aspx.designer.cs">
+      <DependentUpon>GoogleAdsDesc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\googleAdsTitle.aspx.cs">
+      <DependentUpon>googleAdsTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\googleAdsTitle.aspx.designer.cs">
+      <DependentUpon>googleAdsTitle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\HeadContentTemplates.ascx.cs">
+      <DependentUpon>HeadContentTemplates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\HeadContentTemplates.ascx.designer.cs">
+      <DependentUpon>HeadContentTemplates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\LinkedAdsDesc.aspx.cs">
+      <DependentUpon>LinkedAdsDesc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\LinkedAdsDesc.aspx.designer.cs">
+      <DependentUpon>LinkedAdsDesc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\LinkedAdsHeadLine.aspx.cs">
+      <DependentUpon>LinkedAdsHeadLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\LinkedAdsHeadLine.aspx.designer.cs">
+      <DependentUpon>LinkedAdsHeadLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\paragraphWriter.aspx.cs">
+      <DependentUpon>paragraphWriter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\paragraphWriter.aspx.designer.cs">
+      <DependentUpon>paragraphWriter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\passiveToActiveVoice.aspx.cs">
+      <DependentUpon>passiveToActiveVoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\passiveToActiveVoice.aspx.designer.cs">
+      <DependentUpon>passiveToActiveVoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\prosAndCons.aspx.cs">
+      <DependentUpon>prosAndCons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\prosAndCons.aspx.designer.cs">
+      <DependentUpon>prosAndCons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\question.aspx.cs">
+      <DependentUpon>question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\question.aspx.designer.cs">
+      <DependentUpon>question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\QuoraAnswer.aspx.cs">
+      <DependentUpon>QuoraAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\QuoraAnswer.aspx.designer.cs">
+      <DependentUpon>QuoraAnswer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\RewriteWithKeywords.aspx.cs">
+      <DependentUpon>RewriteWithKeywords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\RewriteWithKeywords.aspx.designer.cs">
+      <DependentUpon>RewriteWithKeywords.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\songLyrics.aspx.cs">
       <DependentUpon>songLyrics.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ai-templates\songLyrics.aspx.designer.cs">
       <DependentUpon>songLyrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\startupNameGenerator.aspx.cs">
+      <DependentUpon>startupNameGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\startupNameGenerator.aspx.designer.cs">
+      <DependentUpon>startupNameGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\stories.aspx.cs">
+      <DependentUpon>stories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\stories.aspx.designer.cs">
+      <DependentUpon>stories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\summarizeGrade.aspx.cs">
+      <DependentUpon>summarizeGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\summarizeGrade.aspx.designer.cs">
+      <DependentUpon>summarizeGrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\talkingPoints.aspx.cs">
+      <DependentUpon>talkingPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\talkingPoints.aspx.designer.cs">
+      <DependentUpon>talkingPoints.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\Templates.aspx.cs">
       <DependentUpon>Templates.aspx</DependentUpon>
@@ -302,6 +607,13 @@
     </Compile>
     <Compile Include="ai-templates\testimonial-reviews.aspx.designer.cs">
       <DependentUpon>testimonial-reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\TextExtender.aspx.cs">
+      <DependentUpon>TextExtender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\TextExtender.aspx.designer.cs">
+      <DependentUpon>TextExtender.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\ToneChanger.aspx.cs">
       <DependentUpon>ToneChanger.aspx</DependentUpon>

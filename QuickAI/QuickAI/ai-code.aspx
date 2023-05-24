@@ -199,7 +199,7 @@
                                     <div class="col-md-8">
                                         <div class="form-group" style="display:flex">
                                             <h3>AI Code</h3>
-                                            <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" disabled /> 
+                                            <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" "disabled" /> 
                                         </div>                                        
                                     </div>                                   
                                     <%-- Right Side of Right side --%>

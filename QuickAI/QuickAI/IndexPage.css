@@ -6,6 +6,20 @@
         display: none; /* Hide div2 when screen width is less than or equal to 768px */
     }
 }
+.ai-templates {
+    margin:10px;
+    padding:10px;
+}
+.aitempl {
+    /*//box-shadow: 1px 1px 1px 3px grey;*/
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+   margin:20px;
+   
+  
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -94,13 +108,7 @@ footer {
     color: #333;
 }
 
-.aitempl {
-    /*//box-shadow: 1px 1px 1px 3px grey;*/
-    background: white;
-    border-radius:50px;
-    padding:20px;
-  
-}
+
 .content{
     color:black;
 }
