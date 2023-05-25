@@ -41,17 +41,16 @@
                                 <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropDownList">
-
                                 <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                                <a class="dropdown-item" href="#">Templates</a>
-                                <a class="dropdown-item" href="#">AI Images</a>
-                                <a class="dropdown-item" href="#">AI Chat</a>
-                                <a class="dropdown-item" href="#">Speech to Text</a>
-                                <a class="dropdown-item" href="#">AI Code</a>
-                                <a class="dropdown-item" href="#">All Documents</a>
-                                <a class="dropdown-item" href="#">Membership</a>
-                                <a class="dropdown-item" href="#">Account Setting</a>
-                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                                <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                                <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                                <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
+                                <a class="dropdown-item" href="ai-code.aspx">AI Code</a>
+                                <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                                <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
+                                <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
+                                <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                             </div>
                         </div>
                     </div>

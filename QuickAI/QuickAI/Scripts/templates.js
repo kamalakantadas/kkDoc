@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+    $("#selectTempID").on("input", function () {
+        var searchText = $(this).val().toLowerCase();
+        
+    });
     $("#at").on("click", function () {
         $("#abp").show();
         $("#amt").show();

@@ -13,8 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />   
-    <script src="../Scripts/templates.js"></script>
-   
+    <script src="../Scripts/templates.js"></script>   
 </head>
 <body>
     <form id="aitemplatesForm" runat="server" method="post">
@@ -40,7 +39,7 @@
                <%-- Original Header --%>
                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey;height:90px;border-style: ridge;z-index:999;background-color:white;">                    
                     <div class="col-lg-3 col-md-4 col-sm-4" style="width:24.99%"  >                                
-                        <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px;overflow: hidden;">                    
+                        <a class="navbar-brand" href="../Index.aspx" style="margin-bottom: 50px;overflow: hidden;">                    
                             <img src="../Images/1149945428.png" style="position:fixed; max-width:100%;margin-bottom:30px;padding-left:35px;padding-right:35px;overflow: hidden;"/>
                         </a>                        
                     </div>
@@ -234,8 +233,11 @@
                                </div>
                            </div>
                            <%--All Templates Start--%>
-                           <div style="padding-top:15px;padding-bottom:25px">
-                               <input type="text" class="with-border border-pilled" style="width:800px; height:45px"/>
+                           <%--<div style="padding-top:15px;padding-bottom:25px">
+                               <input type="text" class="with-border border-pilled" style="width:100%; height:45px;border-radius: 20px;"/>
+                           </div>--%>
+                           <div class="row mt-1 mb-2 ml-1" style="width:100%;height:45px;border-radius:25px;background:white">
+                               <input id="selectTempID" type="text" style="margin-left:20px;border:none;outline:none;width:90%"/>
                            </div>
                            <div class="row">
                                 <div class="col-md-12">
@@ -262,7 +264,7 @@
                                        <h4>Article and Blogs</h4>                                        <hr />
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="blogIdeas">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -275,7 +277,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="blogIntro">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -288,7 +290,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="blogTitle">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -303,7 +305,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="blogSection"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -319,7 +321,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="blogConclusion">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -332,7 +334,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="articleWriter"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -350,7 +352,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="articleRewriter">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -363,7 +365,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="articleOutlines">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -376,7 +378,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="talkingPoint">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -391,7 +393,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="paragraphWriter"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -407,7 +409,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="contentRephrase">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -420,7 +422,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
 
                                        </div>
                                    </div>                                 
@@ -431,7 +433,7 @@
                                        <h4>Ads And Marketing Tools</h4>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="facebookAds">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -444,7 +446,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="facebookAdsHeadLines">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -457,7 +459,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="GoogleAdTitle"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -475,7 +477,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="GoogleAdDesc"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -491,7 +493,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="LinkedInAdHeadLines">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -504,7 +506,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="LinkedAdDesc">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -519,7 +521,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="appsAndSms">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -532,10 +534,10 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
 
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl"></div>
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl"></div>
                                    </div>
                                </div>
                                <%-- general writing --%>
@@ -544,7 +546,7 @@
                                        <h4>General Writing</h4>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                           <asp:LinkButton runat="server" OnClick="TextExtender">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -557,7 +559,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="contentShorten">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -570,7 +572,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                              <asp:LinkButton runat="server" OnClick="quoraAnswer"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -588,7 +590,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="summarizeFor2nd">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -601,7 +603,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="stories"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -617,7 +619,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                              <asp:LinkButton runat="server" OnClick="bulletPointAnswers">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -632,7 +634,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                              <asp:LinkButton runat="server" OnClick="definition">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -645,7 +647,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="answers">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -658,7 +660,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                           <asp:LinkButton runat="server" OnClick="questions">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -673,7 +675,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="passiveToActive">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -686,7 +688,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="prosAndCons"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -702,7 +704,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="rewriteWithKeywords"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -720,7 +722,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="emails"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -736,7 +738,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="emailsv2"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -752,7 +754,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                             <asp:LinkButton runat="server" OnClick="emailsSubjectLine">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -767,7 +769,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="startupNameGenerator">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -780,7 +782,7 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            <asp:LinkButton runat="server" OnClick="companyBios">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
@@ -793,8 +795,8 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <asp:LinkButton runat="server" OnClick="companyMission">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="companyMission"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -811,7 +813,7 @@
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                           <asp:LinkButton runat="server" OnClick="companyVision"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
@@ -827,10 +829,10 @@
                                                </div>
                                            </asp:LinkButton>
                                        </div>
-                                      <%-- <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                      <%-- <div class="col-lg-4 border border-warning rounded-pill aitempl">
 
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl"></div>--%>
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl"></div>--%>
                                    </div>          
                                </div>
                                <%-- ecommerce --%>
@@ -841,8 +843,8 @@
                                        </div>
                                    </div>                                   
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/product-name-generator">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                         <asp:LinkButton runat="server" OnClick="productNameGenerator">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -852,10 +854,10 @@
                                                        <p class="margin-bottom-0">Create creative product names from examples words.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/product-descriptions">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                          <asp:LinkButton runat="server" OnClick="productDescription">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -865,10 +867,10 @@
                                                        <p class="margin-bottom-0">Authentic product descriptions that will compel, inspire, and influence.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/amazon-product-titles"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                          <asp:LinkButton runat="server" OnClick="amazonProductTitles"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -881,12 +883,12 @@
                                                        <p class="margin-bottom-0">Product titles that will make your product stand out in a sea of competition.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/amazon-product-descriptions"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                          <asp:LinkButton runat="server" OnClick="amazonProductDesc"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -899,10 +901,10 @@
                                                        <p class="margin-bottom-0">Descriptions for Amazon products that rank on the first page of the search results.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/amazon-product-features"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="amazonProductFeatures"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -915,10 +917,10 @@
                                                        <p class="margin-bottom-0">Advantages and features of your products that will make them irresistible to shoppers.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/social-post-personal">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <%--<a href="http://hype.sociusus.com/ai-templates/social-post-personal">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -928,7 +930,7 @@
                                                        <p class="margin-bottom-0">Write a social media post for yourself to be published on any platform.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </a>--%>
                                        </div>
                                    </div>  
                                </div>
@@ -938,21 +940,21 @@
                                        <h3>Social Media</h3>
                                    </div>
                                     <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/social-post-personal">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="socialMediaPostPersonal">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
                                                            <i class="fa fa-facebook"></i>
                                                        </div>
-                                                       <h4>Social Media Post (Personal)                                                                                                    </h4>
+                                                       <h4>Social Media Post (Personal)</h4>
                                                        <p class="margin-bottom-0">Write a social media post for yourself to be published on any platform.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/social-post-business"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="socialMediaPostBusiness"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -965,10 +967,10 @@
                                                        <p class="margin-bottom-0">Write a post for your business to be published on any social media platform.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/instagram-captions">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="instagramCaptions">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -978,12 +980,12 @@
                                                        <p class="margin-bottom-0">Captions that turn your images into attention-grabbing Instagram posts.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/instagram-hashtags"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                          <asp:LinkButton runat="server" OnClick="instagramHashtags"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -996,10 +998,10 @@
                                                        <p class="margin-bottom-0">Trending and highly relevant hashtags to help you get more followers and engagement.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/twitter-tweets">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="twitter">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -1009,10 +1011,10 @@
                                                        <p class="margin-bottom-0">Generate tweets using AI, that are relevant and on-trend.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                          </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/youtube-titles">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="youtubeTitles">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -1022,12 +1024,12 @@
                                                        <p class="margin-bottom-0">Catchy titles that attract more views and increase the number of shares.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>  
                                     <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/youtube-descriptions"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="youtubeDesc"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1040,10 +1042,10 @@
                                                        <p class="margin-bottom-0">Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/youtube-outlines"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="youtubeOutline"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1056,10 +1058,10 @@
                                                        <p class="margin-bottom-0">Video outlines that are a breeze to create and uber-engaging.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/linkedin-posts">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="linkedInPost">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -1069,12 +1071,12 @@
                                                        <p class="margin-bottom-0">Inspiring LinkedIn posts that will help you build trust and authority in your industry.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/tiktok-video-scripts"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="TiktokVideoScript"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1087,12 +1089,12 @@
                                                        <p class="margin-bottom-0">Video scripts that are ready to shoot and will make you go viral.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
                                            
                                        </div>
                                    </div>  
@@ -1103,8 +1105,8 @@
                                        <h4>Website</h4>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/meta-tags-blog"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="smtBlog"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1117,10 +1119,10 @@
                                                        <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your blog.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/meta-tags-homepage"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="smtHome"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1133,10 +1135,10 @@
                                                        <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your home page.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/meta-tags-product"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                            <asp:LinkButton runat="server" OnClick="smtProduct"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1149,7 +1151,7 @@
                                                        <p class="margin-bottom-0">A set of optimized meta title and meta description tags that will boost your search rankings for your product page.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>
                                </div>
@@ -1159,8 +1161,8 @@
                                        <h4>Other</h4>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/tone-changer"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="toneChanger"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1173,10 +1175,10 @@
                                                        <p class="margin-bottom-0">Change the tone of your writing to match your audience and copy.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/song-lyrics"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="songLyrics"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1189,10 +1191,10 @@
                                                        <p class="margin-bottom-0">Unique song lyrics that will be perfect for your next hit song.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/translate">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="translate">
                                                <div class="dashboard-box ai-templates ">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">
@@ -1202,12 +1204,12 @@
                                                        <p class="margin-bottom-0">Translate your content into any language you want.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
                                    </div>
                                    <div class="row">
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/faqs"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                            <asp:LinkButton runat="server" OnClick="faqMet"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1220,10 +1222,10 @@
                                                        <p class="margin-bottom-0">Generate frequently asked questions based on your product description.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <a href="http://hype.sociusus.com/ai-templates/faq-answers"
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                            <asp:LinkButton runat="server" OnClick="faqAnswer"
                                                title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
@@ -1236,10 +1238,10 @@
                                                        <p class="margin-bottom-0">Generate creative answers to questions (FAQs) about your business or website.</p>
                                                    </div>
                                                </div>
-                                           </a>
+                                           </asp:LinkButton>
                                        </div>
-                                       <div class="col-lg-3 border border-warning rounded-pill aitempl">
-                                           <asp:LinkButton runat="server" href="testimonial-reviews.aspx" title="Upgrade your plan to use this template" data-tippy-placement="top">
+                                       <div class="col-lg-4 border border-warning rounded-pill aitempl">
+                                           <asp:LinkButton runat="server" OnClick="testimonialReview" title="Upgrade your plan to use this template" data-tippy-placement="top">
                                                <div class="dashboard-box ai-templates ai-templates-pro">
                                                    <div class="content">
                                                        <div class="ai-templates-icon">

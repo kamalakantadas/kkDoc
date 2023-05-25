@@ -156,7 +156,11 @@ namespace QuickAI
                         MessageBox.Show(ex.ToString());
                     }
                 }
-            }     
+            }
+            else
+            {
+                MessageBox.Show("Image is not uploaded");
+            }  
                           
         }
         

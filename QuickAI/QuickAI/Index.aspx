@@ -63,7 +63,7 @@
                                     <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
                                     <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
                                     <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
-                                    <a class="dropdown-item" href="#">AI Code</a>
+                                    <a class="dropdown-item" href="ai-code.aspx">AI Code</a>
                                     <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
                                     <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
                                     <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
@@ -1481,9 +1481,7 @@
                         </div>
                     </div>
                 <%-- Carousel sliding end --%>
-
-
-                    
+                                        
                     <%-- Carousel --%>
 
                     <%-- Recent Blogs --%>
@@ -1499,7 +1497,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div style="float:right">
-                                    <a href="blogs.aspx" class="btn-link">viewblogs</a>
+                                    <a href="blogs/1/blogsFirst.aspx" class="btn-link">viewblogs</a>
                                 </div>
                             </div>
                         </div>

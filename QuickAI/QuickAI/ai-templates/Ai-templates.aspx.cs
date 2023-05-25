@@ -16,6 +16,112 @@ namespace QuickAI.ai_templates
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
         }
+        //other start
+        protected void toneChanger(object sender, EventArgs e)
+        {
+            Response.Redirect("Tone Changer.aspx");
+        }
+        protected void songLyrics(object sender, EventArgs e)
+        {
+            Response.Redirect("songLyrics.aspx");
+        }
+        protected void translate(object sender, EventArgs e)
+        {
+            Response.Redirect("translate.aspx");
+        }
+        protected void faqMet(object sender, EventArgs e)
+        {
+            Response.Redirect("faq.aspx");
+        }
+        protected void faqAnswer(object sender, EventArgs e)
+        {
+            Response.Redirect("faqAnswer.aspx");
+        }
+        protected void testimonialReview(object sender, EventArgs e)
+        {
+            Response.Redirect("testimonial-reviews.aspx");
+        }
+        //other end
+        //website start
+        protected void smtBlog(object sender, EventArgs e)
+        {
+            Response.Redirect("Seo Meta Tags(Blog Post).aspx");
+        }
+        protected void smtHome(object sender, EventArgs e)
+        {
+            Response.Redirect("SEO Meta Tags (HomePage).aspx");            
+        }
+        protected void smtProduct(object sender, EventArgs e)
+        {
+            Response.Redirect("SEO Meta Tags (Product Page).aspx");
+        }
+        //website end
+        //Social Media Post start
+        protected void socialMediaPostPersonal(object sender, EventArgs e)
+        {
+            Response.Redirect("SocialMediaPost(Personal).aspx");
+        }
+        protected void socialMediaPostBusiness(object sender, EventArgs e)
+        {
+            Response.Redirect("SocialMediaPostBusiness.aspx");
+        }
+        protected void instagramCaptions(object sender, EventArgs e)
+        {
+            Response.Redirect("Instagram Captions.aspx");
+        }
+        protected void instagramHashtags(object sender, EventArgs e)
+        {
+            Response.Redirect("Instagram Hashtags.aspx");
+        }
+        protected void twitter(object sender, EventArgs e)
+        {
+            Response.Redirect("Twitter Tweets.aspx");
+        }
+        protected void youtubeTitles(object sender, EventArgs e)
+        {
+            Response.Redirect("YoutubeTitles.aspx");
+        }
+        protected void youtubeDesc(object sender, EventArgs e)
+        {
+            Response.Redirect("Youtube Desc.aspx");
+        }
+        protected void youtubeOutline(object sender, EventArgs e)
+        {
+            Response.Redirect("Youtube Online.aspx");
+        }
+        protected void linkedInPost(object sender, EventArgs e)
+        {
+            Response.Redirect("Linkedin Posts.aspx");
+        }
+        protected void TiktokVideoScript(object sender, EventArgs e)
+        {
+            Response.Redirect("Tiktok video.aspx");
+        }
+      
+        //Social Media Post End
+        //Ecommerce Starts
+        protected void productNameGenerator(object sender, EventArgs e)
+        {
+            Response.Redirect("Product Name Generator.aspx");
+        }
+        protected void productDescription(object sender, EventArgs e)
+        {
+            Response.Redirect("Product Description.aspx");
+        }
+        protected void amazonProductTitles(object sender, EventArgs e)
+        {
+            Response.Redirect("AmazonProductTitle.aspx");
+        }
+        protected void amazonProductDesc(object sender, EventArgs e)
+        {
+            Response.Redirect("amazonProductDescriptions.aspx");
+        }
+        protected void amazonProductFeatures(object sender, EventArgs e)
+        {
+            Response.Redirect("Amazon Product Features.aspx");
+        }
+
+        //Ecommerce End
         //General Writing Starts
         protected void TextExtender(object sender, EventArgs e)
         {

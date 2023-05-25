@@ -6,3 +6,8 @@
         $("#titleCount").text(xl);
     });
 });
+function viewText() {
+    $("#viewImage").show();
+} function hideText() {
+    $("#viewImage").hide();
+}

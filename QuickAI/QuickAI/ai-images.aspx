@@ -40,17 +40,16 @@
                             <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="userDropDownList">
-
                             <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                            <a class="dropdown-item" href="#">Templates</a>
-                            <a class="dropdown-item" href="#">AI Images</a>
-                            <a class="dropdown-item" href="#">AI Chat</a>
-                            <a class="dropdown-item" href="#">Speech to Text</a>
-                            <a class="dropdown-item" href="#">AI Code</a>
-                            <a class="dropdown-item" href="#">All Documents</a>
-                            <a class="dropdown-item" href="#">Membership</a>
+                            <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                            <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                            <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                            <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
+                            <a class="dropdown-item" href="ai-code.aspx">AI Code</a>
+                            <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                            <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
                             <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                            <a class="dropdown-item" href="#">Logout</a>
+                            <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                         </div>
                     </div>
                 </div>
@@ -127,13 +126,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="ai-Images.aspx">
+                                    <a href="ai-images.aspx">
                                         <i class="icon-feather-image"></i>
                                         <div>Ai Images</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="ai-chat.aspx">
                                         <i class="icon-feather-message-circle"></i>
                                         <div>Ai Chat</div>
                                     </a>
@@ -145,7 +144,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="ai-code.aspx">
                                         <i class="icon-feather-code"></i>
                                         <div>Ai Code</div>
                                     </a>
@@ -160,8 +159,8 @@
                                         </a>
 
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Affiliate Program</a>
-                                            <a class="dropdown-item" href="#">Withdrawals</a>
+                                            <a class="dropdown-item" href="affiliate-program.aspx">Affiliate Program</a>
+                                            <a class="dropdown-item" href="withdrawals.aspx">Withdrawals</a>
                                         </div>
                                     </div>
                                 </li>
@@ -176,20 +175,17 @@
                                         <i class="icon-feather-file-text"></i>
                                         <div>Transactions</div>
                                     </a>
-
+                                </li>
+                                <li><a href="accountSetting.aspx"><i class="icon-feather-log-out"></i>
+                                    <div>Account Setting</div>
+                                </a>
                                 </li>
                                 <li>
-                                    <a href="accountSetting.aspx">
-                                        <i class="icon-feather-log-out"></i>
-                                        <div>Account Setting</div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-material-outline-power-settings-new"></i>
-                                        <div>Logout</div>
-                                    </a>
+                                    <%--<a href="#">
+                                       <i class="icon-material-outline-power-settings-new"></i>
+                                       <div>Logout</div>
+                                   </a>--%>
+                                    <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
 
                                 </li>
                             </ul>

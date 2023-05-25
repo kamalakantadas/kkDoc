@@ -113,6 +113,9 @@
     <Content Include="ai-code.aspx" />
     <Content Include="ai-images.aspx" />
     <Content Include="ai-templates\Ai-templates.aspx" />
+    <Content Include="ai-templates\Amazon Product Features.aspx" />
+    <Content Include="ai-templates\amazonProductDescriptions.aspx" />
+    <Content Include="ai-templates\AmazonProductTitle.aspx" />
     <Content Include="ai-templates\Answers.aspx" />
     <Content Include="ai-templates\AppsAndSms.aspx" />
     <Content Include="ai-templates\articleOutline.aspx" />
@@ -136,19 +139,31 @@
     <Content Include="ai-templates\emailsV2.aspx" />
     <Content Include="ai-templates\facebookAds.aspx" />
     <Content Include="ai-templates\facebookAdsHeadline.aspx" />
+    <Content Include="ai-templates\FAQ templates.aspx" />
     <Content Include="ai-templates\faq-answers.aspx" />
     <Content Include="ai-templates\faq.aspx" />
+    <Content Include="ai-templates\faqAnswer.aspx" />
     <Content Include="ai-templates\GoogleAdsDesc.aspx" />
     <Content Include="ai-templates\googleAdsTitle.aspx" />
     <Content Include="ai-templates\HeadContentTemplates.ascx" />
+    <Content Include="ai-templates\Instagram Captions.aspx" />
+    <Content Include="ai-templates\Instagram Hashtags.aspx" />
     <Content Include="ai-templates\LinkedAdsDesc.aspx" />
     <Content Include="ai-templates\LinkedAdsHeadLine.aspx" />
+    <Content Include="ai-templates\Linkedin Posts.aspx" />
     <Content Include="ai-templates\paragraphWriter.aspx" />
     <Content Include="ai-templates\passiveToActiveVoice.aspx" />
+    <Content Include="ai-templates\Product Description.aspx" />
+    <Content Include="ai-templates\Product Name Generator.aspx" />
     <Content Include="ai-templates\prosAndCons.aspx" />
     <Content Include="ai-templates\question.aspx" />
     <Content Include="ai-templates\QuoraAnswer.aspx" />
     <Content Include="ai-templates\RewriteWithKeywords.aspx" />
+    <Content Include="ai-templates\SEO Meta Tags %28Homepage%29.aspx" />
+    <Content Include="ai-templates\SEO Meta Tags %28Product Page%29.aspx" />
+    <Content Include="ai-templates\Seo Meta Tags%28Blog Post%29.aspx" />
+    <Content Include="ai-templates\SocialMediaPost%28Personal%29.aspx" />
+    <Content Include="ai-templates\SocialMediaPostBusiness.aspx" />
     <Content Include="ai-templates\songLyrics.aspx" />
     <Content Include="ai-templates\startupNameGenerator.aspx" />
     <Content Include="ai-templates\stories.aspx" />
@@ -157,8 +172,14 @@
     <Content Include="ai-templates\Templates.aspx" />
     <Content Include="ai-templates\testimonial-reviews.aspx" />
     <Content Include="ai-templates\TextExtender.aspx" />
+    <Content Include="ai-templates\Tiktok video.aspx" />
+    <Content Include="ai-templates\Tone Changer.aspx" />
     <Content Include="ai-templates\ToneChanger.aspx" />
     <Content Include="ai-templates\translate.aspx" />
+    <Content Include="ai-templates\Twitter Tweets.aspx" />
+    <Content Include="ai-templates\Youtube Desc.aspx" />
+    <Content Include="ai-templates\Youtube Online.aspx" />
+    <Content Include="ai-templates\YoutubeTitles.aspx" />
     <Content Include="all-documents.aspx" />
     <Content Include="all-Images.aspx" />
     <Content Include="blogs\1\blogsFirst.aspx" />
@@ -306,6 +327,27 @@
     </Compile>
     <Compile Include="ai-templates\Ai-templates.aspx.designer.cs">
       <DependentUpon>Ai-templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Amazon Product Features.aspx.cs">
+      <DependentUpon>Amazon Product Features.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Amazon Product Features.aspx.designer.cs">
+      <DependentUpon>Amazon Product Features.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\amazonProductDescriptions.aspx.cs">
+      <DependentUpon>amazonProductDescriptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\amazonProductDescriptions.aspx.designer.cs">
+      <DependentUpon>amazonProductDescriptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\AmazonProductTitle.aspx.cs">
+      <DependentUpon>AmazonProductTitle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\AmazonProductTitle.aspx.designer.cs">
+      <DependentUpon>AmazonProductTitle.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\Answers.aspx.cs">
       <DependentUpon>Answers.aspx</DependentUpon>
@@ -468,6 +510,13 @@
     <Compile Include="ai-templates\facebookAdsHeadline.aspx.designer.cs">
       <DependentUpon>facebookAdsHeadline.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\FAQ templates.aspx.cs">
+      <DependentUpon>FAQ templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\FAQ templates.aspx.designer.cs">
+      <DependentUpon>FAQ templates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\faq-answers.aspx.cs">
       <DependentUpon>faq-answers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -481,6 +530,13 @@
     </Compile>
     <Compile Include="ai-templates\faq.aspx.designer.cs">
       <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\faqAnswer.aspx.cs">
+      <DependentUpon>faqAnswer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\faqAnswer.aspx.designer.cs">
+      <DependentUpon>faqAnswer.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\GoogleAdsDesc.aspx.cs">
       <DependentUpon>GoogleAdsDesc.aspx</DependentUpon>
@@ -503,6 +559,20 @@
     <Compile Include="ai-templates\HeadContentTemplates.ascx.designer.cs">
       <DependentUpon>HeadContentTemplates.ascx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\Instagram Captions.aspx.cs">
+      <DependentUpon>Instagram Captions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Instagram Captions.aspx.designer.cs">
+      <DependentUpon>Instagram Captions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Instagram Hashtags.aspx.cs">
+      <DependentUpon>Instagram Hashtags.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Instagram Hashtags.aspx.designer.cs">
+      <DependentUpon>Instagram Hashtags.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\LinkedAdsDesc.aspx.cs">
       <DependentUpon>LinkedAdsDesc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -517,6 +587,13 @@
     <Compile Include="ai-templates\LinkedAdsHeadLine.aspx.designer.cs">
       <DependentUpon>LinkedAdsHeadLine.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\Linkedin Posts.aspx.cs">
+      <DependentUpon>Linkedin Posts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Linkedin Posts.aspx.designer.cs">
+      <DependentUpon>Linkedin Posts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\paragraphWriter.aspx.cs">
       <DependentUpon>paragraphWriter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -530,6 +607,20 @@
     </Compile>
     <Compile Include="ai-templates\passiveToActiveVoice.aspx.designer.cs">
       <DependentUpon>passiveToActiveVoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Product Description.aspx.cs">
+      <DependentUpon>Product Description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Product Description.aspx.designer.cs">
+      <DependentUpon>Product Description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Product Name Generator.aspx.cs">
+      <DependentUpon>Product Name Generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Product Name Generator.aspx.designer.cs">
+      <DependentUpon>Product Name Generator.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\prosAndCons.aspx.cs">
       <DependentUpon>prosAndCons.aspx</DependentUpon>
@@ -558,6 +649,41 @@
     </Compile>
     <Compile Include="ai-templates\RewriteWithKeywords.aspx.designer.cs">
       <DependentUpon>RewriteWithKeywords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\SEO Meta Tags %28Homepage%29.aspx.cs">
+      <DependentUpon>SEO Meta Tags %28Homepage%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\SEO Meta Tags %28Homepage%29.aspx.designer.cs">
+      <DependentUpon>SEO Meta Tags %28Homepage%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\SEO Meta Tags %28Product Page%29.aspx.cs">
+      <DependentUpon>SEO Meta Tags %28Product Page%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\SEO Meta Tags %28Product Page%29.aspx.designer.cs">
+      <DependentUpon>SEO Meta Tags %28Product Page%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Seo Meta Tags%28Blog Post%29.aspx.cs">
+      <DependentUpon>Seo Meta Tags%28Blog Post%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Seo Meta Tags%28Blog Post%29.aspx.designer.cs">
+      <DependentUpon>Seo Meta Tags%28Blog Post%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\SocialMediaPost%28Personal%29.aspx.cs">
+      <DependentUpon>SocialMediaPost%28Personal%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\SocialMediaPost%28Personal%29.aspx.designer.cs">
+      <DependentUpon>SocialMediaPost%28Personal%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\SocialMediaPostBusiness.aspx.cs">
+      <DependentUpon>SocialMediaPostBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\SocialMediaPostBusiness.aspx.designer.cs">
+      <DependentUpon>SocialMediaPostBusiness.aspx</DependentUpon>
     </Compile>
     <Compile Include="ai-templates\songLyrics.aspx.cs">
       <DependentUpon>songLyrics.aspx</DependentUpon>
@@ -615,6 +741,20 @@
     <Compile Include="ai-templates\TextExtender.aspx.designer.cs">
       <DependentUpon>TextExtender.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ai-templates\Tiktok video.aspx.cs">
+      <DependentUpon>Tiktok video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Tiktok video.aspx.designer.cs">
+      <DependentUpon>Tiktok video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Tone Changer.aspx.cs">
+      <DependentUpon>Tone Changer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Tone Changer.aspx.designer.cs">
+      <DependentUpon>Tone Changer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ai-templates\ToneChanger.aspx.cs">
       <DependentUpon>ToneChanger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -628,6 +768,34 @@
     </Compile>
     <Compile Include="ai-templates\translate.aspx.designer.cs">
       <DependentUpon>translate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Twitter Tweets.aspx.cs">
+      <DependentUpon>Twitter Tweets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Twitter Tweets.aspx.designer.cs">
+      <DependentUpon>Twitter Tweets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Youtube Desc.aspx.cs">
+      <DependentUpon>Youtube Desc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Youtube Desc.aspx.designer.cs">
+      <DependentUpon>Youtube Desc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\Youtube Online.aspx.cs">
+      <DependentUpon>Youtube Online.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\Youtube Online.aspx.designer.cs">
+      <DependentUpon>Youtube Online.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai-templates\YoutubeTitles.aspx.cs">
+      <DependentUpon>YoutubeTitles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai-templates\YoutubeTitles.aspx.designer.cs">
+      <DependentUpon>YoutubeTitles.aspx</DependentUpon>
     </Compile>
     <Compile Include="all-documents.aspx.cs">
       <DependentUpon>all-documents.aspx</DependentUpon>

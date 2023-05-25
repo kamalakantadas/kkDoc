@@ -69,7 +69,7 @@
                 <div class="justify-content-center h-100">
                     <div class="card" style="margin-top:50px;margin-bottom:30px;">
                          <div class="card-header">
-                             <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                             <h2 class="text-uppercase text-center mb-1">Create an account</h2>
                              <div class="d-flex justify-content-end">
                                  <div class="p-3 m-0 border-0 bd-example">
                                      <!-- Example Code -->

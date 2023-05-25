@@ -12,6 +12,7 @@ $(document).ready(function () {
         min_height: 500,
         resize: true,
         plugins: 'advlist lists table autolink link wordcount fullscreen autoresize',
+        /* plugins: 'advlist lists fullscreen autoresize',*/
         toolbar: [
             "blocks | bold italic underline strikethrough | alignleft aligncenter alignright  | link blockquote",
             "undo redo | removeformat | table | bullist numlist | outdent indent"
@@ -39,6 +40,38 @@ function blogIdea() {
     $("#ctl03_pageLink").text("blogIdea.aspx");
 
 }
+//other start
+function ToneChanger() { }
+function songLyrics() { }
+function translate() { }
+function faqTemplates() { }
+function faqAnswer() { }
+function testimonialReview() { }
+//other end
+//Website start
+function smtBlogMet() { }
+function smtHomeMet() { }
+function smtProductPage() { }
+//Website End
+//socialMedia start
+function socialMediaPostPersonal() { }
+function socialMediaPostBusiness() { }
+function instagramCaptions() { }
+function instagramHashTags() { }
+function Twitter() { }
+function youtube() { }
+function youtubeDesc() { }
+function youtubeOnline() { }
+function linkedInPost() { }
+function tiktok() { }
+//socialMedia end
+//Ecommerce start
+function ProductNameGenerator() { }
+function productDescription() { } 
+function amazonProductTitle() { }
+function amazonProductDesc() { }
+function amazonProductFeature() { }
+//Ecommerce end
 //General Writing start
 function textExtender() { } 
 function contentShorten() { } 

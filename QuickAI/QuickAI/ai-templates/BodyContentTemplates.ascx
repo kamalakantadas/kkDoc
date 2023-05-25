@@ -21,7 +21,7 @@
                         <%-- user drop down button --%>
                         <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userdropdownlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <asp:image runat="server" id="userimage" src="../images/usericon.jpg" style="height: 30px" onmouseover="viewtext()" onmouseout="hidetext()" alt="" class="hover-text" />
+                                <asp:image runat="server" id="userimage" src="../Images/Image%20ICON.png" style="height: 30px" onmouseover="viewtext()" onmouseout="hidetext()" alt="" class="hover-text" />
                                 <asp:textbox id="viewimage" style="display: none; width: 100px;" runat="server" value=""></asp:textbox>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userdropdownlist">
@@ -79,11 +79,10 @@
                                     <div>dashboard</div>
                                 </a>
                             </li>
-
                             <li>
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="mydocdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512" style="height: 15px; width: 15px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" <%--viewbox="0 0 384 512"--%> style="height: 15px; width: 15px;">
                                             <!--! font awesome pro 6.4.0 by @fontawesome - https://fontawesome.com license - https://fontawesome.com/license (commercial license) copyright 2023 fonticons, inc. -->
                                             <path d="m0 64c0 28.7 28.7 0 64 0h224v128c0 17.7 14.3 32 32 32h384v448c0 35.3-28.7 64-64 64h64c-35.3 0-64-28.7-64-64v64zm384 64h256v0l384 128z" />
                                         </svg>

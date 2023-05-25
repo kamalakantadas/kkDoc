@@ -9,8 +9,6 @@
   
 </head>
 <body>
-     <form id="faqBody" runat="server">
-     
-    </form>
+   
 </body>
 </html>

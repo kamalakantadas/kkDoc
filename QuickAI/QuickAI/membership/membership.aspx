@@ -59,16 +59,16 @@
                           </a>
                           <div class="dropdown-menu" aria-labelledby="userDropDownList">
                             
-                            <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                            <a class="dropdown-item" href="#">Templates</a>
-                              <a class="dropdown-item" href="#">AI Images</a>
-                              <a class="dropdown-item" href="#">AI Chat</a>
-                              <a class="dropdown-item" href="#">Speech to Text</a>
-                              <a class="dropdown-item" href="#">AI Code</a>
-                              <a class="dropdown-item" href="#">All Documents</a>
-                              <a class="dropdown-item" href="#">Membership</a>
-                              <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                              <a class="dropdown-item" href="#">Logout</a>                           
+                              <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
+                              <a class="dropdown-item" href="../ai-templates/Ai-templates.aspx">Templates</a>
+                              <a class="dropdown-item" href="../ai-images.aspx">AI Images</a>
+                              <a class="dropdown-item" href="../ai-chat.aspx">AI Chat</a>
+                              <a class="dropdown-item" href="../speechToText.aspx">Speech to Text</a>
+                              <a class="dropdown-item" href="../ai-code.aspx">AI Code</a>
+                              <a class="dropdown-item" href="../all-documents.aspx">All Documents</a>
+                              <a class="dropdown-item" href="membership.aspx">Membership</a>
+                              <a class="dropdown-item" href="../accountSetting.aspx">Account Setting</a>
+                              <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                           </div>
                         </div>                 
                     </div>
@@ -106,7 +106,7 @@
                            <%-- My Account --%>
                            <ul class="">
                                <li>
-                                   <a href="dashboard.aspx">
+                                   <a href="../dashboard.aspx">
                                        <i class="icon-feather-grid"></i>
                                        <div>Dashboard</div>
                                    </a>
@@ -123,8 +123,8 @@
 
                                        </button>
                                        <div class="dropdown-menu" aria-labelledby="MyDocDrop">
-                                           <a class="dropdown-item" href="#">All Documents</a>
-                                           <a class="dropdown-item" href="#">All AI Images</a>
+                                           <a class="dropdown-item" href="../all-documents.aspx">All Documents</a>
+                                           <a class="dropdown-item" href="../ai-images.aspx">All AI Images</a><a href="../all-Images.aspx">../all-Images.aspx</a>
                                        </div>
                                    </div>
                                    <%-- <a href="#" id="myDocBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> 
@@ -205,10 +205,7 @@
 
                                </li>
                                <li>
-                                   <a href="#">
-                                       <i class="icon-material-outline-power-settings-new"></i>
-                                       <div>Logout</div>
-                                   </a>
+                                    <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
 
                                </li>
                            </ul>

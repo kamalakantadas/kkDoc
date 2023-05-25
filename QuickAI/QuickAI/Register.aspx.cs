@@ -114,6 +114,7 @@ namespace QuickAI
                         DataTable table = new DataTable();
                         adapter.Fill(table);
                         MessageBox.Show("Successfully Registered!!");
+                        Response.Redirect("dashboard.aspx?email='" + reg.email + "'");
                         //It should be redirected to Index page where UserName should assign to User Icon using reg.name
                         //all property associated with userName should be visible in Dashboard page
                     }
