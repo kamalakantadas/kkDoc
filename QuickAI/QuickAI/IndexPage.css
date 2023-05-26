@@ -5,7 +5,11 @@
     #sidebar {
         display: none; /* Hide div2 when screen width is less than or equal to 768px */
     }
+    #dashboardBody {
+        margin-top: 177px;
+    }
 }
+
 .ai-templates {
    margin:6px;
     padding:10px;
@@ -16,6 +20,8 @@
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    width:80%;
+    
 }
 .clearfix::after {
     content: "";

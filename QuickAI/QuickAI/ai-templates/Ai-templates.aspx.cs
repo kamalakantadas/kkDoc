@@ -236,16 +236,17 @@ namespace QuickAI.ai_templates
         //All Blogs Code starts
         protected void blogIdeas(object sender, EventArgs e)
         {
-            var paragraphElement = FindControl("conText") as System.Web.UI.HtmlControls.HtmlGenericControl;
-            var headingElement = FindControl("conId") as System.Web.UI.HtmlControls.HtmlGenericControl;
-            if (paragraphElement != null && headingElement != null)
-            {
-                string pText = paragraphElement.InnerText;
-                // Use the paragraphText as needed            
-                string pHead = headingElement.InnerText;
-                // Use the headingText as needed
-                Response.Redirect("blogIdea.aspx?pText=" + pText + "&pHead=" + pHead + "");
-            }
+            //var paragraphElement = FindControl("conText") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            //var headingElement = FindControl("conId") as System.Web.UI.HtmlControls.HtmlGenericControl;
+            //if (paragraphElement != null && headingElement != null)
+            //{
+            //    string pText = paragraphElement.InnerText;
+            //    // Use the paragraphText as needed            
+            //    string pHead = headingElement.InnerText;
+            //    // Use the headingText as needed
+            //    Response.Redirect("blogIdea.aspx?pText=" + pText + "&pHead=" + pHead + "");
+            //}
+            Response.Redirect("blogIdea.aspx");
 
         }
         protected void contentRephrase(object sender, EventArgs e) {

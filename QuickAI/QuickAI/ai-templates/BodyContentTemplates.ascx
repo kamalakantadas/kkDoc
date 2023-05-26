@@ -198,103 +198,128 @@
                                 <%-- speech to text form left side start--%>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                     <div class="row" style="background-color: white; margin-left: 10px; box-shadow: 0px 1px 7px 1px;">
-                                        <div class="row" style="width: 90%; padding: 20px; margin-left: 10px; border-bottom: 1px solid grey">
-                                            <a><i class="fas fa-headset"></i></a>
-                                            <h6 runat="server" id="formHeader">faq answers</h6>
+                                        <div id="r1" style="width:100%">
+                                            <div class="row" style="width: 90%; padding: 20px; margin-left: 10px; border-bottom: 1px solid grey">
+                                                <a><i class="fas fa-headset"></i></a>
+                                                <h6 runat="server" id="formHeader">faq answers</h6>
+                                            </div>
                                         </div>
-                                        <div class="row" style="margin: 20px; padding: 5px; background-color: cornflowerblue;">
+                                       
+                                        <div class="row mt-1" style="padding: 5px; background-color: cornflowerblue;">
 <%--                                            <p runat="server" id="formInnerDiv" class="small">add social proof to your website by generating user testimonials.</p>--%>
 <%--                                            <asp:TextBox runat="server" ID="formInnerDiv" class="small" placeholder="add social proof to your website by generating user testimonials."></asp:TextBox>--%>
                                         </div>
-                                        <div class="row form-group ml-3 mb-0">
-                                            <p>product name:</p><p style="color:red">*</p>
-                                            <p style="margin-left: 50px;" id="titlecount">0</p>
-                                            <p>/100</p>
+                                        <div id="r2">
+                                            <div class="row form-group ml-3 mb-0">
+                                                <p>product name:</p>
+                                                <p style="color: red">*</p>
+                                                <p style="margin-left: 50px;" id="titlecount">0</p>
+                                                <p>/100</p>
+                                            </div>
+                                            <div class="row form-group ml-3 mb-0">
+                                                <input class="form-control" type="text" runat="server" id="title" placeholder="" style="width: 267px" />
+                                            </div>
                                         </div>
-                                        <div class="row form-group ml-3 mb-0">
-                                            <input class="form-control" type="text" runat="server" id="title" placeholder="" style="width:267px" />
-                                        </div>
-                                        <div class="row" style="margin: 15px; margin-bottom: 0px">
-                                            <p class="fs-4 fw-bolder">product description</p>
-                                            <p style="color: red">*</p> 
-                                            <p style="margin-left: 50px" id="audiodesccount">0</p>
-                                            <p>/100</p>
-                                        </div>
-                                        <div class="row form-group ml-3" >
-                                            <asp:textbox class="form-control" id="adesc" runat="server" rows="2" textmode="multiline" style="width: 267px"></asp:textbox>
+                                        <div id="r3">
+                                            <div class="row" style="margin: 15px; margin-bottom: 0px">
+                                                <p class="fs-4 fw-bolder">product description</p>
+                                                <p style="color: red">*</p>
+                                                <p style="margin-left: 50px" id="audiodesccount">0</p>
+                                                <p>/100</p>
+                                            </div>
+                                            <div class="row form-group ml-3">
+                                                <asp:TextBox class="form-control" ID="adesc" runat="server" Rows="2" TextMode="multiline" Style="width: 267px"></asp:TextBox>
+                                            </div>
                                         </div>
                                         
+                                        
                                         <%-- language --%>
-                                        <p class="fs-4 fw-bolder ml-3">language</p>
-                                        <div class="row ml-3 ml-3 mb-2" style="box-shadow:0px 1px 4px 1px grey;height:30px;">                                            
-                                            <select class="selectpicker" data-width="fit" style="width:267px">
-                                                <option>english</option>
-                                                <option>chinese</option>
-                                                <option>danish</option>
-                                                <option>dutch</option>                                                
-                                                <option>english</option>
-                                                <option>french</option>
-                                                <option>german</option>
-                                                <option>hebrew</option>
-                                                <option>hindi</option>
-                                                <option>italian</option>
-                                                <option>japanese</option>
-                                                <option>polish</option>
-                                                <option>romanian</option>
-                                                <option>russian</option>
-                                                <option>spanish</option>
-                                                <option>swedish</option>
-                                                <option>turkish</option>
-                                                <option>vietnamese</option>
-                                            </select>
+                                        <div id="r4">
+                                            <p class="fs-4 fw-bolder ml-3">language</p>
+                                            <div class="row ml-3 ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
+                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                                    <option>english</option>
+                                                    <option>chinese</option>
+                                                    <option>danish</option>
+                                                    <option>dutch</option>
+                                                    <option>english</option>
+                                                    <option>french</option>
+                                                    <option>german</option>
+                                                    <option>hebrew</option>
+                                                    <option>hindi</option>
+                                                    <option>italian</option>
+                                                    <option>japanese</option>
+                                                    <option>polish</option>
+                                                    <option>romanian</option>
+                                                    <option>russian</option>
+                                                    <option>spanish</option>
+                                                    <option>swedish</option>
+                                                    <option>turkish</option>
+                                                    <option>vietnamese</option>
+                                                </select>
+                                            </div>
                                         </div>
+                                       
                                         <%-- quality type --%>
-                                        <p class="fs-4 fw-bolder ml-3">quality type</p>
-                                        <div class="row ml-3 mb-2" style="box-shadow:0px 1px 4px 1px grey;height:30px;">                                            
-                                            <select class="selectpicker" data-width="fit" style="width:267px">
-                                                <option>economy</option>
-                                                <option>average</option>
-                                                <option>good</option>
-                                                <option>premium</option> 
-                                            </select>
+                                        <div id="r5">
+                                            <p class="fs-4 fw-bolder ml-3">quality type</p>
+                                            <div class="row ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
+                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                                    <option>economy</option>
+                                                    <option>average</option>
+                                                    <option>good</option>
+                                                    <option>premium</option>
+                                                </select>
+                                            </div>
                                         </div>
+                                        
                                         <%-- tone of voice --%>
-                                        <p class="fs-4 fw-bolder ml-3">tones of voice</p>
-                                        <div class="row ml-3 mb-2" style="box-shadow:0px 1px 4px 1px grey;height:30px;">                                            
-                                            <select class="selectpicker" data-width="fit" style="width:267px">
-                                                <option>funny</option>
-                                                <option>casual</option>
-                                                <option>excited</option>
-                                                <option>professional</option> 
-                                                <option>witty</option> 
-                                                <option>sarcastic</option> 
-                                                <option>feminine</option> 
-                                                <option>bold</option> 
-                                                <option>dramatic</option> 
-                                                <option>gumpy</option> 
-                                                <option>secretive</option> 
-                                            </select>
+                                        <div id="r6">
+                                            <p class="fs-4 fw-bolder ml-3">tones of voice</p>
+                                            <div class="row ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
+                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                                    <option>funny</option>
+                                                    <option>casual</option>
+                                                    <option>excited</option>
+                                                    <option>professional</option>
+                                                    <option>witty</option>
+                                                    <option>sarcastic</option>
+                                                    <option>feminine</option>
+                                                    <option>bold</option>
+                                                    <option>dramatic</option>
+                                                    <option>gumpy</option>
+                                                    <option>secretive</option>
+                                                </select>
+                                            </div>
                                         </div>
+                                       
                                         <%-- number of result --%>
-                                        <p class="fs-4 fw-bolder ml-3 mb-2">number of result</p>
-                                        <div class="row ml-3" style="box-shadow:0px 1px 4px 1px grey;height:30px;">                                           
-                                            <select class="selectpicker" data-width="fit" style="width:267px">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option> 
-                                                <option>5</option> 
-                                            </select>
+                                        <div id="r7">
+                                            <p class="fs-4 fw-bolder ml-3 mb-2">number of result</p>
+                                            <div class="row ml-3" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
+                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="row" style="margin: 10px">
+                                                <p class="fs-6 text-lowercase text-muted fw-light">describe the speech from the file to help the ai. (optional)</p>
+                                            </div>
                                         </div>
-                                        <div class="row" style="margin: 10px">
-                                            <p class="fs-6 text-lowercase text-muted fw-light">describe the speech from the file to help the ai. (optional)</p>
+                                      
+                                        <div id="r8">
+                                            <div class="row form-group" style="margin-left: 20px; margin-left: 10px; margin-right: 10px; margin-top: 10px; width: 90%;">
+                                                <input type="button" class="form-control btn btn-primary" value="generate ->" />
+                                            </div>
                                         </div>
-                                        <div class="row form-group" style="margin-left: 20px; margin-left: 10px; margin-right: 10px; margin-top: 10px; width: 90%;">
-                                            <input type="button" class="form-control btn btn-primary" value="generate ->" />
-                                        </div>
-                                        <div class="row" style="background: cornflowerblue; margin: 5px">
-                                            <p class="fs-6 text-lowercase fw-light">audio transcription may takes time due to the file size.</p>
-                                        </div>
+                                        <div id="r9">
+                                            <div class="row" style="background: cornflowerblue; margin: 5px">
+                                                <p class="fs-6 text-lowercase fw-light">audio transcription may takes time due to the file size.</p>
+                                            </div>
+                                        </div>                                        
                                     </div>
                                 </div>
                                 <%-- speech to text form left side end --%>

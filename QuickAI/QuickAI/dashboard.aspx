@@ -25,18 +25,18 @@
                <div class="row fixed-top"  style="box-shadow: 2px 2px 5px grey;background:white;">
                    <div class="row">
                        <%-- Email Bar start--%>
-                       <div class="row" id="emailBar" style="height: 50px;width:100%; box-shadow:1px 1px 1px">                           
+                       <div class="row" id="emailBar" style="min-height: 50px;width:100%; box-shadow:1px 1px 1px">                           
                            <div class="container" >
                                <div class="row" style="padding-top: 5px;">
-                                   <div class="col-lg-8">
+                                   <div class="col-lg-8 col-md-12 col-sm-12">
                                        <p class="text-left">Your Email Address is not verified. Please Verify your email address to use all the feature.</p>
                                    </div>
-                                   <div class="col-lg-2">
+                                   <div class="col-lg-2 col-md-6 col-sm-6">
                                        <div class="form-group">
                                            <asp:TextBox runat="server" ID="verifyEmailBox" class="form-control"></asp:TextBox>
                                        </div>
                                    </div>
-                                   <div class="col-lg-2">
+                                   <div class="col-lg-2 col-md-6 col-sm-6">
                                        <asp:Button class="btn btn-primary" OnClick="verifyEmail" runat="server" ID="verfiyEmailBtn" Text="VerifyEmail" />
                                    </div>
                                </div>
@@ -109,7 +109,7 @@
                 </div>
            </div>
            <%-- Body designed by Kamalakantadas --%>
-           <div id="dashboardBody" style="margin-top:125px"  >
+           <div id="dashboardBody" <%--style="margin-top:125px"--%>>
                <div class="container-fluid">
                    <div class="row" style="display:inline-flex;width:100%">
                        <!-- Left Side Lists -->
@@ -117,10 +117,10 @@
                            <%-- My Account --%>
                            <ul class="">
                                <li>
-                                   <a href="dashboard.aspx">
+                                   <asp:LinkButton runat="server" OnClick="Page_Load">
                                        <i class="icon-feather-grid"></i>
                                        <div>Dashboard</div>
-                                   </a>
+                                   </asp:LinkButton>
                                </li>
 
                                <li>
@@ -226,13 +226,13 @@
                                <%-- Right content 1st row only content --%>
                                <div class="row" >
                                    <%-- Left Side of Right side --%>
-                                   <div class="col-md-2">
+                                   <div class="col-md-2 col-lg-2 col-sm-4">
                                        <h3>Dashboard</h3>
                                    </div>
                                    <div class="col-md-6">
                                    </div>
                                    <%-- Right Side of Right side --%>
-                                   <div class="col-md-4">
+                                   <div class="col-md-4 col-lg-3 col-sm-8">
                                        <div id="SubPage">
                                            <ul style="display: inline-flex;">
                                                <li><a href="index.aspx">Home</a></li>
@@ -244,16 +244,16 @@
                                <%-- 3 boxes Right content 2nd row --%>
                                <div class="row">
                                    <%-- Words Used --%>
-                                   <div class="col-lg-4" style="width: 33%;">
+                                   <div class="col-lg-4 col-md-4 col-sm-4" style="width: 33%;">
                                        <div id="wordsUsed" style="height: 150px; background-color: white; margin-bottom: 30px; margin-right: 30px">
                                            <div class="row">
-                                               <div class="col-lg-8">
+                                               <div class="col-lg-8 col-md-8 col-sm-8">
                                                    <div id="wu" style="padding-left: 40px; padding-top: 40px; width: 50%;">
                                                        <h5>Words Used</h5>
                                                        <h5>0/10,000</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-lg-4" style="background-position: center; width: 50%;">
+                                               <div class="col-lg-4 col-md-4 col-sm-4" style="background-position: center; width: 50%;">
                                                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 140px; width: 40px; fill: rgb(184, 27, 127);" viewBox="0 0 576 512">
                                                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                                        <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
@@ -264,16 +264,16 @@
                                        </div>
                                    </div>
                                    <%-- Images Used --%>
-                                   <div class="col-lg-4" style="width: 33%;">
+                                   <div class="col-lg-4 col-md-4 col-sm-4" style="width: 33%;">
                                        <div id="imagesUsed" style="height: 150px; background-color: white; margin-bottom: 30px; margin-right: 30px;">
                                            <div class="row">
-                                               <div class="col-lg-6" style="width: 50%;">
+                                               <div class="col-lg-6 col-md-6 col-sm-6" style="width: 50%;">
                                                    <div id="iu" style="padding-left: 40px; padding-top: 40px;">
                                                        <h5>Images Used</h5>
                                                        <h5>0/100</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-lg-6" style="color: rgb(54, 189, 120); text-align: center; width: 50%">
+                                               <div class="col-lg-6 col-md-6 col-sm-6" style="color: rgb(54, 189, 120); text-align: center; width: 50%">
                                                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 20px;" width="100px" height="100px" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
                                                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z" />
                                                    </svg>
@@ -282,16 +282,16 @@
                                        </div>
                                    </div>
                                    <%-- Speech Text --%>
-                                   <div class="col-lg-4" style="width: 33%;">
+                                   <div class="col-lg-4 col-md-4 col-sm-4" style="width: 33%;">
                                        <div id="speechText" style="height: 150px; background-color: white; margin-bottom: 30px; margin-right: 30px">
                                            <div class="row">
-                                               <div class="col-lg-6" style="width: 50%">
+                                               <div class="col-lg-6 col-md-6 col-sm-6" style="width: 50%">
                                                    <div id="st" style="padding-left: 40px; padding-top: 40px;">
                                                        <h5>Speech Text</h5>
                                                        <h5>0/0</h5>
                                                    </div>
                                                </div>
-                                               <div class="col-lg-6" style="color: rgb(239, 168, 15); text-align: center; width: 50%">
+                                               <div class="col-lg-6 col-md-6 col-sm-6" style="color: rgb(239, 168, 15); text-align: center; width: 50%">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" style="margin-top: 30px;" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
                                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
                                                    </svg>

@@ -1,5 +1,4 @@
-﻿
-$(document).ready(function () {
+﻿$(document).ready(function () {
    
     //$(function () {
     //    $('.selectpicker').selectpicker();
@@ -121,6 +120,15 @@ function blogsTitle() {
     $("#ctl03_formHeader").text("Blog Ideas");
     $("#ctl03_formInnerDiv").text("Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.");
     $("#ctl03_pageLink").text("blogIdea.aspx");
+}
+function blogIdea() {
+    $("#ctl03_formMainHeader").text("Blog ideas");
+    $("#ctl03_formHeader").text("Blog Ideas");
+    $("#ctl03_formInnerDiv").text("Article/blog ideas that you can use to generate more traffic, leads, and sales for your business.");
+    $("#ctl03_pageLink").text("blogIdea.aspx");
+    $("#r2").hide();
+
+
 }
 function blogSection() {
 

@@ -50,6 +50,11 @@ namespace QuickAI.blogs._1
             //myContainer.Controls.Add(myPanel);
             
         }
+        protected void logout(object sender, EventArgs e)
+        {
+            Session["Email"] = null;
+            Response.Redirect("Index.aspx");
+        }
         
         protected void saveComment(object sender, EventArgs e)
         {

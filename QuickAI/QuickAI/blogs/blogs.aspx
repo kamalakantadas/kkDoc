@@ -34,23 +34,24 @@
                         </a>
                     </div>
                     <div class="col-lg-1 col-md-3 col-sm-4" style="width: 8.33%;">
-                        <%-- User Drop Down Button --%>
+                        <%-- User Drop Down Button --%><img src="" />
                         <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <asp:Image runat="server" ID="userImage" src="../Images/userIcon.jpg" Style="height: 30px" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
+                             <a class="btn btn-secondary dropdown-toggle" style="margin-bottom: 23px;"href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <asp:Image runat="server" ID="userImage" src="../../Images/Image%20ICON.png" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText();" alt="" class="hover-text" />
                                 <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropDownList">
-                                <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                                <a class="dropdown-item" href="#">Templates</a>
-                                <a class="dropdown-item" href="#">AI Images</a>
-                                <a class="dropdown-item" href="#">AI Chat</a>
-                                <a class="dropdown-item" href="#">Speech to Text</a>
-                                <a class="dropdown-item" href="#">AI Code</a>
-                                <a class="dropdown-item" href="#">All Documents</a>
-                                <a class="dropdown-item" href="#">Membership</a>
-                                <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                                <a class="dropdown-item" href="#">Logout</a>
+                                <a class="dropdown-item" href="../dashboard.aspx">Dashboard</a>
+                                <a class="dropdown-item" href="../ai-templates/Ai-templates.aspx">Templates</a>
+                                <a class="dropdown-item" href="../ai-images.aspx">AI Images</a>
+                                <a class="dropdown-item" href="../ai-chat.aspx">AI Chat</a>
+                                <a class="dropdown-item" href="../speechToText.aspx">Speech to Text</a>
+                                <a class="dropdown-item" href="../ai-code.aspx">AI Code</a>
+                                <a class="dropdown-item" href="../all-documents.aspx">All Documents</a>
+                                <a class="dropdown-item" href="../membership/membership.aspx">Membership</a>
+                                <a class="dropdown-item" href="../accountSetting.aspx">Account Setting</a>
+                                <asp:LinkButton runat="server" OnClick="logout"><i class="icon-material-outline-power-settings-new"></i><div>Logout</div></asp:LinkButton>
+
                             </div>
                         </div>
                     </div>
@@ -94,7 +95,7 @@
                                     <div class="col-lg-6">
                                         <ul style="display: inline-flex; float: right">
                                             <li><a href="../Index.aspx">Home</a></li>
-                                            <li><a href="blogs.aspx">Blogs</a></li>
+                                            <li><a href="blogs.aspx">Blogs</a></li>                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -267,7 +268,7 @@
                                 <div class="footer-links">
                                     <h3>My Account</h3>
                                     <ul>
-                                        <li><a href="../Login.aspx">Login</a></li>
+                                        <li><a href="../Login.aspx">Login</a></li>                                        
                                         <li><a href="../Register.aspx">Register</a></li>                                        
                                     </ul>
                                 </div>

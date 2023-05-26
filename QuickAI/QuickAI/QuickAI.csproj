@@ -226,6 +226,7 @@
     <Content Include="index.ashx" />
     <Content Include="Scripts\allTemplates.js" />
     <Content Include="Scripts\withdrawals.js" />
+    <Content Include="TestSearchBar.aspx" />
     <Content Include="withdrawals.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Index.aspx" />
@@ -937,6 +938,13 @@
     </Compile>
     <Compile Include="Testimonials.aspx.designer.cs">
       <DependentUpon>Testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestSearchBar.aspx.cs">
+      <DependentUpon>TestSearchBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestSearchBar.aspx.designer.cs">
+      <DependentUpon>TestSearchBar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Transaction.aspx.cs">
       <DependentUpon>Transaction.aspx</DependentUpon>
