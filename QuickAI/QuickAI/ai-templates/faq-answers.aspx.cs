@@ -11,7 +11,15 @@ namespace QuickAI.ai_templates
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //page load assign all the content of Templates Page
+            Control headTemplate = LoadControl("/ai-templates/HeadContentTemplates.ascx");
+            Page.Header.Controls.Add(headTemplate);
 
+            // Load the body template
+            Control bodyTemplate = LoadControl("/ai-templates/BodyContentTemplates.ascx");
+            Page.Controls.Add(bodyTemplate);
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "faqAnswerID", "faqAnswerMethod();", true);
         }
         protected void logout(object sender, EventArgs e)
         {

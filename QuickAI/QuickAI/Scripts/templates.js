@@ -63,7 +63,7 @@
     //I Have to store 6 div into one array
     
     $("#at").on("click", function () {
-        $(".row h4").show();
+       /* $(".row h4").show();*/
         $("#abp").show();
         $("#amt").show();
         $("#gwg").show();
@@ -73,7 +73,7 @@
         $("#oth").show();
     });
     $("#ab").on("click", function () {
-        $(".row h4").css("display", "none");
+        /*$(".row h4").css("display", "none");*/
         $("#abp").show();
         $("#amt").hide();
         $("#gwg").hide();
@@ -83,7 +83,7 @@
         $("#oth").hide();
     });
     $("#am").on("click", function () {
-        $("#amt").show(); $(".row h4").css("display", "none");
+        $("#amt").show(); /*$(".row h4").css("display", "none");*/
         $("#abp").hide();       
         $("#gwg").hide();
         $("#ece").hide();
@@ -92,7 +92,7 @@
         $("#oth").hide();
     });
     $("#gw").on("click", function () {
-        $("#gwg").show(); $(".row h4").css("display", "none");
+        $("#gwg").show(); /*$(".row h4").css("display", "none");*/
         $("#amt").hide();
         $("#abp").hide();
         $("#ece").hide();
@@ -101,7 +101,7 @@
         $("#oth").hide();
     });
     $("#ec").on("click", function () {
-        $("#ece").show(); $(".row h4").css("display", "none");
+        $("#ece").show(); /*$(".row h4").css("display", "none");*/
         $("#gwg").hide();
         $("#amt").hide();
         $("#abp").hide();        
@@ -110,7 +110,7 @@
         $("#oth").hide();
     });
     $("#sm").on("click", function () {
-        $("#ece").hide(); $(".row h4").css("display", "none");
+        $("#ece").hide(); /*$(".row h4").css("display", "none");*/
         $("#gwg").hide();
         $("#amt").hide();
         $("#abp").hide();
@@ -119,7 +119,7 @@
         $("#oth").hide();
     });
     $("#ws").on("click", function () {
-        $("#webe").show(); $(".row h4").css("display", "none");
+        $("#webe").show(); /*$(".row h4").css("display", "none");*/
         $("#ece").hide();
         $("#gwg").hide();
         $("#amt").hide();
@@ -128,7 +128,7 @@
         $("#oth").hide();
     });
     $("#ot").on("click", function () {
-        $("#oth").show(); $(".row h4").css("display", "none");
+        $("#oth").show(); /*$(".row h4").css("display", "none");*/
         $("#webe").hide();
         $("#ece").hide();
         $("#gwg").hide();

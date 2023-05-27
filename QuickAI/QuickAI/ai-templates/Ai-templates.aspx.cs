@@ -35,7 +35,7 @@ namespace QuickAI.ai_templates
         }
         protected void faqAnswer(object sender, EventArgs e)
         {
-            Response.Redirect("faqAnswer.aspx");
+            Response.Redirect("faq-answers.aspx");
         }
         protected void testimonialReview(object sender, EventArgs e)
         {
@@ -157,7 +157,7 @@ namespace QuickAI.ai_templates
         }
         protected void questions(object sender, EventArgs e)
         {
-            Response.Redirect("questions.aspx");
+            Response.Redirect("question.aspx");
         }
         protected void passiveToActive(object sender, EventArgs e)
         {
@@ -181,7 +181,7 @@ namespace QuickAI.ai_templates
         }
         protected void emailsSubjectLine(object sender, EventArgs e)
         {
-            Response.Redirect("EmailsSubjectLines.aspx");
+            Response.Redirect("EmailSubjectLines.aspx");
         }
         protected void startupNameGenerator(object sender, EventArgs e)
         {

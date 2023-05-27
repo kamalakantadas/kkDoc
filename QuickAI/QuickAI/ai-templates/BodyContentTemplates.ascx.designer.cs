@@ -78,6 +78,15 @@ namespace QuickAI.ai_templates
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl formHeader;
 
         /// <summary>
+        /// formInnerDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl formInnerDiv;
+
+        /// <summary>
         /// title control.
         /// </summary>
         /// <remarks>

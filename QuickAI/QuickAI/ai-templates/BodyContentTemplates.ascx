@@ -205,9 +205,9 @@
                                             </div>
                                         </div>
                                        
-                                        <div class="row mt-1" style="padding: 5px; background-color: cornflowerblue;">
-<%--                                            <p runat="server" id="formInnerDiv" class="small">add social proof to your website by generating user testimonials.</p>--%>
-<%--                                            <asp:TextBox runat="server" ID="formInnerDiv" class="small" placeholder="add social proof to your website by generating user testimonials."></asp:TextBox>--%>
+                                        <div class="row mt-1" style="padding: 5px;margin:10px; background-color: cornflowerblue;">
+                                           <p runat="server" id="formInnerDiv" class="small">add social proof to your website by generating user testimonials.</p>
+<%--                                            <%<asp:TextBox runat="server" ID="formInnerDiv" class="small" placeholder="add social proof to your website by generating user testimonials."></asp:TextBox>--%>
                                         </div>
                                         <div id="r2">
                                             <div class="row form-group ml-3 mb-0">

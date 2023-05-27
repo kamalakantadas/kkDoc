@@ -19,7 +19,7 @@ namespace QuickAI.ai_templates
             Control bodyTemplate = LoadControl("/ai-templates/BodyContentTemplates.ascx");
             Page.Controls.Add(bodyTemplate);
 
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "amazonProductDesc", "amazonProductDesc();", true);
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "amazonProductTitle", "amazonProductTitle();", true);
         }
     }
 }
