@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server" id="gAdsDesc">
-    <title></title>
+    <title>Google Ads Desc</title>
 </head>
 <body>
    

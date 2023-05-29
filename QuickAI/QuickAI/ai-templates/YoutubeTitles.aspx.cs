@@ -10,8 +10,7 @@ namespace QuickAI.ai_templates
     public partial class YoutubeTitles : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-            
+        {            
             //page load assign all the content of Templates Page
             Control headTemplate = LoadControl("/ai-templates/HeadContentTemplates.ascx");
             Page.Header.Controls.Add(headTemplate);

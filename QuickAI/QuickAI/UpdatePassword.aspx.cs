@@ -102,7 +102,7 @@ namespace QuickAI
                         DataTable table = new DataTable();
                         adapter.Fill(table);
                         MessageBox.Show("Updated Successfully");
-                        Response.Redirect("Index.aspx");
+                        Response.Redirect("dashboard.aspx");
                     }
                 }
                 catch (SqlException ex)

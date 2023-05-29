@@ -17,46 +17,46 @@
 <body>
     <!--Forgot Password Page Design-->
     <div class="container" style="margin-top:100px">
-            <div class="d-flex justify-content-center">
-                <!-- h-100-->
-                <div class="card">
-                    <div id="forgotPage">
-                        <nav class="nav navbar">
-                            <div class="card-body">
-                                <form id="form1" class="form-group" runat="server">
-                                    <div class="panel panel-default">
+        <div class="d-flex justify-content-center">
+            <!-- h-100-->
+            <div class="card">
+                <div id="forgotPage">
+                    <nav class="nav navbar">
+                        <div class="card-body">
+                            <form id="form1" class="form-group" runat="server">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <asp:Button runat="server" OnClick="returnHome" class="btn btn-primary float-left" Text="GoHome" />
+                                            </div>
+                                        </div>
+                                        <h3><i class="fa fa-lock fa-4x"></i></h3>
+                                        <h2 class="text-center">Forgot Password?</h2>
+                                        <div class="row" id="alertPopupForEmptyEmail" style="display: none">
+                                            <h4>Email is Missing</h4>
+                                        </div>
                                         <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <asp:Button runat="server" onclick="returnHome" class="btn btn-primary float-left" Text="GoHome"/>                                                    
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                                    <asp:TextBox runat="server" ID="emailFromForgot" placeholder="email address" class="form-control" type="email"></asp:TextBox>
                                                 </div>
                                             </div>
-                                            <h3><i class="fa fa-lock fa-4x"></i></h3>
-                                            <h2 class="text-center">Forgot Password?</h2>
-                                            <div class="row" id="alertPopupForEmptyEmail" style="display:none">
-                                                <h4>Email is Missing</h4>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                                        <asp:TextBox runat="server" id="emailFromForgot" placeholder="email address" class="form-control" type="email"></asp:TextBox>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <asp:Button runat="server" onclick="forgotPassword" class="btn btn-lg btn-primary btn-block" id="btnReset" Text="ResetPassword" />
-                                                </div>
+                                            <div class="form-group">
+                                                <asp:Button runat="server" OnClick="forgotPassword" class="btn btn-lg btn-primary btn-block" ID="btnReset" Text="ResetPassword" />
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </nav>
-                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </div>       
+        </div>
+    </div>
 </body>
 </html>

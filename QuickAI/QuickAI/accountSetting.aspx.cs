@@ -73,15 +73,15 @@ namespace QuickAI
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
             try {
-                String connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
+                string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
                 //string connectionString = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI; Integrated Security=True";
-                String query = "select userName,userEmail from userReg where userEmail=" + email + "";
+                string query = "select userName,userEmail from userReg where userEmail=" + email + "";
                 using (SqlConnection con = new SqlConnection(connectionString)) {
                     //con.Open();
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
-                    String userName = "";
+                    string userName = "";
                     sda.Fill(dt);
                     if (dt.Rows.Count == 1)
                     {
@@ -109,12 +109,12 @@ namespace QuickAI
             //image.InputStream.Read(imgarray, 0, imagefilelenth);
             if (imageInput.HasFile)
             {
-                int imagefilelenth = imageInput.PostedFile.ContentLength;
-                byte[] imgarray = new byte[imagefilelenth];
+                int imagefilelength = imageInput.PostedFile.ContentLength;
+                byte[] imgarray = new byte[imagefilelength];
                 HttpPostedFile image = imageInput.PostedFile;
 
-                String email = userEmail.Text.ToString();
-                String uName = userName.Text.ToString();
+                string email = userEmail.Text.ToString();
+                string uName = userName.Text.ToString();
                 reg.Password = userPwd.Text.ToString();
                 reg.ConfirmPassword = userRePwd.Text.ToString();
                 var context = new ValidationContext(reg, serviceProvider: null, items: null);
@@ -167,7 +167,6 @@ namespace QuickAI
         //Billing Details of Account Setting Page
         public void billingDetails(object sender, EventArgs e) 
         {
-            //
             if (string.IsNullOrEmpty(billingUserName.Text) || string.IsNullOrEmpty(billingUserAdd.Text) || string.IsNullOrEmpty(billingUserCity.Text)
                 || string.IsNullOrEmpty(billingUserState.Text)|| string.IsNullOrEmpty(billingUserZip.Text)|| string.IsNullOrEmpty(country.Text))
             {
@@ -179,16 +178,16 @@ namespace QuickAI
             }
             else
             {
-                String type = typeSel.Text.ToString();
+                string type = typeSel.Text.ToString();
                 string taxId = taxIdBox.Text.ToString();
-                String name = billingUserName.Text.ToString();
-                String add = billingUserAdd.Text.ToString();
-                String city = billingUserCity.Text.ToString();
-                String state = billingUserState.Text.ToString();
-                String zip = billingUserZip.Text.ToString();
-                String countryName = country.Text.ToString();
-                String query = "insert into billing values('" + type + "','" + taxId + "','" + name + "','" + add + "','" + city + "','" + state + "','" + zip + "','" + countryName + "')";
-                String connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
+                string name = billingUserName.Text.ToString();
+                string add = billingUserAdd.Text.ToString();
+                string city = billingUserCity.Text.ToString();
+                string state = billingUserState.Text.ToString();
+                string zip = billingUserZip.Text.ToString();
+                string countryName = country.Text.ToString();
+                string query = "insert into billing values('" + type + "','" + taxId + "','" + name + "','" + add + "','" + city + "','" + state + "','" + zip + "','" + countryName + "')";
+                string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
                 try
                 {
                     using (SqlConnection con = new SqlConnection(connectionString))

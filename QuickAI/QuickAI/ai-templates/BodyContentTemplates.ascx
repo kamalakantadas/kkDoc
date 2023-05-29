@@ -378,33 +378,33 @@
                             <div class="row-fluid" style="padding-bottom:80px;border-top: 1px solid #ccc;">
                                <footerclass="footer" style="position: sticky; bottom: 0;margin-bottom:85px;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
                                   <div class="row navbar py-3 full-width">
-                                           <div class="col-md-6">
-                                               <span class="footer-copyright-text">@ 2023 socius igb pvt ltd, all right reserved</span>
-                                           </div>
-                                           <div class="col-md-6">
-                                               <!-- facebook -->
-                                               <a class="btn" style="" href="#!" role="button"></a>
-                                               <!-- twitter -->
-                                               <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                                      <div class="col-md-6">
+                                          <span class="footer-copyright-text">@ 2023 socius igb pvt ltd, all right reserved</span>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <!-- facebook -->
+                                          <a class="btn" style="" href="#!" role="button"></a>
+                                          <!-- twitter -->
+                                          <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                               <!-- google -->
-                                               <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                                          <!-- google -->
+                                          <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                               <!-- instagram -->
-                                               <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                          <!-- instagram -->
+                                          <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                               <!-- linkedin -->
-                                               <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                          <!-- linkedin -->
+                                          <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                               <!-- pinterest -->
-                                               <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+                                          <!-- pinterest -->
+                                          <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                               <!-- github -->
-                                               <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                                          <!-- github -->
+                                          <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                           </div>
-                                       </div>
+                                      </div>
+                                  </div>
                                </footerclass>
                             </div>
                         </div>

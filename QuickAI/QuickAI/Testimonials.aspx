@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonials</title>      
     <link href="../IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="../Scripts/changeplan.js"></script>
 </head>
 <body>
@@ -159,45 +159,45 @@
             <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
             <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
                 <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="footer-logo">
-                                    <img src="Images/1149945428.png" />
-                                </div>
-                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-logo">
+                                <img src="Images/1149945428.png" />
+                            </div>
+                            <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
 
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>My Account</h3>
+                                <ul>
+                                    <li><a href="Login.aspx">Login</a></li>
+                                    <li><a href="Register.aspx">Register</a></li>
+                                </ul>
                             </div>
-                            <div class="col-md-2">
-                                <div class="footer-links">
-                                    <h3>My Account</h3>
-                                    <ul>
-                                        <li><a href="Login.aspx">Login</a></li>
-                                        <li><a href="Register.aspx">Register</a></li>                                        
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>Helpful Links</h3>
+                                <ul>
+                                    <li><a href="blogs/blogs.aspx">Blog</a></li>
+                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
                             </div>
-                            <div class="col-md-2">
-                                <div class="footer-links">
-                                    <h3>Helpful Links</h3>
-                                    <ul>
-                                        <li><a href="blogs/blogs.aspx">Blog</a></li>
-                                        <li><a href="#">Feedback</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="footer-links">
-                                    <h3>Information</h3>
-                                    <ul>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="Testimonials.aspx">Testimonials</a></li>
-                                        
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-links">
+                                <h3>Information</h3>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="Testimonials.aspx">Testimonials</a></li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
+                </div>
                 <div class="row navbar py-3 text-light bg-dark full-width">
                     <div class="col-md-6">
                         <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>

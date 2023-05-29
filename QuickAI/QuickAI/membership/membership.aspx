@@ -18,8 +18,8 @@
 <body>    
     <form id="membershipForm" runat="server">
         <div id="memberShipPage">
-             <%-- Header Contentt Writen by kamalakantadas27@gmail.com --%>
-           <div id="dHeader">
+            <%-- Header Content start --%>
+            <div id="dHeader">
                <%-- Hide EmailverficationBar --%>
                <%--<div class="container" id="emailBar" style="height:50px;display:none">
                    <div class="row" style="padding-top:5px;">
@@ -97,8 +97,8 @@
                     </div>                    
                 </nav>
            </div>
-           <%-- Body designed by Kamalakantadas --%>
-           <div id="dashboardBody" style="margin-top:95px">
+            <%-- Body designed by Kamalakantadas --%>
+            <div id="dashboardBody" style="margin-top:95px">
                <div class="container-fluid">
                    <div class="row" style="display:inline-flex;width:100%">
                        <!-- Left Side Lists -->
@@ -320,10 +320,10 @@
                   </div>                               
                </div>
            </div>
-           <%-- Bottom Fixed Bar Design by Kamalakantadas --%>
-           <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">
+            <%-- Bottom Fixed Bar Design by Kamalakantadas --%>
+            <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">
                
-           </div>
+            </div>
         </div>
     </form>
 </body>

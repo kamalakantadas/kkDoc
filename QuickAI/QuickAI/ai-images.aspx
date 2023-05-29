@@ -78,7 +78,7 @@
                 </div>
             </nav>
             <%-- AiImages Body --%>
-             <%-- Body designed by Kamalakantadas --%>
+            <%-- Body designed by Kamalakantadas --%>
             <div id="aIBody" style="margin-top:95px">
                 <div class="container-fluid">
                     <div class="row" style="display: inline-flex; width: 100%">
@@ -348,52 +348,40 @@
                                     <a href="#" id="adSet">Advanced Setting +</a>
                                 </div>
                                 <hr />
-                                <div style="padding-bottom:120px;"></div>                                
-                                 <%-- Footer Dashboard --%>
-                                 <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                                 <div class="row-fluid" style="border-top: 1px solid #ccc;">
-                                       <footerclass="footer" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
-                                           <div class="row navbar py-3 full-width">
-                                                    <div class="col-md-6">
-                                                        <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                       <!-- Facebook -->
-                                                        <a class="btn" style="" href="#!" role="button"></a>
-                                                            <!-- Twitter -->
-                                                        <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
-                                                          ><i class="fab fa-twitter"></i
-                                                        ></a>
+                                <div style="padding-bottom:120px;"></div>
+                                <%-- Footer Dashboard --%>
+                                <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
+                                <div class="row-fluid" style="border-top: 1px solid #ccc;">
+                                    <footerclass="footer" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
+                                        <div class="row navbar py-3 full-width">
+                                            <div class="col-md-6">
+                                                <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Facebook -->
+                                                <a class="btn" style="" href="#!" role="button"></a>
+                                                <!-- Twitter -->
+                                                <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                                        <!-- Google -->
-                                                        <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
-                                                          ><i class="fab fa-google"></i
-                                                        ></a>
+                                                <!-- Google -->
+                                                <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                                        <!-- Instagram -->
-                                                        <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
-                                                          ><i class="fab fa-instagram"></i
-                                                        ></a>
+                                                <!-- Instagram -->
+                                                <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                                        <!-- Linkedin -->
-                                                        <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
-                                                          ><i class="fab fa-linkedin-in"></i
-                                                        ></a>
+                                                <!-- Linkedin -->
+                                                <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                                        <!-- Pinterest -->
-                                                        <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
-                                                          ><i class="fab fa-pinterest"></i
-                                                        ></a>
+                                                <!-- Pinterest -->
+                                                <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                                        <!-- Github -->
-                                                        <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
-                                                          ><i class="fab fa-github"></i
-                                                        ></a>
+                                                <!-- Github -->
+                                                <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                                    </div> 
-                                                </div>
-                                       </footerclass> 
+                                            </div>
+                                         </div>
+                                     </footerclass> 
                                  </div>          
                             </div>
                         </div>                        

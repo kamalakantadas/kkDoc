@@ -366,7 +366,7 @@
                            </div>
                        </div>
                   </div>                               
-                </div>
+               </div>
            </div>
            <%-- Bottom Fixed Bar Design by Kamalakantadas --%>
            <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">

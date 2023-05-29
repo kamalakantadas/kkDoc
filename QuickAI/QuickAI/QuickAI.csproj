@@ -226,6 +226,8 @@
     <Content Include="index.ashx" />
     <Content Include="Scripts\allTemplates.js" />
     <Content Include="Scripts\withdrawals.js" />
+    <Content Include="TestDiv.aspx" />
+    <Content Include="TestScrollingAndDropping.aspx" />
     <Content Include="TestSearchBar.aspx" />
     <Content Include="withdrawals.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -925,6 +927,13 @@
     <Compile Include="speechToText.aspx.designer.cs">
       <DependentUpon>speechToText.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestDiv.aspx.cs">
+      <DependentUpon>TestDiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDiv.aspx.designer.cs">
+      <DependentUpon>TestDiv.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TestForm.aspx.cs">
       <DependentUpon>TestForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -938,6 +947,13 @@
     </Compile>
     <Compile Include="Testimonials.aspx.designer.cs">
       <DependentUpon>Testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestScrollingAndDropping.aspx.cs">
+      <DependentUpon>TestScrollingAndDropping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestScrollingAndDropping.aspx.designer.cs">
+      <DependentUpon>TestScrollingAndDropping.aspx</DependentUpon>
     </Compile>
     <Compile Include="TestSearchBar.aspx.cs">
       <DependentUpon>TestSearchBar.aspx</DependentUpon>

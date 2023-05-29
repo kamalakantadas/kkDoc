@@ -16,6 +16,7 @@ namespace QuickAI
             string email = (string)Session["email"];
             TextBox txt = (TextBox)Page.FindControl("viewImage");
             txt.Text = email;
+            //KKcode for hiding userIcon
             if (email == null) {
                 activeSessionFunction.Visible = false;
                 joinButtonFunct.Visible = true;

@@ -53,7 +53,7 @@ namespace QuickAI
                     {
                         System.Windows.MessageBox.Show("Updated unsuccessfull");
                         Response.Redirect("ForgotPassword.aspx");
-                    }                  
+                    }                
                 }
             }
             catch (SqlException ex)

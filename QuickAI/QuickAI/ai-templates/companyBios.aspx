@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server" id="companyBiosID">
-    <title></title>
+    <title>Company Bios</title>
 </head>
 <body>
     

@@ -7,12 +7,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
-    <link href="IndexPage.css" rel="stylesheet" />    
+    <link href="IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/Index.js"></script>
 </head>
 <body>
@@ -125,6 +125,7 @@
                         </div>
                     </nav>
                     <nav class="row navbar navbar-expand-lg" style="padding-top: 100px"></nav>
+                    <hr />
                     <nav class="row navbar navbar-expand-lg">
                         <div class="container">
                             <div class="row">
@@ -143,8 +144,8 @@
                             </div>
                         </div>
                     </nav>
-
-                    <nav class="row navbar navbar-expand-lg" style="padding-top: 200px"></nav>
+                   
+                    <nav class="row navbar navbar-expand-lg" style="padding-top: 100px"></nav>
                     <div class="row">
                         <div class="col-md-12 copy">
                             <p class="text-center"></p>
@@ -1194,7 +1195,7 @@
                     <%--All Templates End--%>
                     <%-- Templates end--%>
                     <%-- Membership Plan --%>
-                     <%-- Change Plan Stuff --%>
+                    <%-- Change Plan Stuff --%>
                     <div id="changePlan">
                         <div class="row" style="margin-top: 10px">
                             <div class="col-lg-12" style="padding-left: 150px; padding-right: 150px">
@@ -1480,7 +1481,7 @@
                             </div>
                         </div>
                     </div>
-                <%-- Carousel sliding end --%>
+                    <%-- Carousel sliding end --%>
                                         
                     <%-- Carousel --%>
 
@@ -1532,127 +1533,98 @@
                             <div class="col-lg-4" style="background:white">
 
                             </div>
-                        </div>
-                       
+                        </div>                       
                     </div>
 
                     <%-- Footer Design By KK row navbar navbar-expand-lg navbar-dark bg-dark--%>
                     <footerclass="footer fixed-bottom" style="bottom: 0;width: 100%;height: 60px;background-color: #f5f5f5;">
                         <div class="row navbar navbar-expand-lg navbar-dark py-3 bg-dark text-light full-width">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="footer-logo">
-                                    <img src="Images/1149945428.png" />                               
-                                </div>
-                                <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="footer-logo">
+                                        <img src="Images/1149945428.png" />
+                                    </div>
+                                    <p>Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.</p>
 
-                            </div>
-                            <div class="col-md-2">
-                                 <div class="footer-links">
-                                    <h3>My Account</h3>
-                                    <ul>
-                                        <li><a href="Login.aspx">Login</a></li>
-                                        <li><a href="Register.aspx">Register</a></li>   
-                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="footer-links">
+                                        <h3>My Account</h3>
+                                        <ul>
+                                            <li><a href="Login.aspx">Login</a></li>
+                                            <li><a href="Register.aspx">Register</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="footer-links">
+                                        <h3>Helpful Links</h3>
+                                        <ul>
+                                            <li><a href="#">Feedback</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="blogs/blogs.aspx">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="footer-links">
+                                        <h3>Information</h3>
+                                        <ul>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="Testimonials.aspx">Testimonials</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <div class="footer-links">
-                                    <h3>Helpful Links</h3>
-                                    <ul>
-                                        <li><a href="#">Feedback</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="blogs/blogs.aspx">Blog</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="footer-links">
-                                    <h3>Information</h3>
-                                    <ul>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="Testimonials.aspx">Testimonials</a></li>   
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>                    
-                    </div>
-                        <div class="row navbar py-3 text-light bg-dark full-width">
-                        <div class="col-md-6">
-                            <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
                         </div>
-                        <div class="col-md-6">
-                           <!-- Facebook -->
-                            <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
-                              ><i class="fab fa-facebook-f"></i
-                            ></a>
+                        <div class="row navbar py-3 text-light bg-dark full-width">
+                            <div class="col-md-6">
+                                <span class="footer-copyright-text">2023 Socius IGB Pvt Ltd, All right reserved</span>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Facebook -->
+                                <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-                            <!-- Twitter -->
-                            <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"
-                              ><i class="fab fa-twitter"></i
-                            ></a>
+                                <!-- Twitter -->
+                                <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                            <!-- Google -->
-                            <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
-                              ><i class="fab fa-google"></i
-                            ></a>
+                                <!-- Google -->
+                                <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                            <!-- Instagram -->
-                            <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"
-                              ><i class="fab fa-instagram"></i
-                            ></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                            <!-- Linkedin -->
-                            <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
-                              ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                            <!-- Pinterest -->
-                            <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"
-                              ><i class="fab fa-pinterest"></i
-                            ></a>
+                                <!-- Pinterest -->
+                                <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
-                            <!-- Vkontakte -->
-                            <a class="btn btn-primary" style="background-color: #4c75a3;" href="#!" role="button"
-                              ><i class="fab fa-vk"></i
-                            ></a>
+                                <!-- Vkontakte -->
+                                <a class="btn btn-primary" style="background-color: #4c75a3;" href="#!" role="button"><i class="fab fa-vk"></i></a>
 
-                            <!-- Stack overflow -->
-                            <a class="btn btn-primary" style="background-color: #ffac44;" href="#!" role="button"
-                              ><i class="fab fa-stack-overflow"></i
-                            ></a>
+                                <!-- Stack overflow -->
+                                <a class="btn btn-primary" style="background-color: #ffac44;" href="#!" role="button"><i class="fab fa-stack-overflow"></i></a>
 
-                            <!-- Youtube -->
-                            <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"
-                              ><i class="fab fa-youtube"></i
-                            ></a>
+                                <!-- Youtube -->
+                                <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
 
-                            <!-- Slack -->
-                            <a class="btn btn-primary" style="background-color: #481449;" href="#!" role="button"
-                              ><i class="fab fa-slack-hash"></i
-                            ></a>
+                                <!-- Slack -->
+                                <a class="btn btn-primary" style="background-color: #481449;" href="#!" role="button"><i class="fab fa-slack-hash"></i></a>
 
-                            <!-- Github -->
-                            <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
-                              ><i class="fab fa-github"></i
-                            ></a>
+                                <!-- Github -->
+                                <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                            <!-- Dribbble -->
-                            <a class="btn btn-primary" style="background-color: #ec4a89;" href="#!" role="button"
-                              ><i class="fab fa-dribbble"></i
-                            ></a>
+                                <!-- Dribbble -->
+                                <a class="btn btn-primary" style="background-color: #ec4a89;" href="#!" role="button"><i class="fab fa-dribbble"></i></a>
 
-                            <!-- Reddit -->
-                            <a class="btn btn-primary" style="background-color: #ff4500;" href="#!" role="button"
-                              ><i class="fab fa-reddit-alien"></i
-                            ></a>
+                                <!-- Reddit -->
+                                <a class="btn btn-primary" style="background-color: #ff4500;" href="#!" role="button"><i class="fab fa-reddit-alien"></i></a>
 
-                            <!-- Whatsapp -->
-                            <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"
-                              ><i class="fab fa-whatsapp"></i
-                            ></a>
-                        </div> 
-                    </div>
+                                <!-- Whatsapp -->
+                                <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
                     </footerclass>    
                 </div>                      
             </div>
@@ -1660,29 +1632,4 @@
     </div>    
 </body>
 </html>
-  <%--  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="Images/Email.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="Images/home-hero-icon%20(1).png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="Images/userIcon.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>--%>
+

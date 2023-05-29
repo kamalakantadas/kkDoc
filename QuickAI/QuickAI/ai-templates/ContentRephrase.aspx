@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server" id="contentRephase">
-    <title></title>
+    <title>Content Rephrase</title>
 </head>
     <body></body>
 </html>

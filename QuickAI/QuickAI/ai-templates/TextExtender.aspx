@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server" id="textExtenderID">
-    <title></title>
+    <title>Text Extender</title>
 </head>
 <body>
   

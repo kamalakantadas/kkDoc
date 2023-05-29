@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server" id="emailsV2ID">
-    <title></title>
+    <title>EmailV2</title>
 </head>
 <body>
     

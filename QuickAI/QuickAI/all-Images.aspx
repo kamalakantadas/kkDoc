@@ -189,10 +189,11 @@
 
                                 </li>
                                 <li>
-                                    <a href="#">
+                                   <%-- <a href="#">
                                         <i class="icon-material-outline-power-settings-new"></i>
                                         <div>Logout</div>
-                                    </a>
+                                    </a>--%>
+                                    <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
 
                                 </li>
                             </ul>

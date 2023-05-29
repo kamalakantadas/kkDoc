@@ -12,12 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="Scripts/AccountSetting.js"></script>
 </head>
 <body>
     <form id="accountSetting" runat="server">
-        <%-- Header Contentt Writen by kamalakantadas27@gmail.com --%>
+        <%-- Header Content ofAccount setting --%>
         <div id="dHeader">
             <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white">
                 <div class="col-lg-3" style="width: 24.99%">
@@ -78,7 +78,7 @@
                 </div>
             </nav>
         </div>
-        <%-- Body designed by Kamalakantadas --%>
+        <%-- Body designed of Account Setting  --%>
         <div id="AccountPage" >
             <div class="container-fluid">
                 <div class="row" style="display:inline-flex;margin-top:95px;width:100%">                   
@@ -370,7 +370,7 @@
                 </div>                               
             </div>
         </div>
-        <%-- Bottom Fixed Bar Design by Kamalakantadas --%>
+        <%-- Bottom Fixed Bar --%>
         <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">
         </div>
     </form>

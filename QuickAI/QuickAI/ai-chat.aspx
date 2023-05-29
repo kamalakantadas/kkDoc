@@ -7,8 +7,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Chat</title>  
     <link href="IndexPage.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -20,7 +19,7 @@
 <body>
      <form id="aiChat" runat="server">
         <div id="ac">
-           <%-- <%-- Original Header --%>
+            <%-- <%-- Original Header --%>
             <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white; ">
                 <div class="col-lg-3 col-md-4 col-sm-4" style="width: 24.99%">
                     <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px; overflow: hidden;">
@@ -81,7 +80,7 @@
                 </div>
             </nav>
             <%-- AiImages Body --%>
-             <%-- Body designed by Kamalakantadas --%>
+            <%-- Body designed --%>
             <div id="aIBody" style="margin-top:95px">
                 <div class="container-fluid">
                     <div class="row" style="display: inline-flex; width: 100%">
@@ -269,34 +268,34 @@
                                  <%-- Footer Dashboard --%>
                                  <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
                                  <div class="row-fluid" style="border-top: 1px solid #ccc;">
-                                       <footerclass="footer" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
-                                           <div class="row navbar py-3 full-width">
-                                               <div class="col-md-6">
-                                                   <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
-                                               </div>
-                                               <div class="col-md-6">
-                                                   <!-- Facebook -->
-                                                   <a class="btn" style="" href="#!" role="button"></a>
-                                                   <!-- Twitter -->
-                                                   <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                                     <footerclass="footer" style="position: sticky; bottom: 0;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
+                                         <div class="row navbar py-3 full-width">
+                                             <div class="col-md-6">
+                                                 <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                                             </div>
+                                             <div class="col-md-6">
+                                                 <!-- Facebook -->
+                                                 <a class="btn" style="" href="#!" role="button"></a>
+                                                 <!-- Twitter -->
+                                                 <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                                   <!-- Google -->
-                                                   <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                                                 <!-- Google -->
+                                                 <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                                   <!-- Instagram -->
-                                                   <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                                 <!-- Instagram -->
+                                                 <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                                   <!-- Linkedin -->
-                                                   <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                                 <!-- Linkedin -->
+                                                 <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                                   <!-- Pinterest -->
-                                                   <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+                                                 <!-- Pinterest -->
+                                                 <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                                   <!-- Github -->
-                                                   <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                                                 <!-- Github -->
+                                                 <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                               </div>
+                                             </div>
                                            </div>
                                        </footerclass> 
                                  </div>          

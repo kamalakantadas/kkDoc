@@ -1,4 +1,48 @@
 ﻿$(document).ready(function () {
+    //scrolling div start
+    $("#selectBtn").on("change", function () {
+        var searchVal = $(this).val().toLowerCase();
+        $(".row").each(function () {
+            var text = $(this).text().toLowerCase();
+            if (text.includes(searchVal)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+        $("html, body").animate({
+            scrollTop: $("#content").offset().top
+        }, 1000);
+    });
+    $(window).on("scroll", function () {
+        // Perform any desired actions on scrolling
+        console.log("Scrolling");
+    });
+    //scrolling div end
+    //TestDiv start
+    $("#TestButton").on("click", function () {
+        const sM = $("<div>");//document.createElement("div")
+        sM.addClass("row", "subMain");
+
+        const cD1 = $("<div>");
+        cD1.addClass("row", "childDiv1");
+
+        const pCd1 = $("<p>").text("I am Child 1 Div");
+        cD1.append(pCd1);
+
+        const cD2 = $("<div>");
+        cD2.addClass("row", "childDiv2");
+        //const cD2 = document.createElement("div").className("row childDiv2");
+        const pCd2 = $("<p>").text("I am Child 2");
+
+        cD2.append(pCd2);
+
+        sM.append(cD1);
+        sM.append(cD2);
+        //sM.append(cD1);
+        $("#subMain").append(sM);
+    });
+    //TestDiv end
     //tinymce.init({
     //    selector: '#myTextarea',
     //    plugins: 'code',

@@ -10,7 +10,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <title>TinyMCE WYSIWYG Bootstrap</title>
-        
+
         <!-- TinyMCE CDN -->
         <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         
@@ -34,7 +34,7 @@
         content_style: 'body { font-size:14px }'
     });
 </script>
-       <%-- <script>
+        <%--<script>
             tinymce.init({
                 selector: 'textarea#editor',
                 plugins: 'lists, link, image, media',
