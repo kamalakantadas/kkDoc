@@ -36,8 +36,8 @@
         };
 
         $.ajax(settings).done(function (response) {
-            //var val = response.chatbot.response;  
-            var val = "hello";
+            var val = response.chatbot.response;  
+            //var val = "hello";
             const aiChatDiv = document.createElement("div");
             aiChatDiv.classList.add("row", "aiChat", "mb-1");
 
