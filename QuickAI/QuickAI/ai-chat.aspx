@@ -20,20 +20,21 @@
      <form id="aiChat" runat="server">
         <div id="ac">
             <%-- <%-- Original Header --%>
-            <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white; ">
-                <div class="col-lg-3 col-md-4 col-sm-4" style="width: 24.99%">
-                    <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px; overflow: hidden;">
-                        <img src="Images/1149945428.png" alt="Index Image" style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;" />
+            <%--<nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white; ">--%>
+            <div class="topbar">
+                <div class="col" <%--style="min-width: 24.99%"--%>>
+                    <a class="navbar-brand" href="Index.aspx" <%--style="margin-bottom: 50px; overflow: hidden;"--%>>
+                        <img src="Images/1149945428.png" alt="Index Image" style="padding-left:90px" <%--style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;"--%> />
                     </a>
                 </div>
-                <div class="col-lg-7 col-md-2" style="width: 58.31%; overflow: hidden;">
-                    <a href="#" class="sandwich-link" data-toggle="collapse" <%--data-target=".leftSideBar"--%> id="btnToggle">
+                <div  <%--style="min-width: 58.31%; overflow: hidden;"--%> media>
+                    <a href="#" class="sandwich-link" style="padding-left:130px" data-toggle="collapse" <%--data-target=".leftSideBar"--%> id="btnToggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </a>
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-4" style="width: 8.33%;">
+                <div class="col" <%--style="min-width: 8.33%;"--%>>
                     <%-- User Drop Down Button --%>
                     <div class="dropdown show">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +42,6 @@
                             <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="userDropDownList">
-
                             <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
                             <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
                             <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
@@ -51,11 +51,11 @@
                             <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
                             <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
                             <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                          <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-4" style="width: 8.33%;">
+                <div class="col" <%--style="min-width: 8.33%;"--%>>
                     <%-- Header Language Selection --%>
                     <div class="dropdown">
                         <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -78,10 +78,10 @@
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
             <%-- AiImages Body --%>
             <%-- Body designed --%>
-            <div id="aIBody" style="margin-top:95px">
+            <div id="aIBody" style="padding-top:90px;">
                 <div class="container-fluid">
                     <div class="row" style="display: inline-flex; width: 100%">
                         <!-- Left Side Lists -->
@@ -193,7 +193,7 @@
                             </ul>
                         </div>
                         <%-- Right Side Lists --%>
-                        <div class="col-lg-9 scrollable" id="content" style="width: 75%; background: #f2f2f2; z-index: 99; padding-left: 30px; padding-top: 50px;">
+                        <div class="col-lg-9 scrollable" id="content" style="min-width: 75%; background: #f2f2f2; z-index: 99; padding-left: 30px; padding-top: 50px;">
                             <div id="rightSide">
                                 <%-- Right content 1st row only content --%>
                                 <div class="row">
@@ -219,9 +219,9 @@
                                 <%-- AI chat box starts Here --%>
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12 col-sm-12">
-                                        <div id="chatBotBox" style="background-color: white">
+                                        <div id="chatBotBox" style="background-color: white;">
                                             <%-- chatbot header --%>
-                                            <div class="row pt-2 pb-2" style="box-shadow: 1px 1px 1px">
+                                            <div class="row pt-2 pb-2" style="box-shadow: 1px 1px 1px;background:white">
                                                 <div class="col-lg-1 col-md-4 col-sm-2 pl-5">
                                                     <div id="left">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -244,9 +244,9 @@
                                                 </div>
                                             </div>
                                             <%-- chatbot body --%>
-                                            <div class="row ml-2 mr-2 mt-1" style="background-color: white; min-height: 300px; box-shadow: 0px 0px 1px">
+                                            <div class="row ml-2 mr-2 mt-1" style="background-color: white; height: 300px; box-shadow: 0px 0px 1px;height:300px;overflow-y:scroll">
                                                 <div class="col-md-12 col-lg-12 col-sm-12 pl-2 pr-2">
-                                                    <div id="chatHistory">
+                                                    <div id="chatHistory"style=" display: flex;flex-direction: column-reverse;">
                                                     </div>
                                                 </div>
                                             </div>

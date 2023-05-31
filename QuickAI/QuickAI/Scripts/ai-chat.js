@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+    $('#btnToggle').on('click', function () { //button event       
+        $("#sidebar").toggle();
+        $("#content").toggleClass('col-lg-12 full-width');
+    });
     const chatContainer = document.getElementById("chatHistory");
     $("#chatHistory").css({
         'padding-left': '10px'
@@ -8,20 +12,20 @@
         //For User Text
         const chatDiv = document.createElement("div");
         chatDiv.classList.add("row", "chat", "mb-1");
-        //
+        
        //$('.chat').css({
        //        'background': '#007bff',
        //        'color': 'white',
        //        'width': '90%',
        //        'padding-left': '10px'
        //    });
-        //
+        
         const chatTe = document.createElement("p");
         chatTe.textContent = s;
         
-        chatDiv.appendChild(chatTe);
+        chatDiv.append(chatTe);
 
-        chatContainer.appendChild(chatDiv);//for Input
+        chatContainer.append(chatDiv);//for Input
         const settings = {
             async: true,
             crossDomain: true,
@@ -34,9 +38,9 @@
             processData: false,
             data: '{"message": ' + s + '}'
         };
-
+        $("#textSrch").val("");
         $.ajax(settings).done(function (response) {
-            var val = response.chatbot.response;  
+            val = response.chatbot.response;  
             //var val = "hello";
             const aiChatDiv = document.createElement("div");
             aiChatDiv.classList.add("row", "aiChat", "mb-1");
@@ -50,11 +54,11 @@
             //    'width': '90%',
             //    'padding-left': '10px',
             //});
-            //
+            
             const aiChatTe = document.createElement("p");
             aiChatTe.textContent = val;
             aiChatDiv.append(aiChatTe);
-            chatContainer.appendChild(aiChatDiv);
+            chatContainer.append(aiChatDiv);
         });
     });
     //chatbot end

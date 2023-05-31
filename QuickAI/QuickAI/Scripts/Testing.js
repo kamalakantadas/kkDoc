@@ -1,4 +1,22 @@
 ﻿$(document).ready(function () {
+    //TestChat start
+$("#EnterButton").on("click", function () {
+    var s = $("#txtVal").val();
+    connectApi(s);
+});
+async function connectApi(s) {
+    $("#chatBox").append($("<div>").append($("<p>").text(s)));
+    const url = 'https://ai-chatbot.p.rapidapi.com/chat/free?message=' + s + '&uid=user1';
+    const header = {
+        'X-RapidAPI-Key': 'a74a1d2cc3msha679bf7a657f709p109c34jsn350f2c252bbe',
+        'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'
+    };
+   
+    const response = await fetch(url, { headers: header });
+    const data = await response.json();
+    $("#chatBox").append($("<div>").append($("<p>").text(data.chatbot.response)));
+}
+    //TestChat end
     //scrolling div start
     $("#selectBtn").on("change", function () {
         var searchVal = $(this).val().toLowerCase();

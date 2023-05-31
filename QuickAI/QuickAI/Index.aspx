@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-                   <%-- //Email verify Bar
+                    <%-- //Email verify Bar
                     //Header Page--%>
                     <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey;z-index:999;background-color:white;">
                         <div class="row" style="width:100%;height:50px;"></div>
