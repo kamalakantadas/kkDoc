@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('#btnToggle').on('click', function () { //button event       
         $("#sidebar").toggle();
-        $("#content").toggleClass('col-lg-12 full-width');
+        $("#content").toggleClass('col-12 full-width');
     });
     const chatContainer = document.getElementById("chatHistory");
     $("#chatHistory").css({

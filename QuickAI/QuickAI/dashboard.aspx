@@ -22,23 +22,24 @@
            <%-- Header Contentt Writen by kamalakantadas27@gmail.com --%>
            <div id="dHeader">               
                <%-- Original Header --%>
+          <%--     <div class="row fixed-top"  style="box-shadow: 2px 2px 5px grey;background:white;">--%>
                <div class="row fixed-top"  style="box-shadow: 2px 2px 5px grey;background:white;">
                    <div class="row">
                        <%-- Email Bar start--%>
                        <div class="row" id="emailBar" style="min-height: 50px;width:100%; box-shadow:1px 1px 1px">                           
                            <div class="container" >
                                <div class="row" style="padding-top: 5px;">
-                                   <div class="col-lg-8 col-md-12 col-sm-12">
+                                  <div class="col-8">
                                        <p class="text-left">Your Email Address is not verified. Please Verify your email address to use all the feature.</p>
                                    </div>
-                                   <div class="col-lg-2 col-md-6 col-sm-6">
+                                   <div class="col-2">
                                        <div class="form-group">
                                            <asp:TextBox runat="server" ID="verifyEmailBox" class="form-control"></asp:TextBox>
                                        </div>
                                    </div>
-                                   <div class="col-lg-2 col-md-6 col-sm-6">
+                                   <div class="col-2">
                                        <asp:Button class="btn btn-primary" OnClick="verifyEmail" runat="server" ID="verfiyEmailBtn" Text="VerifyEmail" />
-                                   </div>
+                                   </div>                                   
                                </div>
                            </div>                           
                        </div>
@@ -109,9 +110,9 @@
                 </div>
            </div>
            <%-- Body designed by Kamalakantadas --%>
-           <div id="dashboardBody" <%--style="margin-top:125px"--%>>
+           <div id="dashboardBody" style="margin-top:125px">
                <div class="container-fluid">
-                   <div class="row" style="display:inline-flex;width:100%">
+                   <div class="row " style="display:inline-flex;width:100%">
                        <!-- Left Side Lists -->
                        <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
                            <%-- My Account --%>
@@ -221,7 +222,7 @@
                            </ul>
                        </div>
                        <%-- Right Side --%>
-                       <div class="col-lg-9 scrollable" id="content"  style="width:75%;background:#f2f2f2;z-index:99;padding-left:50px;padding-top:50px;">
+                       <div class="col-lg-9 scrollable" id="content"  style="/*width:75%;*/background:#f2f2f2;z-index:99;padding-left:50px;padding-top:50px;">
                            <div id="rightSide">
                                <%-- Right content 1st row only content --%>
                                <div class="row" >

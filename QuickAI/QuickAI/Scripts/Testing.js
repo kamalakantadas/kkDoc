@@ -1,4 +1,7 @@
 ﻿$(document).ready(function () {
+    $("#btnTest").on("click", function () {
+        window.location.href = "https://www.google.com?search="+5;
+    });
     //TestChat start
 $("#EnterButton").on("click", function () {
     var s = $("#txtVal").val();

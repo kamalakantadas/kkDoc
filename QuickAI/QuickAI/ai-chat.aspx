@@ -24,10 +24,10 @@
             <div class="topbar">
                 <div class="col" <%--style="min-width: 24.99%"--%>>
                     <a class="navbar-brand" href="Index.aspx" <%--style="margin-bottom: 50px; overflow: hidden;"--%>>
-                        <img src="Images/1149945428.png" alt="Index Image" style="padding-left:90px" <%--style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;"--%> />
+                        <img src="Images/1149945428.png" alt="Index Image" id="websiteLogo" /><%--style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;"--%> 
                     </a>
                 </div>
-                <div  <%--style="min-width: 58.31%; overflow: hidden;"--%> media>
+                <div>  <%--style="min-width: 58.31%; overflow: hidden;"--%>
                     <a href="#" class="sandwich-link" style="padding-left:130px" data-toggle="collapse" <%--data-target=".leftSideBar"--%> id="btnToggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -85,7 +85,8 @@
                 <div class="container-fluid">
                     <div class="row" style="display: inline-flex; width: 100%">
                         <!-- Left Side Lists -->
-                        <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
+                        <%--<div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">--%>
+                        <div class="col-3 scrollable" id="sidebar" style="background-color: #f2f2f2;">
                             <%-- My Account --%>
                             <ul class="">
                                 <li>
@@ -193,20 +194,27 @@
                             </ul>
                         </div>
                         <%-- Right Side Lists --%>
-                        <div class="col-lg-9 scrollable" id="content" style="min-width: 75%; background: #f2f2f2; z-index: 99; padding-left: 30px; padding-top: 50px;">
+                       <%-- <div class="col-lg-9 scrollable" id="content" style="min-width: 75%; background: #f2f2f2; z-index: 99; padding-left: 30px; padding-top: 50px;">--%>
+                        <div class="col-9 scrollable" id="content" style="background: #f2f2f2; z-index: 99;">
                             <div id="rightSide">
                                 <%-- Right content 1st row only content --%>
-                                <div class="row">
+                                <div class="row pageContentHeader">
                                     <%-- Left Side of Right side --%>
-                                    <div class="col-md-8">
-                                        <div class="form-group" style="display:flex">
-                                            <h3>AI Chat</h3>
-                                            <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" "disabled" /> 
+                                   <%-- <div class="col-md-8">--%>
+                                    <div class="col-8 ">
+                                       <%-- <div class="form-group" style="display:flex"> --%>
+                                        <div class="form-group">
+                                            <h3>AI Chat <input type="button" class="btn btn-secondary" style="border-radius:20px;height:40px;";id="disableData" value="0/100 Images Used" "disabled" /></h3>
+                                            <%--<input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disableData" value="0/100 Images Used" "disabled" />--%>
+                                            <span>
+                                                
+                                            </span>
                                         </div>                                       
                                         <!-- Message Content Inner -->                                       
                                     </div>                                   
                                     <%-- Right Side of Right side --%>
-                                    <div class="col-md-4">
+                                   <%-- <div class="col-md-4"> --%>
+                                    <div class="col-4">
                                         <div id="SubPage">
                                             <ul style="display: inline-flex;">
                                                 <li><a href="index.aspx">Home</a></li>
@@ -222,40 +230,51 @@
                                         <div id="chatBotBox" style="background-color: white;">
                                             <%-- chatbot header --%>
                                             <div class="row pt-2 pb-2" style="box-shadow: 1px 1px 1px;background:white">
-                                                <div class="col-lg-1 col-md-4 col-sm-2 pl-5">
+                                                <%--<div class="col-lg-1 col-md-4 col-sm-2 pl-5">--%>
+                                               <div class="col-4 pl-5">
                                                     <div id="left">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                                                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-9 col-md-4 col-sm-6 pt-2">
+                                                <%--<div class="col-lg-9 col-md-4 col-sm-6 pt-2">--%>
+                                                <div class="col-4 pt-2">
                                                     <p>AI Chat Bot</p>
                                                 </div>
-                                                <div class="col-lg-2 col-md-4 col-sm-4 pt-1">
+                                             <%--   <div class="col-lg-2 col-md-4 col-sm-4 pt-1">--%>
+                                                <div class="col-4 pt-1">
                                                     <div id="right">
-                                                        <asp:Button OnClick="generateText" ID="generateChatText" runat="server" CssClass="button-with-span btn align-items-center" Style="position: absolute"></asp:Button>
+                                                        <asp:Button OnClick="generateText" ID="generateChatText" runat="server" CssClass="button-with-span btn align-items-center" Style="position: absolute;"></asp:Button>
                                                         <i class="fa fa-download" aria-hidden="true" style="position: relative; width: 15px; padding-left: 5px; padding-top: 5px; /* color: red; */"></i>
-                                                        <%--<a class="btn btn-primary" onclick="generateText" id="generateChatText" runat="server" style="background-color: #ac2bac;" role="button"><i class="fa fa-download" aria-hidden="true"></i></a>--%>
-
-                                                        <asp:Button runat="server" CssClass="button-with-span" ID="deleteChat" class="btn align-items-center" Style="position: absolute; width: 30px; margin-left: 20px;"></asp:Button>
-                                                        <i class="fa fa-trash" aria-hidden="true" style="position: relative; /* width: 99px; */padding-left: 7px; padding-top: 5px; margin-left: 21px; color: red;"></i>
+                                                        <%--<asp:Button class="btn btn-primary" onclick="generateText" id="generateChatText" runat="server" style="background-color: #ac2bac;" role="button"><i class="fa fa-download" aria-hidden="true"></i></a>--%>
+                                                      
+                                                        <asp:Button runat="server" CssClass="button-with-span btn align-items-center" ID="deleteChat" style="position: absolute; "></asp:Button>
+                                                        <i class="fa fa-trash binicon" aria-hidden="true" style="position:relative; padding-left:10px "></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <%-- chatbot body --%>
-                                            <div class="row ml-2 mr-2 mt-1" style="background-color: white; height: 300px; box-shadow: 0px 0px 1px;height:300px;overflow-y:scroll">
+                                            <div class="row ml-2 mr-2 mt-1" style="background-color: white; height: 300px; box-shadow: 0px 0px 1px;height:300px;overflow-y:auto; margin:0 auto;position:relative  ">
                                                 <div class="col-md-12 col-lg-12 col-sm-12 pl-2 pr-2">
-                                                    <div id="chatHistory"style=" display: flex;flex-direction: column-reverse;">
+                                                    <div id="chatHistory"style=" display: flex;flex-direction: column;">
+                                                         <div class="fixed-row" style="position: fixed;margin-top:2px;
+                                                              bottom: 0;
+                                                              left: 0;
+                                                              width: 100%;
+                                                              background-color: #f2f2f2;
+                                                              padding: 10px;
+                                                              font-weight: bold;">
+                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <%-- chatbot Text Submit box --%>
                                             <div class="row ml-2 mr-2 mt-1" style="background-color: white; box-shadow: 1px 1px 1px 2px grey">
-                                                <div class="col-md-8 col-lg-10 col-sm-10 mt-4">
+                                                <div class="col-8 mt-4">
                                                     <input type="text" id="textSrch" style="width: 100%; border: none; outline: none" placeholder="Type Your Message Here" />
                                                 </div>
-                                                <div class="col-md-4 col-lg-2 col-sm-2 pt-3 pb-3">
+                                                <div class="col-4 pt-3 pb-3">
                                                     <input type="button" class="btn btn-primary" value="Submit" id="chatSubmitBtn" />
                                                 </div>
                                             </div>

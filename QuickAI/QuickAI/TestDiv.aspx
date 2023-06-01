@@ -10,6 +10,7 @@
 </head>
 <body>
     <form id="TestDiv" runat="server">
+        <input type="button" id="btnTest" value="checkButton" />
         <%--<div class="container">
             <div id="subMain" style="min-height:400px;">
             </div>
