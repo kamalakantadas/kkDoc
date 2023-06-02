@@ -226,6 +226,7 @@
     <Content Include="index.ashx" />
     <Content Include="Scripts\allTemplates.js" />
     <Content Include="Scripts\withdrawals.js" />
+    <Content Include="Style\dashboard.css" />
     <Content Include="TestDiv.aspx" />
     <Content Include="TestScrollingAndDropping.aspx" />
     <Content Include="TestSearchBar.aspx" />

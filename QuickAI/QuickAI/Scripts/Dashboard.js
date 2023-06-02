@@ -1,5 +1,6 @@
 ﻿
 $(document).ready(function () {   
+   
     const ctx = document.getElementById('myChart');
     const months = [
         "Jan", "Feb", "Mar", "Apr",
@@ -126,26 +127,29 @@ $(document).ready(function () {
 });
 function hideEmailDiv() {
     $("#emailBar").hide();
+    //$("#emailBar").css({
+    //    'display':'none'
+    //});
    // $("#headerBar").css("position", "");
     $("#headerBar").css({
         'margin-left':'30px',
         'position': 'fixed',
         'height': '80px',
         'background' : 'white',
-        'box-shadow': '2px 2px 5px grey'
+        'box-shadow': '0px 4px 8px 0px grey'
         //'position': 'fixed',box-shadow: 2px 2px 5px grey;
         
     });
-    $("#dashboardBody").css("margin-top", ""); /* 'margin-top': '0px'*/
-    $("#dashboardBody").css({
-        'margin-top':'82px'
+    $(".dashboardBody").css("padding-top", ""); //**//* 'margin-top': '0px'*/
+    $(".dashboardBody").css({
+       'padding-top':'74px'
     });
     
-   
 }
-function viewText() {   
-    $("#viewImage").show();   
-} function hideText() {
+function viewText() {
+    $("#viewImage").show();
+}
+function hideText() {
     $("#viewImage").hide();
 }
 

@@ -11,7 +11,8 @@
         var s = $("#textSrch").val();
         //For User Text
         const chatDiv = document.createElement("div");
-        chatDiv.classList.add("row", "chat", "mb-1");
+        //chatDiv.classList.add("row", "chat", "mb-1");
+        chatDiv.classList.add("chat", "mb-1");
         
        //$('.chat').css({
        //        'background': '#007bff',
@@ -43,7 +44,8 @@
             val = response.chatbot.response;  
             //var val = "hello";
             const aiChatDiv = document.createElement("div");
-            aiChatDiv.classList.add("row", "aiChat", "mb-1");
+           //aiChatDiv.classList.add("row", "aiChat", "mb-1");
+            aiChatDiv.classList.add("aiChat", "mb-1");
 
             //For ai Text
             //$('.aiChat').css({

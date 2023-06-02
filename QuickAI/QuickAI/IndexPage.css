@@ -9,9 +9,9 @@
     #dashboardBody {
         margin-top: 177px;
     }
-   #content{
-       width:100%;
-   }
+    #content {
+        width: 100%;
+    }
    
     #btnToggle {
         display: none; /*hide btnToggle when screen size max 750px*/
@@ -23,13 +23,6 @@
         float: right;
     }
 }
-/*Dashboard css start*/
-@Media(max-width:990px) {
-    #content {
-        width: 100%;
-    }
-}
-/*Dashboard css end*/
 
 @media(min-width:342px){
     #chatSubmitBtn {
@@ -56,59 +49,13 @@
     #SubPage{
         
     }
-    .pageContentHeader {
+.pageContentHeader {
        flex-direction:column;
     }
 }
-   /* .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }*/
+  
     /*Responsive using grid end*/
-    .topbar {
+.topbar {
         position: fixed;
         background-color: #fff;
         box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
@@ -124,29 +71,33 @@
 
 
     /*ai chat*/
-    #chatHistory .aiChat {
+#chatHistory .aiChat {
         float: left;
         background-repeat: no-repeat;
         background: orange;
         color: white;
-        width: 90%;
+        width: fit-content;
+        /*border-radius:20px;*/
+        /*padding:5px;*/
         padding-left: 10px;
     }
 
-    #chatHistory .chat {
-        float: right;
-        background: #007bff;
-        color: white;
-        width: 90%;
-        padding-left: 10px;
-    }
+#chatHistory .chat {
+    float: right;
+    background: #007bff;
+    color: white;
+    width: fit-content;
+   /* border-radius: 20px;*/
+    /*padding:5px;*/
+    padding-left: 10px;
+}
 
-    .ai-templates {
+.ai-templates {
         margin: 6px;
         padding: 10px;
     }
 
-    .aitempl {
+.aitempl {
         /*//box-shadow: 1px 1px 1px 3px grey;*/
         background: white;
         border-radius: 10px;
@@ -155,41 +106,41 @@
         width: 80%;
     }
 
-    .clearfix::after {
+.clearfix::after {
         content: "";
         display: table;
         clear: both;
     }
 
-    footer {
+footer {
         position: relative;
         z-index: 1;
     }
 
-    .textbox-container {
+.textbox-container {
         display: none;
         position: absolute;
         top: 30px;
         left: 0;
     }
 
-    #hover-textbox {
+#hover-textbox {
         width: 200px;
         height: 100px;
     }
 
-    .raise {
+.raise {
         border: none;
         margin: 5px;
         outline: none;
     }
 
 
-    .input-group-append {
+.input-group-append {
         margin-left: -1px;
     }
 
-    @keyframes typing-animation {
+/*@keyframes typing-animation {
         0% {
             opacity: 0;
         }
@@ -202,22 +153,22 @@
             opacity: 0;
         }
     }
-
-    .btn {
+*/
+.btn {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
 
-    .pt-50 {
+.pt-50 {
         padding-top: 50px;
     }
 
-    .btn-group btnToggle {
+.btn-group btnToggle {
         border: none;
         outline: none;
     }
     /* V arun kumar css code start*/
-    .btnToggle {
+.btnToggle {
         border: none;
         outline: none;
         background-color: deepskyblue;
@@ -225,40 +176,40 @@
     }
     /*v arun kumar css code end*/
     /*ChangePlan Page*/
-    .pricing-plan-features ul li {
+.pricing-plan-features ul li {
         color: black;
     }
 
-    .radio-button-list label {
+.radio-button-list label {
         margin-right: 10px;
     }
 
-    .text-container {
+.text-container {
         max-width: 500px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
-    .form-group {
+.form-group {
         border: none;
         background-color: transparent;
         cursor: pointer;
     }
 
-        .form-group i {
+.form-group i {
             font-size: 20px;
             color: #333;
         }
 
 
-    .content {
+.content {
         color: black;
     }
 
 
-    /*Account Setting Page*/
-    .leftSideBarOfAS {
+/*Account Setting Page*/
+.leftSideBarOfAS {
         position: fixed;
         width: 260px;
         height: calc(100%-95px);
@@ -267,22 +218,22 @@
         padding-bottom: 20px;
     }
 
-    #sidebar ul li {
+#sidebar ul li {
         background-color: #cbb4b4;
     }
 
-    .leftSideBarOfAS ul {
+.leftSideBarOfAS ul {
         margin-top: 20px;
     }
 
-        .leftSideBarOfAS ul li {
+.leftSideBarOfAS ul li {
             width: 100%;
             list-style: none;
             color: cornflowerblue;
             background-color: #007bff;
         }
 
-            .leftSideBarOfAS ul li dropdown-menu a {
+.leftSideBarOfAS ul li dropdown-menu a {
                 width: 100%;
                 text-decoration: none;
                 color: cornflowerblue;
@@ -291,7 +242,7 @@
                 align-items: center;
             }
 
-            .leftSideBarOfAS ul li a {
+.leftSideBarOfAS ul li a {
                 width: 100%;
                 text-decoration: none;
                 color: cornflowerblue;
@@ -300,15 +251,15 @@
                 align-items: center;
             }
 
-                .leftSideBarOfAS ul li a i {
+.leftSideBarOfAS ul li a i {
                     color: cornflowerblue;
                     min-width: 60px;
                     font-size: 24px;
                     text-align: center;
                 }
 
-    /*Dashboard Page*/
-    .leftSideBar {
+/*Dashboard Page*/
+.leftSideBar {
         position: fixed;
         width: 260px;
         height: calc(100%-95px);
@@ -317,41 +268,32 @@
         padding-bottom: 20px;
     }
 
-    #sidebar {
+#sidebar {
         background-color: #f5f5f5;
         height: 100vh;
     }
 
-    #content {
+#content {
         background-color: #fff;
         height: 100vh;
     }
-    /*.hide-div {
-    display: none;
-}*/
 
-    .full-width {
+.full-width {
         width: 100%;
     }
 
-    .leftSideBar ul {
-        margin-top: 20px;
-    }
-        /*.col-lg-9{
-    width:75%;
-}
-.col-lg-3 {
-    width: 25%;
-    margin-bottom:150px;
-}*/
-        /*Left Side Panel*/
-        .leftSideBar ul li {
+.leftSideBar ul {
+    margin-top: 20px;
+ }
+      
+/*Left Side Panel*/
+.leftSideBar ul li {
             width: 100%;
             list-style: none;
             color: cornflowerblue;
         }
 
-            .leftSideBar ul li dropdown-menu a {
+.leftSideBar ul li dropdown-menu a {
                 width: 100%;
                 text-decoration: none;
                 color: cornflowerblue;
@@ -360,7 +302,7 @@
                 align-items: center;
             }
 
-            .leftSideBar ul li a {
+.leftSideBar ul li a {
                 width: 100%;
                 text-decoration: none;
                 color: cornflowerblue;
@@ -369,27 +311,27 @@
                 align-items: center;
             }
 
-                .leftSideBar ul li a i {
+.leftSideBar ul li a i {
                     color: cornflowerblue;
                     min-width: 60px;
                     font-size: 24px;
                     text-align: center;
                 }
 
-    body::-webkit-scrollbar {
+body::-webkit-scrollbar {
         display: none;
     }
 
-    .leftSideBar ul li a svg {
+.leftSideBar ul li a svg {
         min-width: 60px;
         font-size: 24px;
     }
 
-    .container-fluid {
+.container-fluid {
         display: inline;
     }
 
-    .leftSideBar ul li a svg {
+.leftSideBar ul li a svg {
         padding-right: 8px;
         height: 20px;
         width: 20px;
@@ -400,62 +342,62 @@
         top: 2px;
     }
 
-    .axis-y {
+.axis-y {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
     }
 
-        .axis-y span {
-            font-size: 12px;
-        }
+.axis-y span {
+    font-size: 12px;
+ }
 
-    .chart-container {
-        flex-grow: 1;
-        position: relative;
-        height: 100%;
-    }
+.chart-container {
+   flex-grow: 1;
+   position: relative;
+   height: 100%;
+}
 
-  #SubPage li:hover {
+#SubPage li:hover {
         background-color: #f2f2f2;
         cursor: pointer;
     }
 
-    .active {
+.active {
         border-radius: 1px;
     }
 
-    a {
+a {
         color: black;
     }
 
-    .scrollable {
+.scrollable {
         overflow-y: auto;
         height: 500px;
     }
    
-    #sidebar ul {
+#sidebar ul {
         list-style: none;
         position: center;
         box-shadow: 2px 2px 1px grey;
     }
 
-        #sidebar ul li {
-            box-shadow: 2px 2px 1px grey;
-            list-style: none;
-            background-color: #cbb4b4;
-            color: #fff;
-            transition: background-color 0.3s ease-in-out;
-            border-radius: 1px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 25px;
-            padding-right: 25px;
-            font-size: 15px;
-            line-height: 25px;
-            /* box-shadow: 1px 1px 5px grey;*/
-        }
+#sidebar ul li {
+        box-shadow: 2px 2px 1px grey;
+        list-style: none;
+        background-color: #cbb4b4;
+        color: #fff;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 15px;
+        line-height: 25px;
+        /* box-shadow: 1px 1px 5px grey;*/
+}
 #SubPage ul li {
     list-style: none;
     background-color: white;
