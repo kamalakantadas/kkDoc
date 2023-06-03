@@ -18,72 +18,70 @@
 <body>
     <form id="accountSetting" runat="server">
         <%-- Header Content ofAccount setting --%>
-        <div id="dHeader">
-            <nav class="row navbar navbar-expand-lg navbar-light fixed-top" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white">
-                <div class="col-lg-3" style="width: 24.99%">
-                    <a class="navbar-brand" href="Index.aspx" style="margin-bottom: 50px; overflow: hidden;">
-                        <img src="Images/1149945428.png" style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;" />
+        <div class="headerBar">
+            <%-- Header starts here --%>
+            <div>
+                <a class="navbar-brand" href="Index.aspx">
+                    <img src="Images/1149945428.png" id="websiteLogo" />
+                </a>
+            </div>
+            <div>
+                <a href="#" class="sandwich-link" data-toggle="collapse" id="btnToggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div>
+                <asp:TextBox ID="viewImage" Style="display: none;" runat="server" value=""></asp:TextBox>
+            </div>
+            <div>
+                <%-- User Drop Down Button --%>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <asp:Image runat="server" ID="userImage" src="Images/Image%20ICON.png" Style="height: 30px;" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
                     </a>
-                </div>
-                <div class="col-lg-7" style="width: 58.31%; overflow: hidden;">
-                    <a href="#" class="sandwich-link" data-toggle="collapse" <%--data-target=".leftSideBar"--%> id="btnToggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="col-lg-1" style="width: 8.33%;">
-                    <%-- User Drop Down Button --%>
-                    <div class="dropdown show">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="userDropDownList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <asp:Image runat="server" ID="userImage" src="Images/Image%20ICON.png" Style="height: 30px" onmouseover="viewText()" onmouseout="hideText()" alt="" class="hover-text" />
-                            <asp:TextBox ID="viewImage" Style="display: none; width: 100px;" runat="server" value=""></asp:TextBox>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="userDropDownList">
-                            <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
-                            <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
-                            <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
-                            <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
-                            <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
-                            <a class="dropdown-item" href="ai-code.aspx">AI Code</a>
-                            <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
-                            <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
-                            <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
-                            <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
-                        </div>
+                    <div class="dropdown-menu" aria-labelledby="userDropDownList">
+                        <a class="dropdown-item" href="dashboard.aspx">Dashboard</a>
+                        <a class="dropdown-item" href="ai-templates/Ai-templates.aspx">Templates</a>
+                        <a class="dropdown-item" href="ai-images.aspx">AI Images</a>
+                        <a class="dropdown-item" href="ai-chat.aspx">AI Chat</a>
+                        <a class="dropdown-item" href="speechToText.aspx">Speech to Text</a>
+                        <a class="dropdown-item" href="ai-code.aspx">AI Code</a>
+                        <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                        <a class="dropdown-item" href="membership/membership.aspx">Membership</a>
+                        <a class="dropdown-item" href="accountSetting.aspx">Account Setting</a>
+                        <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
                     </div>
                 </div>
-                <div class="col-lg-1" style="width: 8.33%;">
-                    <%-- Header Language Selection --%>
-                    <div class="dropdown">
-                        <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            Text="en" />
-                        <div class="dropdown-menu" aria-labelledby="Lang">
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="English" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                            <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
-                        </div>
+            </div>
+            <div>
+                <%-- Header Language Selection --%>
+                <div class="dropdown">
+                    <asp:Button runat="server" class="btn btn-secondary btn-primary btn-lg dropdown-toggle" type="button" ID="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        Text="en" />
+                    <div class="dropdown-menu" aria-labelledby="Lang">
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="English" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Hindi" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Odia" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
+                        <asp:Button runat="server" class="dropdown-item" type="button" Text="Tamil" />
                     </div>
                 </div>
-            </nav>
+            </div>
+            <%-- Header End Here --%>
         </div>
         <%-- Body designed of Account Setting  --%>
-        <div id="AccountPage" >
-            <div class="container-fluid">
-                <div class="row" style="display:inline-flex;margin-top:95px;width:100%">                   
+        <div class="row" id="AccountPage">                   
                    <!-- Left Side Lists -->
-                    <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
+                    <div class="col-lg-3 scrollable" id="sidebar" >
                         <%-- My Account --%>
                         <ul class="">
                             <li><a href="dashboard.aspx"><i class="icon-feather-grid"></i>
@@ -152,7 +150,7 @@
                     </div>
 
                    <%-- Right Side --%>
-                   <div class="col-lg-9 scrollable" id="content" style="width:75%;background:#f2f2f2;z-index:99;padding-left:50px;padding-top:50px;">
+                   <div class="col-lg-9 scrollable" id="content" >
                        <%-- Right content 1st row only content --%>
                        <div class="row">
                            <%-- Left Side of Right side --%>
@@ -367,9 +365,7 @@
                            </footerclass> 
                        </div>     
                    </div>
-                </div>                               
-            </div>
-        </div>
+                </div> 
         <%-- Bottom Fixed Bar --%>
         <div class="row-fluid fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;width:100%;height:70px;box-shadow: 2px 2px 5px grey;">
         </div>

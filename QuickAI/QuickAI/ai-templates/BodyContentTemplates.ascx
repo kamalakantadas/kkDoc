@@ -69,7 +69,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <%-- left side bar --%>
-                    <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
+                    <div class="col-lg-3 scrollable" id="sidebar">
                         <!-- left side lists -->
                         <%-- my account --%>
                         <ul class="">
@@ -173,71 +173,64 @@
                         </ul>
                     </div>
                     <%-- right side content--%>
-                    <div class="col-lg-9 scrollable" id="content"  style="width:75%;background:#f2f2f2;z-index:99;padding-left:50px;padding-top:50px;">
+                    <div class="col-lg-9 scrollable" id="content">
                         <div id="rightside">
-                            <div class="row" >
-                                   <%-- left side of right side --%>
-                                   <div class="col-md-6" style="display:flex">
-                                       <p runat="server" id="formMainHeader">faq answers/reviews</p>
-                                       <input type="button" class="btn btn-secondary form-control" style="border-radius:20px;height:40px;width:180px";id="disabledata" value="0/100 images used" disabled /> 
-                                   </div>                                   
-                                   <%-- right side of right side --%>
-                                   <div class="col-md-6">
-                                       <div id="subpage">
-                                           <ul style="display: inline-flex;">
-                                               <li><a href="../index.aspx">home</a></li>
-                                               <li><a href="ai-templates.aspx">templates</a></li>
-                                               <li><asp:LinkButton runat="server" id="pageLink" href="testimonial-reviews.aspx">testimonials/reviews</asp:LinkButton></li>                                              
-                                           </ul>
-                                       </div>
-                                   </div>
-                               </div>
+                            <div class="row">
+                                <%-- left side of right side --%>
+                                <div class="col-md-6">
+                                    <p runat="server" id="formMainHeader">faq answers/reviews</p>
+                                    <div style="border-radius: 20px; height: 40px; width: 180px; background: grey; padding: 5px;">
+                                        0/100 Images Used"
+                                    </div>
+                                </div>
+                                <%-- right side of right side --%>
+                                <div class="col-md-6">
+                                    <div id="subpage">
+                                        <ul style="display: inline-flex;">
+                                            <li><a href="../index.aspx">home</a></li>
+                                            <li><a href="ai-templates.aspx">templates</a></li>
+                                            <li>
+                                                <asp:LinkButton runat="server" ID="pageLink" href="testimonial-reviews.aspx">testimonials/reviews</asp:LinkButton></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <%-- testimonial body start --%>
                             <%-- right content second row div --%>
-                            <div class="row pt-10">
+                            <div class="row pt-5">
                                 <%-- speech to text form left side start--%>
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="row" style="background-color: white; margin-left: 10px; box-shadow: 0px 1px 7px 1px;">
-                                        <div id="r1" style="width:100%">
-                                            <div class="row" style="width: 90%; padding: 20px; margin-left: 10px; border-bottom: 1px solid grey">
-                                                <a><i class="fas fa-headset"></i></a>
-                                                <h6 runat="server" id="formHeader">faq answers</h6>
-                                            </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <div class="contentLeft">
+                                        <div>
+                                            <a><i class="fas fa-headset"></i></a>
+                                            <h6 runat="server" id="formHeader">faq answers</h6>
                                         </div>
-                                       
-                                        <div class="row mt-1" style="padding: 5px;margin:10px; background-color: cornflowerblue;">
-                                           <p runat="server" id="formInnerDiv" class="small">add social proof to your website by generating user testimonials.</p>
-<%--                                            <%<asp:TextBox runat="server" ID="formInnerDiv" class="small" placeholder="add social proof to your website by generating user testimonials."></asp:TextBox>--%>
+                                        <div style="background-color: cornflowerblue;">
+                                            <p runat="server" id="formInnerDiv">add social proof to your website by generating user testimonials.</p>
                                         </div>
-                                        <div id="r2">
-                                            <div class="row form-group ml-3 mb-0">
-                                                <p>product name:</p>
-                                                <p style="color: red">*</p>
-                                                <p style="margin-left: 50px;" id="titlecount">0</p>
-                                                <p>/100</p>
-                                            </div>
-                                            <div class="row form-group ml-3 mb-0">
-                                                <input class="form-control" type="text" runat="server" id="title" placeholder="" style="width: 267px" />
-                                            </div>
+
+                                        <div>
+                                            <p>product name:<span id="titlecount"><span style="color: red">*</span></span>/100</p>
                                         </div>
-                                        <div id="r3">
-                                            <div class="row" style="margin: 15px; margin-bottom: 0px">
-                                                <p class="fs-4 fw-bolder">product description</p>
-                                                <p style="color: red">*</p>
-                                                <p style="margin-left: 50px" id="audiodesccount">0</p>
-                                                <p>/100</p>
-                                            </div>
-                                            <div class="row form-group ml-3">
-                                                <asp:TextBox class="form-control" ID="adesc" runat="server" Rows="2" TextMode="multiline" Style="width: 267px"></asp:TextBox>
-                                            </div>
+                                        <div>
+                                            <input class="form-control" type="text" runat="server" id="title" />
                                         </div>
-                                        
-                                        
+
+
+                                        <div>
+                                            <p class="fs-4 ">product description<span style="color: red">*</span>0/100</p>
+                                        </div>
+                                        <div>
+                                            <asp:TextBox class="form-control" ID="adesc" runat="server" Rows="2" TextMode="multiline"></asp:TextBox>
+                                        </div>
+
                                         <%-- language --%>
-                                        <div id="r4">
-                                            <p class="fs-4 fw-bolder ml-3">language</p>
-                                            <div class="row ml-3 ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
-                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                        <div class="mb-1">
+                                            <p class="fs-4">language</p>
+                                            <div>
+                                                <select class="selectpicker">
                                                     <option>english</option>
                                                     <option>chinese</option>
                                                     <option>danish</option>
@@ -259,12 +252,12 @@
                                                 </select>
                                             </div>
                                         </div>
-                                       
+
                                         <%-- quality type --%>
-                                        <div id="r5">
-                                            <p class="fs-4 fw-bolder ml-3">quality type</p>
-                                            <div class="row ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
-                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                        <div>
+                                            <p>quality type</p>
+                                            <div class="row mb-1">
+                                                <select class="selectpicker">
                                                     <option>economy</option>
                                                     <option>average</option>
                                                     <option>good</option>
@@ -272,12 +265,12 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        
+
                                         <%-- tone of voice --%>
-                                        <div id="r6">
-                                            <p class="fs-4 fw-bolder ml-3">tones of voice</p>
-                                            <div class="row ml-3 mb-2" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
-                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                        <div>
+                                            <p>tones of voice</p>
+                                            <div class="row mb-2">
+                                                <select class="selectpicker" data-width="fit">
                                                     <option>funny</option>
                                                     <option>casual</option>
                                                     <option>excited</option>
@@ -292,12 +285,12 @@
                                                 </select>
                                             </div>
                                         </div>
-                                       
+
                                         <%-- number of result --%>
-                                        <div id="r7">
-                                            <p class="fs-4 fw-bolder ml-3 mb-2">number of result</p>
-                                            <div class="row ml-3" style="box-shadow: 0px 1px 4px 1px grey; height: 30px;">
-                                                <select class="selectpicker" data-width="fit" style="width: 267px">
+                                        <div>
+                                            <p>number of result</p>
+                                            <div class="row">
+                                                <select class="selectpicker">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -305,112 +298,106 @@
                                                     <option>5</option>
                                                 </select>
                                             </div>
-                                            <div class="row" style="margin: 10px">
+                                            <div>
                                                 <p class="fs-6 text-lowercase text-muted fw-light">describe the speech from the file to help the ai. (optional)</p>
                                             </div>
                                         </div>
-                                      
-                                        <div id="r8">
-                                            <div class="row form-group" style="margin-left: 20px; margin-left: 10px; margin-right: 10px; margin-top: 10px; width: 90%;">
-                                                <input type="button" class="form-control btn btn-primary" value="generate ->" />
-                                            </div>
+                                        <%-- Button Generate --%>
+                                        <div class="pb-1">
+                                            <input type="button" class="form-control btn btn-primary" value="generate ->" />
                                         </div>
-                                        <div id="r9">
-                                            <div class="row" style="background: cornflowerblue; margin: 5px">
+                                        <%-- Last Line Description --%>
+                                        <div>
+                                            <div style="background: cornflowerblue;">
                                                 <p class="fs-6 text-lowercase fw-light">audio transcription may takes time due to the file size.</p>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </div>
                                 </div>
+
                                 <%-- speech to text form left side end --%>
                                 <%-- generated result right side start--%>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="row pl-3 pr-3">
+                                <div class="col-lg-8 col-md-12">
+                                    <div class="row generateHeaderBar">
                                         <%-- header of generated result start --%>
-                                        <div class="row" style="margin-left: 1px; width: 100%; padding-top: 25px; padding-bottom: 25px; height: 80px; background-color: white; box-shadow: 0px 1px 5px 1px grey;">
-                                            <div class="col-lg-1 col-md-2 col-sm-1">
-                                                <i class="fa fa-align-left" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="col-lg-5 col-md-6 col-sm-7">
-                                                <p>generated result</p>
-                                            </div>
-                                            <div class="col-lg-3"></div>
-                                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                                <!--mouse hover event required for all three event//mouse click also-->
-                                                <a href="#"><i class="fa fa-file-word" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
-
-                                                <a href="#"><i class="fa fa-file" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
-
-                                                <a href="#"><i class="fa fa-clone" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
-                                            </div>
+                                        <div class="col-1">
+                                            <i class="fa fa-align-left" aria-hidden="true"></i>
                                         </div>
-                                        <%-- header of generated result end--%>
+                                        <div class="col-6">
+                                            <p>Generated Result</p>
+                                        </div>
+                                        <div class="col-2"></div>
+                                        <div class="col-3">
+                                            <!--Mouse Hover Event required for all three event//Mouse click also-->
+                                            <a href="#"><i class="fa fa-file-word" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
+
+                                            <a href="#"><i class="fa fa-file" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
+
+                                            <a href="#"><i class="fa fa-clone" aria-hidden="true" style="font-size: 40px; color: cornflowerblue;"></i></a>
+                                        </div>
                                     </div>
-                                  
+                                    <%-- header of generated result end--%>
+
+
                                     <%-- paragraph of generated box start --%>
-                                    <div id="pc" style="min-height: 400px; width: 100%; padding-top: 10px; background-color: white; border: none">
-                                        <%-- Printing --%>
-                                        <div class="row form-group" style="margin: 10px">
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" style="height:50px" />
-                                            </div>
-                                            <div class="col-md-2">
-                                                <a id="btnPrint" style="height: 50px">
-                                                    <i class="fa fa-print" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
+
+                                    <%-- Printing --%>
+                                    <div class="row" style="background:#f2f2f2;  box-shadow: 0px 1px 3px 0px grey;">
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" />
                                         </div>
-                                        <%-- Printing end --%>
-                                        <div class="row justify-content-md-center mt-4 mb-4">
-                                            <div class="form-group">
-                                                <textarea id="editor"></textarea>
-                                            </div>
+                                        <div class="col-2">
+                                            <a id="btnPrint">
+                                                <i class="fa fa-print" aria-hidden="true"></i>
+                                            </a>
                                         </div>
-                                        <%--<button type="submit" class="btn btn-primary">submit</button>--%>
                                     </div>
-                                    <%-- paragraph of generated box end --%>
+                                    <%-- Printing end --%>
+                                    <div class="row justify-content-md-center mb-4" id="pc" style="min-height: 400px;">
+                                        <textarea id="editor"></textarea>
+                                    </div>
+                                    <%--<button type="submit" class="btn btn-primary">submit</button>--%>
                                 </div>
-                                <%-- generated result right side end--%>
+                                <%-- paragraph of generated box end --%>
                             </div>
+                            <%-- generated result right side end--%>
+                            <hr />
                             <%-- testimonial body end--%>
                             <%-- footer testimonial --%>
-                            <%-- footer design by kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                            <div class="row-fluid" style="padding-bottom:80px;border-top: 1px solid #ccc;">
-                               <footerclass="footer" style="position: sticky; bottom: 0;margin-bottom:85px;text-align:center;width: 100%;height: 80px;background:#f2f2f2;">
-                                  <div class="row navbar py-3 full-width">
-                                      <div class="col-md-6">
-                                          <span class="footer-copyright-text">@ 2023 socius igb pvt ltd, all right reserved</span>
-                                      </div>
-                                      <div class="col-md-6">
-                                          <!-- facebook -->
-                                          <a class="btn" style="" href="#!" role="button"></a>
-                                          <!-- twitter -->
-                                          <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                            <%-- footer design by row navbar navbar-expand-lg navbar-dark bg-dark--%>
+                            <div class="row footer">
 
-                                          <!-- google -->
-                                          <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                                <div class="col-md-6">
+                                    <span class="footer-copyright-text">@ 2023 socius igb pvt ltd, all right reserved</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- facebook -->
+                                    <a class="btn" style="" href="#!" role="button"></a>
+                                    <!-- twitter -->
+                                    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                                          <!-- instagram -->
-                                          <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                    <!-- google -->
+                                    <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                          <!-- linkedin -->
-                                          <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                    <!-- instagram -->
+                                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                          <!-- pinterest -->
-                                          <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+                                    <!-- linkedin -->
+                                    <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                                    <!-- pinterest -->
+                                    <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                          <!-- github -->
-                                          <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                                    <!-- github -->
+                                    <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                                      </div>
-                                  </div>
-                               </footerclass>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>           
     </form>
 </body>

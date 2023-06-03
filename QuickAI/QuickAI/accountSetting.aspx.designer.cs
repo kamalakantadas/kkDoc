@@ -15,15 +15,6 @@ namespace QuickAI
     {
 
         /// <summary>
-        /// userImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image userImage;
-
-        /// <summary>
         /// viewImage control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace QuickAI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox viewImage;
+
+        /// <summary>
+        /// userImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image userImage;
 
         /// <summary>
         /// dropdownMenu2 control.

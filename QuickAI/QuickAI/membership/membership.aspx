@@ -19,24 +19,7 @@
     <form id="membershipForm" runat="server">
         <div id="memberShipPage">
             <%-- Header Content start --%>
-            <div id="dHeader">
-               <%-- Hide EmailverficationBar --%>
-               <%--<div class="container" id="emailBar" style="height:50px;display:none">
-                   <div class="row" style="padding-top:5px;">
-                       <div class="col-lg-8">
-                           <p class="text-left">Your Email Address is not verified. Please Verify your email address to use all the feature.</p>
-                       </div>
-                       <div class="col-lg-2">
-                           <div class="form-group">
-                               <asp:TextBox runat="server" ID="verifyEmailBox" class="form-control"></asp:TextBox>
-                           </div>
-                       </div>
-                       <div class="col-lg-2">
-                           <asp:Button class="btn btn-primary" onClick="verifyEmail" runat="server" ID="verfiyEmailBtn" Text="VerifyEmail" />
-                       </div>
-                   </div>
-               </div>--%>
-               <%-- Original Header --%>
+            <div id="dHeader">              
                <nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey;height:90px;border-style: ridge;z-index:999;background-color:white;">                    
                     <div class="col-lg-3 col-md-4 col-sm-4" style="width:24.99%"  >                                
                         <a class="navbar-brand" href="../Index.aspx" style="margin-bottom: 50px;overflow: hidden;">                    
@@ -108,7 +91,7 @@
                                <li>
                                    <a href="../dashboard.aspx">
                                        <i class="icon-feather-grid"></i>
-                                       <div>Dashboard</div>
+                                       <div>Dashboard</div>                                       
                                    </a>
                                </li>
 
@@ -120,9 +103,8 @@
                                                <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
                                            </svg>
                                            My Documents
-
                                        </button>
-                                       <div class="dropdown-menu" aria-labelledby="MyDocDrop">
+                                       <div class="dropdown-menu" aria-labelledby="MyDocDrop">                                           
                                            <a class="dropdown-item" href="../all-documents.aspx">All Documents</a>
                                            <a class="dropdown-item" href="../ai-images.aspx">All AI Images</a><a href="../all-Images.aspx">../all-Images.aspx</a>
                                        </div>
@@ -139,31 +121,31 @@
                            <ul>
                                <li>Organize and Manage</li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-templates/Ai-templates.aspx">
                                        <i class="icon-feather-layers"></i>
                                        <div>Templates</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-images.aspx">
                                        <i class="icon-feather-image"></i>
                                        <div>Ai Images</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-chat.aspx">
                                        <i class="icon-feather-message-circle"></i>
                                        <div>Ai Chat</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../speechToText.aspx">
                                        <i class="icon-feather-headphones"></i>
                                        <div>Speech to Text</div>
                                    </a>
                                </li>
                                <li>
-                                   <a href="#">
+                                   <a href="../ai-code.aspx">
                                        <i class="icon-feather-code"></i>
                                        <div>Ai Code</div>
                                    </a>
@@ -178,8 +160,8 @@
                                        </a>
 
                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                           <a class="dropdown-item" href="#">Affiliate Program</a>
-                                           <a class="dropdown-item" href="#">Withdrawals</a>
+                                           <a class="dropdown-item" href="../affiliate-program.aspx">Affiliate Program</a>
+                                           <a class="dropdown-item" href="../withdrawals.aspx">Withdrawals</a>
                                        </div>
                                    </div>
                                </li>
@@ -187,6 +169,7 @@
                                    <a href="membership.aspx">
                                        <i class="icon-feather-gift"></i>
                                        <div>Membership</div>
+                                      
                                    </a>
 
                                </li>

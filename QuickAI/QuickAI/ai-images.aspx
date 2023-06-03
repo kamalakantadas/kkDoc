@@ -84,111 +84,111 @@
                     <div class="row" style="display: inline-flex; width: 100%">
                         <!-- Left Side Lists -->
                         <div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">
-                            <%-- My Account --%>
-                            <ul class="">
-                                <li>
-                                    <a href="dashboard.aspx">
-                                        <i class="icon-feather-grid"></i>
-                                        <div>Dashboard</div>
-                                    </a>
-                                </li>
+                             <%-- My Account --%>
+                           <ul class="">
+                               <li>
+                                   <a href="dashboard.aspx">
+                                       <i class="icon-feather-grid"></i>
+                                       <div>Dashboard</div>
+                                   </a>
+                               </li>
 
-                                <li>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="MyDocDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 15px; width: 15px;">
-                                                <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                                <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
-                                            </svg>
-                                            My Documents
+                               <li>
+                                   <div class="dropdown">
+                                       <button class="btn btn-secondary dropdown-toggle" type="button" id="MyDocDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 15px; width: 15px;">
+                                               <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                               <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
+                                           </svg>
+                                           My Documents
 
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="MyDocDrop">
-                                            <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
-                                            <a class="dropdown-item" href="all-Images.aspx">All AI Images</a>
-                                        </div>
-                                    </div>
-                                    <%-- <a href="#" id="myDocBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> 
+                                       </button>
+                                       <div class="dropdown-menu" aria-labelledby="MyDocDrop">
+                                           <a class="dropdown-item" href="all-documents.aspx">All Documents</a>
+                                           <a class="dropdown-item" href="all-Images.aspx">All AI Images</a>
+                                       </div>
+                                   </div>
+                                   <%-- <a href="#" id="myDocBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> 
                                            My Documents</a>
                                         <ul id="myDocShow">
                                            <li class=""><a href="http://hype.sociusus.com/all-documents">All Documents</a></li>
                                            <li class=""><a href="http://hype.sociusus.com/all-images">All AI Images</a></li>
                                         </ul>--%>                                  
-                                </li>
-                            </ul>
-                            <%-- Organize and Manage --%>
-                            <ul>
-                                <li>Organize and Manage</li>
-                                <li>
-                                    <a href="ai-templates/Ai-templates.aspx">
-                                        <i class="icon-feather-layers"></i>
-                                        <div>Templates</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="ai-images.aspx">
-                                        <i class="icon-feather-image"></i>
-                                        <div>Ai Images</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="ai-chat.aspx">
-                                        <i class="icon-feather-message-circle"></i>
-                                        <div>Ai Chat</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="speechToText.aspx">
-                                        <i class="icon-feather-headphones"></i>
-                                        <div>Speech to Text</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="ai-code.aspx">
-                                        <i class="icon-feather-code"></i>
-                                        <div>Ai Code</div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <%-- Account --%>
-                            <ul style="padding-bottom: 50px">
-                                <li>Account</li>
-                                <li class="">
-                                    <div class="dropdown show" style="">
-                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" style="height: 40px;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Affiliate Program
-                                        </a>
+                               </li>
+                           </ul>
+                           <%-- Organize and Manage --%>
+                           <ul>
+                               <li>Organize and Manage</li>
+                               <li>
+                                   <a href="ai-templates/Ai-templates.aspx">
+                                       <i class="icon-feather-layers"></i>
+                                       <div>Templates</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="ai-images.aspx">
+                                       <i class="icon-feather-image"></i>
+                                       <div>Ai Images</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="ai-chat.aspx">
+                                       <i class="icon-feather-message-circle"></i>
+                                       <div>Ai Chat</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="speechToText.aspx">
+                                       <i class="icon-feather-headphones"></i>
+                                       <div>Speech to Text</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="ai-code.aspx">
+                                       <i class="icon-feather-code"></i>
+                                       <div>Ai Code</div>
+                                   </a>
+                               </li>
+                           </ul>
+                           <%-- Account --%>
+                           <ul style="padding-bottom: 50px">
+                               <li>Account</li>
+                               <li class="">
+                                   <div class="dropdown show" style="">
+                                       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" style="height: 40px;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Affiliate Program
+                                       </a>
 
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="affiliate-program.aspx">Affiliate Program</a>
-                                            <a class="dropdown-item" href="withdrawals.aspx">Withdrawals</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="membership/membership.aspx">
-                                        <i class="icon-feather-gift"></i>
-                                        <div>Membership</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Transaction.aspx">
-                                        <i class="icon-feather-file-text"></i>
-                                        <div>Transactions</div>
-                                    </a>
-                                </li>
-                                <li><a href="accountSetting.aspx"><i class="icon-feather-log-out"></i>
-                                    <div>Account Setting</div>
-                                </a>
-                                </li>
-                                <li>
-                                    <%--<a href="#">
+                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                           <a class="dropdown-item" href="affiliate-program.aspx">Affiliate Program</a>
+                                           <a class="dropdown-item" href="withdrawals.aspx">Withdrawals</a>
+                                       </div>
+                                   </div>
+                               </li>
+                               <li>
+                                   <a href="membership/membership.aspx">
+                                       <i class="icon-feather-gift"></i>
+                                       <div>Membership</div>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="Transaction.aspx">
+                                       <i class="icon-feather-file-text"></i>
+                                       <div>Transactions</div>
+                                   </a>
+                               </li>
+                               <li><a href="accountSetting.aspx"><i class="icon-feather-log-out"></i>
+                                   <div>Account Setting</div>
+                               </a>
+                               </li>
+                               <li>
+                                   <%--<a href="#">
                                        <i class="icon-material-outline-power-settings-new"></i>
                                        <div>Logout</div>
                                    </a>--%>
-                                    <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
+                                   <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
 
-                                </li>
-                            </ul>
+                               </li>
+                           </ul>
                         </div>
                         <%-- Right Side Lists --%>
                         <div class="col-lg-9 scrollable" id="content" style="width: 75%; background: #f2f2f2; z-index: 99; padding-left: 50px; padding-top: 50px;">

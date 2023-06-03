@@ -22,7 +22,7 @@
             <%-- <%-- Original Header --%>
             <%--<nav class="row navbar navbar-expand-lg navbar-light fixed-top" id="headerBar" style="box-shadow: 2px 2px 5px grey; height: 90px; border-style: ridge; z-index: 999; background-color: white; ">--%>
             <div class="topbar">
-                <div class="col" <%--style="min-width: 24.99%"--%>>
+                <div<%-- class="col"--%> <%--style="min-width: 24.99%"--%>>
                     <a class="navbar-brand" href="Index.aspx" <%--style="margin-bottom: 50px; overflow: hidden;"--%>>
                         <img src="Images/1149945428.png" alt="Index Image" id="websiteLogo" /><%--style="position: fixed; max-width: 100%; margin-bottom: 30px; padding-left: 35px; padding-right: 35px; overflow: hidden;"--%> 
                     </a>

@@ -184,6 +184,7 @@
     <Content Include="all-Images.aspx" />
     <Content Include="blogs\1\blogsFirst.aspx" />
     <Content Include="blogs\blogs.aspx" />
+    <Content Include="css\speech-to-text.css" />
     <Content Include="Images\Image ICON.png" />
     <Content Include="Images\picDemo.jfif" />
     <Content Include="Images\userIcon1.png" />
@@ -228,6 +229,7 @@
     <Content Include="Scripts\withdrawals.js" />
     <Content Include="Style\dashboard.css" />
     <Content Include="TestDiv.aspx" />
+    <Content Include="testing.aspx" />
     <Content Include="TestScrollingAndDropping.aspx" />
     <Content Include="TestSearchBar.aspx" />
     <Content Include="withdrawals.aspx" />
@@ -948,6 +950,13 @@
     </Compile>
     <Compile Include="Testimonials.aspx.designer.cs">
       <DependentUpon>Testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
     </Compile>
     <Compile Include="TestScrollingAndDropping.aspx.cs">
       <DependentUpon>TestScrollingAndDropping.aspx</DependentUpon>

@@ -7,8 +7,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link href="Style/dashboard.css" rel="stylesheet" />
-    <%--<link href="IndexPage.css" rel="stylesheet" />--%>
+    <%--<link href="Style/dashboard.css" rel="stylesheet" />--%>
+    <link href="IndexPage.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,11 +38,11 @@
                </div>
                
                <%-- Headear Bar --%>          
-               <div class="headerBar">
+               <div class="headerBarDashboard">
                    <%-- Header starts here --%>
                    <div>
                        <a class="navbar-brand" href="Index.aspx">
-                           <img src="Images/1149945428.png"/>
+                           <img src="Images/1149945428.png"  id="websiteLogo" />
                        </a>
                    </div>
                    <div>
@@ -273,9 +273,9 @@
                            <canvas id="myChart"></canvas>
                        </div>                       
                    </div>
-
+                   <hr />
                    <%-- dashboard Footer--%>
-                   <div class="row-fluid">
+                   <div class="row-fluid mt-3">
                        <div class="row footer">
                            <div class="col-6">
                                <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
