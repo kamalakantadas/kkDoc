@@ -15,42 +15,6 @@ namespace QuickAI
     {
 
         /// <summary>
-        /// verifyEmailBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox verifyEmailBox;
-
-        /// <summary>
-        /// verfiyEmailBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verfiyEmailBtn;
-
-        /// <summary>
-        /// activeSessionFunction control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl activeSessionFunction;
-
-        /// <summary>
-        /// userImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image userImage;
-
-        /// <summary>
         /// viewImage control.
         /// </summary>
         /// <remarks>
@@ -60,12 +24,21 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.TextBox viewImage;
 
         /// <summary>
-        /// dropdownMenu2 control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dropdownMenu2;
+        protected global::System.Web.UI.WebControls.Image Image1;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

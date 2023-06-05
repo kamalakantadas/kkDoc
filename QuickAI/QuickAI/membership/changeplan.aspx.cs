@@ -99,8 +99,22 @@ namespace QuickAI.membership
             SqlDataAdapter adpt = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adpt.Fill(dt);
-            MessageBox.Show("Done");
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "up", "showBill();", true);
+            //MessageBox.Show("Done");
+
+            //if billiing Details is already there means don't go for show Bill otherwise go for showBill Form
+            query = "Select * from billing";
+            cmd = new SqlCommand(query, con);
+            adpt = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            adpt.Fill(dt);
+            if(dt.Rows.Count >= 1)
+            {
+                forwardToBankDeposit(sender, e);
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "up", "showBill();", true);
+            }           
         }
         //billing Details from on change plan page
         protected void billingDetails(object sender, EventArgs e) {

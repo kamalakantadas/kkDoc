@@ -1,5 +1,86 @@
 ﻿body {
 }
+/*Withdrawals Start*/
+#withdrawalsBody {
+    padding-top: 65px;
+    background: #f2f2f2;
+}
+#contentWithdrawalsRightSide {
+    padding: 20px;
+    background:#f2f2f2;
+}
+
+
+#contenWithDrawalsRSInner{
+    background:white;  
+}
+#hideContentInner{
+    padding:25px;
+}
+#hideDiv2 {
+    padding-left: 20px;
+}
+#withdrawalRequest {
+    margin-top: 20px;
+    background:white;
+}
+/*Withdrawals end*/
+/*TransactionPage Start*/
+#transactionBody {
+    padding-top: 65px;
+    padding: 100px;
+    background: #f2f2f2;
+}
+#tableData {
+    margin-top: 40px;
+    background: white;
+}
+/*TransactionPage End*/
+/*Affiliate-program start*/
+#aBody {
+    padding-top: 65px;
+}
+#wordsUsed {
+    margin:10px;
+}
+#imagesUsed {
+    margin: 10px;
+}
+#speechText {
+    margin: 10px;
+}
+#mDiv {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;    
+    margin:10px;
+    padding:10px;
+}
+#mSubDiv3 {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    margin: 10px;
+    padding: 10px;
+}
+#mSubDiv4 {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    margin: 10px;
+    padding: 10px;
+}
+#commission {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    margin: 10px;
+    padding: 10px;
+}
+.in1{
+    width:80%;
+    outline:none;
+    border:10x solid #e0e0e0;
+    border-radius:5px;
+
+}
+/*Affiliate-program end*/
 /*Global scope start*/
 .headerBar {
     position: fixed;
@@ -8,6 +89,16 @@
     align-items: center;
     background-color: white;
     z-index: 999;
+    
+}
+ul li {
+    background-color: #cbb4b4;
+    list-style: none;
+    height: 45px;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0px 1px 3px 4px cornflowerblue;
+    padding: 10px;
 }
 /*Global scope end*/
 /*AccountSetting start*/
@@ -140,19 +231,25 @@
     #dashboardBody {
         margin-top: 177px;
     }
-    #content {
+    /*#content {
         width: 100%;
-    }
+    }*/
    
     #btnToggle {    
         display: none; /*hide btnToggle when screen size max 750px*/
     }
 }
+.home{
+    background-color:blue;
+    border-radius:5px;
+    padding:5px;
+    color:#fff;
+}
 /*Responsive using grid start*/
-@Media(min-width:740px) {
-    #SubPage {
+@media(min-width:900px) {
+    /*.homebtn {
         float: right;
-    }
+    }*/
 }
 
 @media(min-width:342px){
@@ -174,15 +271,12 @@
 .tox .tox-statusbar__branding svg {
     display: none;
 }
-@media(max-width:991px) {
+@media(min-width:991px) {
     #SubPage{
-        float:none;
+        float:right;
     }
 }
-@media(max-width:500px){
-    #SubPage{
-        
-    }
+
 .pageContentHeader {
        flex-direction:column;
     }
@@ -322,11 +416,6 @@
         }
 
 
-.content {
-        color: black;
-    }
-
-
 /*Account Setting Page*/
 .leftSideBarOfAS {
         position: fixed;
@@ -337,9 +426,11 @@
         padding-bottom: 20px;
     }
 
-#sidebar ul li {
+#sidebar{
         background-color: #cbb4b4;
     }
+
+
 
 
 .leftSideBarOfAS ul {
@@ -490,7 +581,7 @@ body::-webkit-scrollbar {
 
 a {
         color: black;
-    }
+}
 
 .scrollable {
         overflow-y: auto;

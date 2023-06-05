@@ -192,7 +192,7 @@
                     </ul>
                 </div>
                 <%-- Right Side Lists --%>
-                <div class="col-lg-9 col-md-12 scrollable" style="background: #f2f2f2;">
+                <div class="col-lg-9 col-md-12 scrollable" id="content" style="background: #f2f2f2;">
                     <div id="rightSide">
                         <%-- Right content 1st row only content --%>
                         <div class="row mb-3">

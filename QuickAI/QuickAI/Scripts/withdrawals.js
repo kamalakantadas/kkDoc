@@ -1,4 +1,7 @@
 ﻿$(document).ready(function () {
+    $("#hideDiv2").on("click", function () {
+        $("#hideContentInner").slideToggle("slow");
+    });
     $("#amount").val(50);
     
     $("#amount").on("keyup change", function () {
@@ -8,6 +11,10 @@
             $("#amount").val(50);
         }
     });
+    $('#btnToggle').on('click', function () { //button event       
+        $("#sidebar").toggle();
+        $("#content").toggleClass('col-lg-12 full-width');
+    });   
 });
 function viewText() {
     $("#viewImage").show();
