@@ -179,8 +179,8 @@
                                 <%-- left side of right side --%>
                                 <div class="col-md-6">
                                     <p runat="server" id="formMainHeader">faq answers/reviews</p>
-                                    <div style="border-radius: 20px; height: 40px; width: 180px; background: grey; padding: 5px;">
-                                        0/100 Images Used"
+                                    <div style="border-radius: 20px; height: 40px; width: 180px; background: grey; padding: 7px;">
+                                        0/100 Images Used
                                     </div>
                                 </div>
                                 <%-- right side of right side --%>

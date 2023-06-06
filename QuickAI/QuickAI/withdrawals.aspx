@@ -16,7 +16,7 @@
 </head>
 <body>
     <form id="withdrawals" runat="server">
-        <%-- Affiliate Header --%>
+        <%-- Withdrawals Header --%>
         <div class="headerBar">
             <%-- Header starts here --%>
             <div>
@@ -144,37 +144,27 @@
                             <div>Account Setting</div>
                         </a></li>
                         <li>
-                            <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton></li>
+                            <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
+                        </li>
                     </ul>
                 </div>
                 <%-- Right Side --%>
                 <div class="col-lg-9 scrollable" id="content">
                     <div id="contentWithdrawalsRightSide">
                         <%-- Right content 1st row only content --%>
-                        <%--<div class="row">
-                        
-                            <div class="col-lg-5">
+                        <div class="row mb-5">                        
+                            <div class="col-lg-6">
                                 <h3>WithDrawals</h3>
                             </div>
                             
-                            <div class="col-lg-5">
-                                <div id="SubPage">
-                                        <span><a href="index.aspx">Home</a></span>
-                                        <span><a href="withdrawals">Withdrawals</a></span>
-                                </div>
-                            </div>
-                        </div>--%>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <h4>Withdrawel</h4>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="home">
-                                    <span><a href="#">Home</a></span>
-                                    <span><a>withdrawel</a></span>
+                            <div class="col-lg-6">
+                                <div id="subPageLink">
+                                    <span><a href="index.aspx">Home</a></span>
+                                    <span><a href="withdrawals">Withdrawals</a></span>
                                 </div>
                             </div>
                         </div>
+                       
                         <%-- Request Withdrawals Start --%>
                         <div id="contenWithDrawalsRSInner">
                             <div id="hideDiv2">                                
@@ -245,7 +235,7 @@
                         </div>
                         <%-- Withdrawal Request--%>
                         <div id="withdrawalRequest">
-                            <div>                                
+                            <div id="withdrawalHead">                                
                                 <h5><svg xmlns="http://www.w3.org/2000/svg" width="40" height="15" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
                                     <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
                                     <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"></path>
@@ -254,13 +244,12 @@
                             <hr />
                             <div class="table-responsive" style="background-color: white;">
                                 <table class="table">
-                                    <thead class="thead-dark">
+                                    <thead class="thead-white">
                                         <tr>
-                                            <th scope="col">Commission</th>
-                                            <th scope="col">Total Amount</th>
-                                            <th scope="col">Commission Rate</th>
-                                            <th scope="col">Transaction ID</th>
-                                            <th scope="col">Date</th>
+                                            <th scope="col">Request On</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Payment Method</th>
+                                            <th scope="col">Status</th>                                           
                                         </tr>
                                     </thead>
                                     <tbody>

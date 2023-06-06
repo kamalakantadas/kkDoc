@@ -31,7 +31,7 @@ namespace QuickAI.membership
         protected void logout(object sender, EventArgs e)
         {
             Session["Email"] = null;
-            Response.Redirect("Index.aspx");
+            Response.Redirect("../Index.aspx");
         }
         protected void upgradeMembership(object sender, EventArgs e)
         {

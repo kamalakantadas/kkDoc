@@ -284,7 +284,7 @@ namespace QuickAI.ai_templates
         protected void logout(object sender, EventArgs e)
         {
             Session["Email"] = null;
-            Response.Redirect("Index.aspx");
+            Response.Redirect("../Index.aspx");
         }
     }
 }

@@ -1,27 +1,116 @@
 ﻿body {
 }
+/*Testimonial page start*/
+#tBody {   
+    padding-top:65px;
+}
+.firstRowTestimonial{
+    padding-top:20px;
+    padding-bottom:100px;    
+}
+.tempDiv {
+    padding:20px;
+    height: 300px;
+    box-shadow: 2px 2px 5px grey;
+    background: bisque;
+    text-align-last: center;
+}
+.secondRowTestimonial{
+   
+    background:white;
+  
+}
+.secondRowTestimonial {
+    padding-top:50px;
+    padding-left:125px;
+    padding-right:125px;
+    padding-bottom:50px;
+}
+@media (max-width:700px){
+    #rightSideContent{
+
+    }
+    .secondRowTestimonial{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+/*Testimonial page end*/
+/*AI Templates Page start*/
+#allTempHead {
+    margin-left:20px;
+    width:95%;
+}
+#aiRightDiv{
+    padding-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+#aiTempBody {
+    padding-top: 65px;
+}
+.sTempHead{}
+.sTemp{
+
+}
+.ai-templates {
+    
+    border-radius: 12px;
+    margin: 20px;
+    background: white;
+}
+.ai-templates i {
+    box-shadow: 1px 0px 4px 1px grey;
+    padding: 7px;
+    border-radius:5px;
+}
+.content {
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0px grey;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    user-select: none;
+}
+p.margin-bottom-0{
+    user-select:none;
+}
+.dashboard-status-button i {
+    padding: 0px;
+}
+.templates-main:hover{
+    text-decoration:none;
+
+}
+
+/*AI Templates Page end*/
 /*Withdrawals Start*/
 #withdrawalsBody {
     padding-top: 65px;
     background: #f2f2f2;
 }
 #contentWithdrawalsRightSide {
-    padding: 20px;
+    padding: 25px;
     background:#f2f2f2;
+}
+#withdrawalHead{
+   /* padding-top:10px;*/
 }
 
 
-#contenWithDrawalsRSInner{
-    background:white;  
+#contenWithDrawalsRSInner {
+    background: white;
 }
 #hideContentInner{
     padding:25px;
 }
 #hideDiv2 {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 #withdrawalRequest {
     margin-top: 20px;
+    padding:25px;
     background:white;
 }
 /*Withdrawals end*/
@@ -76,7 +165,7 @@
 .in1{
     width:80%;
     outline:none;
-    border:10x solid #e0e0e0;
+   /* border:10x solid #e0e0e0;*/
     border-radius:5px;
 
 }
@@ -92,15 +181,21 @@
     
 }
 ul li {
-    background-color: #cbb4b4;
+    background:#f2f2f2;
     list-style: none;
     height: 45px;
     align-items: center;
     text-decoration: none;
-    box-shadow: 0px 1px 3px 4px cornflowerblue;
+    
     padding: 10px;
 }
+.scrollable {
+    overflow-y: auto;
+    height: 500px;
+}
+   
 /*Global scope end*/
+
 /*AccountSetting start*/
 #AccountPage {
     padding-top: 65px;
@@ -239,11 +334,10 @@ ul li {
         display: none; /*hide btnToggle when screen size max 750px*/
     }
 }
-.home{
-    background-color:blue;
-    border-radius:5px;
-    padding:5px;
-    color:#fff;
+#subPageLink {
+   background:white;
+    padding: 5px;
+    float:right;
 }
 /*Responsive using grid start*/
 @media(min-width:900px) {
@@ -278,8 +372,7 @@ ul li {
 }
 
 .pageContentHeader {
-       flex-direction:column;
-    }
+       flex-direction:column;   
 }
   
     /*Responsive using grid end*/
@@ -317,19 +410,7 @@ ul li {
     padding-left: 10px;
 }
 
-.ai-templates {
-        margin: 6px;
-        padding: 10px;
-    }
 
-.aitempl {
-        /*//box-shadow: 1px 1px 1px 3px grey;*/
-        background: white;
-        border-radius: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 80%;
-    }
 
 .clearfix::after {
         content: "";
@@ -384,7 +465,7 @@ ul li {
 .btnToggle {
         border: none;
         outline: none;
-        background-color: deepskyblue;
+        background-color: skyblue;
         padding: 10px;
     }
 /*v arun kumar css code end*/
@@ -412,7 +493,7 @@ ul li {
 
 .form-group i {
             font-size: 20px;
-            color: #333;
+          /*  color: #333;*/
         }
 
 
@@ -426,23 +507,23 @@ ul li {
         padding-bottom: 20px;
     }
 
-#sidebar{
+/*#sidebar{
         background-color: #cbb4b4;
-    }
+    }*/
 
 
 
 
-.leftSideBarOfAS ul {
+/*.leftSideBarOfAS ul {
         margin-top: 20px;
     }
 
 .leftSideBarOfAS ul li {
             width: 100%;
             list-style: none;
-            color: cornflowerblue;
-            background-color: #007bff;
-        }
+            color: cornflowerblue;*/
+           /* background-color: #007bff;*/
+        /*}
 
 .leftSideBarOfAS ul li dropdown-menu a {
                 width: 100%;
@@ -467,10 +548,10 @@ ul li {
                     min-width: 60px;
                     font-size: 24px;
                     text-align: center;
-                }
+                }*/
 
 /*Dashboard Page*/
-.leftSideBar {
+/*.leftSideBar {
         position: fixed;
         width: 260px;
         height: calc(100%-95px);
@@ -495,10 +576,10 @@ ul li {
 
 .leftSideBar ul {
     margin-top: 20px;
- }
+ }*/
       
 /*Left Side Panel*/
-.leftSideBar ul li {
+/*.leftSideBar ul li {
             width: 100%;
             list-style: none;
             color: cornflowerblue;
@@ -546,9 +627,9 @@ body::-webkit-scrollbar {
         padding-right: 8px;
         height: 20px;
         width: 20px;
-        font-size: 20px;
-        color: #909090;
-        transition: .3s;
+        font-size: 20px;*/
+       /* color: #909090;*/
+        /*transition: .3s;
         position: relative;
         top: 2px;
     }
@@ -568,26 +649,22 @@ body::-webkit-scrollbar {
    flex-grow: 1;
    position: relative;
    height: 100%;
-}
+}*/
 
-#SubPage li:hover {
+/*#SubPage li:hover {
         background-color: #f2f2f2;
         cursor: pointer;
     }
-
-.active {
+*/
+/*.active {
         border-radius: 1px;
     }
 
 a {
-        color: black;
+        color: white;
 }
 
-.scrollable {
-        overflow-y: auto;
-        height: 500px;
-    }
-   
+
 #sidebar ul {
         list-style: none;
         position: center;
@@ -596,20 +673,20 @@ a {
 
 #sidebar ul li {
         box-shadow: 2px 2px 1px grey;
-        list-style: none;
-        background-color: #cbb4b4;
-        color: #fff;
-        transition: background-color 0.3s ease-in-out;
+        list-style: none;*/
+       /* background-color: #cbb4b4;*/
+       /* color: #fff;*/
+        /*transition: background-color 0.3s ease-in-out;
         border-radius: 1px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 25px;
         padding-right: 25px;
         font-size: 15px;
-        line-height: 25px;
+        line-height: 25px;*/
         /* box-shadow: 1px 1px 5px grey;*/
-}
-#subpage ul li {
+/*}*/
+/*#subpage ul li {
     list-style: none;
     background-color: #f2f2f2;
     color: #fff;
@@ -621,8 +698,8 @@ a {
     padding-right: 25px;
     font-size: 15px;
     line-height: 25px;
-}
-#SubPage ul li {
+}*/
+/*#SubPage ul li {
     list-style: none;
     background-color: white;
     color: #fff;
@@ -633,6 +710,6 @@ a {
     padding-left: 25px;
     padding-right: 25px;
     font-size: 15px;
-    line-height: 25px;
+    line-height: 25px;*/
     /* box-shadow: 1px 1px 5px grey;*/
-}
+/*}*/
