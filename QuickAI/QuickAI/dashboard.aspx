@@ -19,7 +19,7 @@
 <body>
    <form id="dashboardForm" runat="server" method="post">
        <div id="DashBoard">
-        <%-- Header Contentt Writen by  --%>
+       <%-- Header Contentt Writen by  --%>
            <div id="dHeader">
               <%-- Email Bar end--%>
                <div class="row" id="emailBar">
@@ -195,9 +195,9 @@
                </div>
                <%-- Right Side --%>
                <div class="col-lg-9 scrollable" id="content">
-                   <div id="rightSide">
+                   <div id="rightSide" style="padding-top:25px;">
                        <%-- Right content 1st row only content --%>
-                       <div class="row">
+                       <div class="row mb-5">
                            <%-- Left Side of Right side --%>
                            <div class="col-2">
                                <h3>Dashboard</h3>
@@ -215,10 +215,10 @@
                            </div>
                        </div>
                        <%-- 3 boxes Right content 2nd row --%>
-                       <div class="row">
+                       <div class="row mb-5">
                            <%-- Words Used --%>
-                           <div class="col-lg-4 col-md-12" >
-                               <div id="wordsUsed" style="margin: 10px">
+                           <div class="col-lg-4 col-md-12">
+                               <div id="wordsUsed">
                                    <div class="col-md-6">
                                        <h5>Words Used</h5>
                                        <h5>0/10,000</h5>
@@ -229,11 +229,11 @@
                                            <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
                                        </svg>
                                    </div>
-                               </div>                                                         
+                               </div>
                            </div>
                            <%-- Images Used --%>
-                           <div class="col-lg-4 col-md-12" >
-                               <div style="margin:10px" id="imagesUsed">
+                           <div class="col-lg-4 col-md-12">
+                               <div id="imagesUsed">
                                    <div class="col-md-6">
                                        <div id="iu">
                                            <h5>Images Used</h5>
@@ -245,11 +245,11 @@
                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z" />
                                        </svg>
                                    </div>
-                               </div>                               
+                               </div>
                            </div>
                            <%-- Speech Text --%>
-                           <div class="col-lg-4 col-md-12" >
-                               <div style="margin:10px;" id="speechText">
+                           <div class="col-lg-4 col-md-12">
+                               <div style="" id="speechText">
                                    <div class="col-md-6" id="st">
                                        <h5>Speech Text</h5>
                                        <h5>0/0</h5>
@@ -259,20 +259,21 @@
                                            <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
                                        </svg>
                                    </div>
-                               </div>                               
+                               </div>
                            </div>
                        </div>
-                   </div>
-                   <%-- second Row for right content--%>
-                   <%-- Chart --%>
-                   <div class="row" id="chartbody">
-                       <%-- Chart Body--%>
-                       <div class="col-12">
-                           <h3 class="text-muted">Words used this month</h3>
+
+                       <%-- second Row for right content--%>
+                       <%-- Chart --%>
+                       <div class="row mb-3" id="chartbody">
+                           <%-- Chart Body--%>
+                           <div style="width:100%;border-bottom:1px solid grey;padding:10px">
+                               <h4 class="text-muted">Words used this month</h4>
+                           </div>
                            <canvas id="myChart"></canvas>
-                       </div>                       
+                       </div>
+                      <hr />
                    </div>
-                   <hr />
                    <%-- dashboard Footer--%>
                    <div class="row-fluid mt-3">
                        <div class="row footer">
@@ -310,8 +311,7 @@
 
        <%-- Bottom Fixed --%>
        <div class="row-fluid fixed-bottom">
-       </div>
-    
+       </div>    
    </form>
 </body>
   

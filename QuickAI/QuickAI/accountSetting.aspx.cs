@@ -12,6 +12,7 @@ using System.Windows;
 
 namespace QuickAI
 {   
+    //verify Details and check validation
     class verfiyAccountSetting
     {
       
@@ -68,37 +69,39 @@ namespace QuickAI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //account setting autofill
-            string email = (string)Session["Email"];
-            TextBox txt = (TextBox)Page.FindControl("viewImage");
-            txt.Text = email;
-            try {
-                string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
-                //string connectionString = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI; Integrated Security=True";
-                string query = "select userName,userEmail from userReg where userEmail=" + email + "";
-                using (SqlConnection con = new SqlConnection(connectionString)) {
-                    //con.Open();
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    string userName = "";
-                    sda.Fill(dt);
-                    if (dt.Rows.Count == 1)
-                    {
-                        DataRow dr = dt.Rows[0];
-                        email = dr["userEmail"].ToString();
-                        userName = dr["userName"].ToString();
-                    }
-                    TextBox uName = (TextBox)Page.FindControl("userName");
-                    uName.Text = userName;
-                    TextBox uEmail = (TextBox)Page.FindControl("userEmail");
-                    uEmail.Text = email;
-                }               
-            }
-            catch(SqlException ex)
-            {
-                Response.Write(ex.ToString() + "Error");
-            }            
+            ////account setting autofill
+            //string email = (string)Session["Email"];
+            //TextBox txt = (TextBox)Page.FindControl("viewImage");
+            //txt.Text = email;
+            //try
+            //{
+            //    string connectionString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
+            //    //string connectionString = "Data Source=DESKTOP-GUK77OV\\SQLEXPRESS;Initial Catalog=QUICKAI; Integrated Security=True";
+            //    string query = "select userName,userEmail from userReg where userEmail=" + email + "";
+            //    using (SqlConnection con = new SqlConnection(connectionString))
+            //    {
+            //        //con.Open();
+            //        SqlCommand cmd = new SqlCommand(query, con);
+            //        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            //        DataTable dt = new DataTable();
+            //        string userName = "";
+            //        sda.Fill(dt);
+            //        if (dt.Rows.Count == 1)
+            //        {
+            //            DataRow dr = dt.Rows[0];
+            //            email = dr["userEmail"].ToString();
+            //            userName = dr["userName"].ToString();
+            //        }
+            //        TextBox uName = (TextBox)Page.FindControl("userName");
+            //        uName.Text = userName;
+            //        TextBox uEmail = (TextBox)Page.FindControl("userEmail");
+            //        uEmail.Text = email;
+            //    }
+            //}
+            //catch (SqlException ex)
+            //{
+            //    Response.Write(ex.ToString() + "Error");
+            //}
         }
         protected void updatePwd(object sender, EventArgs e)
         {

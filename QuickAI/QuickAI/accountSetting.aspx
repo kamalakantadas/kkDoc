@@ -150,188 +150,160 @@
             </div>
 
             <%-- Right Side --%>
-            <div class="col-lg-9 scrollable" id="content" >
-                <%-- Right content 1st row only content --%>
-                <div class="row">
-                    <%-- Left Side of Right side --%>
-                    <div class="col-md-7">
-                        <h3>Account Setting</h3>
-                    </div>
-                    <%-- Right Side of Right side --%>
-                    <div class="col-md-5">
-                        <div id="SubPage">
-                            <ul style="display: inline-flex;">
-                                <li><a href="index.aspx">Home</a></li>
-                                <li><a href="#">Account Setting</a></li>
-                            </ul>
+            <div class="col-lg-9 scrollable" id="content">
+                <div class="ac_content_right">
+                    <div id="ac_content_right_1">
+                        <div class="row">
+                            <%-- Left Side of Right side --%>
+                            <div class="col-lg-7">
+                                <h3>Account Setting</h3>
+                            </div>
+                            <%-- Right Side of Right side --%>
+                            <div class="col-lg-5">
+                                <div id="SubPage">
+                                    <ul style="display: inline-flex;">
+                                        <li><a href="index.aspx">Home</a></li>
+                                        <li><a href="#">Account Setting</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <%-- Second Row --%>
-                <div class="row" style="width: 100%; background-color: white;">
-                    <%-- Account Setting--%>
-                    <div id="SettingBody" style="width: 100%; background-color: white;">
-                        <div class="" style="box-shadow: 1px 1px 2px grey;">
-                            <h6 class="text-muted" style="padding-left: 15px; padding-top: 14px; padding-bottom: 14px">Account Setting</h6>
-                        </div>
-                    </div>
-                </div>
-                <%--Account Details Contents available --%>
-                <div id="accountInfo">
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-lg-6" style="padding-top: 20px; padding-bottom: 20px">
-                            <h6>Avatar</h6>
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="form-group">
-                                        <label class="custom-file-label" for="imageInput" style="margin-left: 15px;">Upload</label>
-                                        <asp:FileUpload runat="server" class="form-control-file" ID="imageInput" Style="width: 100px;" />
+                    <%-- Account Setting --%>
+                    <div id="ac_content_right_2">                       
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div style="border-bottom:1px solid grey;padding:10px;">
+                                    <h6 class="text-muted" style="">Account Setting</h6>
+                                </div>                                 
+                            </div>
+                            
+                            <div class="col-lg-6 mt-5 mb-2">
+                                <h6>Avatar</h6>
+                                <div class="form-group">
+                                   
+                                    <asp:FileUpload runat="server" ID="imageInput" />
+                                </div>
+                                <p>Use 150*150px for better use</p>                                    
+                            </div>
+                            <div class="col-lg-6 mt-2"></div>
+                            <div class="col-lg-6 mt-2">
+                                <h4>UserName *</h4>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="userId">
+                                            <img src="Images/userIcon.jpg" style="height: 15px" />
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <h6>Use 150*150px for better use</h6>
+                                    <asp:TextBox runat="server" ID="userName" class="form-control" placeholder="UserName" aria-label="Username" aria-describedby="basic-addon1"></asp:TextBox>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6"></div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white; margin-right: 45px; padding-top: 50px">
-                        <div class="col-lg-6">
-                            <h4>UserName *</h4>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="userId">
-                                        <img src="Images/userIcon.jpg" style="height: 15px" />
-                                    </span>
+                            <div class="col-lg-6 mt-2">
+                                <h4>Email Address *</h4>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="">
+                                            <img src="Images/Email.png" style="height: 15px" /></span>
+                                    </div>
+                                    <asp:TextBox runat="server" ID="userEmail" class="form-control" placeholder="userEmail" aria-label="userEmail" aria-describedby="basic-addon1"></asp:TextBox>
                                 </div>
-                                <asp:TextBox runat="server" ID="userName" class="form-control" placeholder="UserName" aria-label="Username" aria-describedby="basic-addon1"></asp:TextBox>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4>Email Address *</h4>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="">
-                                        <img src="Images/Email.png" style="height: 15px" /></span>
+                            <div class="col-lg-6 mt-2">
+                                <h4>New Password</h4>
+                                <div class="form-group">
+                                    <asp:TextBox runat="server" class="form-control" ID="userPwd"></asp:TextBox>
                                 </div>
-                                <asp:TextBox runat="server" ID="userEmail" class="form-control" placeholder="userEmail" aria-label="userEmail" aria-describedby="basic-addon1"></asp:TextBox>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white; margin-right: 45px;">
-                        <div class="col-lg-6">
-                            <h4>New Password</h4>
-                            <div class="form-group">
-                                <asp:TextBox runat="server" class="form-control" ID="userPwd"></asp:TextBox>
+                            <div class="col-lg-6 mt-2">
+                                <h4>Confirm Password</h4>
+                                <div class="form-group">
+                                    <asp:TextBox runat="server" class="form-control" ID="userRePwd"></asp:TextBox>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4>Confirm Password</h4>
-                            <div class="form-group">
-                                <asp:TextBox runat="server" class="form-control" ID="userRePwd"></asp:TextBox>
+                            <div class="col-lg-6 mt-2">
+                                <asp:Button runat="server" ID="saveUserBtn" Text="Save Changes" OnClick="updatePwd" class="btn btn-primary form-control"></asp:Button>
                             </div>
+                            <div class="col-lg-6 mt-2"></div>
                         </div>
                     </div>
-                    <div class="row" style="width: 100%; background-color: white; margin-right: 45px; padding-bottom: 30px; margin-bottom: 30px">
-                        <div class="col-lg-6">
-                            <asp:Button runat="server" ID="saveUserBtn" Text="Save Changes" OnClick="updatePwd" class="btn btn-primary form-control"></asp:Button>
+                     <%-- Billing Details --%>
+                    <div id="ac_content_right_3">                       
+                        <div class="row">
+                            <div class="col-lg-12 mb-5">
+                                <div style="border-bottom:1px solid grey;padding:10px;">
+                                    <h6 class="text-muted">Billing Details</h6>
+                                </div>
+                            </div>  
+                            <div class="col-lg-12 mb-3">
+                                <div style="padding:10px;background:skyblue;">
+                                    <p>These details will be used in invoice and payments.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="exampleInputEmail1">Type</label>
+                                <div class="dropdown">
+                                    <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" Style="width:100%;height: 38px;">
+                                        <asp:ListItem href="#" Value="personal">Personal</asp:ListItem>
+                                        <asp:ListItem href="#" Value="business">Business</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div id="td" style="display: none">
+                                    <label for="taxId">Tax ID</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="taxIdBox" aria-describedby="taxIdBoxx"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name *</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="billingUserName" aria-describedby="emailHelp"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Address *</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="billingUserAdd" aria-describedby="emailHelp"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="billingUserCity">City *</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="billingUserCity"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="billingUserState">State *</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="billingUserState"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="billingUserZip">Zip *</label>
+                                    <asp:TextBox runat="server" class="form-control" ID="billingUserZip"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="country">Country *</label>
+                                <div class="form-group">
+                                    <asp:DropDownList runat="server" class="form-select" ID="country" name="country" Style="height: 32px; width: 100%;">
+                                        <asp:ListItem Value="">country</asp:ListItem>
+                                        <asp:ListItem Value="AF">Afghanistan</asp:ListItem>
+                                        <asp:ListItem Value="IN">INDIA</asp:ListItem>
+                                        <asp:ListItem Value="US">USA</asp:ListItem>
+                                        <asp:ListItem Value="EN">Engaland</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 mt-3">
+                                <asp:Button runat="server" OnClick="billingDetails" ID="userBillingDetails" Text="Save Changes" class="btn btn-primary form-control"></asp:Button>
+                            </div>
+                            <div class="col-md-6"></div>                     
                         </div>
-                        <div class="col-lg-6"></div>
                     </div>
                 </div>
-
-                <%-- Billing Header --%>
-                <div id="billInfo">
-                    <div class="row" style="width: 100%; box-shadow: 1px 1px 2px grey; height: 50px; padding-left: 20px; padding-top: 15px; padding-bottom: 15px; background-color: white;">
-                        <h6 class="text-muted" style="padding-left: 15px; padding-top: 14px; padding-bottom: 14px">Billing Details</h6>
-                    </div>
-
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-12">
-                            <div style="width: 100%; height: 50px; width: 400px"></div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-12">
-                            <label for="exampleInputEmail1">Type</label>
-                            <div class="dropdown">
-                                <%-- <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="typeOfPerson" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   </a>--%>
-                                <asp:DropDownList ID="typeSel" runat="server" aria-labelledby="dropdownMenuLink" Style="width: 100%; height: 38px;">
-                                    <asp:ListItem href="#" Value="personal">Personal</asp:ListItem>
-                                    <asp:ListItem href="#" Value="business">Business</asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="td" style="width: 100%; background-color: white; display: none">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="taxId">Tax ID</label>
-                                <asp:TextBox runat="server" class="form-control" ID="taxIdBox" aria-describedby="taxIdBoxx"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Name *</label>
-                                <asp:TextBox runat="server" class="form-control" ID="billingUserName" aria-describedby="emailHelp"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Address *</label>
-                                <asp:TextBox runat="server" class="form-control" ID="billingUserAdd" aria-describedby="emailHelp"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="billingUserCity">City *</label>
-                                <asp:TextBox runat="server" class="form-control" ID="billingUserCity"></asp:TextBox>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="billingUserState">State *</label>
-                                <asp:TextBox runat="server" class="form-control" ID="billingUserState"></asp:TextBox>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="billingUserZip">Zip *</label>
-                                <asp:TextBox runat="server" class="form-control" ID="billingUserZip"></asp:TextBox>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; background-color: white;">
-                        <div class="col-md-12">
-                            <label for="country">Country *</label>
-                            <div class="form-group">
-                                <asp:DropDownList runat="server" class="form-select" ID="country" name="country" Style="height: 32px; width: 100%;">
-                                    <asp:ListItem Value="">country</asp:ListItem>
-                                    <asp:ListItem Value="AF">Afghanistan</asp:ListItem>
-                                    <asp:ListItem Value="IN">INDIA</asp:ListItem>
-                                    <asp:ListItem Value="US">USA</asp:ListItem>
-                                    <asp:ListItem Value="EN">Engaland</asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="width: 100%; padding-top: 30px; background-color: white; padding-bottom: 30px; margin-bottom: 30px">
-                        <div class="col-md-6">
-                            <asp:Button runat="server" OnClick="billingDetails" ID="userBillingDetails" Text="Save Changes" class="btn btn-primary form-control"></asp:Button>
-                        </div>
-                        <div class="col-md-6"></div>
-                    </div>
-                </div>
-                       <%-- Footer Dashboard --%>
-                       <%-- Footer Design By row navbar navbar-expand-lg navbar-dark bg-dark--%>
+                <%-- Footer Dashboard --%>
                 <div class="row footer mb-5">
                     <div class="col-md-6">
                         <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
@@ -359,8 +331,7 @@
                         <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-
-            </div>       
+            </div>
         </div> 
         <%-- Bottom Fixed Bar --%>
         <div class="row fixed-bottom" style="position:fixed;bottom:0;padding:10px;background-color:white;z-index: 999;height:50px;box-shadow: 2px 2px 5px grey;">

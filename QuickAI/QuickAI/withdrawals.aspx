@@ -244,7 +244,7 @@
                             <hr />
                             <div class="table-responsive" style="background-color: white;">
                                 <table class="table">
-                                    <thead class="thead-white">
+                                    <thead class="thead-light">
                                         <tr>
                                             <th scope="col">Request On</th>
                                             <th scope="col">Amount</th>
