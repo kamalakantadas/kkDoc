@@ -83,10 +83,10 @@
          <div id="aIBody" style="padding-top: 65px;">
              <div class="row">
                  <!-- Left Side Lists -->
-                 <%--<div class="col-lg-3 scrollable" id="sidebar" style="width: 25%; background-color: #f2f2f2;">--%>
-                 <div class="col-lg-3 scrollable" id="sidebar" style="background-color: #f2f2f2;">
+                 <div class="col-lg-3 scrollable" id="sidebar">
                      <%-- My Account --%>
                      <ul class="">
+                          <li>My Account</li>
                          <li>
                              <a href="dashboard.aspx">
                                  <i class="icon-feather-grid"></i>
@@ -152,7 +152,7 @@
                          </li>
                      </ul>
                      <%-- Account --%>
-                     <ul style="padding-bottom: 50px">
+                     <ul>
                          <li>Account</li>
                          <li class="">
                              <div class="dropdown show" style="">
@@ -182,117 +182,102 @@
                          </a>
                          </li>
                          <li>
-                             <%--<a href="#">
-                                       <i class="icon-material-outline-power-settings-new"></i>
-                                       <div>Logout</div>
-                                   </a>--%>
                              <asp:LinkButton class="dropdown-item" OnClick="logout" runat="server">Logout</asp:LinkButton>
-
                          </li>
                      </ul>
                  </div>
                  <%-- Right Side Lists --%>
-                 <%-- <div class="col-lg-9 scrollable" id="content" style="min-width: 75%; background: #f2f2f2; z-index: 99; padding-left: 30px; padding-top: 50px;">--%>
-                 <div class="col-lg-9 scrollable" id="content" style="background: #f2f2f2;">
-                     <div id="rightSide">
-                         <%-- Right content 1st row only content --%>
-                         <div class="row pageContentHeader">
-                             <div class="col-md-8">
-                                <div class="form-group" style="display: flex">
-                                    <h3>Ai Chat</h3>
-                                    <div style="border-radius: 20px; height: 40px; width: 180px; background: grey; padding: 7px;">
-                                        0/100 Images Used
-                                    </div>
-                                </div>
-                            </div>
-                             <%-- Right Side of Right side --%>                           
-                             <div class="col-md-4">
-                                 <div id="SubPage">
-                                     <ul style="display: inline-flex;">
-                                         <li><a href="index.aspx">Home</a></li>
-                                         <li><a href="ai-images.aspx">AI Chat</a></li>
-                                     </ul>
+                 <div class="col-lg-9 scrollable" id="content" style="padding-top:35px;">
+                     <%-- Right content 1st row only content --%>
+                     <div class="row pageContentHeader">
+                         <div class="col-md-8">
+                             <div class="form-group" style="display: flex">
+                                 <h3>Ai Chat</h3>
+                                 <div style="border-radius: 20px; height: 40px; width: 180px; background: grey; padding: 7px;">
+                                     0/100 Images Used
                                  </div>
                              </div>
                          </div>
+                         <%-- Right Side of Right side --%>
+                         <div class="col-md-4">
+                             <div id="SubPage">
+                                 <ul style="display: inline-flex;">
+                                     <li><a href="index.aspx">Home</a></li>
+                                     <li><a href="ai-images.aspx">AI Chat</a></li>
+                                 </ul>
+                             </div>
+                         </div>                   
 
-                         <%-- AI chat box starts Here --%>
-                         <div class="row">
-                             <div class="col-md-12 col-lg-12 col-sm-12">
-                                 <div id="chatBotBox" style="background-color: white;">
-                                     <%-- chatbot header --%>
-                                     <div class="row pt-2 pb-2" style="box-shadow: 1px 1px 1px; background: white">
-                                         <%--<div class="col-lg-1 col-md-4 col-sm-2 pl-5">--%>
-                                         <div class="col-4 pl-5">
-                                             <div id="left">
-                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                                 </svg>
-                                             </div>
-                                         </div>
-                                         <%--<div class="col-lg-9 col-md-4 col-sm-6 pt-2">--%>
-                                         <div class="col-4 pt-2">
-                                             <p>AI Chat Bot</p>
-                                         </div>
-                                         <%--   <div class="col-lg-2 col-md-4 col-sm-4 pt-1">--%>
-                                         <div class="col-4 pt-1">
-                                             <div id="right">
-                                                 <asp:Button OnClick="generateText" ID="generateChatText" runat="server" CssClass="button-with-span btn align-items-center" Style="position: absolute;"></asp:Button>
-                                                 <i class="fa fa-download" aria-hidden="true" style="position: relative; width: 15px; padding-left: 5px; padding-top: 5px; /* color: red; */"></i>
-                                                 <%--<asp:Button class="btn btn-primary" onclick="generateText" id="generateChatText" runat="server" style="background-color: #ac2bac;" role="button"><i class="fa fa-download" aria-hidden="true"></i></a>--%>
+                         <%-- AI chat box starts Here --%>               
+                         <div class="col-md-12 col-lg-12 col-sm-12">
+                             <%-- chatbot header --%>
+                             <div class="row" id="chatBotBox" style="border: 1px solid grey; background: white">
+                                 <div class="col-4 pl-5">
+                                     <div id="left">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                         </svg>
+                                     </div>
+                                 </div>
+                                 <div class="col-4 pt-2">
+                                     <p>AI Chat Bot</p>
+                                 </div>
+                                 <div class="col-4 pt-1">
+                                     <div id="right">
+                                         <asp:Button OnClick="generateText" ID="generateChatText" runat="server" CssClass="button-with-span btn align-items-center" Style="position: absolute;"></asp:Button>
+                                         <i class="fa fa-download" aria-hidden="true" style="position: relative; width: 15px; padding-left: 5px; padding-top: 5px; /* color: red; */"></i>
+                                         <%--<asp:Button class="btn btn-primary" onclick="generateText" id="generateChatText" runat="server" style="background-color: #ac2bac;" role="button"><i class="fa fa-download" aria-hidden="true"></i></a>--%>
 
-                                                 <asp:Button runat="server" CssClass="button-with-span btn align-items-center" ID="deleteChat" Style="position: absolute;"></asp:Button>
-                                                 <i class="fa fa-trash binicon" aria-hidden="true" style="position: relative; padding-left: 10px"></i>
-                                             </div>
-                                         </div>
+                                         <asp:Button runat="server" CssClass="button-with-span btn align-items-center" ID="deleteChat" Style="position: absolute;"></asp:Button>
+                                         <i class="fa fa-trash binicon" aria-hidden="true" style="position: relative; padding-left: 10px"></i>
                                      </div>
-                                     <%-- chatbot body --%>
-                                     <div id="chatHistory" style="background-color: white; height: 250px; overflow-y: auto;border:1px solid grey">
+                                 </div>
+
+                                 <%-- chatbot body --%>
+                                 <div class="col-12">
+                                     <div id="chatHistory" style="height: 250px; overflow-y: auto; border: 1px solid grey">
                                      </div>
-                                     <%-- chatbot Text Submit box --%>
-                                     <div class="row ml-2 mr-2 mt-1" style="background-color: white; box-shadow: 1px 1px 1px 2px grey">
-                                         <div class="col-8 mt-4">
-                                             <input type="text" id="textSrch" style="width: 100%; border: none; outline: none" placeholder="Type Your Message Here" />
-                                         </div>
-                                         <div class="col-4 pt-3 pb-3">
-                                             <input type="button" class="btn btn-primary" value="Submit" id="chatSubmitBtn" />
-                                         </div>
+                                 </div>
+
+                                 <%-- chatbot Text Submit box --%>
+                                 <div class="col-12" style="border: 1px solid grey;">
+                                     <div style="padding-top:15px;padding-bottom:15px">
+                                         <input type="text" id="textSrch" style="border: none; outline: none" placeholder="Type Your Message Here" />
+                                         <input type="button" class="btn btn-primary" value="Submit" id="chatSubmitBtn" />
                                      </div>
                                  </div>
                              </div>
                          </div>
-                         <%-- AI chat box end --%>
-                         <hr />
+                     </div>
+                     <%-- AI chat box end --%>                    
+                     <hr />
+                     <%-- Footer Dashboard --%>                    
+                     <div class="row footer">
+                         <div class="col-md-6">
+                             <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
+                         </div>
+                         <div class="col-md-6">
+                             <!-- Facebook -->
+                             <a class="btn" style="" href="#!" role="button"></a>
+                             <!-- Twitter -->
+                             <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                         <%-- Footer Dashboard --%>
-                         <%-- Footer Design By Kamalakantadas row navbar navbar-expand-lg navbar-dark bg-dark--%>
-                         <div class="row footer" style="border-top: 1px solid #ccc;">
-                             <div class="col-md-6">
-                                 <span class="footer-copyright-text">@ 2023 Socius IGB Pvt Ltd, All right reserved</span>
-                             </div>
-                             <div class="col-md-6">
-                                 <!-- Facebook -->
-                                 <a class="btn" style="" href="#!" role="button"></a>
-                                 <!-- Twitter -->
-                                 <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                             <!-- Google -->
+                             <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                                 <!-- Google -->
-                                 <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                             <!-- Instagram -->
+                             <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                                 <!-- Instagram -->
-                                 <a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                             <!-- Linkedin -->
+                             <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                                 <!-- Linkedin -->
-                                 <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-                                 <!-- Pinterest -->
-                                 <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+                             <!-- Pinterest -->
+                             <a class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
 
 
-                                 <!-- Github -->
-                                 <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                             <!-- Github -->
+                             <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
 
-                             </div>
                          </div>
                      </div>
                  </div>

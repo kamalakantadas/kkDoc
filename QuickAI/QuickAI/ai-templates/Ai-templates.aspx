@@ -20,7 +20,7 @@
         <div class="headerBar">
             <%-- Header starts here --%>
             <div>
-                <a class="navbar-brand" href="Index.aspx">
+                <a class="navbar-brand" href="../Index.aspx">
                     <img src="../Images/1149945428.png" id="websiteLogo" />
                 </a>
             </div>
@@ -75,6 +75,7 @@
                     </div>
                 </div>
             </div>
+           
             <%-- Header End Here --%>
         </div>
         <div id="aiTempBody">

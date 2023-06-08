@@ -15,22 +15,13 @@ namespace QuickAI
     {
 
         /// <summary>
-        /// verifyEmailBox control.
+        /// viewImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox verifyEmailBox;
-
-        /// <summary>
-        /// verfiyEmailBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button verfiyEmailBtn;
+        protected global::System.Web.UI.WebControls.TextBox viewImage;
 
         /// <summary>
         /// activeSessionFunction control.
@@ -51,15 +42,6 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Image userImage;
 
         /// <summary>
-        /// viewImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox viewImage;
-
-        /// <summary>
         /// joinButtonFunct control.
         /// </summary>
         /// <remarks>
@@ -69,22 +51,22 @@ namespace QuickAI
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl joinButtonFunct;
 
         /// <summary>
-        /// joinbutton control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button joinbutton;
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// dropdownMenu2 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dropdownMenu2;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// startedFreeReg control.
@@ -94,6 +76,24 @@ namespace QuickAI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton startedFreeReg;
+
+        /// <summary>
+        /// conId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl conId;
+
+        /// <summary>
+        /// conText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl conText;
 
         /// <summary>
         /// timePeriod control.
@@ -177,21 +177,21 @@ namespace QuickAI
         protected global::System.Web.UI.WebControls.Button t1;
 
         /// <summary>
-        /// t2 control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button t2;
+        protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
-        /// t3 control.
+        /// Button4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button t3;
+        protected global::System.Web.UI.WebControls.Button Button4;
     }
 }

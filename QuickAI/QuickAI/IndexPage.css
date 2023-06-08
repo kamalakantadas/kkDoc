@@ -1,11 +1,62 @@
 ﻿body {
 }
+/*Index page start*/
+#changePlan{
+    border-top:1px solid grey;
+    padding-left:100px;
+    padding-right:100px;
+    background:#f2f2f2;
+}
+#allTemp {
+    padding-top: 50px;
+    background: #f2f2f2;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.large{font-size:400%;}
+#allTempHeadIndexPage {
+    text-align:center;
+}
+.btn-group {
+    background: skyblue;
+    box-shadow: 0px 0px 0px 2px skyblue;
+    padding: 10px;
+    border-radius: 81px;
+}
+/*Index page end*/
+/*Membership Page start*/
+#membershipTable {
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+#membershipBody {
+    padding-top: 65px;
+    
+}
+#rightSideMembership{
+    
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+}
+/*Membership Page end*/
+/*AiCode Start*/
+#aibody {
+    padding-top: 65px;
+}
+#titleCount{
+    padding-left:190px;
+}
+.aiCodeLeftBox{
+    padding:20px;
+}
+/*AiCode End*/
 /*Ai Images start*/
-
 #rightSideAiImages {
-    padding-top:50px;
+    padding-top: 50px;
     padding-left: 20px;
-    padding-right: 20px;   
+    padding-right: 20px;
 }
 .advanceSet {
     padding-left: 20px;
@@ -56,8 +107,9 @@
 }
 /*AccountSetting end*/
 /*Ai Chat Start*/
+
 #chatHistory {
-    display:block;
+    display: block;
 }
 .aiChat{
     width:100%;
@@ -201,40 +253,40 @@ p.margin-bottom-0{
 /*TransactionPage End*/
 /*Affiliate-program start*/
 /*Dashboard Start */
+#rightSideOfAffiliatePage{
+    padding-top:30px;
+}
 #aBody {
     padding-top: 65px;
 }
-
-#mDiv {
-    background-color: white;
-    box-shadow: 2px 2px 5px grey;
-    margin: 10px;
-    padding: 10px;
+#rightSideOfAffiliatePage{
+    border-bottom:1px solid grey;
+    padding-left:30px;
+    padding-right:30px;
 }
-#mSubDiv3 {
+#mDiv{
+    margin-top:30px;
+    margin-bottom:30px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:30px;
     background-color: white;
-    box-shadow: 2px 2px 5px grey;
-    margin: 10px;
-    padding: 10px;
-}
-#mSubDiv4 {
-    background-color: white;
-    box-shadow: 2px 2px 5px grey;
-    margin: 10px;
-    padding: 10px;
+    box-shadow: 2px 2px 5px grey; 
 }
 #commission {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
     background-color: white;
     box-shadow: 2px 2px 5px grey;
-    margin: 10px;
-    padding: 10px;
 }
-.in1{
-    width:80%;
-    outline:none;
-   /* border:10x solid #e0e0e0;*/
-    border-radius:5px;
-
+.in1 {
+    width: 80%;
+    outline: none;
+    /* border:10x solid #e0e0e0;*/
+    border-radius: 5px;
 }
 /*Affiliate-program end*/
 /*Global scope start*/
@@ -253,7 +305,7 @@ p.margin-bottom-0{
 .headerBar {
     position: fixed;
     display: grid;
-    grid-template-columns: 0fr 8fr 0fr 0fr 0fr;
+    grid-template-columns: 0fr 8fr 0fr 0fr 0fr 1fr;
     align-items: center;
     background-color: white;
     z-index: 999;
@@ -299,10 +351,14 @@ ul li {
 
 
 /*SpeechTOText start*/
+#audioCount{
+    padding-left:190px
+}
 .contentLeft {
     background: white;
     box-shadow: 0px 1px 3px 0px grey;
     padding: 15px;
+    margin: 10px;
 }
 #speechBody {
     padding-top: 65px;

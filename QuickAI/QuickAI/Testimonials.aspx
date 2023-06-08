@@ -104,11 +104,11 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="tempDiv">
-                        <img src="Images/Image%20ICON.png" style="height: 30px; "/>
+                        <img src="Images/Image%20ICON.png" style="height: 30px;" />
                         <h4>Rohini</h4>
                         <asp:Button ID="t3" runat="server" Text="Designer" class="btn btn-primary" />
                         <p style="white-space: initial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dolor sed urna placerat tincidunt. Aliquam eget metus auctor, congue massa in, aliquet tellus.</p>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="tempDiv">

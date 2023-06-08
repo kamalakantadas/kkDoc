@@ -84,6 +84,7 @@
             <div class="col-lg-3 scrollable" id="sidebar">
                 <%-- My Account --%>
                 <ul class="">
+                    <li>My Account</li>
                     <li><a href="dashboard.aspx"><i class="icon-feather-grid"></i>
                         <div>Dashboard</div>
                     </a></li>

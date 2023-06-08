@@ -84,9 +84,10 @@
         <%-- Body --%>
         <div class="row" id="speechBody">
             <!-- Left Side Lists -->
-            <div class="col-lg-3 scrollable" id="sidebar" style="background-color: #f2f2f2;">
+            <div class="col-lg-3 scrollable" id="sidebar">
                 <%-- My Account --%>
                 <ul class="">
+                    <li>My Account</li>
                     <li>
                         <a href="dashboard.aspx">
                             <i class="icon-feather-grid"></i>
@@ -192,8 +193,8 @@
                 </ul>
             </div>
             <%-- Right Side Lists --%>
-            <div class="col-lg-9 col-md-12 scrollable" id="content" style="background: #f2f2f2;">
-                <div id="rightSide">
+            <div class="col-lg-9 col-md-12 scrollable" id="content">
+                <div id="rightSide" style="padding-top:30px;">
                     <%-- Right content 1st row only content --%>
                     <div class="row mb-3">
                         <%-- Left Side of Right side --%>
@@ -219,35 +220,33 @@
                     <div class="row pt-5">
                         <%-- speech To text Form Left Side start--%>
                         <div class="col-lg-4 col-md-12">
-                            <div class="contentLeft">
-                                <div class="row" style="background: #f2f2f2">
-                                    <div class="col-2">
-                                        <a><i class="fas fa-headset"></i></a>
+                            <div class="row contentLeft">                                
+                                <div class="col-12" style="background: #f2f2f2;display:flex">
+                                    <div>
+                                        <i class="fas fa-headset"></i>
                                     </div>
-                                    <div class="col-10">
+                                    <div>
                                         <p class="fs-4 fw-bolder">Speech To Text</p>
-                                    </div>
-
-                                </div>
-                                <div style="background-color: cornflowerblue;">
+                                    </div>                                    
+                                </div>                          
+                                <div style="background-color: cornflowerblue;margin-top:15px">
                                     <p>Create audio transcript from a file</p>
                                 </div>
-                                <div>
-                                    <p>Title:0/100</p>
+                                <div style="margin-top:30px">
+                                    <span>Title:<span id="titleCount">0</span>/100</span>
                                 </div>
                                 <div>
                                     <input type="text" class="form-control" runat="server" id="title" />
                                 </div>
-                                <div>
-                                    <p class="fs-4 fw-bolder">Upload Media </p>
-                                    <span style="color: red">*</span>
+                                <div style="margin-top:30px">                                   
+                                    <span>Upload Media<span style="color: red">*</span></span>
                                     <input type="file" class="form-control" runat="server" id="audioFile" placeholder="Upload Media" />
                                     <div class="row">
                                         <p class="fs-6 text-lowercase text-muted fw-light">.mp3, .mp4.,.mpeg,.mpga,.m4a,.wav,.webm allowed. Max file size:1024MB</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <p>Audio Description: 0/100</p>
+                                <div style="margin-top:20px">
+                                    <span>Title:<span id="audioCount">0</span>/100</span>
                                 </div>
                                 <div>
                                     <asp:TextBox class="form-control" ID="aDesc" runat="server" Rows="2" TextMode="MultiLine"></asp:TextBox>

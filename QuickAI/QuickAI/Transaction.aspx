@@ -16,8 +16,7 @@
     <script src="Scripts/Transaction.js"></script>
 </head>
 <body>
-    <form id="TransactionForm" runat="server">
-        
+    <form id="TransactionForm" runat="server">        
         <%-- Affiliate Header --%>
         <div class="headerBar">
             <%-- Header starts here --%>
@@ -107,16 +106,7 @@
                     </asp:TableRow>
                 </asp:Table>
             </div>                    
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <h1>hi da</h1>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <span><a>home</a></span>
-                <span><a>home</a></span>
-            </div>
-        </div>
+        </div>        
         <%-- Footer Design --%>
         <div class="row footer">
             <div class="col-md-6">
@@ -205,7 +195,6 @@
                 <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-
     </form>
 </body>
 </html>
